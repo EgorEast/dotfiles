@@ -1,24 +1,16 @@
 #!/usr/bin/env bash
 
-# Установить комбинацию для смены раскладки (ПКМ)
-if [[ "$BLOCK_BUTTON" == "3" ]]; then
+# Проверка, включен ли переключатель rwin
+LAYOUT_STATE=$(setxkbmap -query | grep options)
+
+# Если параметр grp:rwin_toggle отсутствует — перезапустить настройку
+if ! echo "$LAYOUT_STATE" | grep -q "grp:rwin_toggle"; then
+  echo "Fixing layout setup..." >&2
   setxkbmap -layout us,ru -option grp:rwin_toggle
 fi
 
-# Смена раскладки по клику (ЛКМ)
-if [[ "$BLOCK_BUTTON" == "1" ]]; then
-  CURRENT=$(xkblayout-state print '%s')
-  if [[ "$CURRENT" == "us" ]]; then
-    setxkbmap -layout ru
-  else
-    setxkbmap -layout us
-  fi
-fi
-
-# Получение текущей раскладки
+# Показываем текущую раскладку
 KBD=$(xkblayout-state print '%s')
-
-# Вывод иконки
 case "$KBD" in
 ru) echo "🇷🇺" ;;
 us) echo "🇺🇸" ;;
