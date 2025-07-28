@@ -1,0 +1,8 @@
+# Set a higher default search limit
+limit=25
+
+# Always use audio-only mode by default
+audio_only=false
+
+# Set a custom download directory
+download_dir="$HOME/Videos/YouTube"
