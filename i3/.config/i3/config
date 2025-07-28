@@ -514,6 +514,7 @@ for_window [class="Nm-connection-editor"] floating enable
 for_window [class="nekoray"] floating enable
 for_window [class="Throne"] floating enable
 for_window [class="^obs$"] floating enable
+for_window [title="^(DevTools - |Developer Tools — ).*"] floating enable, move position center
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
@@ -524,6 +525,7 @@ for_window [class="urxvt"] border pixel 1
 for_window [class="nekoray"]  resize set 1000 1000
 for_window [class="Throne"]  resize set 1000 1000
 for_window [class="mpv"]  resize set 1000 1000
+for_window [title="^(DevTools - |Developer Tools — ).*"] resize set 1000 1000
 
 # set position of floating window
 for_window [class=".*"] move position center
