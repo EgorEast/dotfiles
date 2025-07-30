@@ -6,4 +6,15 @@
   <property name="last-window-maximized" type="bool" value="true"/>
   <property name="last-show-hidden" type="bool" value="true"/>
   <property name="last-separator-position" type="int" value="170"/>
+  <property name="misc-single-click" type="bool" value="false"/>
+  <property name="misc-directory-specific-settings" type="bool" value="true"/>
+  <property name="misc-file-size-binary" type="bool" value="false"/>
+  <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_ALWAYS"/>
+  <property name="misc-thumbnail-max-file-size" type="uint64" value="10737418240"/>
+  <property name="misc-image-preview-mode" type="string" value="THUNAR_IMAGE_PREVIEW_MODE_EMBEDDED"/>
+  <property name="misc-middle-click-in-tab" type="bool" value="true"/>
+  <property name="misc-open-new-window-as-tab" type="bool" value="true"/>
+  <property name="misc-full-path-in-tab-title" type="bool" value="true"/>
+  <property name="last-restore-tabs" type="bool" value="true"/>
+  <property name="misc-show-delete-action" type="bool" value="false"/>
 </channel>

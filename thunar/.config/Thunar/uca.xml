@@ -12,4 +12,74 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>emblem-symbolic-link</icon>
+	<name>Create Symlink</name>
+	<submenu></submenu>
+	<unique-id>1753944539675909-4</unique-id>
+	<command>ln -s %f %n.symlink</command>
+	<description>Creates a symbolic link to the selected object</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Permanently remove...</name>
+	<submenu></submenu>
+	<unique-id>1753944539675915-5</unique-id>
+	<command>Xdialog --title &quot;Remove...&quot; --yesno &quot;Do you wish to permanently remove n %N?&quot; 10 45 &amp;&amp; rm -r %F</command>
+	<description>Permanently remove selected files</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>View</name>
+	<submenu></submenu>
+	<unique-id>1753944539675919-6</unique-id>
+	<command>feh %F</command>
+	<description>View selected images in a slideshow</description>
+	<range></range>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Copy current path</name>
+	<submenu></submenu>
+	<unique-id>1753944539675915-6</unique-id>
+	<command>echo -n %f | xclip -selection &quot;clipboard&quot;</command>
+	<description>Copies the current path to the clipboard</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Open folder as root</name>
+	<submenu></submenu>
+	<unique-id>1753944539675915-7</unique-id>
+	<command>pkexec thunar %f </command>
+	<description>Open folder as root</description>
+	<range></range>
+	<patterns>*</patterns>
+	<directories/>
+</action>
 </actions>
