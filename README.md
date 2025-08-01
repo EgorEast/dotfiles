@@ -138,7 +138,8 @@ sudo ln -sf /usr/bin/kitty /usr/bin/x-terminal-emulator
 # apply xresources
 
 ```sh
-xrdb -merge ~/evangelion.Xresources
+cp ~/evangelion.Xresources ~/.Xresources
+xrdb -merge ~/.Xresources
 ```
 
 # enable necessary services
