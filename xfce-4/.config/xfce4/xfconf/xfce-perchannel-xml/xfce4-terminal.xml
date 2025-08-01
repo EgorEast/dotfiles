@@ -5,7 +5,7 @@
   <property name="custom-command" type="string" value="fish"/>
   <property name="use-default-working-dir" type="bool" value="false"/>
   <property name="font-use-system" type="bool" value="false"/>
-  <property name="font-name" type="string" value="JetBrainsMono Nerd Font Mono 9.5"/>
+  <property name="font-name" type="string" value="JetBrainsMono Nerd Font Mono 10.5"/>
   <property name="background-mode" type="string" value="TERMINAL_BACKGROUND_TRANSPARENT"/>
   <property name="background-darkness" type="double" value="0.94999999999999996"/>
   <property name="color-foreground" type="string" value="#e3e3ea"/>

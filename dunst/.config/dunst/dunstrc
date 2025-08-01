@@ -49,7 +49,7 @@
     idle_threshold = 0
 
     ### Text ###
-    font = JetBrainsMono Nerd Font Mono 9.5
+    font = JetBrainsMono Nerd Font Mono 10.5
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"

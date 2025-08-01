@@ -11,7 +11,7 @@ set foldmethod=syntax
 set foldcolumn=2
 set foldlevel=1
 
-set guifont=JetBrainsMono_Nerd_Font_Mono\ 9.5
+set guifont=JetBrainsMono_Nerd_Font_Mono\ 10.5
 
 colorscheme habamax
 
