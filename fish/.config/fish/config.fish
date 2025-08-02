@@ -72,5 +72,4 @@ alias update_packages='sudo pacman -Syu'
 alias update_packages_yay='yay'
 alias update_yazi_packages='ya pkg upgrade ndtoan96/ouch dedukun/relative-motions lpanebr/yazi-plugins:first-non-directory h-hg/yamb yazi-rs/plugins:chmod Lil-Dank/lazygit boydaihungst/restore yazi-rs/plugins:git yazi-rs/plugins:full-border yazi-rs/plugins:piper BennyOe/tokyo-night DreamMaoMao/fg'
 alias v="nvim"
-alias y="yazi"
 alias yandex-disk='yandex-disk'
