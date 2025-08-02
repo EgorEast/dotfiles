@@ -112,3 +112,4 @@ alias update_yazi_packages='ya pkg upgrade ndtoan96/ouch dedukun/relative-motion
 alias v='nvim'
 alias vimdiff='nvim -d -u ~/.config/nvim/init.vim'
 alias yandex-disk='yandex-disk'
+alias get_files_type_statistics='cloc'
