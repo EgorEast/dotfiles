@@ -455,7 +455,7 @@ exec --no-startup-id sleep 2 && $terminal
 exec --no-startup-id sleep 3 && $browser 
 exec --no-startup-id sleep 3 && $obsidian
 #exec --no-startup-id sleep 3 && thunar
-# exec --no-startup-id redshift -b 1.0:0.7 -t 6500:3200 -l 47:39
+exec --no-startup-id redshift
 # enable natural scrolling for touchpad
 exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput Natural Scrolling Enabled" 1
 
