@@ -4,6 +4,7 @@ end
 
 # Created by `pipx` on 2025-03-14 06:55:59
 set PATH $PATH /home/egoreast/.local/bin
+set -gx fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 zoxide init fish | source
 caniuse --completion-fish | source
@@ -99,6 +100,7 @@ alias repo_info='onefetch'
 alias resources_usage='btm'
 alias resources_usage_htop='htop'
 alias rmrf='rm -rf'
+alias rofi-obsidian-start='rofi -show obsidian'
 alias run_bash_command='bax'
 alias scp='scp -r'
 alias se='sudo $EDITOR'

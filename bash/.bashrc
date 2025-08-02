@@ -27,6 +27,7 @@ export MANPAGER='nvim --cmd ":lua vim.g.noplugins=1" +Man!'
 export MANWIDTH=999
 export EDITOR=nvim
 export VISUAL=nvim
+export PATH="$HOME/.cargo/bin:$PATH"
 # options
 PS1='\n\w\n\$ '
 set -o noclobber
