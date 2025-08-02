@@ -9,3 +9,6 @@
     path = ~/.config/delta/themes.gitconfig
 [core]
 	editor = nvim
+[alias]
+	graph = log --oneline --graph --all --decorate
+	graphgpg = log --graph --all --pretty=format:'%C(auto)%h %G? %an %d %s'
