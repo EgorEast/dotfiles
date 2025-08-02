@@ -1,44 +1,4 @@
-if not status is-interactive
-    exit
-end
-
-# Created by `pipx` on 2025-03-14 06:55:59
-set PATH $PATH /home/egoreast/.local/bin
-
-zoxide init fish | source
-caniuse --completion-fish | source
-
-# Эти пути будут добавлены в $PATH единожды
-fish_add_path -m ~/bin ~/.local/bin
-
-# Определим переменные XDG
-set -q XDG_DATA_HOME || set -U XDG_DATA_HOME $HOME/.local/share
-set -q XDG_STATE_HOME || set -U XDG_STATE_HOME $HOME/.local/state
-set -q XDG_CONFIG_HOME || set -U XDG_CONFIG_HOME $HOME/.config
-set -q XDG_CACHE_HOME || set -U XDG_CACHE_HOME $HOME/.cache
-
-set -U fish_key_bindings fish_vi_key_bindings
-
-# Двойное нажатие ESC не работает, если выставить меньше
-set -g fish_escape_delay_ms 300
-
-set -gx EDITOR nvim
-set -gx VISUAL nvim
-set -gx BROWSER xdg-open
-set -x TERMINAL kitty
-
-set -x PAGER delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
-set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
-
-# pj plugin settings. Usage - pj <project name>
-set -U PROJECT_PATHS ~/Programming/exarh-web ~/Yandex.Disk/ ~/Yandex.Disk/Obsidian/
-# done plugin settings
-set -U __done_min_cmd_duration 20000 # default: 5000 ms
-set -U __done_exclude '^(v|nvim|y|yazi|m|cmus|g|lazygit)' # default: all git commands, except push and pull. accepts a regex.
-set -U __done_notify_sound 1
-# pisces plugin settings - autoclose pair sybols
-set -U pisces_only_insert_at_eol 1
-
+# Auto-generated from $HOME/.config/fish/config.fish
 alias 'cd..'='cd ../'
 alias ZZ='exit'
 alias ai='gemini'
@@ -55,7 +15,7 @@ alias curlh='curl -sILX GET'
 alias curlm='curl -A "Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) CriOS/28.0.1500.12 Mobile/10B329 Safari/8536.25"'
 alias disk_usage='gdu'
 alias disks='echo "╓───── m o u n t . p o i n t s";echo "╙────────────────────────────────────── ─ ─ ";lsblk -a;echo "";echo "╓───── d i s k . u s a g e";echo "╙────────────────────────────────────── ─ ─ ";df -h;'
-alias download_from_youtube='yt-dlp' # download with 128x720 resolution and to Downloads folder
+alias download_from_youtube='yt-dlp # download with 128x720 resolution and to Downloads folder'
 alias download_from_youtube_best='yt-dlp -f "bestvideo+bestaudio"'
 alias download_playlist_from_youtube='yt-dlp --output "~/Youtube/%(playlist_title)s/%(title)s.%(ext)s"'
 alias download_playlist_from_youtube_best='yt-dlp --output "~/Youtube/%(playlist_title)s/%(title)s.%(ext)s" -f "bestvideo+bestaudio"'
@@ -72,7 +32,7 @@ alias gcob='git checkout -b'
 alias gcs='git commit -S -m'
 alias gd='git difftool'
 alias gdc='git difftool --cached'
-alias generate_license='license' # Usage - license <license_name>. Example - license mit >> LICENSE
+alias generate_license='license # Usage - license <license_name>. Example - license mit >> LICENSE'
 alias gf='git fetch'
 alias gg='git graph'
 alias ggg='git graphgpg'
