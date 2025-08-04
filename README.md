@@ -112,7 +112,7 @@ sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher 
 
 yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git
 
-sudo npm install -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli
+sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
 cargo install rofi-obsidian
 
