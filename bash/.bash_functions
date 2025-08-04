@@ -17,3 +17,79 @@ npm() {
     command npm "$@"
   fi
 }
+
+y() {
+  tmpfile=$(mktemp -t yazi-cwd.XXXXXX)
+  yazi --cwd-file="$tmpfile" "$@"
+  if [[ -f $tmpfile ]]; then
+    cd "$(cat "$tmpfile")" || return
+    rm "$tmpfile"
+  fi
+}
+
+pj() {
+  local argc=$#
+  if [[ -z "${PROJECT_PATHS[*]}" ]]; then
+    echo 'Add some directories to the environment variable $PROJECT_PATHS to get started!'
+    echo '  export PROJECT_PATHS=(~/dir1 ~/dir2)'
+    return 1
+  elif [[ $argc -le 0 || $argc -gt 2 ]]; then
+    echo 'Usage: pj [open] [PROJECT]'
+    return 1
+  elif [[ $argc -eq 2 && $1 != "open" ]]; then
+    echo 'Usage: pj [open] [PROJECT]'
+    return 1
+  elif [[ "$1" == "--help" ]]; then
+    echo 'Usage: pj [open] [PROJECT]'
+  elif [[ "$1" == "open" ]]; then
+    local target
+    target=$(find "${PROJECT_PATHS[@]}" -maxdepth 1 -name "$2" | head -n 1)
+    if [[ -n "$target" ]]; then
+      cd "$target" || return
+      eval "$EDITOR \"$target\""
+    else
+      echo "No such project: $2"
+      return 1
+    fi
+  else
+    local target
+    target=$(find "${PROJECT_PATHS[@]}" -maxdepth 1 -name "$1" | head -n 1)
+    if [[ -n "$target" ]]; then
+      cd "$target" || return
+    else
+      echo "No such project: $1"
+      return 1
+    fi
+  fi
+}
+
+__project_basenames() {
+  local project_basenames=()
+  for pp in "${PROJECT_PATHS[@]}"; do
+    if [[ -n "$(ls -A "$pp" 2>/dev/null)" ]]; then
+      project_basenames+=("$(basename "$pp")")
+      while IFS= read -r project; do
+        project_basenames+=("$project")
+      done < <(find "$pp" -maxdepth 1 -mindepth 1 -type d -not -name '.*' -exec basename {} \;)
+    fi
+  done
+  echo "${project_basenames[@]}"
+}
+
+license() {
+  local base_url="https://api.github.com/licenses"
+  local headers="Accept: application/vnd.github.drax-preview+json"
+
+  if [[ -n "$1" ]]; then
+    local license="$1"
+    local res
+    res=$(curl --silent --header "$headers" "$base_url/$license" | jq '.body')
+    echo -e "$res" | sed -e 's/^"//' -e 's/"$//'
+  else
+    local res
+    res=$(curl --silent --header "$headers" "$base_url")
+    echo "Available Licenses: "
+    echo
+    echo "$res" | jq -r '.[].key'
+  fi
+}
