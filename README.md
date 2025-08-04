@@ -147,6 +147,8 @@ xrdb -merge ~/.Xresources
 # enable necessary services
 
 ```sh
+sudo systemctl enable --now reflector.timer
+
 sudo systemctl start bluetooth
 sudo systemctl enable bluetooth
 
