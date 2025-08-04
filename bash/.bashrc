@@ -16,6 +16,10 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
+if [ -f "$HOME/.bash_functions" ]; then
+  source "$HOME/.bash_functions"
+fi
+
 # interactive
 case $- in
 *i*) ;;
@@ -56,19 +60,6 @@ shopt -s dirspell 2>/dev/null
 shopt -s cdspell 2>/dev/null
 CDPATH="."
 
-# aliases
-function l() {
-  ls -gGAhF --color=always "$@" |
-    sed -e 's/--x/1/g;s/-w-/2/g;s/-wx/3/g;s/r--/4/g;s/r-x/5/g;s/rw-/6/g;s/rwx/7/g;s/---/0/g;s/rwt/7/g' |
-    sed 's/^\(....\) [[:digit:]] /\1 /'
-}
-# function t() {
-#   X=$#
-#   [[ $X -eq 0 ]] || X=X
-#   tmux new-session -A -s $X
-#   tmux set-environment LC_ALL 'en_US.UTF-8'
-#   tmux set-environment LANG 'en_US.UTF-8'
-# }
 # completionion hail mary
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
