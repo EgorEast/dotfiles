@@ -4,6 +4,7 @@
 prepend_keymap = [
   # ouch
   { on = [
+    "c",
     "C",
   ], run = "plugin ouch", desc = "Compress with ouch" },
   # relative motions
