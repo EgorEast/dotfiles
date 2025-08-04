@@ -35,7 +35,7 @@ set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
 set -U PROJECT_PATHS ~/Programming/exarh-web ~/Yandex.Disk/ ~/Yandex.Disk/Obsidian/
 # done plugin settings
 set -U __done_min_cmd_duration 20000 # default: 5000 ms
-set -U __done_exclude '^(v|nvim|y|yazi|m|cmus|g|lazygit)' # default: all git commands, except push and pull. accepts a regex.
+set -U __done_exclude '^(v|e|se|nvim|y|yazi|m|cmus|g|lazygit|ai|gemini|cal)' # default: all git commands, except push and pull. accepts a regex.
 set -U __done_notify_sound 1
 # pisces plugin settings - autoclose pair sybols
 set -U pisces_only_insert_at_eol 1
@@ -46,7 +46,7 @@ alias ai='gemini'
 alias b='blobdrop' # Usage - blobdrop <file_name> - copy file to blobdrop
 alias browser='yandex-browser-stable'
 alias c='clear'
-alias calendar='calcurse'
+alias cal='calcurse'
 alias cat='bat'
 alias cd='z'
 alias check_saved_git_passwords='seahorse'

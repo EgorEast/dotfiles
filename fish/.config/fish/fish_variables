@@ -10,7 +10,7 @@ SETUVAR XDG_CONFIG_HOME:/home/egoreast/\x2econfig
 SETUVAR XDG_DATA_HOME:/home/egoreast/\x2elocal/share
 SETUVAR XDG_STATE_HOME:/home/egoreast/\x2elocal/state
 SETUVAR __done_allow_nongraphical:1
-SETUVAR __done_exclude:\x5e\x28v\x7cnvim\x7cy\x7cyazi\x7cm\x7ccmus\x7cg\x7clazygit\x29
+SETUVAR __done_exclude:\x5e\x28v\x7ce\x7cse\x7cnvim\x7cy\x7cyazi\x7cm\x7ccmus\x7cg\x7clazygit\x7cai\x7cgemini\x7ccal\x29
 SETUVAR __done_min_cmd_duration:20000
 SETUVAR __done_notify_sound:1
 SETUVAR __fish_initialized:3800
