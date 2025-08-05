@@ -15,11 +15,14 @@
   <property name="misc-middle-click-in-tab" type="bool" value="true"/>
   <property name="misc-open-new-window-as-tab" type="bool" value="true"/>
   <property name="misc-full-path-in-tab-title" type="bool" value="true"/>
-  <property name="last-restore-tabs" type="bool" value="true"/>
+  <property name="last-restore-tabs" type="bool" value="false"/>
   <property name="misc-show-delete-action" type="bool" value="false"/>
   <property name="last-focused-tab-left" type="int" value="0"/>
   <property name="last-focused-tab-right" type="int" value="0"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
   <property name="last-details-view-column-widths" type="string" value="50,50,143,134,50,127,50,50,306,50,50,80,50,504"/>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
+  <property name="misc-use-csd" type="bool" value="true"/>
+  <property name="misc-thumbnail-draw-frames" type="bool" value="false"/>
+  <property name="misc-symbolic-icons-in-sidepane" type="bool" value="false"/>
 </channel>
