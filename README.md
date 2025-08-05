@@ -107,19 +107,23 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shortcut redshift blueberry xfce4-clipman-plugin gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch kshutdown picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shortcut redshift blueberry xfce4-clipman-plugin gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch kshutdown picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew
 
 
-yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui
+yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
-
-cargo install rofi-obsidian
 
 curl -L https://github.com/dundee/gdu/releases/latest/download/gdu_linux_amd64.tgz | tar xz
 chmod +x gdu_linux_amd64
 mv gdu_linux_amd64 /usr/bin/gdu
 
+sudo pacman -S python-pipx
+pipx ensurepath
+sudo pipx ensurepath --global # optional to allow pipx actions with --global argument
+pipx install git+https://github.com/rmaake1/terminal-rain-lightning.git
+
+curl https://raw.githubusercontent.com/byawitz/ggh/master/install/unix.sh | sh
 ```
 
 # install and setup aider
