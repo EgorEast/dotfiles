@@ -3,6 +3,8 @@
 # See dunst(5) for all configuration options
 
 [global]
+    timeout = 10
+
     ### Display ###
     monitor = 2
 
@@ -139,3 +141,11 @@
     summary = "*"
     # Запуск скрипта для каждого уведомления
     script = ~/.config/dunst/notify-sound.sh
+
+[portmaster]
+    appname = "Portmaster"
+    timeout = 10
+
+[rule]
+    summary = "*Speed Up Website Loading*"
+    timeout = 10
