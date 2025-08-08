@@ -582,7 +582,7 @@ bar {
     separator							$purple
     background						$darkgrey
     statusline						$white
-  #												border 			 bg					txt				indicator
+  #												border 			bg					txt				indicator
     focused_workspace			$mediumgrey	$grey				$darkgrey	$purple
     active_workspace			$lightblue	$mediumgrey	$darkgrey	$purple
     inactive_workspace		$darkgrey		$darkgrey		$grey			$purple
