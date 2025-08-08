@@ -165,4 +165,5 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 
 # about packages
 
+jq - command-line JSON processor ([docs](https://jqlang.org/manual/))
 ncdu - terminal disk usage analyzer ([docs](https://dev.yorhel.nl/ncdu/man))
