@@ -305,7 +305,7 @@ bindsym $mod+Shift+x exec --no-startup-id dunstctl history-pop
 # Power Profiles menu switcher (rofi)
 bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
 # show bluetooth menu
-bindsym $mod+Shift+b exec --no-startup-id blueberry
+bindsym $mod+Shift+b exec --no-startup-id rofi-bluetooth
 
 ##########################################
 # configuration for workspace behaviour: #
