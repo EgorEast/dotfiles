@@ -25,4 +25,6 @@
   <property name="misc-use-csd" type="bool" value="true"/>
   <property name="misc-thumbnail-draw-frames" type="bool" value="false"/>
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="false"/>
+  <property name="last-window-width" type="int" value="640"/>
+  <property name="last-window-height" type="int" value="480"/>
 </channel>
