@@ -1,5 +1,6 @@
 # Auto-generated from $HOME/.config/fish/config.fish
 alias 'cd..'='cd ../'
+alias 'z..'='z ../'
 alias ZZ='exit'
 alias ai='gemini'
 alias b='blobdrop # Usage - blobdrop <file_name> - copy file to blobdrop'

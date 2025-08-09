@@ -41,6 +41,7 @@ set -U __done_notify_sound 1
 set -U pisces_only_insert_at_eol 1
 
 alias 'cd..'='cd ../'
+alias 'z..'='z ../'
 alias ZZ='exit'
 alias ai='gemini'
 alias b='blobdrop' # Usage - blobdrop <file_name> - copy file to blobdrop
