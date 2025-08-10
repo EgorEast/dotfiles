@@ -168,6 +168,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 bitchat-tui - terminal chat app ([docs](https://github.com/vaibhav-mattoo/bitchat-tui))
 bluetuith - bluetooth terminal ([docs](https://bluetuith-org.github.io/bluetuith/index.html))
 fd - command-line find replacement ([docs](https://github.com/sharkdp/fd))
+ggh - meant to act as a lightweight, fast wrapper around SSH commands ([docs](https://github.com/byawitz/ggh))
 jq - command-line JSON processor ([docs](https://jqlang.org/manual/))
 ncdu - terminal disk usage analyzer ([docs](https://dev.yorhel.nl/ncdu/man))
 tabiew - TUI application that allows users to view and query tabular data files, such as CSV, Parquet, Arrow, and ... ([docs](https://github.com/shshemi/tabiew))
