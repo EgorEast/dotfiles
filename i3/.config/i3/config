@@ -262,6 +262,10 @@ bindsym $mod+a focus parent
 # open new empty workspace
 bindsym $mod+Shift+n exec --no-startup-id ~/.config/i3/scripts/empty_workspace
 
+
+# open obsidian
+bindsym $mod+Shift+o exec --no-startup-id obsidian
+
 # Multimedia Keys
 
 # volume
