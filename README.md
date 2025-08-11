@@ -111,7 +111,7 @@ etc, etc, etc...
 sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shortcut redshift blueberry xfce4-clipman-plugin gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch kshutdown picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine
 
 
-yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin
+yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
@@ -170,6 +170,7 @@ bluetuith - bluetooth terminal ([docs](https://bluetuith-org.github.io/bluetuith
 fd - command-line find replacement ([docs](https://github.com/sharkdp/fd))
 ggh - meant to act as a lightweight, fast wrapper around SSH commands ([docs](https://github.com/byawitz/ggh))
 jq - command-line JSON processor ([docs](https://jqlang.org/manual/))
+mmtui-bin - TUI disk mount manager for TUI file managers for Linux ([docs](https://github.com/SL-RU/mmtui))
 ncdu - terminal disk usage analyzer ([docs](https://dev.yorhel.nl/ncdu/man))
 tabiew - TUI application that allows users to view and query tabular data files, such as CSV, Parquet, Arrow, and ... ([docs](https://github.com/shshemi/tabiew))
 tdf - terminal file manager ([docs](https://github.com/itsjunetime/tdf))

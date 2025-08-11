@@ -120,4 +120,6 @@ prepend_keymap = [
 
 
   { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
+
+  { on = "M", run = "plugin mount", desc = "Mount manager" },
 ]
