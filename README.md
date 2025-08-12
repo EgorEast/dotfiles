@@ -70,7 +70,7 @@ to fully "install" and setup this repo run the [setup script](https://github.com
 # clone and stow
 git clone git@github.com:EgorEast/dotfiles.git ~/.local/src/dotfiles &&
  cd ~/.local/src/dotfiles &&
- stow anydesk autostart bash bottom calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk htop i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith -t ~
+ stow anydesk autostart bash bottom calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk htop i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd -t ~
 
 # nvim
 nvim --headless "+Lazy! sync" +qa
@@ -108,14 +108,13 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shortcut redshift blueberry xfce4-clipman-plugin gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch kshutdown picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shortcut redshift blueberry xfce4-clipman-plugin gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx
 
 
 yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
-sudo pacman -S python-pipx
 pipx ensurepath
 sudo pipx ensurepath --global # optional to allow pipx actions with --global argument
 pipx install git+https://github.com/rmaake1/terminal-rain-lightning.git
