@@ -263,3 +263,24 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **yandex-music** – Unofficial Yandex Music client. ([docs](https://github.com/cucumber-sp/yandex-music-linux))
 - **yazi-git** – Modern TUI file manager with Lua plugins. ([docs](https://yazi-rs.github.io/docs/quick-start))
 - **ytsurf** – TUI YouTube browser/downloader. ([docs](https://github.com/Stan-breaks/ytsurf))
+
+---
+
+## **Installed via npm (global)**
+
+- **@bramus/caniuse-cli** – Check browser support from the terminal. ([docs](https://github.com/bramus/caniuse-cli))
+- **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
+- **npm-check-updates** – Check for newer npm dependencies. ([docs](https://github.com/raineorshine/npm-check-updates))
+- **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
+
+---
+
+## **Installed via pipx**
+
+- **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))
+
+---
+
+## **Installed via curl script**
+
+- **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
