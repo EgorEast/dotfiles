@@ -130,3 +130,8 @@ alias update_yazi_packages='ya pkg upgrade ndtoan96/ouch dedukun/relative-motion
 alias v='nvim'
 alias vimdiff='nvim -d -u ~/.config/nvim/init.vim'
 alias yandex-disk='yandex-disk'
+
+# functions that must be declared after everything
+for f in ~/.config/fish/my_functions/*.fish
+    source $f
+end

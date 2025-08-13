@@ -31,7 +31,7 @@ Based on: <https://github.com/xero/dotfiles>
 - [apply xresources](#apply-xresources)
 - [enable necessary services](#enable-necessary-services)
 - [setup env variables](#setup-env-variables)
-- [about packages](#about-packages)
+- [about packages](#-about-packages)
 
 # managing
 
