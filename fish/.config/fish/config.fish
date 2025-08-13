@@ -60,7 +60,6 @@ alias curld='curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML,
 alias curlh='curl -sILX GET'
 alias curlm='curl -A "Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_3 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) CriOS/28.0.1500.12 Mobile/10B329 Safari/8536.25"'
 alias du='ncdu'
-alias disks='echo "╓───── m o u n t . p o i n t s";echo "╙────────────────────────────────────── ─ ─ ";lsblk -a;echo "";echo "╓───── d i s k . u s a g e";echo "╙────────────────────────────────────── ─ ─ ";df -h;'
 alias download_from_youtube='yt-dlp' # download with 128x720 resolution and to Downloads folder
 alias download_from_youtube_best='yt-dlp -f "bestvideo+bestaudio"'
 alias download_playlist_from_youtube='yt-dlp --output "~/Youtube/%(playlist_title)s/%(title)s.%(ext)s"'
