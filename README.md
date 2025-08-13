@@ -70,7 +70,7 @@ to fully "install" and setup this repo run the [setup script](https://github.com
 # clone and stow
 git clone git@github.com:EgorEast/dotfiles.git ~/.local/src/dotfiles &&
  cd ~/.local/src/dotfiles &&
- stow anydesk autostart bash bottom calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk htop i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd -t ~
+ stow anydesk autostart bash bottom calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk htop i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd qalculate -t ~
 
 # nvim
 nvim --headless "+Lazy! sync" +qa
@@ -108,7 +108,7 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate
 
 
 yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin
@@ -261,6 +261,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **galculator** – GTK calculator. ([docs](https://github.com/galculator/galculator))
 - **glow** – TUI Markdown viewer. ([docs](https://github.com/charmbracelet/glow))
 - **gsimplecal** – Simple popup calendar. ([docs](https://dmedvinsky.github.io/gsimplecal/))
+- **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
 - **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
 - **onlyoffice-bin** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/))
 - **tabiew** – TUI tabular data viewer. ([docs](https://github.com/shshemi/tabiew))

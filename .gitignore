@@ -11,6 +11,7 @@ nekoray/.config/nekoray/config/profiles
 obs/.config/obs-studio/logs
 obs/.config/obs-studio/profiler_data
 obs/.config/obs-studio/safe_mode
+qalculate/.config/qalculate/qalc.history
 rudesktop/.config/rudesktop/RuDesktop*_ThreadId*
 rudesktop/.config/rudesktop/RuDesktop.toml
 rudesktop/.config/rudesktop/RuDesktop2.toml
