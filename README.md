@@ -30,6 +30,7 @@ Based on: <https://github.com/xero/dotfiles>
 - [setup kitty](#setupkitty)
 - [apply xresources](#apply-xresources)
 - [enable necessary services](#enable-necessary-services)
+- [setup bandwhich](#setup-bandwhich)
 - [setup env variables](#setup-env-variables)
 - [about packages](#-about-packages)
 
@@ -70,7 +71,7 @@ to fully "install" and setup this repo run the [setup script](https://github.com
 # clone and stow
 git clone git@github.com:EgorEast/dotfiles.git ~/.local/src/dotfiles &&
  cd ~/.local/src/dotfiles &&
- stow anydesk autostart bash bottom calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk htop i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd qalculate -t ~
+ stow anydesk autostart bash calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd qalculate -t ~
 
 # nvim
 nvim --headless "+Lazy! sync" +qa
@@ -108,10 +109,10 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel bottom htop cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich
 
 
-yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf neohtop lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin
+yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
@@ -154,6 +155,13 @@ sudo systemctl enable bluetooth
 
 yandex-disk token
 yandex-disk start
+
+```
+
+# setup bandwhich
+
+```sh
+sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)
 ```
 
 # setup env variables
@@ -166,12 +174,11 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 
 ## 🖥 System Monitoring & Info
 
-- **bottom** – TUI system monitor with graphs. ([docs](https://github.com/ClementTsang/bottom))
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
-- **htop** – Interactive process viewer. ([docs](https://htop.dev/))
+- **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
-- **neohtop** – Improved htop clone. ([docs](https://github.com/Abdenasser/neohtop))
+- **neohtop** – Improved htop clone. ([docs](https://github.com/aristocratos/btop))
 
 ## 📂 File & Disk Management
 
@@ -200,6 +207,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **whatsapp-linux-desktop** – Unofficial WhatsApp desktop client. ([docs](https://github.com/eneshecan/whatsapp-for-linux))
 - **yandex-browser** – Yandex web browser. ([docs](https://browser.yandex.ru/help/))
 - **yandex-disk** – Cloud storage client. ([docs](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux))
+- **bandwhich** - CLI utility for displaying current network utilization by process, connection and remote IP/hostname. ([docs](https://github.com/imsnif/bandwhich))
 
 ## 💻 Development Tools
 
