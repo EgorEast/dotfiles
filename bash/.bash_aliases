@@ -26,6 +26,7 @@ alias download_playlist_from_youtube_best='yt-dlp --output "~/Youtube/%(playlist
 alias e='$EDITOR'
 alias enable_keyboard1='sudo chmod 777 /dev/hidraw1'
 alias enable_keyboard2='sudo chmod 777 /dev/hidraw2'
+alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
 alias g='lazygit'
 alias ga='git add'
 alias gb='git branch'

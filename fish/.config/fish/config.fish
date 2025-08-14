@@ -27,6 +27,10 @@ set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx BROWSER xdg-open
 set -x TERMINAL kitty
+set -gx MANPAGER "sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
+
+abbr -a --position anywhere -- --help '--help | bat -plhelp'
+abbr -a --position anywhere -- -h '-h | bat -plhelp'
 
 set -x PAGER delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
 set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
@@ -67,6 +71,7 @@ alias download_playlist_from_youtube_best='yt-dlp --output "~/Youtube/%(playlist
 alias e='$EDITOR'
 alias enable_keyboard1='sudo chmod 777 /dev/hidraw1'
 alias enable_keyboard2='sudo chmod 777 /dev/hidraw2'
+alias fzf='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
 alias g='lazygit'
 alias ga='git add'
 alias gb='git branch'
