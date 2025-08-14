@@ -98,3 +98,15 @@ git:
 
 # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-pull-request-urls
 services: {}
+
+customCommands:
+  - key: "N" # (Shift+n)
+    description: "Commit with --no-verify"
+    command: "git commit --no-verify -m '{{.Form.Message}}'"
+    context: "files"
+    prompts:
+      - type: "input"
+        title: "Commit message with --no-verify"
+        key: "Message"
+        # initialValue: "{{.SelectedLocalBranch.Name}}"
+    loadingText: "Committing with --no-verify..."
