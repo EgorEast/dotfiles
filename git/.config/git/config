@@ -4,12 +4,48 @@
 [credential]
 	helper = libsecret
 [init]
-  defaultBranch = main
+	defaultBranch = main
 [include]
-    path = ~/.config/delta/themes.gitconfig
+	path = ~/.config/delta/themes.gitconfig
 [core]
 	editor = nvim
+	fsmonitor = true
+	untrackedCache = true
 [alias]
 	graph = log --oneline --graph --all --decorate
 	graphgpg = log --graph --all --pretty=format:'%C(auto)%h %G? %an %d %s'
 	project-summary = !which onefetch && onefetch
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[rebase]
+	autoSquash = true
+	autoStash = true
+	updateRefs = true
+[merge]
+	conflictstyle = zdiff3
+[pull]
+	; rebase = true
