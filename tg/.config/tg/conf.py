@@ -1,8 +1,44 @@
-PHONE = "+79604441373"
+import os
 
-# import os
-#
-#
+ENV_PATH = os.path.expanduser("~/.config/tg/.env")
+
+
+def load_env(path):
+    """Reads an env file into a dictionary."""
+    env_vars = {}
+    if os.path.exists(path):
+        with open(path, "r") as f:
+            for line in f:
+                line = line.strip()
+                if not line or line.startswith("#"):
+                    continue
+                if "=" in line:
+                    key, value = line.split("=", 1)
+                    env_vars[key.strip()] = value.strip()
+    return env_vars
+
+
+def save_env_var(path, key, value):
+    """Adds or updates a variable in the env file."""
+    env_vars = load_env(path)
+    env_vars[key] = value
+    with open(path, "w") as f:
+        for k, v in env_vars.items():
+            f.write(f"{k}={v}\n")
+
+
+# Load environment variables from file
+env = load_env(ENV_PATH)
+PHONE = env.get("PHONE")
+
+# If PHONE is missing — ask the user and save it
+if not PHONE:
+    PHONE = input("Enter your Telegram phone number: ").strip()
+    save_env_var(ENV_PATH, "PHONE", PHONE)
+
+# PHONE is now ready to be used in the config
+print(f"Using phone number: {PHONE}")
+
 # # You can write anything you want here, file will be executed at start time
 # # You can keep you sensitive information in password managers or gpg
 # # encrypted files for example
@@ -14,7 +50,7 @@ PHONE = "+79604441373"
 # PHONE = get_pass("i/telegram-phone")
 # # encrypt you local tdlib database with the key
 # ENC_KEY = get_pass("i/telegram-enc-key")
-#
+
 # # log level for debugging, info by default
 # LOG_LEVEL = "DEBUG"
 # # path where logs will be stored (all.log and error.log)

@@ -1,3 +1,5 @@
+.env
+
 anydesk/.anydesk/*
 cmus/.config/cmus/cache
 cmus/.config/cmus/queue.pl
