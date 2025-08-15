@@ -71,7 +71,7 @@ to fully "install" and setup this repo run the [setup script](https://github.com
 # clone and stow
 git clone git@github.com:EgorEast/dotfiles.git ~/.local/src/dotfiles &&
  cd ~/.local/src/dotfiles &&
- stow anydesk autostart bash calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd qalculate bat -t ~
+ stow anydesk autostart bash calcurse cmus curl delta dunst fastfetch fish flameshot gemini git glow greenclip gtk i3 icons inputrc kitty lazygit mineapp-list mpv nano nekoray neovim nwg-look obs onlyoffice pavucontrol picom pipewire rofi rudesktop spectacle ssh thunar user-dirs vim wget xfce-4 xinit xorg xsettingsd ya-disk ya-music yazi yt-dlp ytsurf xarchiver galculator lazydocker redshift ncdu bluetuith lsd qalculate bat tg -t ~
 
 # nvim
 nvim --headless "+Lazy! sync" +qa
@@ -112,7 +112,7 @@ etc, etc, etc...
 sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich
 
 
-yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin
+yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games portmaster-bin blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin telegram-tg
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
@@ -174,9 +174,9 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 
 ## 🖥 System Monitoring & Info
 
+- **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
-- **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
 - **neohtop** – Improved htop clone. ([docs](https://github.com/aristocratos/btop))
 
@@ -192,22 +192,23 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 ## 🌐 Networking & Communication
 
 - **anydesk-bin** – Remote desktop software. ([docs](https://anydesk.com))
+- **bandwhich** - CLI utility for displaying current network utilization by process, connection and remote IP/hostname. ([docs](https://github.com/imsnif/bandwhich))
 - **bitchat-tui** – TUI chat application. ([docs](https://github.com/vaibhav-mattoo/bitchat-tui))
 - **blobdrop-git** – Local network file sharing tool. ([docs](https://github.com/vimpostor/blobdrop))
 - **firefox** – Web browser. ([docs](https://support.mozilla.org/))
-- **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
 - **nekoray-bin** – GUI for V2Ray/XRay tunneling. ([docs](https://github.com/MatsuriDayo/nekoray))
+- **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
 - **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))
 - **portmaster-bin** – Firewall and network monitor. ([docs](https://safing.io/portmaster/))
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
+- **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
 - **tor** – Anonymity network. ([docs](https://2019.www.torproject.org/docs/documentation.html.en))
 - **torbrowser-launcher** – Tor Browser installer/updater. ([docs](https://github.com/micahflee/torbrowser-launcher))
 - **torsocks** – Run applications through Tor. ([docs](https://gitweb.torproject.org/torsocks.git))
 - **whatsapp-linux-desktop** – Unofficial WhatsApp desktop client. ([docs](https://github.com/eneshecan/whatsapp-for-linux))
 - **yandex-browser** – Yandex web browser. ([docs](https://browser.yandex.ru/help/))
 - **yandex-disk** – Cloud storage client. ([docs](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux))
-- **bandwhich** - CLI utility for displaying current network utilization by process, connection and remote IP/hostname. ([docs](https://github.com/imsnif/bandwhich))
 
 ## 💻 Development Tools
 
@@ -215,8 +216,8 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
 - **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))
-- **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
+- **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
 - **nodejs-lts-jod** – Long-term support version of Node.js. ([docs](https://nodejs.org/en/docs/))
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))
