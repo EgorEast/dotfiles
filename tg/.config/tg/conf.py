@@ -65,7 +65,12 @@ LOG_PATH = os.path.expanduser("~/.local/share/tg/")
 # can format title, msg, subtitle and icon_path paramters
 # In these exapmle, kitty terminal is used and when notification is pressed
 # it will focus on the tab of running tg
-# NOTIFY_CMD = "/usr/local/bin/terminal-notifier -title {title} -subtitle {subtitle} -message {msg} -appIcon {icon_path} -sound default -execute '/Applications/kitty.app/Contents/MacOS/kitty @ --to unix:/tmp/kitty focus-tab --no-response -m title:tg'"
+NOTIFY_CMD = (
+    "notify-send -a telegram-tg "
+    "-i {icon_path} -t 5000 "
+    '"{title}" "{msg}" '
+    "-h string:x-dunst-stack-tag:telegram"
+)
 
 # You can use your own voice recording cmd but it's better to use default one.
 # The voice note must be encoded with the Opus codec, and stored inside an OGG

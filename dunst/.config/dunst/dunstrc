@@ -149,3 +149,7 @@
 [rule]
     summary = "*Speed Up Website Loading*"
     timeout = 10
+
+[telegram-tg]
+    appname = telegram-tg
+    action = kitty @ focus-tab -m title:tg
