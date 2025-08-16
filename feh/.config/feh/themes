@@ -1,0 +1,11 @@
+feh --auto-zoom \
+--borderless \
+--draw-actions \
+--draw-filename \
+--draw-tinted \
+--edit \
+--font /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular/10.5 \
+--geometry 500x500 \
+--image-bg black \
+--menu-font /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular/10.5 \
+--verbose
