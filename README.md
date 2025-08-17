@@ -178,7 +178,6 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
-- **neohtop** – Improved htop clone. ([docs](https://github.com/aristocratos/btop))
 
 ## 📂 File & Disk Management
 
@@ -218,6 +217,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))
 - **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
 - **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
+- **lazydocker** – TUI Docker manager. ([docs](https://github.com/jesseduffield/lazydocker))
 - **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
 - **nodejs-lts-jod** – Long-term support version of Node.js. ([docs](https://nodejs.org/en/docs/))
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))
@@ -299,7 +299,6 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **downloader-cli** – CLI file downloader. ([docs](https://github.com/deepjyoti30/downloader-cli))
 - **fish** – User-friendly shell with autosuggestions. ([docs](https://fishshell.com/docs/current/))
 - **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
-- **lazydocker** – TUI Docker manager. ([docs](https://github.com/jesseduffield/lazydocker))
 - **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
 - **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))
 - **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))
