@@ -251,6 +251,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **playerctl** – Control media players from CLI. ([docs](https://github.com/altdesktop/playerctl))
 - **shotcut** – Cross-platform video editor. ([docs](https://www.shotcut.org/))
 - **spectacle** – KDE screenshot tool. ([docs](https://github.com/KDE/spectacle))
+- **timg** – Terminal image viewer. ([docs](https://github.com/hzeller/timg))
 - **urlview** – Extract URLs from a text file and allow the user to select via a menu. ([docs](https://aur.archlinux.org/packages/urlview))
 - **yandex-music** – Unofficial Yandex Music client. ([docs](https://github.com/cucumber-sp/yandex-music-linux))
 - **yt-dlp** – Video/audio downloader. ([docs](https://github.com/yt-dlp/yt-dlp))
