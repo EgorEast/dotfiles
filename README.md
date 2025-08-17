@@ -26,7 +26,6 @@ Based on: <https://github.com/xero/dotfiles>
 - [my dotfiles setup](#my-dotfiles-setup)
 - [tl;dr](#tldr)
 - [install packages](#install-packages)
-- [install and setup aider](#install-and-setup-aider)
 - [setup kitty](#setupkitty)
 - [apply xresources](#apply-xresources)
 - [enable necessary services](#enable-necessary-services)
@@ -121,15 +120,6 @@ sudo pipx ensurepath --global # optional to allow pipx actions with --global arg
 pipx install git+https://github.com/rmaake1/terminal-rain-lightning.git
 
 curl https://raw.githubusercontent.com/byawitz/ggh/master/install/unix.sh | sh
-```
-
-# install and setup aider
-
-```sh
-curl -LsSf https://aider.chat/install.sh | sh
-
-sudo usermod -aG i2c $USER  # добавляем пользователя в группу i2c
-sudo modprobe i2c-dev
 ```
 
 # setup kitty
