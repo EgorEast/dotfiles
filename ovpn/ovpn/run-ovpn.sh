@@ -94,33 +94,46 @@ done
 options+=("Quit")
 
 echo -e "${BLUE}Available OpenVPN Configurations:${NC}"
-PS3=$'\nPlease select a configuration (number): '
-select opt_basename in "${options[@]}"; do
-  if [[ "$opt_basename" == "Quit" ]]; then
-    echo "Exiting."
-    exit 0
-  fi
+for i in "${!options[@]}"; do
+  printf "%d) %s\n" $((i + 1)) "${options[$i]}"
+done
+echo
 
-  selected_ovpn_file_fullpath=""
-  for f_path in "${ovpn_files_full_path[@]}"; do
-    if [[ "$(basename "$f_path")" == "$opt_basename" ]]; then
-      selected_ovpn_file_fullpath="$f_path"
-      break
-    fi
-  done
+read -p "Please select a configuration (number, Enter = 1): " choice
 
-  if [[ -n "$selected_ovpn_file_fullpath" ]] && [[ -f "$selected_ovpn_file_fullpath" ]]; then
-    echo -e "${GREEN}You selected: $opt_basename${NC}"
+# если ничего не ввёл → выбор = 1
+if [[ -z "$choice" ]]; then
+  choice=1
+fi
+
+# проверка на число
+if ! [[ "$choice" =~ ^[0-9]+$ ]]; then
+  echo -e "${RED}Invalid input. Exiting.${NC}"
+  exit 1
+fi
+
+# проверка диапазона
+if ((choice < 1 || choice > ${#options[@]})); then
+  echo -e "${RED}Invalid option '$choice'. Exiting.${NC}"
+  exit 1
+fi
+
+opt_basename="${options[$((choice - 1))]}"
+
+if [[ "$opt_basename" == "Quit" ]]; then
+  echo "Exiting."
+  exit 0
+fi
+
+selected_ovpn_file_fullpath=""
+for f_path in "${ovpn_files_full_path[@]}"; do
+  if [[ "$(basename "$f_path")" == "$opt_basename" ]]; then
+    selected_ovpn_file_fullpath="$f_path"
     break
-  else
-    echo -e "${RED}Invalid option '$REPLY'. Please try again.${NC}"
   fi
 done
 
-if [[ -z "$selected_ovpn_file_fullpath" ]]; then
-  echo -e "${RED}No configuration selected. Exiting.${NC}"
-  exit 1
-fi
+echo -e "${GREEN}You selected: $opt_basename${NC}"
 
 # Check openvpn has any auth file text if yes include it in the ovpn command:
 auth_arg_value=""
