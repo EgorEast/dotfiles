@@ -1,5 +1,5 @@
 {
-    "custom": "{\"rules\":[{\"domain_keyword\":[\"xn--p1ai\",\"ru\",\"su\",\"рф\",\"yandex.com\",\"vk.com\",\"yandex.net\",\"meet.google.com\",\"github.com\",\"web.exarh.ru\",\"dev.exarh.ru\",\"gitlab.exarh.ru\",\"docs.api.exarh.ru\",\"chat.deepseek.com\",\"habr.com\",\"cloud-api.yandex.net\"],\"domain_suffix\":[\".ru\",\".su\"],\"ip_cidr\":[\"111.111.11.11\",\"222.222.22.221\"],\"outbound\":\"direct\"},{\"domain_suffix\":[\"appcenter.ms\",\"www.myip.com\",\"firebase.io\",\"crashlytics.com\"],\"outbound\":\"block\"}]}",
+    "custom": "{\"rules\":[{\"domain_keyword\":[\"xn--p1ai\",\"ru\",\"su\",\"рф\",\"yandex.com\",\"vk.com\",\"yandex.net\",\"meet.google.com\",\"github.com\",\"web.exarh.ru\",\"dev.exarh.ru\",\"gitlab.exarh.ru\",\"docs.api.exarh.ru\",\"chat.deepseek.com\",\"habr.com\",\"cloud-api.yandex.net\",\"disk.yandex.ru\",\"webdav.yandex.ru\",\"yandex.ru\"],\"domain_suffix\":[\".ru\",\".su\"],\"ip_cidr\":[\"111.111.11.11\",\"222.222.22.221\"],\"outbound\":\"direct\"},{\"domain_suffix\":[\"appcenter.ms\",\"www.myip.com\",\"firebase.io\",\"crashlytics.com\"],\"outbound\":\"block\"}]}",
     "def_outbound": "proxy",
     "direct_dns": "https://doh.pub/dns-query",
     "dns_final_out": "proxy",
