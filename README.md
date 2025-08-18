@@ -108,10 +108,10 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich urlview feh docker docker-compose gping
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich urlview feh docker docker-compose gping hledger hledger-ui
 
 
-yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin telegram-tg sc-im pandoc-bin gobang-bin
+yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin telegram-tg sc-im pandoc-bin gobang-bin puffin
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
@@ -267,10 +267,13 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **galculator** – GTK calculator. ([docs](https://github.com/galculator/galculator))
 - **glow** – TUI Markdown viewer. ([docs](https://github.com/charmbracelet/glow))
 - **gsimplecal** – Simple popup calendar. ([docs](https://dmedvinsky.github.io/gsimplecal/))
+- **hledger** – Robust, intuitive plain text accounting. ([docs](https://github.com/simonmichael/hledger))
+- **hledger-ui** – UI for hledger. ([tutor](https://hledger.org/ui.html))
 - **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
 - **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
 - **onlyoffice-bin** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/))
 - **pandoc-bin** – Universal markup converter. ([docs](https://github.com/jgm/pandoc?tab=readme-ov-file))
+- **puffin** – Terminal dashboard to manage personal finances. Built with hledger and bubbletea. ([docs](https://github.com/siddhantac/puffin))
 - **tabiew** – TUI tabular data viewer. ([docs](https://github.com/shshemi/tabiew))
 - **tdf** – Terminal-based PDF viewer. ([docs](https://github.com/itsjunetime/tdf))
 
