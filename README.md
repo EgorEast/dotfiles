@@ -108,7 +108,7 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich urlview feh docker docker-compose
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich urlview feh docker docker-compose gping
 
 
 yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin telegram-tg sc-im pandoc-bin gobang-bin
@@ -227,6 +227,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **bat** – `cat` replacement with syntax highlighting. ([docs](https://github.com/sharkdp/bat))
 - **brightnessctl** – CLI brightness control. ([docs](https://github.com/Hummer12007/brightnessctl))
 - **ddcutil** – Monitor settings control via DDC/CI. ([docs](https://www.ddcutil.com/))
+- **gping** – Ping, but with a graph. ([docs](https://github.com/orf/gping))
 - **kitty** – GPU-accelerated terminal emulator. ([docs](https://sw.kovidgoyal.net/kitty/))
 - **lsd** – `ls` replacement with icons and colors. ([docs](https://github.com/lsd-rs/lsd))
 - **xautolock** – Idle-time screen locker. ([docs](https://linux.die.net/man/1/xautolock))
