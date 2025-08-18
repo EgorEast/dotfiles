@@ -1,9 +1,9 @@
 password = []
 size = [
     9,
-    481,
-    1902,
-    1039,
+    505,
+    1900,
+    1011,
 ]
 size_ft = [
     0,
@@ -37,8 +37,8 @@ view_mode = false
 alias = 'Савва'
 
 [info]
-username = 'Савва'
-hostname = 'msi'
+username = 'USER'
+hostname = 'desktop-k5u7in0'
 platform = 'Windows'
 
 [transfer]

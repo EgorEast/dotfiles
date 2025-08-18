@@ -1,9 +1,9 @@
 password = []
 size = [
     9,
-    503,
+    505,
     1900,
-    1016,
+    1011,
 ]
 size_ft = [
     0,
@@ -27,7 +27,7 @@ privacy_mode = false
 port_forwards = []
 direct_failures = 0
 disable_audio = false
-disable_clipboard = false
+disable_clipboard = true
 enable_file_transfer = false
 note = ''
 show_quality_monitor = false
