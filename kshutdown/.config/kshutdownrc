@@ -1,0 +1,23 @@
+[General]
+Selected Action=suspend
+Selected Trigger=time-from-now
+
+[KShutdown Action extras]
+Command=
+Examples Created=false
+
+[KShutdown Trigger date-time]
+Date Time=2025,8,12,19,11,36.536
+
+[KShutdown Trigger idle-monitor]
+Date Time=2000,1,1,1,0,0
+
+[KShutdown Trigger process-monitor]
+Recent Pid=-1
+Recent Program=
+
+[KShutdown Trigger time-from-now]
+Date Time=2000,1,1,1,0,0
+
+[Preferences]
+Current Page Index=1
