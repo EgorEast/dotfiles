@@ -108,10 +108,10 @@ etc, etc, etc...
 # install packages
 
 ```sh
-sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich urlview feh docker docker-compose gping hledger hledger-ui
+sudo pacman -S vim nodejs-lts-jod npm kitty ttf-jetbrains-mono-nerd fish fisher nvim lazygit git-delta trash-cli zoxide ouch glow onefetch ripgrep xclip xsel cmus lsd playerctl jq gparted qbittorrent spectacle obs-studio networkmanager-openvpn yt-dlp shotcut redshift blueberry gsimplecal calcurse telegram-desktop libsecret gnome-keyring seahorse ddcutil firefox brightnessctl flameshot galculator tree fastfetch picom obsidian vulkan-radeon vulkan-tools vulkan-icd-loader cloc bat tabiew tor torsocks ncdu fd rustup tdf-git wine python-pipx libqalculate bandwhich urlview feh docker docker-compose gping hledger hledger-ui oryx trippy
 
 
-yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin telegram-tg sc-im pandoc-bin gobang-bin puffin
+yay -S yazi-git fish-done yandex-browser onlyoffice-bin portproton ventoy-bin pantum-driver yandex-disk visual-studio-code-bin xkblayout-state-git rofi-greenclip rudesktop anydesk-bin xautolock nekoray-bin whatsapp-linux-desktop ytsurf lazydocker dysk rofi-games blobdrop-git bitchat-tui downloader-cli hellwal speedread-git torbrowser-launcher obfs4proxy yandex-music rofi-bluetooth-git bluetuith-bin mmtui-bin telegram-tg sc-im pandoc-bin gobang-bin puffin sysz
 
 sudo npm i -g npm-check-updates @bramus/caniuse-cli @google/gemini-cli pnq
 
@@ -188,6 +188,7 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **nekoray-bin** – GUI for V2Ray/XRay tunneling. ([docs](https://github.com/MatsuriDayo/nekoray))
 - **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
 - **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))
+- **oryx** - TUI for sniffing network traffic using eBPF. ([docs](https://github.com/pythops/oryx))
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
 - **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
@@ -230,6 +231,8 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 - **gping** – Ping, but with a graph. ([docs](https://github.com/orf/gping))
 - **kitty** – GPU-accelerated terminal emulator. ([docs](https://sw.kovidgoyal.net/kitty/))
 - **lsd** – `ls` replacement with icons and colors. ([docs](https://github.com/lsd-rs/lsd))
+- **sysz** – A fzf terminal UI for systemctl. ([docs](https://github.com/joehillen/sysz))
+- **trippy** – Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues. ([docs](https://github.com/fujiapple852/trippy))
 - **xautolock** – Idle-time screen locker. ([docs](https://linux.die.net/man/1/xautolock))
 - **xclip** – Clipboard tool for X11. ([docs](https://linux.die.net/man/1/xclip))
 - **xkblayout-state-git** – Get/set X11 keyboard layout. ([docs](https://github.com/nonpop/xkblayout-state))
