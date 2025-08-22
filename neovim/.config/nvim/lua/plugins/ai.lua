@@ -1,26 +1,29 @@
+-- local map = vim.keymap.set
+-- map("n", "<leader>a", "", { desc = "AI" })
+
 return {
   -- https://github.com/GeorgesAlkhouri/nvim-aider
-  {
-    "GeorgesAlkhouri/nvim-aider",
-    cmd = {
-      "AiderTerminalToggle",
-      "AiderHealth",
-    },
-    keys = {
-      { "<leader>aa", "", desc = "Aider" },
-      { "<leader>aa/", ":AiderTerminalToggle<cr>", desc = "Open Aider" },
-      { "<leader>aas", ":AiderTerminalSend<cr>", desc = "Send to Aider", mode = { "n", "v" } },
-      { "<leader>aac", ":AiderQuickSendCommand<cr>", desc = "Send Command To Aider" },
-      { "<leader>aab", ":AiderQuickSendBuffer<cr>", desc = "Send Buffer To Aider" },
-      { "<leader>aa+", ":AiderQuickAddFile<cr>", desc = "Add File to Aider" },
-      { "<leader>aa-", ":AiderQuickDropFile<cr>", desc = "Drop File from Aider" },
-      { "<leader>aar", ":AiderQuickReadOnlyFile<cr>", desc = "Add File as Read-Only" },
-      -- Example nvim-tree.lua integration if needed
-      { "<leader>aa+", ":AiderTreeAddFile<cr>", desc = "Add File from Tree to Aider", ft = "NvimTree" },
-      { "<leader>aa-", ":AiderTreeDropFile<cr>", desc = "Drop File from Tree from Aider", ft = "NvimTree" },
-    },
-    dependencies = { "folke/snacks.nvim" },
-  },
+  -- {
+  --   "GeorgesAlkhouri/nvim-aider",
+  --   cmd = {
+  --     "AiderTerminalToggle",
+  --     "AiderHealth",
+  --   },
+  --   keys = {
+  --     { "<leader>aa", "", desc = "Aider" },
+  --     { "<leader>aa/", ":AiderTerminalToggle<cr>", desc = "Open Aider" },
+  --     { "<leader>aas", ":AiderTerminalSend<cr>", desc = "Send to Aider", mode = { "n", "v" } },
+  --     { "<leader>aac", ":AiderQuickSendCommand<cr>", desc = "Send Command To Aider" },
+  --     { "<leader>aab", ":AiderQuickSendBuffer<cr>", desc = "Send Buffer To Aider" },
+  --     { "<leader>aa+", ":AiderQuickAddFile<cr>", desc = "Add File to Aider" },
+  --     { "<leader>aa-", ":AiderQuickDropFile<cr>", desc = "Drop File from Aider" },
+  --     { "<leader>aar", ":AiderQuickReadOnlyFile<cr>", desc = "Add File as Read-Only" },
+  --     -- Example nvim-tree.lua integration if needed
+  --     { "<leader>aa+", ":AiderTreeAddFile<cr>", desc = "Add File from Tree to Aider", ft = "NvimTree" },
+  --     { "<leader>aa-", ":AiderTreeDropFile<cr>", desc = "Drop File from Tree from Aider", ft = "NvimTree" },
+  --   },
+  --   dependencies = { "folke/snacks.nvim" },
+  -- },
   -- https://github.com/sourcegraph/sg.nvim
   -- {
   --   "sourcegraph/sg.nvim",

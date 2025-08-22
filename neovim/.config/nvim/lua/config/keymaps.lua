@@ -9,8 +9,6 @@ map("n", "<leader>w", ":w<CR>", { desc = "Save current tab" })
 map("n", "<leader>ww", ":w<CR>", { desc = "Save current tab" })
 map("n", "<leader>wa", ":wa<CR>", { desc = "Save all changed files" })
 
-map("n", "<leader>a", "", { desc = "AI" })
-
 map("n", "<leader>'", "", { desc = "Marks" })
 
 local del_marks = function()
