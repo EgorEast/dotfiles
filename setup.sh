@@ -202,6 +202,9 @@ pipx install git+https://github.com/rmaake1/terminal-rain-lightning.git
 echo ">>> Installing ggh..."
 curl -fsSL https://raw.githubusercontent.com/byawitz/ggh/master/install/unix.sh | sh
 
+echo ">>> Installing Aider..."
+curl -LsSf https://aider.chat/install.sh | sh
+
 echo ">>> Setting up kitty as default terminal..."
 sudo ln -sf /usr/bin/kitty /usr/bin/x-terminal-emulator
 
