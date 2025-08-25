@@ -2,7 +2,6 @@
 alias 'cd..'='cd ../'
 alias 'z..'='z ../'
 alias ZZ='exit'
-alias ai='gemini'
 alias b='blobdrop # Usage - blobdrop <file_name> - copy file to blobdrop'
 alias browser='yandex-browser-stable'
 alias bt='bluetuith --confirm-on-quit'

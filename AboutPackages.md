@@ -43,6 +43,7 @@
 ## 💻 Development Tools
 
 - **@bramus/caniuse-cli** – Check browser support from the terminal. ([docs](https://github.com/bramus/caniuse-cli))
+- **@builder.io/ai-shell** – AI shell. ([docs](https://github.com/BuilderIO/ai-shell))
 - **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))

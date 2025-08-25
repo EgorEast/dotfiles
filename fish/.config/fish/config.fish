@@ -47,7 +47,6 @@ set -U pisces_only_insert_at_eol 1
 alias 'cd..'='cd ../'
 alias 'z..'='z ../'
 alias ZZ='exit'
-alias ai='gemini'
 alias b='blobdrop' # Usage - blobdrop <file_name> - copy file to blobdrop
 alias browser='yandex-browser-stable'
 alias bt='bluetuith --confirm-on-quit'
