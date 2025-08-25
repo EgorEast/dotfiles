@@ -176,6 +176,7 @@ yay -S --noconfirm \
   sysz \
   telegram-tg \
   torbrowser-launcher \
+  ttf-ms-fonts \
   ventoy-bin \
   visual-studio-code-bin \
   whatsapp-linux-desktop \
