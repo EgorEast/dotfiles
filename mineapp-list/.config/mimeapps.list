@@ -2,7 +2,7 @@
 [Default Applications]
 application/x-ms-dos-executable;application/x-wine-extension-msp;application/x-msi;application/x-msdos-program;text/win-bat;=PortProton.desktop
 application/json=yandex-browser.desktop;firefox.desktop;
-application/pdf=yandex-browser.desktop;onlyoffice-desktopeditors.desktop;firefox.desktop;
+application/pdf=onlyoffice-desktopeditors.desktop;yandex-browser.desktop;firefox.desktop;
 application/rdf+xml=yandex-browser.desktop;firefox.desktop;
 application/rss+xml=yandex-browser.desktop;firefox.desktop;
 application/xhtml+xml=yandex-browser.desktop;firefox.desktop;
