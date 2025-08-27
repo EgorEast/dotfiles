@@ -1,9 +1,9 @@
 password = []
 size = [
     9,
-    503,
+    505,
     1900,
-    1016,
+    1011,
 ]
 size_ft = [
     0,
@@ -18,8 +18,8 @@ size_pf = [
     0,
 ]
 view_style = 'shrink'
-image_quality = ''
-custom_image_quality = []
+image_quality = 'balanced'
+custom_image_quality = [50]
 show_remote_cursor = true
 disable_wallpaper_and_aero = false
 lock_after_session_end = false
@@ -37,8 +37,8 @@ view_mode = false
 alias = 'Витя'
 
 [info]
-username = 'Vako'
-hostname = 'desktop-kitek59'
+username = 'User'
+hostname = 'desktop-0c3jtg3'
 platform = 'Windows'
 
 [transfer]
