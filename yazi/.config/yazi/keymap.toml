@@ -119,14 +119,12 @@ prepend_keymap = [
   ], run = "plugin lazygit", desc = "run lazygit" },
 
 
-  { on = "u", run = "plugin restore", desc = "Restore last deleted files/folders" },
+  { on = "u", run = "plugin restore -- --interactive", desc = "Restore deleted files/folders (Interactive)" },
 
   { on = "M", run = "plugin mount", desc = "Mount manager" },
 
   { on = [
     "c",
     "F",
-  ], run = [
-    "plugin copy-file-contents",
-  ], desc = "Copy contents of file" },
+  ], run = "plugin copy-file-contents", desc = "Copy contents of file" },
 ]
