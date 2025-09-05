@@ -27,6 +27,7 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
+mpv/.config/mpv/shaders/cache
 
 
 !anydesk/.anydesk/user.conf
