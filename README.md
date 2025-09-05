@@ -59,6 +59,7 @@ to install configs execute the stow command with the folder name as the first ar
 to install my **fish** configs use the command:
 
 `stow fish -t ~`
+
 this will symlink files like `config.fish` to `~/.config/fish`
 
 **note:** stow can only create a symlink if a config file does not already exist. if a default file was created upon program installation you must delete it first before you can install a new one with stow. this does not apply to directories, only files.
