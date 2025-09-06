@@ -62,6 +62,7 @@ stow --adopt --restow \
   user-dirs \
   vim \
   wget \
+  winapps \
   xarchiver \
   xfce-4 \
   xinit \
@@ -75,7 +76,7 @@ stow --adopt --restow \
   -t ~
 
 echo ">>> Installing base packages..."
-sudo pacman -S --noconfirm \
+sudo pacman -S --noconfirm --needed \
   bandwhich \
   bat \
   blueberry \
@@ -83,7 +84,9 @@ sudo pacman -S --noconfirm \
   calcurse \
   cloc \
   cmus \
+  curl \
   ddcutil \
+  dialog \
   docker \
   docker-compose \
   fastfetch \
@@ -93,7 +96,9 @@ sudo pacman -S --noconfirm \
   fish \
   fisher \
   flameshot \
+  freerdp \
   galculator \
+  git \
   git-delta \
   glow \
   gnome-keyring \
@@ -102,9 +107,11 @@ sudo pacman -S --noconfirm \
   gsimplecal \
   hledger \
   hledger-ui \
+  iproute2 \
   jq \
   kitty \
   lazygit \
+  libnotify \
   libqalculate \
   libsecret \
   lsd \
@@ -116,6 +123,7 @@ sudo pacman -S --noconfirm \
   obs-studio \
   obsidian \
   onefetch \
+  openbsd-netcat \
   oryx \
   ouch \
   picom \
@@ -148,7 +156,7 @@ sudo pacman -S --noconfirm \
   zoxide
 
 echo ">>> Installing AUR packages (via yay)..."
-yay -S --noconfirm \
+yay -S --noconfirm --needed \
   anydesk-bin \
   bitchat-tui \
   blobdrop-git \

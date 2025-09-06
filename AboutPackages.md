@@ -126,6 +126,7 @@
 
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
 - **rofi-games** – Rofi-based game launcher. ([docs](https://github.com/Rolv-Apneseth/rofi-games))
+- **winapps** – Run Windows applications on GNU/Linux with KDE Plasma, GNOME or XFCE, integrated seamlessly as if they were native to the OS ([docs](https://github.com/winapps-org/winapps))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 
 ## 🛡 Security & Encryption
