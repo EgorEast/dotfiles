@@ -17,6 +17,7 @@ stow --adopt --restow \
   cmus \
   curl \
   delta \
+  docker \
   dunst \
   fastfetch \
   feh \
