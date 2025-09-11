@@ -35,6 +35,8 @@ abbr -a --position anywhere -- -h '-h | bat -plhelp'
 set -x PAGER delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
 set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
 
+set -gx ATAC_KEY_BINDINGS ~/.config/atac/vim_key_bindings.toml
+
 # pj plugin settings. Usage - pj <project name>
 set -U PROJECT_PATHS ~/Programming/exarh-web ~/Yandex.Disk/ ~/Yandex.Disk/Obsidian/
 # done plugin settings
