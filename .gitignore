@@ -1,10 +1,12 @@
 .env
 
 anydesk/.anydesk/*
+atac/.config/atac/atac.log
 cmus/.config/cmus/cache
 cmus/.config/cmus/queue.pl
 cmus/.config/cmus/resume
 gemini/.gemini/*
+mpv/.config/mpv/shaders/cache
 nekoray/.config/nekoray/config/neko.log
 nekoray/.config/nekoray/config/profiles
 obs/.config/obs-studio/logs
@@ -27,7 +29,6 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
-mpv/.config/mpv/shaders/cache
 
 
 !anydesk/.anydesk/user.conf

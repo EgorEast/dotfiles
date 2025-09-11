@@ -1,0 +1,63 @@
+.ie \n(.g .ds Aq \(aq
+.el .ds Aq '
+.TH atac 1  "atac 0.20.2" 
+.SH NAME
+atac \- Arguably a Terminal API Client. Feature\-full, free, open\-source, offline and account\-less.
+.SH SYNOPSIS
+\fBatac\fR [\fB\-d\fR|\fB\-\-directory\fR] [\fB\-\-tui\fR] [\fB\-\-dry\-run\fR] [\fB\-\-no\-ansi\-log\fR] [\fB\-v\fR|\fB\-\-verbose\fR]... [\fB\-q\fR|\fB\-\-quiet\fR]... [\fB\-h\fR|\fB\-\-help\fR] [\fB\-V\fR|\fB\-\-version\fR] [\fIsubcommands\fR]
+.SH DESCRIPTION
+ATAC is Arguably a Terminal API Client.
+It is based on well\-known clients such as Postman, Insomnia, or even Bruno, but inside your terminal without any specific graphical environment needed.
+The philosophy of ATAC is to be free, account\-less, and offline for now and forever.
+.SH OPTIONS
+.TP
+\fB\-d\fR, \fB\-\-directory\fR=\fIDIRECTORY\fR
+Main application directory, containing JSON/YAML collections files, the atac.toml config file and the atac.log file
+.TP
+\fB\-\-tui\fR
+Run TUI after command
+.TP
+\fB\-\-dry\-run\fR
+Avoid saving data to the collection and environment files
+.TP
+\fB\-\-no\-ansi\-log\fR
+Avoid using ANSI format for log file/output
+.TP
+\fB\-v\fR, \fB\-\-verbose\fR
+Increase logging verbosity
+.TP
+\fB\-q\fR, \fB\-\-quiet\fR
+Decrease logging verbosity
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Print help (see a summary with \*(Aq\-h\*(Aq)
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+Print version
+.SH SUBCOMMANDS
+.TP
+atac\-collection(1)
+Collection commands
+.TP
+atac\-request(1)
+Request commands
+.TP
+atac\-try(1)
+One\-shot request sender
+.TP
+atac\-env(1)
+Environment commands
+.TP
+atac\-import(1)
+Import a collection or a request from other file formats (Postman v2.1.0, cURL, OpenAPI)
+.TP
+atac\-completions(1)
+Create a completion file
+.TP
+atac\-man(1)
+Generate ATAC man page
+.TP
+atac\-help(1)
+Print this message or the help of the given subcommand(s)
+.SH VERSION
+v0.20.2

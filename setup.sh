@@ -11,6 +11,7 @@ rm -rf ~/.config/mineapps.list
 
 stow --adopt --restow \
   anydesk \
+  atac \
   autostart \
   bash \
   bat \
@@ -80,6 +81,7 @@ stow --adopt --restow \
 
 echo ">>> Installing base packages..."
 sudo pacman -S --noconfirm --needed \
+  atac \
   bandwhich \
   bat \
   blueberry \

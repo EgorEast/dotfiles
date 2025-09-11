@@ -45,6 +45,7 @@
 - **@bramus/caniuse-cli** – Check browser support from the terminal. ([docs](https://github.com/bramus/caniuse-cli))
 - **@builder.io/ai-shell** – AI shell. ([docs](https://github.com/BuilderIO/ai-shell))
 - **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
+- **atac** – Arguably a Terminal API Client. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://atac.julien-cpsn.com/))
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))
 - **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
