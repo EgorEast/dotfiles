@@ -7,6 +7,8 @@ sudo pacman -Syu --noconfirm
 echo ">>> Creating symlinks with stow..."
 cd ~/.local/src/dotfiles
 
+rm -rf ~/.config/mineapps.list
+
 stow --adopt --restow \
   anydesk \
   autostart \

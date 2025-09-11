@@ -5,6 +5,7 @@ application/pdf=onlyoffice-desktopeditors.desktop;yandex-browser.desktop;firefox
 application/rdf+xml=yandex-browser.desktop;firefox.desktop;
 application/rss+xml=yandex-browser.desktop;firefox.desktop;
 application/x-ms-dos-executable=wine.desktop;PortProton.desktop
+application/x-ms-dos-program=wine.desktop
 application/x-msdos-program=wine.desktop;PortProton.desktop
 application/x-msi=wine.desktop;PortProton.desktop
 application/x-wine-extension-msp=wine.desktop;PortProton.desktop
@@ -37,3 +38,6 @@ x-scheme-handler/httpxdg-mime=yandex-browser.desktop;firefox.desktop;
 x-scheme-handler/mailto=yandex-browser.desktop
 x-scheme-handler/terminal=kitty.desktop
 x-scheme-handler/webcal=yandex-browser.desktop
+
+[Added Associations]
+application/x-msdownload=wine.desktop;
