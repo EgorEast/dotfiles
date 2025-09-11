@@ -16,6 +16,7 @@ stow --adopt --restow \
   bash \
   bat \
   bluetuith \
+  brows \
   calcurse \
   cmus \
   curl \
@@ -29,6 +30,7 @@ stow --adopt --restow \
   galculator \
   gemini \
   git \
+  github-cli \
   glow \
   gobang \
   greenclip \
@@ -105,6 +107,7 @@ sudo pacman -S --noconfirm --needed \
   galculator \
   git \
   git-delta \
+  github-cli \
   glow \
   gnome-keyring \
   gparted \
@@ -166,6 +169,7 @@ yay -S --noconfirm --needed \
   bitchat-tui \
   blobdrop-git \
   bluetuith-bin \
+  brows \
   downloader-cli \
   dysk \
   fish-done \
