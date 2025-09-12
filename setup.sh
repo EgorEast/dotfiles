@@ -170,6 +170,7 @@ yay -S --noconfirm --needed \
   blobdrop-git \
   bluetuith-bin \
   brows \
+  dblab \
   downloader-cli \
   dysk \
   fish-done \

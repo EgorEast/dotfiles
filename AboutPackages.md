@@ -48,6 +48,7 @@
 - **atac** – Arguably a Terminal API Client. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://atac.julien-cpsn.com/))
 - **brows** – CLI tool to browse GitHub releases. ([docs](https://github.com/rubysolo/brows))
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
+- **dblab** – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server. ([docs](https://github.com/danvergara/dblab))
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))
 - **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
 - **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))
