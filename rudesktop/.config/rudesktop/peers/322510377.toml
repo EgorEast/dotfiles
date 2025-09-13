@@ -1,7 +1,7 @@
 password = []
 size = [
     9,
-    33,
+    505,
     1900,
     1011,
 ]
@@ -27,7 +27,7 @@ privacy_mode = false
 port_forwards = []
 direct_failures = 0
 disable_audio = false
-disable_clipboard = true
+disable_clipboard = false
 enable_file_transfer = false
 note = ''
 show_quality_monitor = false
