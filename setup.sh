@@ -19,6 +19,7 @@ stow --adopt --restow \
   brows \
   calcurse \
   cmus \
+  crush \
   curl \
   delta \
   docker \
@@ -170,6 +171,7 @@ yay -S --noconfirm --needed \
   blobdrop-git \
   bluetuith-bin \
   brows \
+  crush-bin \
   dblab \
   downloader-cli \
   dysk \
