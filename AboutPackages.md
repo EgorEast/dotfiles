@@ -53,6 +53,7 @@
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))
 - **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
 - **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))
+- **fx** – Terminal JSON viewer & processor. ([docs](https://fx.wtf/getting-started))
 - **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
 - **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **github-cli** – GitHub CLI. ([docs](https://github.com/cli/cli))

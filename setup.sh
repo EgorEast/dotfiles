@@ -105,6 +105,7 @@ sudo pacman -S --noconfirm --needed \
   fisher \
   flameshot \
   freerdp \
+  fx \
   galculator \
   git \
   git-delta \
