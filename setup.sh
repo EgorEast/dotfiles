@@ -182,7 +182,6 @@ yay -S --noconfirm --needed \
   gobang-bin \
   hellwal \
   jqp-bin \
-  opencode-bin \
   lazydocker \
   lazyjournal \
   lazysql \
@@ -190,9 +189,11 @@ yay -S --noconfirm --needed \
   nekoray-bin \
   obfs4proxy \
   onlyoffice-bin \
+  opencode-bin \
   pandoc-bin \
   pantum-driver \
   portproton \
+  posting \
   puffin \
   rofi-bluetooth-git \
   rofi-games \

@@ -71,6 +71,7 @@
 - **onefetch** – Git repository summary in terminal. ([docs](https://github.com/o2sh/onefetch))
 - **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))
 - **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
+- **posting** – TUI HTTP client, not unlike Postman and Insomnia. ([docs](https://github.com/darrenburns/posting))
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
 - **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
