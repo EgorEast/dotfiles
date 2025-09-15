@@ -43,6 +43,7 @@ stow --adopt --restow \
   kitty \
   lazydocker \
   lazygit \
+  lazysql \
   lsd \
   mailcap \
   mineapp-list \
@@ -182,6 +183,7 @@ yay -S --noconfirm --needed \
   hellwal \
   jqp-bin \
   lazydocker \
+  lazysql \
   mmtui-bin \
   nekoray-bin \
   obfs4proxy \
