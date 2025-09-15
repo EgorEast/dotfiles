@@ -69,6 +69,7 @@
 - **npm-check-updates** – Check for newer npm dependencies. ([docs](https://github.com/raineorshine/npm-check-updates))
 - **nvim** – Modern Vim-based editor with Lua support. ([docs](https://neovim.io/doc/))
 - **onefetch** – Git repository summary in terminal. ([docs](https://github.com/o2sh/onefetch))
+- **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))
 - **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))

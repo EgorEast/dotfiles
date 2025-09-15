@@ -182,6 +182,7 @@ yay -S --noconfirm --needed \
   gobang-bin \
   hellwal \
   jqp-bin \
+  opencode-bin \
   lazydocker \
   lazyjournal \
   lazysql \
