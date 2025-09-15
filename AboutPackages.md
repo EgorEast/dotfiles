@@ -58,6 +58,7 @@
 - **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **github-cli** – GitHub CLI. ([docs](https://github.com/cli/cli))
 - **gobang-bin** – TUI database management tool. ([docs](https://github.com/TaKO8Ki/gobang))
+- **jqp** – TUI playground for exploring jq. ([docs](https://github.com/noahgorstein/jqp))
 - **lazydocker** – TUI Docker manager. ([docs](https://github.com/jesseduffield/lazydocker))
 - **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
 - **live-server** – Little development server with live reload capability. ([docs](https://github.com/tapio/live-server))

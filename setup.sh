@@ -39,6 +39,7 @@ stow --adopt --restow \
   i3 \
   icons \
   inputrc \
+  jqp \
   kitty \
   lazydocker \
   lazygit \
@@ -179,6 +180,7 @@ yay -S --noconfirm --needed \
   fish-done \
   gobang-bin \
   hellwal \
+  jqp-bin \
   lazydocker \
   mmtui-bin \
   nekoray-bin \

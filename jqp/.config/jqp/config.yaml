@@ -1,0 +1,10 @@
+theme:
+  name: "doom-one2" # controls the color scheme
+  # chromaStyleOverrides: # override parts of the chroma style
+  #   kc: "#009900 underline" # keys use the chroma short names
+  # styleOverrides:
+  #   primary: "#c4b28a"
+  #   secondary: "#8992a7"
+  #   error: "#c4746e"
+  #   inactive: "#a6a69c"
+  #   success: "#87a987"
