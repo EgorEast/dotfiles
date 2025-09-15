@@ -183,6 +183,7 @@ yay -S --noconfirm --needed \
   hellwal \
   jqp-bin \
   lazydocker \
+  lazyjournal \
   lazysql \
   mmtui-bin \
   nekoray-bin \
