@@ -74,6 +74,7 @@
 - **posting** – TUI HTTP client, not unlike Postman and Insomnia. ([docs](https://github.com/darrenburns/posting))
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
+- **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
 - **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
 - **visual-studio-code-bin** – VS Code editor. ([docs](https://code.visualstudio.com/docs))
 

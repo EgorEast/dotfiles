@@ -147,6 +147,7 @@ sudo pacman -S --noconfirm --needed \
   rustup \
   seahorse \
   shotcut \
+  soft-serve \
   spectacle \
   tabiew \
   telegram-desktop \
