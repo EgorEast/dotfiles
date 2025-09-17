@@ -1,0 +1,17 @@
+{
+  "providers": {
+    "ollama": {
+      "name": "Ollama",
+      "base_url": "http://localhost:11434/",
+      "type": "openai",
+      "models": [
+        {
+          "name": "deepseek-coder",
+          "id": "deepseek-coder-v2",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        }
+      ]
+    }
+  }
+}
