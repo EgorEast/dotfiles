@@ -5,6 +5,7 @@ atac/.config/atac/atac.log
 cmus/.config/cmus/cache
 cmus/.config/cmus/queue.pl
 cmus/.config/cmus/resume
+docker/.docker/buildx
 gemini/.gemini/*
 mpv/.config/mpv/shaders/cache
 nekoray/.config/nekoray/config/neko.log

@@ -252,6 +252,9 @@ xrdb -merge ~/.Xresources || true
 echo ">>> Enabling necessary services..."
 sudo systemctl enable --now reflector.timer
 sudo systemctl enable --now bluetooth
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo gpasswd -a egoreast docker
 yandex-disk token || true
 yandex-disk start || true
 
@@ -262,6 +265,7 @@ echo ">>> Updating environment variables..."
 sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR=nvim/" /etc/environment || echo "EDITOR=nvim" >> /etc/environment; grep -q "BROWSER=" /etc/environment && sed -i "s/^BROWSER=.*$/BROWSER=yandex-browser-stable/" /etc/environment || echo "BROWSER=yandex-browser-stable" >> /etc/environment; grep -q "VISUAL=" /etc/environment || echo "VISUAL=nvim" >> /etc/environment; awk "!seen[\$0]++ && NF" /etc/environment > /tmp/env.tmp && mv /tmp/env.tmp /etc/environment'
 
 echo ">>> Run and pull ollama"
-ollama serve & ollama pull deepseek-coder-v2
+ollama serve &
+ollama pull deepseek-coder-v2
 
 echo ">>> All done!"
