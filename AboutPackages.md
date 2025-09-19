@@ -52,6 +52,7 @@
 - **crush** – Your tools, your code, and your workflows, wired into your LLM of choice. ([docs](https://github.com/charmbracelet/crush))
 - **ctop** – Top-like interface for container metrics. ([docs](https://github.com/bcicen/ctop))
 - **dblab** – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server. ([docs](https://github.com/danvergara/dblab))
+- **dive** – A tool for exploring each layer in a docker image. ([docs](https://github.com/wagoodman/dive))
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))
 - **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
 - **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))

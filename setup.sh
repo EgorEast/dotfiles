@@ -23,6 +23,7 @@ stow --adopt --restow \
   crush \
   curl \
   delta \
+  dive \
   docker \
   dunst \
   fastfetch \
@@ -99,6 +100,7 @@ sudo pacman -S --noconfirm --needed \
   curl \
   ddcutil \
   dialog \
+  dive \
   docker \
   docker-compose \
   fastfetch \
