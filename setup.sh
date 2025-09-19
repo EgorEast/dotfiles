@@ -126,6 +126,7 @@ sudo pacman -S --noconfirm --needed \
   iproute2 \
   jq \
   kitty \
+  lazydocker \
   lazygit \
   libnotify \
   libqalculate \
@@ -189,7 +190,6 @@ yay -S --noconfirm --needed \
   gobang-bin \
   hellwal \
   jqp-bin \
-  lazydocker \
   lazyjournal \
   lazysql \
   mmtui-bin \
