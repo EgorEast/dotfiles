@@ -26,6 +26,7 @@ stow --adopt --restow \
   dive \
   docker \
   dunst \
+  durdraw \
   fastfetch \
   feh \
   fish \
@@ -187,6 +188,7 @@ yay -S --noconfirm --needed \
   crush-bin \
   dblab \
   downloader-cli \
+  durdraw \
   dysk \
   fish-done \
   gobang-bin \
