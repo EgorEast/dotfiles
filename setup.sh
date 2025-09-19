@@ -42,6 +42,7 @@ stow --adopt --restow \
   icons \
   inputrc \
   jqp \
+  k9s \
   kitty \
   lazydocker \
   lazygit \
@@ -125,6 +126,7 @@ sudo pacman -S --noconfirm --needed \
   hledger-ui \
   iproute2 \
   jq \
+  k9s \
   kitty \
   lazydocker \
   lazygit \
