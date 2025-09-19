@@ -8,6 +8,7 @@ set -gx fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 zoxide init fish | source
 caniuse --completion-fish | source
+cruise completion fish | source
 
 # Эти пути будут добавлены в $PATH единожды
 fish_add_path -m ~/bin ~/.local/bin

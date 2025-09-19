@@ -48,6 +48,7 @@
 - **atac** – Arguably a Terminal API Client. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://atac.julien-cpsn.com/))
 - **brows** – CLI tool to browse GitHub releases. ([docs](https://github.com/rubysolo/brows))
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
+- **cruise** – Docker TUI Client. ([docs](https://nucleofusion.github.io/cruise/))
 - **crush** – Your tools, your code, and your workflows, wired into your LLM of choice. ([docs](https://github.com/charmbracelet/crush))
 - **dblab** – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server. ([docs](https://github.com/danvergara/dblab))
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))
