@@ -50,6 +50,7 @@
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
 - **cruise** – Docker TUI Client. ([docs](https://nucleofusion.github.io/cruise/))
 - **crush** – Your tools, your code, and your workflows, wired into your LLM of choice. ([docs](https://github.com/charmbracelet/crush))
+- **ctop** – Top-like interface for container metrics. ([docs](https://github.com/bcicen/ctop))
 - **dblab** – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server. ([docs](https://github.com/danvergara/dblab))
 - **docker** – Container runtime. ([docs](https://docs.docker.com/))
 - **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
@@ -69,7 +70,7 @@
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))
 - **npm-check-updates** – Check for newer npm dependencies. ([docs](https://github.com/raineorshine/npm-check-updates))
 - **nvim** – Modern Vim-based editor with Lua support. ([docs](https://neovim.io/doc/))
-- [ollama](https://github.com/ollama/ollama) – Get up and running with large language models.
+- **ollama** – Get up and running with large language models. ([docs](https://github.com/ollama/ollama))
 - **onefetch** – Git repository summary in terminal. ([docs](https://github.com/o2sh/onefetch))
 - **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))
 - **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))

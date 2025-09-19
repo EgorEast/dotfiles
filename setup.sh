@@ -95,6 +95,7 @@ sudo pacman -S --noconfirm --needed \
   calcurse \
   cloc \
   cmus \
+  ctop \
   curl \
   ddcutil \
   dialog \
