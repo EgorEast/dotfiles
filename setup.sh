@@ -266,6 +266,8 @@ sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR
 
 echo ">>> Run and pull ollama"
 ollama serve &
-ollama pull deepseek-coder-v2
+ollama pull deepseek-coder-v2 &
+ollama pull gpt-oss &
+ollama pull qwen3-coder
 
 echo ">>> All done!"

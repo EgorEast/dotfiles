@@ -2,12 +2,24 @@
   "providers": {
     "ollama": {
       "name": "Ollama",
-      "base_url": "http://localhost:11434/",
+      "base_url": "http://localhost:11434/v1/",
       "type": "openai",
       "models": [
         {
-          "name": "deepseek-coder",
-          "id": "deepseek-coder-v2",
+          "name": "Qwen 3",
+          "id": "qwen3-coder:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        },
+        {
+          "name": "Deepseek Coder",
+          "id": "deepseek-coder-v2:latest",
+          "context_window": 256000,
+          "default_max_tokens": 20000
+        },
+        {
+          "name": "GPT OSS",
+          "id": "gpt-oss:latest",
           "context_window": 256000,
           "default_max_tokens": 20000
         }
