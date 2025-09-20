@@ -166,7 +166,6 @@ sudo pacman -S --noconfirm --needed \
   tree \
   trippy \
   ttf-jetbrains-mono-nerd \
-  urlview \
   vim \
   vulkan-icd-loader \
   vulkan-radeon \
