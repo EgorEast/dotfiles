@@ -180,6 +180,7 @@ sudo pacman -S --noconfirm --needed \
 echo ">>> Installing AUR packages (via yay)..."
 yay -S --noconfirm --needed \
   anydesk-bin \
+  balena-etcher \
   bitchat-tui \
   blobdrop-git \
   bluetuith-bin \
