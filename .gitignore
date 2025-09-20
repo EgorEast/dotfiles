@@ -7,6 +7,8 @@ cmus/.config/cmus/queue.pl
 cmus/.config/cmus/resume
 docker/.docker/buildx
 gemini/.gemini/*
+gtk/.config/gtk-4.0/gtk-dark.css
+gtk/.config/gtk-4.0/gtk.css
 mpv/.config/mpv/shaders/cache
 nekoray/.config/nekoray/config/neko.log
 nekoray/.config/nekoray/config/profiles
