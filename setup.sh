@@ -17,6 +17,7 @@ stow --adopt --restow \
   bat \
   bluetuith \
   brows \
+  btop \
   calcurse \
   cmus \
   cruise \
@@ -95,6 +96,7 @@ sudo pacman -S --noconfirm --needed \
   bat \
   blueberry \
   brightnessctl \
+  btop \
   calcurse \
   cloc \
   cmus \
