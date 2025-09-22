@@ -3,6 +3,7 @@
 ## 🖥 System Monitoring & Info
 
 - **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
+- **duf** – Disk Usage/Free Utility . ([docs](https://github.com/muesli/duf))
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 
 # AboutPackages

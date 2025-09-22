@@ -106,6 +106,7 @@ sudo pacman -S --noconfirm --needed \
   dive \
   docker \
   docker-compose \
+  duf \
   fastfetch \
   fd \
   feh \
