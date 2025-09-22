@@ -112,8 +112,10 @@
 ## 📷 Media Tools
 
 - **cmus** – Console music player. ([docs](https://cmus.github.io/))
+- **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
 - **feh** – X11 image viewer. ([docs](https://github.com/derf/feh))
 - **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
+- **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
 - **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
 - **playerctl** – Control media players from CLI. ([docs](https://github.com/altdesktop/playerctl))
 - **sc** – Curses-based spreadsheet program that uses key bindings similar to vim. ([docs](https://github.com/andmarti1424/sc-im))
@@ -124,7 +126,6 @@
 - **yandex-music** – Unofficial Yandex Music client. ([docs](https://github.com/cucumber-sp/yandex-music-linux))
 - **yt-dlp** – Video/audio downloader. ([docs](https://github.com/yt-dlp/yt-dlp))
 - **ytsurf** – TUI YouTube browser/downloader. ([docs](https://github.com/Stan-breaks/ytsurf))
-- **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
 
 ## 📅 Productivity
 

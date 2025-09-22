@@ -46,6 +46,7 @@ stow --adopt --restow \
   jqp \
   k9s \
   kitty \
+  koreader \
   lazydocker \
   lazygit \
   lazysql \
@@ -192,6 +193,7 @@ yay -S --noconfirm --needed \
   gobang-bin \
   hellwal \
   jqp-bin \
+  koreader-appimage \
   lazyjournal \
   lazysql \
   mmtui-bin \

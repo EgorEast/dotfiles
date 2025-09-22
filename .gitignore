@@ -32,6 +32,9 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
+koreader/.config/koreader/cache
+koreader/.config/koreader/help
+koreader/.config/koreader/**/*.sqlite*
 
 
 !anydesk/.anydesk/user.conf
