@@ -76,7 +76,6 @@ stow --adopt --restow \
   user-dirs \
   vim \
   wget \
-  winapps \
   xarchiver \
   xfce-4 \
   xinit \
@@ -114,7 +113,6 @@ sudo pacman -S --noconfirm --needed \
   fish \
   fisher \
   flameshot \
-  freerdp \
   fx \
   galculator \
   git \
@@ -127,13 +125,11 @@ sudo pacman -S --noconfirm --needed \
   gsimplecal \
   hledger \
   hledger-ui \
-  iproute2 \
   jq \
   k9s \
   kitty \
   lazydocker \
   lazygit \
-  libnotify \
   libqalculate \
   libsecret \
   lsd \
@@ -146,7 +142,6 @@ sudo pacman -S --noconfirm --needed \
   obsidian \
   ollama \
   onefetch \
-  openbsd-netcat \
   oryx \
   ouch \
   picom \
@@ -274,9 +269,6 @@ sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(co
 
 echo ">>> Updating environment variables..."
 sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR=nvim/" /etc/environment || echo "EDITOR=nvim" >> /etc/environment; grep -q "BROWSER=" /etc/environment && sed -i "s/^BROWSER=.*$/BROWSER=yandex-browser-stable/" /etc/environment || echo "BROWSER=yandex-browser-stable" >> /etc/environment; grep -q "VISUAL=" /etc/environment || echo "VISUAL=nvim" >> /etc/environment; awk "!seen[\$0]++ && NF" /etc/environment > /tmp/env.tmp && mv /tmp/env.tmp /etc/environment'
-
-echo ">>> Setup winapps"
-docker compose --file ~/.config/winapps/compose.yaml up
 
 echo ">>> Run and pull ollama"
 ollama serve &
