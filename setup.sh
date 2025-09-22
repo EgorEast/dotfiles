@@ -197,6 +197,7 @@ yay -S --noconfirm --needed \
   koreader-appimage \
   lazyjournal \
   lazysql \
+  lazyssh-bin \
   mmtui-bin \
   nekoray-bin \
   obfs4proxy \

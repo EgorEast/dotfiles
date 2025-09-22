@@ -68,6 +68,7 @@
 - **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
 - **lazyjournal** – TUI for reading logs from journald, auditd, file system, Docker containers, Podman and Kubernetes pods. ([docs](https://github.com/Lifailon/lazyjournal))
 - **lazysql** – TUI database management tool. ([docs](https://github.com/jorgerojas26/lazysql))
+- **lazyssh** – Terminal-based, interactive SSH manager. ([docs](https://github.com/Adembc/lazyssh))
 - **live-server** – Little development server with live reload capability. ([docs](https://github.com/tapio/live-server))
 - **nodejs-lts-jod** – Long-term support version of Node.js. ([docs](https://nodejs.org/en/docs/))
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))
