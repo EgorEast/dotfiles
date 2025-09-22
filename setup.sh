@@ -204,7 +204,6 @@ yay -S --noconfirm --needed \
   posting \
   puffin \
   rofi-bluetooth-git \
-  rofi-games \
   rofi-greenclip \
   rudesktop \
   sc-im \

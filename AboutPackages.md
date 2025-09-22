@@ -144,7 +144,6 @@
 ## 🎮 Gaming & Entertainment
 
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
-- **rofi-games** – Rofi-based game launcher. ([docs](https://github.com/Rolv-Apneseth/rofi-games))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 
 ## 🛡 Security & Encryption
