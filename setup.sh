@@ -135,6 +135,7 @@ sudo pacman -S --noconfirm --needed \
   libqalculate \
   libsecret \
   lsd \
+  mousai \
   ncdu \
   networkmanager-openvpn \
   nodejs-lts-jod \
