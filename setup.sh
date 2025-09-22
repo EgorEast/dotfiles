@@ -198,6 +198,7 @@ yay -S --noconfirm --needed \
   lazyjournal \
   lazysql \
   lazyssh-bin \
+  linutil \
   mmtui-bin \
   nekoray-bin \
   obfs4proxy \

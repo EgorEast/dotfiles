@@ -5,9 +5,6 @@
 - **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
 - **duf** – Disk Usage/Free Utility . ([docs](https://github.com/muesli/duf))
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
-
-# AboutPackages
-
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
 
@@ -165,6 +162,7 @@
 - **downloader-cli** – CLI file downloader. ([docs](https://github.com/deepjyoti30/downloader-cli))
 - **fish** – User-friendly shell with autosuggestions. ([docs](https://fishshell.com/docs/current/))
 - **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
+- **linutil** – distro-agnostic toolbox designed to simplify everyday Linux tasks. ([docs](https://github.com/ChrisTitusTech/linutil))
 - **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
 - **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))
 - **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))
