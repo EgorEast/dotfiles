@@ -9,6 +9,13 @@ docker/.docker/buildx
 gemini/.gemini/*
 gtk/.config/gtk-4.0/gtk-dark.css
 gtk/.config/gtk-4.0/gtk.css
+koreader/.config/koreader/**/*.sqlite*
+koreader/.config/koreader/cache
+koreader/.config/koreader/help
+koreader/.config/koreader/history.lua
+koreader/.config/koreader/settings.reader.lua*
+koreader/.config/koreader/settings/battery_stats.lua
+koreader/.config/koreader/settings/battery_stats.lua*
 mpv/.config/mpv/shaders/cache
 nekoray/.config/nekoray/config/neko.log
 nekoray/.config/nekoray/config/profiles
@@ -32,9 +39,6 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
-koreader/.config/koreader/cache
-koreader/.config/koreader/help
-koreader/.config/koreader/**/*.sqlite*
 
 
 !anydesk/.anydesk/user.conf
