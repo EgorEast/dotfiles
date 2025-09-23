@@ -1,12 +1,15 @@
 -- /home/egoreast/.config/koreader/settings.reader.lua
 return {
+    ["BookShortcuts_directory_action"] = "FM",
     ["auto_save_settings_interval_minutes"] = 15,
     ["autoturn_distance"] = 1,
     ["autoturn_timeout_seconds"] = 0,
     ["autowarmth_fl_off_during_day_offset_s"] = 0,
     ["autowarmth_timezone"] = 0,
     ["back_in_filemanager"] = "default",
+    ["back_in_reader"] = "previous_location",
     ["back_to_exit"] = "prompt",
+    ["bookmarks_items_font_size"] = 19,
     ["bookmarks_items_per_page"] = 14,
     ["bookmarks_items_text_type"] = "note",
     ["closed_rotation_mode"] = 0,
@@ -46,6 +49,7 @@ return {
     ["dict_presets"] = {},
     ["dicts_disabled"] = {},
     ["dicts_order"] = {},
+    ["dimension_units"] = "mm",
     ["document_metadata_folder"] = "doc",
     ["duration_format"] = "classic",
     ["exporter"] = {
@@ -62,6 +66,7 @@ return {
     ["extra_plugin_paths"] = {
         [1] = "/home/egoreast/.config/koreader/plugins/",
     },
+    ["filemanagermenu_tab_index"] = 1,
     ["folder_shortcuts"] = {},
     ["footer"] = {
         ["align"] = "center",
@@ -116,19 +121,25 @@ return {
         ["wifi_status"] = false,
     },
     ["footer_presets"] = {},
+    ["ges_tap_interval_on_keyboard_ms"] = 0,
     ["highlight_lighten_factor"] = 0.2,
+    ["history_filter"] = "all",
     ["httpinspector_port"] = "8080",
     ["inertial_scroll"] = true,
+    ["keyboard_key_font_size"] = 22,
     ["keyboard_layouts"] = {},
     ["kosync"] = {
         ["auto_sync"] = false,
         ["checksum_method"] = 0,
         ["sync_backward"] = 3,
         ["sync_forward"] = 1,
+        ["userkey"] = "8bf5e008e13d581ec659a17013fb02d6",
+        ["username"] = "egoreast",
     },
+    ["language"] = "ru",
     ["last_migration_date"] = 20250601,
-    ["lastdir"] = "/home/egoreast",
-    ["lastfile"] = "",
+    ["lastdir"] = "/home/egoreast/Yandex.Disk",
+    ["lastfile"] = "/home/egoreast/Yandex.Disk/Books/Обязательно к прочтению/Нереальные ожидания.fb2",
     ["page_turns_tap_zones"] = "default",
     ["panel_zoom_enabled"] = {
         ["cbt"] = true,
@@ -159,6 +170,7 @@ return {
         ["width"] = 1420,
     },
     ["show_filter"] = {},
+    ["start_with"] = "last",
     ["statistics"] = {
         ["calendar_browse_future_months"] = false,
         ["calendar_nb_book_spans"] = 3,
@@ -177,7 +189,8 @@ return {
     },
     ["style_tweaks_in_dispatcher"] = {},
     ["terminal_buffer_size"] = 16,
-    ["terminal_shell"] = "/bin/bash",
+    ["terminal_font_size"] = 14,
+    ["terminal_shell"] = "/bin/fish",
     ["text_lang_fallback"] = "en-US",
     ["toc_items_per_page"] = 14,
     ["vocabulary_builder"] = {
