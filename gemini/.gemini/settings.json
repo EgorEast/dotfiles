@@ -1,29 +1,40 @@
 {
-  "theme": "TokyoNight",
-  "selectedAuthType": "oauth-personal",
-  "preferredEditor": "neovim",
-  "vimMode": true,
-  "showLineNumbers": true,
-  "customThemes": {
-    "TokyoNight": {
-      "name": "TokyoNight",
-      "type": "custom",
-      "Background": "#1a1b26",
-      "Foreground": "#a9b1d6",
-      "LightBlue": "#7aa2f7",
-      "AccentBlue": "#2ac3de",
-      "AccentPurple": "#9d7cd8",
-      "AccentCyan": "#7dcfff",
-      "AccentGreen": "#9ece6a",
-      "AccentYellow": "#e0af68",
-      "AccentRed": "#f7768e",
-      "Comment": "#565f89",
-      "Gray": "#737aa2",
-      "DiffAdded": "#449dab",
-      "DiffRemoved": "#914c54",
-      "DiffModified": "#6183bb",
-      "GradientColors": ["#7aa2f7", "#9d7cd8", "#f7768e"]
+  "ui": {
+    "customThemes": {
+      "TokyoNight": {
+        "name": "TokyoNight",
+        "type": "custom",
+        "Background": "#1a1b26",
+        "Foreground": "#a9b1d6",
+        "LightBlue": "#7aa2f7",
+        "AccentBlue": "#2ac3de",
+        "AccentPurple": "#9d7cd8",
+        "AccentCyan": "#7dcfff",
+        "AccentGreen": "#9ece6a",
+        "AccentYellow": "#e0af68",
+        "AccentRed": "#f7768e",
+        "Comment": "#565f89",
+        "Gray": "#737aa2",
+        "DiffAdded": "#449dab",
+        "DiffRemoved": "#914c54",
+        "DiffModified": "#6183bb",
+        "GradientColors": [
+          "#7aa2f7",
+          "#9d7cd8",
+          "#f7768e"
+        ]
+      }
+    },
+    "showLineNumbers": true,
+    "theme": "TokyoNight"
+  },
+  "general": {
+    "preferredEditor": "neovim",
+    "vimMode": true
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
     }
   }
 }
-
