@@ -433,6 +433,8 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 # https://wiki.archlinux.org/title/Session_lock#xautolock
 exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
+# ollama
+exec --no-startup-id ollama serve
 
 # xscreensaver
 # https://www.jwz.org/xscreensaver
@@ -459,6 +461,7 @@ exec --no-startup-id sleep 2 && $terminal
 exec --no-startup-id sleep 3 && $browser 
 exec --no-startup-id sleep 3 && $obsidian
 #exec --no-startup-id sleep 3 && thunar
+
 exec --no-startup-id redshift
 # enable natural scrolling for touchpad
 exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput Natural Scrolling Enabled" 1
