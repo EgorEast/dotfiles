@@ -212,6 +212,7 @@ yay -S --noconfirm --needed \
   opencode-bin \
   pandoc-bin \
   pantum-driver \
+  pokete-git \
   portproton \
   posting \
   puffin \
