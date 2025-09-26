@@ -136,15 +136,16 @@
 - **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
 - **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
 - **onlyoffice-bin** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/))
-- **pandoc-bin** – Universal markup converter. ([docs](https://github.com/jgm/pandoc?tab=readme-ov-file))
+- **pandoc-bin** – Universal markup converter. ([docs](https://github.com/jgm/pandoc))
 - **puffin** – Terminal dashboard to manage personal finances. Built with hledger and bubbletea. ([docs](https://github.com/siddhantac/puffin))
 - **tabiew** – TUI tabular data viewer. ([docs](https://github.com/shshemi/tabiew))
 - **tdf** – Terminal-based PDF viewer. ([docs](https://github.com/itsjunetime/tdf))
 
 ## 🎮 Gaming & Entertainment
 
-- **brogue-ce** – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon. ([docs](https://github.com/tmewett/BrogueCE?tab=readme-ov-file))
+- **brogue-ce** – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon. ([docs](https://github.com/tmewett/BrogueCE))
 - **cbonsai** – Bonsai tree generator. ([docs](https://gitlab.com/jallbrit/cbonsai))
+- **checkersland** – Checkers game. ([docs](https://checkersland.com/download/pc.html))
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 

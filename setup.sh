@@ -186,6 +186,7 @@ yay -S --noconfirm --needed \
   brogue-ce \
   brows \
   cbonsai \
+  checkersland \
   cruise \
   crush-bin \
   dblab \
