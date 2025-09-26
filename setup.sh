@@ -185,6 +185,7 @@ yay -S --noconfirm --needed \
   bluetuith-bin \
   brogue-ce \
   brows \
+  cbonsai \
   cruise \
   crush-bin \
   dblab \
