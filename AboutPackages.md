@@ -147,6 +147,7 @@
 - **cbonsai** – Bonsai tree generator. ([docs](https://gitlab.com/jallbrit/cbonsai))
 - **checkersland** – Checkers game. ([docs](https://checkersland.com/download/pc.html))
 - **nsnake** – Classic snake game on the terminal. ([docs](https://github.com/alexdantas/nSnake))
+- **nudoku** – Ncurses based sudoku game. ([docs](https://github.com/jubalh/nudoku))
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 

@@ -206,6 +206,7 @@ yay -S --noconfirm --needed \
   mmtui-bin \
   nekoray-bin \
   nsnake \
+  nudoku \
   obfs4proxy \
   onlyoffice-bin \
   opencode-bin \
