@@ -224,6 +224,7 @@ yay -S --noconfirm --needed \
   speedread-git \
   sysz \
   telegram-tg \
+  tinytetris \
   torbrowser-launcher \
   ttf-ms-fonts \
   ventoy-bin \

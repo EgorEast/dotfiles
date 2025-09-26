@@ -151,6 +151,7 @@
 - **pokete** – Small terminal based game in the style of a very popular and old game by Gamefreak. ([docs](https://github.com/lxgr-linux/pokete))
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
 - **rebels-in-the-sky** – It's the year 2101. Corporations have taken over the world.. ([docs](https://github.com/ricott1/rebels-in-the-sky))
+- **tinytetris** – 80x23 terminal tetris. ([docs](https://github.com/taylorconor/tinytetris))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 
 ## 🛡 Security & Encryption
