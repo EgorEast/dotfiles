@@ -129,7 +129,7 @@ return {
     ["keyboard_key_font_size"] = 22,
     ["keyboard_layouts"] = {},
     ["kosync"] = {
-        ["auto_sync"] = false,
+        ["auto_sync"] = true,
         ["checksum_method"] = 0,
         ["sync_backward"] = 3,
         ["sync_forward"] = 1,
@@ -138,8 +138,8 @@ return {
     },
     ["language"] = "ru",
     ["last_migration_date"] = 20250601,
-    ["lastdir"] = "/home/egoreast/Yandex.Disk",
-    ["lastfile"] = "/home/egoreast/Yandex.Disk/Books/Обязательно к прочтению/Нереальные ожидания.fb2",
+    ["lastdir"] = "/home/egoreast/Yandex.Disk/Books/Прочитано",
+    ["lastfile"] = "/home/egoreast/Yandex.Disk/Books/Обязательно к прочтению/Внушай их детям NEW.docx",
     ["page_turns_tap_zones"] = "default",
     ["panel_zoom_enabled"] = {
         ["cbt"] = true,
