@@ -152,6 +152,7 @@ sudo pacman -S --noconfirm --needed \
   playerctl \
   python-pipx \
   qbittorrent \
+  rebels-in-the-sky \
   redshift \
   ripgrep \
   rustup \

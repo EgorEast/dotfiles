@@ -150,6 +150,7 @@
 - **nudoku** – Ncurses based sudoku game. ([docs](https://github.com/jubalh/nudoku))
 - **pokete** – Small terminal based game in the style of a very popular and old game by Gamefreak. ([docs](https://github.com/lxgr-linux/pokete))
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
+- **rebels-in-the-sky** – It's the year 2101. Corporations have taken over the world.. ([docs](https://github.com/ricott1/rebels-in-the-sky))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 
 ## 🛡 Security & Encryption
