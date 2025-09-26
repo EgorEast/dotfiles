@@ -143,6 +143,7 @@
 
 ## 🎮 Gaming & Entertainment
 
+- **brogue-ce** – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon. ([docs](https://github.com/tmewett/BrogueCE?tab=readme-ov-file))
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 

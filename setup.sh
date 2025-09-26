@@ -183,6 +183,7 @@ yay -S --noconfirm --needed \
   bitchat-tui \
   blobdrop-git \
   bluetuith-bin \
+  brogue-ce \
   brows \
   cruise \
   crush-bin \
