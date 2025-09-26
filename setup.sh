@@ -58,6 +58,7 @@ stow --adopt --restow \
   ncdu \
   nekoray \
   neovim \
+  nsnake \
   nwg-look \
   obs \
   onlyoffice \
@@ -204,6 +205,7 @@ yay -S --noconfirm --needed \
   linutil \
   mmtui-bin \
   nekoray-bin \
+  nsnake \
   obfs4proxy \
   onlyoffice-bin \
   opencode-bin \

@@ -146,6 +146,7 @@
 - **brogue-ce** – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon. ([docs](https://github.com/tmewett/BrogueCE))
 - **cbonsai** – Bonsai tree generator. ([docs](https://gitlab.com/jallbrit/cbonsai))
 - **checkersland** – Checkers game. ([docs](https://checkersland.com/download/pc.html))
+- **nsnake** – Classic snake game on the terminal. ([docs](https://github.com/alexdantas/nSnake))
 - **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
 - **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
 
