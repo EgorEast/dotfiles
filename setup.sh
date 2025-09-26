@@ -219,7 +219,6 @@ yay -S --noconfirm --needed \
   torbrowser-launcher \
   ttf-ms-fonts \
   ventoy-bin \
-  visual-studio-code-bin \
   whatsapp-linux-desktop \
   xautolock \
   xkblayout-state-git \
