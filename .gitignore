@@ -16,6 +16,7 @@ koreader/.config/koreader/history.lua
 koreader/.config/koreader/settings.reader.lua*
 koreader/.config/koreader/settings/battery_stats.lua
 koreader/.config/koreader/settings/battery_stats.lua*
+koreader/.config/koreader/settings/cloudstorage.lua
 mpv/.config/mpv/shaders/cache
 nekoray/.config/nekoray/config/neko.log
 nekoray/.config/nekoray/config/profiles

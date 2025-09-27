@@ -289,4 +289,9 @@ ollama pull deepseek-coder-v2 &
 ollama pull gpt-oss &
 ollama pull qwen3-coder
 
+echo ">>> Configuring git..."
+git config filter.ignore-sync-server.clean "./git-filter-script.sh"
+# Настройте smudge фильтр (просто пропускает данные)
+git config filter.ignore-sync-server.smudge "cat"
+
 echo ">>> All done!"
