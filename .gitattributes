@@ -1,1 +1,1 @@
-koreader/.config/koreader/settings.reader.lua filter=ignore-sync-server
+koreader/.config/koreader/settings.reader.lua filter=koreader-ignore-sync-server

@@ -290,8 +290,8 @@ ollama pull gpt-oss &
 ollama pull qwen3-coder
 
 echo ">>> Configuring git..."
-git config filter.ignore-sync-server.clean "./git-filter-script.sh"
+git config filter.koreader-ignore-sync-server.clean "./koreader/.config/koreader/git-filter-script.sh"
 # Настройте smudge фильтр (просто пропускает данные)
-git config filter.ignore-sync-server.smudge "cat"
+git config filter.koreader-ignore-sync-server.smudge "cat"
 
 echo ">>> All done!"
