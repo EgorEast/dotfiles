@@ -1,4 +1,5 @@
 .env
+**/*.old
 
 anydesk/.anydesk/*
 atac/.config/atac/atac.log
@@ -15,7 +16,6 @@ koreader/.config/koreader/help
 koreader/.config/koreader/history.lua
 koreader/.config/koreader/settings.reader.lua*
 koreader/.config/koreader/settings/battery_stats.lua
-koreader/.config/koreader/settings/battery_stats.lua*
 koreader/.config/koreader/settings/cloudstorage.lua
 mpv/.config/mpv/shaders/cache
 nekoray/.config/nekoray/config/neko.log
@@ -34,7 +34,6 @@ ssh/.ssh/authorized_keys
 ssh/.ssh/environment
 ssh/.ssh/id_*
 ssh/.ssh/known_hosts
-ssh/.ssh/known_hosts.old
 thunar/.config/Thunar/accels.scm
 vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
