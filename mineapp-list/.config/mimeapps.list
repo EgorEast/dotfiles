@@ -1,9 +1,11 @@
 
 [Default Applications]
 application/json=yandex-browser.desktop;firefox.desktop;
+application/msword=onlyoffice-desktopeditors.desktop;koreader.desktop;
 application/pdf=onlyoffice-desktopeditors.desktop;yandex-browser.desktop;firefox.desktop;
 application/rdf+xml=yandex-browser.desktop;firefox.desktop;
 application/rss+xml=yandex-browser.desktop;firefox.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;koreader.desktop;
 application/x-ms-dos-executable=wine.desktop;PortProton.desktop
 application/x-ms-dos-program=wine.desktop
 application/x-msdos-program=wine.desktop;PortProton.desktop
