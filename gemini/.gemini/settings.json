@@ -30,11 +30,20 @@
   },
   "general": {
     "preferredEditor": "neovim",
-    "vimMode": true
+    "vimMode": true,
+    "enablePromptCompletion": true
   },
   "security": {
     "auth": {
       "selectedType": "oauth-personal"
     }
+  },
+  "tools": {
+    "shell": {
+      "showColor": true
+    }
+  },
+  "output": {
+    "format": "text"
   }
 }
