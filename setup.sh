@@ -67,6 +67,7 @@ stow --adopt --restow \
   pavucontrol \
   picom \
   pipewire \
+  posting \
   qalculate \
   redshift \
   rofi \
