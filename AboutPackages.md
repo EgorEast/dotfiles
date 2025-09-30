@@ -77,10 +77,12 @@
 - **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))
 - **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
 - **posting** – TUI HTTP client, not unlike Postman and Insomnia. ([docs](https://github.com/darrenburns/posting))
+- **qemu** – Generic and open source machine & userspace emulator and virtualizer. ([docs](https://github.com/qemu/qemu))
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
 - **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
 - **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
+- **virtualbox** – Virtualization software. ([docs](https://www.virtualbox.org/))
 
 ## 🛠 System Utilities
 

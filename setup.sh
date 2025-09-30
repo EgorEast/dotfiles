@@ -154,6 +154,7 @@ sudo pacman -S --noconfirm --needed \
   playerctl \
   python-pipx \
   qbittorrent \
+  qemu-full \
   rebels-in-the-sky \
   redshift \
   ripgrep \
@@ -171,6 +172,7 @@ sudo pacman -S --noconfirm --needed \
   trippy \
   ttf-jetbrains-mono-nerd \
   vim \
+  virtualbox \
   vulkan-icd-loader \
   vulkan-radeon \
   vulkan-tools \
