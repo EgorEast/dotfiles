@@ -1,0 +1,35 @@
+# https://git.sr.ht/~bptato/chawan/tree/HEAD/doc/config.md?__goaway_challenge=meta-refresh&__goaway_id=06b75d83a36428302ef4f0e0d9954fc0&__goaway_referer=https%3A%2F%2Fsr.ht%2F#configuration-of-chawan
+
+[buffer]
+# show images on all websites
+images = true
+# disable website CSS
+styling = true
+# Specify user styles.
+# user-style = '''
+# /* you can import external UA styles like this: */
+# @import 'user.css';
+# /* or just insert the style inline as follows. */
+# /* enforce the default text-decoration for links (i.e. underline). */
+# a[href] { text-decoration: revert !important }
+# @media (monochrome) { /* only in color-mode "monochrome" (or -M) */
+# 	/* disable UA style of bold font (no need for important here) */
+# 	a[href]:hover { font-weight: initial }
+# 	/* ...and italicize the font on hover instead.
+# 	 * here we use important because we don't want websites to
+# 	 * override the value. */
+# 	a[href]:hover { font-style: italic !important }
+# }
+# '''
+# You *can* set scripting to true here, but I strongly recommend using
+# [[siteconf]] to enable it on a per-site basis instead.
+
+[input]
+vi-numeric-prefix = true
+
+# [page]
+# # Here, the arrow function will be called with the vi numbered prefix if
+# # one was input, and with no argument otherwise.
+# # The numeric prefix can never be zero, so it is safe to test for undefined
+# # using the ternary operator.
+G = 'n => n ? pager.gotoLine(n) : pager.cursorLastLine()'

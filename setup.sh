@@ -19,6 +19,7 @@ stow --adopt --restow \
   brows \
   btop \
   calcurse \
+  chawan \
   cmus \
   cruise \
   crush \
@@ -99,6 +100,7 @@ sudo pacman -S --noconfirm --needed \
   brightnessctl \
   btop \
   calcurse \
+  chawan \
   cloc \
   cmus \
   ctop \

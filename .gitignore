@@ -3,6 +3,7 @@
 
 anydesk/.anydesk/*
 atac/.config/atac/atac.log
+chawan/.config/chawan/history.uri
 cmus/.config/cmus/cache
 cmus/.config/cmus/queue.pl
 cmus/.config/cmus/resume
@@ -39,7 +40,6 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
-
 
 !anydesk/.anydesk/user.conf
 !gemini/.gemini/settings.json
