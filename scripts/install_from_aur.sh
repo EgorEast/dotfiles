@@ -15,7 +15,6 @@ yay -S --noconfirm --needed \
   dblab \
   downloader-cli \
   durdraw \
-  dysk \
   fish-done \
   gobang-bin \
   hellwal \
@@ -32,7 +31,6 @@ yay -S --noconfirm --needed \
   obfs4proxy \
   onlyoffice-bin \
   opencode-bin \
-  pandoc-bin \
   pantum-driver \
   pokete-git \
   portproton \
@@ -46,7 +44,6 @@ yay -S --noconfirm --needed \
   sysz \
   telegram-tg \
   tinytetris \
-  torbrowser-launcher \
   ttf-ms-fonts \
   ventoy-bin \
   whatsapp-linux-desktop \
@@ -55,5 +52,4 @@ yay -S --noconfirm --needed \
   yandex-browser \
   yandex-disk \
   yandex-music \
-  yazi-git \
   ytsurf

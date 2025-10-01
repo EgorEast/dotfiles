@@ -174,5 +174,6 @@
 - **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
 - **linutil** – distro-agnostic toolbox designed to simplify everyday Linux tasks. ([docs](https://github.com/ChrisTitusTech/linutil))
 - **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
+- **poketex** – Simple Pokedex based on TUI. ([docs](https://github.com/ckaznable/poketex))
 - **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))
 - **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))

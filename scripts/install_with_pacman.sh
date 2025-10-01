@@ -19,6 +19,7 @@ sudo pacman -S --noconfirm --needed \
   docker \
   docker-compose \
   duf \
+  dysk \
   fastfetch \
   fd \
   feh \
@@ -58,8 +59,10 @@ sudo pacman -S --noconfirm --needed \
   onefetch \
   oryx \
   ouch \
+  pandoc-cli \
   picom \
   playerctl \
+  poketex \
   python-pipx \
   qbittorrent \
   qemu-full \
@@ -74,6 +77,7 @@ sudo pacman -S --noconfirm --needed \
   tabiew \
   telegram-desktop \
   tor \
+  torbrowser-launcher \
   torsocks \
   trash-cli \
   tree \
@@ -87,5 +91,6 @@ sudo pacman -S --noconfirm --needed \
   wine \
   xclip \
   xsel \
+  yazi \
   yt-dlp \
   zoxide
