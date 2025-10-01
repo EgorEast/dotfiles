@@ -14,7 +14,6 @@ yay -S --noconfirm --needed \
   crush-bin \
   dblab \
   downloader-cli \
-  durdraw \
   dysk \
   fish-done \
   gobang-bin \

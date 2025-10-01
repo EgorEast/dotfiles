@@ -21,7 +21,6 @@ stow --adopt --restow \
   dive \
   docker \
   dunst \
-  durdraw \
   fastfetch \
   feh \
   fish \

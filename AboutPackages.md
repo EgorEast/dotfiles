@@ -112,7 +112,6 @@
 ## 📷 Media Tools
 
 - **cmus** – Console music player. ([docs](https://cmus.github.io/))
-- **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
 - **feh** – X11 image viewer. ([docs](https://github.com/derf/feh))
 - **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
 - **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
