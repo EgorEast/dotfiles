@@ -200,10 +200,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # keybinding in fancy rofi (automated):
-bindsym F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
+bindsym $mod+F1 exec --no-startup-id ~/.config/i3/scripts/keyhint-2
 # alternative
 # keybinding list in editor:
-bindsym $mod+F1 exec --no-startup-id kitty nvim ~/.config/i3/keybindings
+bindsym $mod+F2 exec --no-startup-id kitty nvim ~/.config/i3/keybindings
 
 # Backlight control
 #bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight +10 && notify-send "Brightness - $(xbacklight -get | cut -d '.' -f 1)%"
