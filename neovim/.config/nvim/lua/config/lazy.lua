@@ -58,6 +58,8 @@ require("lazy").setup({
 
     -- import/override with your plugins
 
+    { "catppuccin/nvim", enabled = false },
+
     { import = "plugins" },
   },
   defaults = {
