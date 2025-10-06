@@ -190,6 +190,8 @@ bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 #bindsym $mod+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
 # lock by blurring the screen:
 bindsym $mod+m exec --no-startup-id ~/.config/i3/scripts/blur-lock
+# Run blur-lock script after ten minutes of inactivity
+exec --no-startup-id xset s 600
 # lock in case after sleep
 exec --no-startup-id xss-lock -l ~/.config/i3/scripts/blur-lock
 
