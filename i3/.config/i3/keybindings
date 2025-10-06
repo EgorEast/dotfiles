@@ -37,10 +37,10 @@ https://discovery.endeavouros.com/window-tiling-managers/i3-wm/
 +Shift+r
 
 # keybinding in fancy rofi (automated)
-F1
++F1
 
 # full keybinding list in editor:
-+F1
++F2
 
 # change window focus
 +h focus left
