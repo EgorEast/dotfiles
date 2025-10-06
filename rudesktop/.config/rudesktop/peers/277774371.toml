@@ -1,0 +1,49 @@
+password = []
+size = [
+    9,
+    505,
+    1900,
+    1011,
+]
+size_ft = [
+    0,
+    0,
+    0,
+    0,
+]
+size_pf = [
+    0,
+    0,
+    0,
+    0,
+]
+view_style = 'shrink'
+image_quality = 'balanced'
+custom_image_quality = [50]
+show_remote_cursor = true
+disable_wallpaper_and_aero = false
+lock_after_session_end = false
+privacy_mode = false
+port_forwards = []
+direct_failures = 0
+disable_audio = false
+disable_clipboard = false
+enable_file_transfer = false
+note = ''
+show_quality_monitor = false
+view_mode = false
+
+[options]
+alias = 'Яся'
+
+[info]
+username = 'Яся'
+hostname = 'yasya'
+platform = 'Windows'
+
+[transfer]
+write_jobs = []
+read_jobs = []
+
+[chat_storage]
+messages = []
