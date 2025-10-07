@@ -1,8 +1,10 @@
 BrowserStack
 CMD
+DTO
 JSON
 Keymaps
 LazyVim
+OpenAPI
 SauceLabs
 TODO
 VeryLazy
@@ -12,7 +14,10 @@ const
 desc
 eslint
 exarh
+export
 github
+import
+js
 keymaps
 lazyvim
 lua
@@ -24,8 +29,3 @@ sonarjs
 spellfile
 utf
 viewpage
-js
-DTO
-export
-import
-OpenAPI
