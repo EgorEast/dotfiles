@@ -7,6 +7,8 @@ chawan/.config/chawan/history.uri
 cmus/.config/cmus/cache
 cmus/.config/cmus/queue.pl
 cmus/.config/cmus/resume
+docker/.docker/.token_seed
+docker/.docker/.token_seed*
 docker/.docker/buildx
 gemini/.gemini/*
 gtk/.config/gtk-4.0/gtk-dark.css
