@@ -3,6 +3,7 @@
 yay -S --noconfirm --needed \
   anydesk-bin \
   balena-etcher \
+  basalt \
   bitchat-tui \
   blobdrop-git \
   bluetuith-bin \

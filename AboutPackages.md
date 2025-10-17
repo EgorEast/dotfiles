@@ -130,6 +130,7 @@
 
 ## 📅 Productivity
 
+- **basalt** – TUI Application to manage Obsidian vaults and notes directly from the terminal. ([docs](https://github.com/erikjuhani/basalt))
 - **calcurse** – TUI calendar and task manager. ([docs](https://github.com/lfos/calcurse))
 - **galculator** – GTK calculator. ([docs](https://github.com/galculator/galculator))
 - **glow** – TUI Markdown viewer. ([docs](https://github.com/charmbracelet/glow))
