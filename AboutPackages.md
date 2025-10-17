@@ -177,3 +177,7 @@
 - **poketex** – Simple Pokedex based on TUI. ([docs](https://github.com/ckaznable/poketex))
 - **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))
 - **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))
+
+## 📚 Libraries for TUI
+
+<https://github.com/rothgar/awesome-tuis?tab=readme-ov-file#libraries>
