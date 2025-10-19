@@ -10,6 +10,7 @@
 
 ## 📂 File & Disk Management
 
+- **balena-etcher** – Flash OS images to SD cards & USB drives, safely and easily. ([docs](https://github.com/balena-io/etcher))
 - **gparted** – Graphical partition manager. ([docs](https://gparted.org/))
 - **mmtui** – TUI disk mounter for file managers. ([docs](https://github.com/SL-RU/mmtui))
 - **trash-cli** – CLI trash management. ([docs](https://github.com/andreafrancia/trash-cli))
