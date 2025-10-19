@@ -117,6 +117,7 @@ alias npmtw='npm run test:watch'
 alias ollama_run='ollama serve & ollama run deepseek-coder-v2'
 alias open_spreadsheet_tui='sc-im'
 alias ovpn_connect='~/ovpn/run-ovpn.sh'
+alias print_file='lp' # lp -d ИМЯ_ПРИНТЕРА -n КОЛИЧЕСТВО_КОПИЙ image.png
 alias project_jump='pj'
 alias psef='ps -ef'
 alias rain='terminal-rain --rain-color blue --lightning-color white'
