@@ -1,0 +1,105 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo ">>> Updating system..."
+sudo pacman -Syu --noconfirm
+
+echo ">>> Creating symlinks with stow..."
+cd ~/.local/src/dotfiles
+
+stow --adopt --restow \
+  bash \
+  bat \
+  btop \
+  curl \
+  delta \
+  dunst \
+  fastfetch \
+  feh \
+  fish \
+  flameshot \
+  glow \
+  greenclip \
+  jqp \
+  kitty \
+  mpv \
+  nano \
+  ncdu \
+  nekoray \
+  yazi \
+  yt-dlp \
+  -t ~
+
+echo ">>> Installing base packages..."
+
+sudo pacman -S --noconfirm --needed \
+  bat \
+  blueberry \
+  btop \
+  curl \
+  fastfetch \
+  fd \
+  feh \
+  firefox \
+  fish \
+  fisher \
+  flameshot \
+  fx \
+  git \
+  git-delta \
+  glow \
+  kitty \
+  lsd \
+  ncdu \
+  networkmanager-openvpn \
+  nodejs-lts-jod \
+  npm \
+  nvim \
+  obsidian \
+  onefetch \
+  ouch \
+  qbittorrent \
+  ripgrep \
+  shotcut \
+  spectacle \
+  telegram-desktop \
+  trash-cli \
+  tree \
+  ttf-jetbrains-mono-nerd \
+  vulkan-icd-loader \
+  vulkan-radeon \
+  vulkan-tools \
+  wine \
+  xclip \
+  xsel \
+  yazi \
+  zoxide
+
+echo ">>> Installing AUR packages (via yay)..."
+
+yay -S --noconfirm --needed \
+  blobdrop-git \
+  downloader-cli \
+  fish-done \
+  linutil \
+  nekoray-bin \
+  onlyoffice-bin \
+  pantum-driver \
+  portproton \
+  ttf-ms-fonts \
+  ventoy-bin \
+  whatsapp-linux-desktop \
+  yandex-browser \
+  yandex-music
+
+echo ">>> Setting up kitty as default terminal..."
+sudo ln -sf /usr/bin/kitty /usr/bin/x-terminal-emulator
+
+echo ">>> Enabling necessary services..."
+sudo systemctl enable --now reflector.timer
+sudo systemctl enable --now bluetooth
+
+echo ">>> Updating environment variables..."
+sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR=nvim/" /etc/environment || echo "EDITOR=nvim" >> /etc/environment; grep -q "BROWSER=" /etc/environment && sed -i "s/^BROWSER=.*$/BROWSER=yandex-browser-stable/" /etc/environment || echo "BROWSER=yandex-browser-stable" >> /etc/environment; grep -q "VISUAL=" /etc/environment || echo "VISUAL=nvim" >> /etc/environment; awk "!seen[\$0]++ && NF" /etc/environment > /tmp/env.tmp && mv /tmp/env.tmp /etc/environment'
+
+echo ">>> All done!"
