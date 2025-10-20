@@ -11,6 +11,7 @@ sudo pacman -S --noconfirm --needed \
   chawan \
   cloc \
   cmus \
+  cronie \
   ctop \
   curl \
   ddcutil \
@@ -47,6 +48,7 @@ sudo pacman -S --noconfirm --needed \
   libqalculate \
   libsecret \
   lsd \
+  lshw \
   mousai \
   ncdu \
   networkmanager-openvpn \
@@ -63,6 +65,7 @@ sudo pacman -S --noconfirm --needed \
   picom \
   playerctl \
   poketex \
+  pyalpm \
   python-pipx \
   qbittorrent \
   qemu-full \
