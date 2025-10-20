@@ -95,6 +95,9 @@ yay -S --noconfirm --needed \
   yandex-browser \
   yandex-music
 
+echo ">>> Installing global npm packages..."
+sudo npm i -g @bramus/caniuse-cli
+
 echo ">>> Setting up kitty as default terminal..."
 sudo ln -sf /usr/bin/kitty /usr/bin/x-terminal-emulator
 
