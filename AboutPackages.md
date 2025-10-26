@@ -3,6 +3,7 @@
 ## 🖥 System Monitoring & Info
 
 - **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
+- **diskonaut** – Disk usage analyzer, which indexes its metadata to memory so that you could explore its contents. ([docs](https://github.com/imsnif/diskonaut))
 - **duf** – Disk Usage/Free Utility . ([docs](https://github.com/muesli/duf))
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))

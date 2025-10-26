@@ -18,6 +18,7 @@ sudo pacman -S --noconfirm --needed \
   curl \
   ddcutil \
   dialog \
+  diskonaut \
   dive \
   docker \
   docker-compose \
