@@ -12,6 +12,7 @@ stow --adopt --restow \
   brows \
   btop \
   calcurse \
+  cava \
   chawan \
   cmus \
   cruise \

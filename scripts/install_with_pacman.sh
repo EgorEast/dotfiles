@@ -8,6 +8,7 @@ sudo pacman -S --noconfirm --needed \
   brightnessctl \
   btop \
   calcurse \
+  cava \
   chawan \
   cloc \
   cmus \

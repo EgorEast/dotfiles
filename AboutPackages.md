@@ -112,6 +112,7 @@
 
 ## 📷 Media Tools
 
+- **cava** – Cross-platform Audio Visualizer. ([docs](https://github.com/karlstav/cava))
 - **cmus** – Console music player. ([docs](https://cmus.github.io/))
 - **cups** – Open source printing system. ([docs](http://localhost:631/help/options.html))
 - **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
