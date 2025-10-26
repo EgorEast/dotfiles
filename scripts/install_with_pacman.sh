@@ -13,6 +13,7 @@ sudo pacman -S --noconfirm --needed \
   cloc \
   cmus \
   cronie \
+  csvlens \
   ctop \
   curl \
   ddcutil \
