@@ -33,6 +33,7 @@ sudo pacman -S --noconfirm --needed \
   flameshot \
   fx \
   galculator \
+  gdu \
   git \
   git-delta \
   github-cli \

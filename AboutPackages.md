@@ -7,6 +7,7 @@
 - **duf** – Disk Usage/Free Utility . ([docs](https://github.com/muesli/duf))
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
+- **gdu** – Pretty fast disk usage analyzer written in Go. ([docs](https://github.com/dundee/gdu))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
 
 ## 📂 File & Disk Management

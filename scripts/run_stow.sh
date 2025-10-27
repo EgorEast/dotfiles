@@ -5,6 +5,7 @@ rm -rf ~/.config/mineapps.list
 stow --adopt --restow \
   anydesk \
   atac \
+  gdu \
   autostart \
   bash \
   bat \
