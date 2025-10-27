@@ -116,6 +116,7 @@
 - **picom** – X11 compositor for transparency & shadows. ([docs](https://wiki.archlinux.org/title/Picom))
 - **redshift** – Adjusts screen color temperature. ([docs](https://wiki.archlinux.org/title/Redshift))
 - **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))
+- **termshark** – Terminal user-interface for tshark, inspired by Wireshark. ([docs](https://github.com/gcla/termshark))
 
 ## 📷 Media Tools
 

@@ -88,6 +88,7 @@ sudo pacman -S --noconfirm --needed \
   spectacle \
   tabiew \
   telegram-desktop \
+  termshark \
   tor \
   torbrowser-launcher \
   torsocks \

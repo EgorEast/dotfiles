@@ -73,6 +73,7 @@ stow --adopt --restow \
   sc-im \
   spectacle \
   ssh \
+  termshark \
   tg \
   thunar \
   user-dirs \
