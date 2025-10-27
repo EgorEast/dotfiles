@@ -77,6 +77,7 @@ stow --adopt --restow \
   tg \
   thokr \
   thunar \
+  ttyper \
   user-dirs \
   vim \
   wget \

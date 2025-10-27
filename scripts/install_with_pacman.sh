@@ -96,6 +96,7 @@ sudo pacman -S --noconfirm --needed \
   tree \
   trippy \
   ttf-jetbrains-mono-nerd \
+  ttyper \
   vim \
   virtualbox \
   vulkan-icd-loader \
