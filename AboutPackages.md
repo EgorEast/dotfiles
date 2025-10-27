@@ -76,6 +76,7 @@
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))
 - **npm-check-updates** – Check for newer npm dependencies. ([docs](https://github.com/raineorshine/npm-check-updates))
 - **nvim** – Modern Vim-based editor with Lua support. ([docs](https://neovim.io/doc/))
+- **oha** – Tiny program that sends some load to a web application and show realtime tui. ([docs](https://github.com/hatoo/oha))
 - **ollama** – Get up and running with large language models. ([docs](https://github.com/ollama/ollama))
 - **onefetch** – Git repository summary in terminal. ([docs](https://github.com/o2sh/onefetch))
 - **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))

@@ -64,6 +64,7 @@ sudo pacman -S --noconfirm --needed \
   nvim \
   obs-studio \
   obsidian \
+  oha \
   ollama \
   onefetch \
   oryx \
