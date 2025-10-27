@@ -68,7 +68,6 @@ alias download_from_youtube='yt-dlp' # download with 128x720 resolution and to D
 alias download_from_youtube_best='yt-dlp -f "bestvideo+bestaudio"'
 alias download_playlist_from_youtube='yt-dlp --output "~/Youtube/%(playlist_title)s/%(title)s.%(ext)s"'
 alias download_playlist_from_youtube_best='yt-dlp --output "~/Youtube/%(playlist_title)s/%(title)s.%(ext)s" -f "bestvideo+bestaudio"'
-alias du='ncdu'
 alias e='$EDITOR'
 alias enable_keyboard1='sudo chmod 777 /dev/hidraw1'
 alias enable_keyboard2='sudo chmod 777 /dev/hidraw2'
