@@ -108,6 +108,7 @@
 - **blueberry** – GUI Bluetooth manager. ([docs](https://github.com/linuxmint/blueberry))
 - **bluetuith** – TUI Bluetooth manager. ([docs](https://bluetuith-org.github.io/bluetuith/index.html))
 - **hellwal** – Wallpaper-based color scheme generator. ([docs](https://github.com/danihek/hellwal))
+- **impala** – TUI for managing wifi. ([docs](https://github.com/pythops/impala))
 - **picom** – X11 compositor for transparency & shadows. ([docs](https://wiki.archlinux.org/title/Picom))
 - **redshift** – Adjusts screen color temperature. ([docs](https://wiki.archlinux.org/title/Redshift))
 - **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))

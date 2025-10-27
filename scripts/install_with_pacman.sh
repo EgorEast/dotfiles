@@ -45,6 +45,7 @@ sudo pacman -S --noconfirm --needed \
   gsimplecal \
   hledger \
   hledger-ui \
+  impala \
   jq \
   k9s \
   kitty \
