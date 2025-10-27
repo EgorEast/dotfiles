@@ -27,6 +27,7 @@ yay -S --noconfirm --needed \
   linutil \
   mmtui-bin \
   nekoray-bin \
+  nemu \
   nsnake \
   nudoku \
   obfs4proxy \

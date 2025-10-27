@@ -54,6 +54,7 @@ stow --adopt --restow \
   nano \
   ncdu \
   nekoray \
+  nemu \
   neovim \
   nsnake \
   nwg-look \
