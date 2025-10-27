@@ -8,6 +8,7 @@
 - **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
 - **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
 - **gdu** – Pretty fast disk usage analyzer written in Go. ([docs](https://github.com/dundee/gdu))
+- **lnav** – The Logfile Navigator. ([docs](https://github.com/tstack/lnav))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
 
 ## 📂 File & Disk Management

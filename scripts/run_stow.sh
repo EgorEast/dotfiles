@@ -5,7 +5,6 @@ rm -rf ~/.config/mineapps.list
 stow --adopt --restow \
   anydesk \
   atac \
-  gdu \
   autostart \
   bash \
   bat \
@@ -29,6 +28,7 @@ stow --adopt --restow \
   fish \
   flameshot \
   galculator \
+  gdu \
   gemini \
   git \
   github-cli \
@@ -46,6 +46,7 @@ stow --adopt --restow \
   lazydocker \
   lazygit \
   lazysql \
+  lnav \
   lsd \
   mailcap \
   mineapp-list \

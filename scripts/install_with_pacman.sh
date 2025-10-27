@@ -53,6 +53,7 @@ sudo pacman -S --noconfirm --needed \
   lazygit \
   libqalculate \
   libsecret \
+  lnav \
   lsd \
   lshw \
   mousai \
