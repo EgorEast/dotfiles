@@ -40,6 +40,7 @@ sudo pacman -S --noconfirm --needed \
   glow \
   gnome-keyring \
   gparted \
+  gpg-tui \
   gping \
   gsimplecal \
   hledger \

@@ -167,6 +167,7 @@
 ## 🛡 Security & Encryption
 
 - **gnome-keyring** – Password and key manager. ([docs](https://wiki.gnome.org/Projects/GnomeKeyring))
+- **gpg-tui** – TUI for GnuPG. ([docs](https://github.com/orhun/gpg-tui))
 - **libsecret** – Library for password/key storage. ([docs](https://github.com/GNOME/libsecret))
 - **seahorse** – GUI for GNOME Keyring. ([docs](https://wiki.gnome.org/Apps/Seahorse))
 
