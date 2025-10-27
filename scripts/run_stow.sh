@@ -65,6 +65,7 @@ stow --adopt --restow \
   picom \
   pipewire \
   posting \
+  profanity \
   qalculate \
   redshift \
   rofi \
