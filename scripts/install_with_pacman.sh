@@ -73,6 +73,7 @@ sudo pacman -S --noconfirm --needed \
   picom \
   playerctl \
   poketex \
+  profanity \
   pyalpm \
   python-pipx \
   qbittorrent \
