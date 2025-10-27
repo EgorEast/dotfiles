@@ -45,6 +45,7 @@ yay -S --noconfirm --needed \
   speedread-git \
   sysz \
   telegram-tg \
+  thokr-git \
   tinytetris \
   ttf-ms-fonts \
   ventoy-bin \

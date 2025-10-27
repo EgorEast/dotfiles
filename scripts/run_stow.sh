@@ -75,6 +75,7 @@ stow --adopt --restow \
   ssh \
   termshark \
   tg \
+  thokr \
   thunar \
   user-dirs \
   vim \
