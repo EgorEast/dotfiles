@@ -24,13 +24,8 @@ nvim --headless "+Lazy! sync" +qa
 nvim --headless "+Lazy! load mason.nvim" "+lua require('mason.api.command').MasonUpdate()" +qa
 
 echo ">>> Installing global npm packages..."
-sudo npm i -g \
-  @bramus/caniuse-cli \
-  @builder.io/ai-shell \
-  @google/gemini-cli \
-  live-server \
-  npm-check-updates \
-  pnq
+
+. ./scripts/install_from_npm.sh
 
 echo ">>> Setting up pipx..."
 pipx ensurepath
