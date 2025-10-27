@@ -117,6 +117,7 @@
 - **redshift** – Adjusts screen color temperature. ([docs](https://wiki.archlinux.org/title/Redshift))
 - **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))
 - **termshark** – Terminal user-interface for tshark, inspired by Wireshark. ([docs](https://github.com/gcla/termshark))
+- **wavemon** – Ncurses-based monitoring application for wireless network devices on Linux. ([docs](https://github.com/uoaerg/wavemon))
 
 ## 📷 Media Tools
 

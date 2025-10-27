@@ -102,6 +102,7 @@ sudo pacman -S --noconfirm --needed \
   vulkan-icd-loader \
   vulkan-radeon \
   vulkan-tools \
+  wavemon \
   wine \
   xclip \
   xsel \

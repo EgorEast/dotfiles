@@ -80,6 +80,7 @@ stow --adopt --restow \
   ttyper \
   user-dirs \
   vim \
+  wavemon \
   wget \
   xarchiver \
   xfce-4 \
