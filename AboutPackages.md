@@ -122,6 +122,7 @@
 ## 📷 Media Tools
 
 - **cava** – Cross-platform Audio Visualizer. ([docs](https://github.com/karlstav/cava))
+- **chafa** – Powerful utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal. ([docs](https://hpjansson.org/chafa))
 - **cmus** – Console music player. ([docs](https://cmus.github.io/))
 - **cups** – Open source printing system. ([docs](http://localhost:631/help/options.html))
 - **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))

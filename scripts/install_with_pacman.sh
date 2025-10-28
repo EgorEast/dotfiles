@@ -9,6 +9,7 @@ sudo pacman -S --noconfirm --needed \
   btop \
   calcurse \
   cava \
+  chafa \
   chawan \
   cloc \
   cmus \
