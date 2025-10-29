@@ -36,6 +36,7 @@ stow --adopt --restow \
   gobang \
   greenclip \
   gtk \
+  hledger \
   i3 \
   icons \
   inputrc \
