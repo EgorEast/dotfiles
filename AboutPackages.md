@@ -149,7 +149,7 @@
 - **galculator** – GTK calculator. ([docs](https://github.com/galculator/galculator))
 - **glow** – TUI Markdown viewer. ([docs](https://github.com/charmbracelet/glow))
 - **gsimplecal** – Simple popup calendar. ([docs](https://dmedvinsky.github.io/gsimplecal/))
-- **hledger** – Robust, intuitive plain text accounting. ([docs](https://github.com/simonmichael/hledger))
+- **hledger** – Robust, intuitive plain text accounting. ([repo](https://github.com/simonmichael/hledger) [docs](https://hledger.org/))
 - **hledger-ui** – UI for hledger. ([tutor](https://hledger.org/ui.html))
 - **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
 - **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
