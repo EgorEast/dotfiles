@@ -30,7 +30,10 @@ echo ">>> Installing global npm packages..."
 echo ">>> Setting up pipx..."
 pipx ensurepath
 sudo pipx ensurepath --global || true
-pipx install git+https://github.com/rmaake1/terminal-rain-lightning.git
+
+echo ">>> Installing from pipx..."
+
+. ./scripts/install_from_pipx.sh
 
 echo ">>> Installing ggh..."
 curl -fsSL https://raw.githubusercontent.com/byawitz/ggh/master/install/unix.sh | sh

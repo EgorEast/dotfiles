@@ -195,6 +195,7 @@
 - **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))
 - **thokr** – Sleek typing tui with visualized results and historical logging. ([docs](https://github.com/jrnxf/thokr))
 - **ttyper** – Terminal-based typing test built with Rust and Ratatui. ([docs](https://github.com/max-niederman/ttyper))
+- **upiano** – Piano in your terminal. ([docs](https://github.com/eliasdorneles/upiano))
 
 ## 📚 Libraries for TUI
 
