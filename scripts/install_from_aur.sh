@@ -51,6 +51,7 @@ yay -S --noconfirm --needed \
   ttf-ms-fonts \
   ventoy-bin \
   whatsapp-linux-desktop \
+  wifitui-bin \
   xautolock \
   xkblayout-state-git \
   yandex-browser \

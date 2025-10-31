@@ -118,6 +118,7 @@
 - **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))
 - **termshark** – Terminal user-interface for tshark, inspired by Wireshark. ([docs](https://github.com/gcla/termshark))
 - **wavemon** – Ncurses-based monitoring application for wireless network devices on Linux. ([docs](https://github.com/uoaerg/wavemon))
+- **wifitui** – fast, featureful, and friendly replacement for nmtui. ([docs](https://github.com/shazow/wifitui))
 
 ## 📷 Media Tools
 
