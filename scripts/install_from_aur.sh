@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 yay -S --noconfirm --needed \
+  abook \
   anydesk-bin \
   balena-etcher \
   basalt \
