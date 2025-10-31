@@ -24,6 +24,7 @@ stow --adopt --restow \
   greenclip \
   jqp \
   kitty \
+  lazygit \
   mpv \
   nano \
   ncdu \
@@ -51,6 +52,7 @@ sudo pacman -S --noconfirm --needed \
   git-delta \
   glow \
   kitty \
+  lazygit \
   lsd \
   ncdu \
   networkmanager-openvpn \
