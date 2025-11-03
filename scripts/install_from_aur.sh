@@ -11,6 +11,7 @@ yay -S --noconfirm --needed \
   bluetuith-bin \
   brogue-ce \
   brows \
+  calcure \
   cbonsai \
   checkersland \
   cruise \

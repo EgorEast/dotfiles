@@ -12,6 +12,7 @@ stow --adopt --restow \
   bluetuith \
   brows \
   btop \
+  calcure \
   calcurse \
   cava \
   chawan \

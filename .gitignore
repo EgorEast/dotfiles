@@ -34,6 +34,7 @@ rudesktop/.config/rudesktop/RuDesktop.toml
 rudesktop/.config/rudesktop/RuDesktop2.toml
 rudesktop/.config/rudesktop/RuDesktop_local.toml
 rudesktop/.config/rudesktop/RuDesktop_logcollect.toml
+calcure/.config/calcure/*
 ssh/.ssh/*.pub
 ssh/.ssh/authorized_keys
 ssh/.ssh/environment
@@ -47,3 +48,4 @@ ya-disk/.config/yandex-disk/passwd
 
 !anydesk/.anydesk/user.conf
 !gemini/.gemini/settings.json
+!calcure/.config/calcure/config.ini
