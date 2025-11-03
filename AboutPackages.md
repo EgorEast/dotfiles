@@ -146,6 +146,7 @@
 ## 📅 Productivity
 
 - **abook** – TUI addressbook with [mutt](http://www.mutt.org/) integration. ([docs](https://abook.sourceforge.io/))
+- **bagels** – Powerful expense tracker that lives in your terminal. ([docs](https://github.com/EnhancedJax/Bagels))
 - **basalt** – TUI Application to manage Obsidian vaults and notes directly from the terminal. ([docs](https://github.com/erikjuhani/basalt))
 - **calcurse** – TUI calendar and task manager. ([docs](https://github.com/lfos/calcurse))
 - **csvlens** – Command line CSV file viewer. It is like less but made for CSV. ([docs](https://github.com/YS-L/csvlens))

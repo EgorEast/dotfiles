@@ -3,6 +3,7 @@
 yay -S --noconfirm --needed \
   abook \
   anydesk-bin \
+  bagels \
   balena-etcher \
   basalt \
   bitchat-tui \

@@ -6,6 +6,7 @@ stow --adopt --restow \
   anydesk \
   atac \
   autostart \
+  bagels \
   bash \
   bat \
   bluetuith \
