@@ -52,6 +52,7 @@ yay -S --noconfirm --needed \
   ventoy-bin \
   whatsapp-linux-desktop \
   wifitui-bin \
+  woeusb \
   xautolock \
   xkblayout-state-git \
   yandex-browser \

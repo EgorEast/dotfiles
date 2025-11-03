@@ -19,6 +19,7 @@
 - **trash-cli** – CLI trash management. ([docs](https://github.com/andreafrancia/trash-cli))
 - **tree** – Directory tree listing. ([docs](https://linux.die.net/man/1/tree))
 - **ventoy-bin** – Bootable USB multiboot creator. ([docs](https://www.ventoy.net/en/doc_start.html))
+- **woeusb** – A Microsoft Windows® USB installation media preparer for GNU+Linux. ([docs](https://github.com/WoeUSB/WoeUSB))
 - **yazi-git** – Modern TUI file manager with Lua plugins. ([docs](https://yazi-rs.github.io/docs/quick-start))
 
 ## 🌐 Networking & Communication
