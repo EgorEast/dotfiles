@@ -16,6 +16,7 @@ stow --adopt --restow \
   calcurse \
   cava \
   chawan \
+  clipse \
   cmus \
   cruise \
   crush \

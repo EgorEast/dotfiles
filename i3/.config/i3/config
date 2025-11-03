@@ -436,6 +436,8 @@ exec --no-startup-id xset s 480 dpms 600 600 600
 # https://wiki.archlinux.org/title/Session_lock#xautolock
 exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
+exec --no-startup-id clipse -listen
+
 # ollama
 exec --no-startup-id ollama serve
 

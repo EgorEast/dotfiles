@@ -96,6 +96,7 @@
 
 - **bat** – `cat` replacement with syntax highlighting. ([docs](https://github.com/sharkdp/bat))
 - **brightnessctl** – CLI brightness control. ([docs](https://github.com/Hummer12007/brightnessctl))
+- **clipse** – Configurable, TUI-based clipboard manager application written in Go with minimal dependency. ([docs](https://github.com/savedra1/clipse))
 - **ddcutil** – Monitor settings control via DDC/CI. ([docs](https://www.ddcutil.com/))
 - **gping** – Ping, but with a graph. ([docs](https://github.com/orf/gping))
 - **kitty** – GPU-accelerated terminal emulator. ([docs](https://sw.kovidgoyal.net/kitty/))

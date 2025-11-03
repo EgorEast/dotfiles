@@ -14,6 +14,7 @@ yay -S --noconfirm --needed \
   calcure \
   cbonsai \
   checkersland \
+  clipse \
   cruise \
   crush-bin \
   dblab \
