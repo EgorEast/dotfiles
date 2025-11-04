@@ -24,6 +24,7 @@ yay -S --noconfirm --needed \
   gobang-bin \
   hellwal \
   jqp-bin \
+  kabmat \
   koreader-appimage \
   lazyjournal \
   lazysql \

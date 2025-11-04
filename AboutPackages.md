@@ -157,6 +157,7 @@
 - **gsimplecal** – Simple popup calendar. ([docs](https://dmedvinsky.github.io/gsimplecal/))
 - **hledger** – Robust, intuitive plain text accounting. ([repo](https://github.com/simonmichael/hledger) [docs](https://hledger.org/))
 - **hledger-ui** – UI for hledger. ([tutor](https://hledger.org/ui.html))
+- **kabmat** – TUI program for managing kanban boards with vim-like keybindings. ([docs](https://github.com/PlankCipher/kabmat))
 - **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
 - **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
 - **onlyoffice-bin** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/))
