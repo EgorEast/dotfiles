@@ -50,6 +50,7 @@ yay -S --noconfirm --needed \
   sc-im \
   slides \
   speedread-git \
+  sshm-bin \
   sysz \
   telegram-tg \
   thokr-git \

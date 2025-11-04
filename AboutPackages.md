@@ -89,6 +89,7 @@
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
 - **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
+- **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
 - **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
 - **virtualbox** – Virtualization software. ([docs](https://www.virtualbox.org/))
 

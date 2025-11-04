@@ -79,6 +79,7 @@ stow --adopt --restow \
   sc-im \
   spectacle \
   ssh \
+  sshm \
   termshark \
   tg \
   thokr \

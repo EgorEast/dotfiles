@@ -1,0 +1,9 @@
+{
+  "key_bindings": {
+    "quit_keys": [
+      "q",
+      "ctrl+c"
+    ],
+    "disable_esc_quit": false
+  }
+}
