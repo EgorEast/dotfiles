@@ -49,6 +49,7 @@ sudo pacman -S --noconfirm --needed \
   impala \
   jq \
   k9s \
+  khal \
   kitty \
   lazydocker \
   lazygit \

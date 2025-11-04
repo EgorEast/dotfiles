@@ -45,6 +45,7 @@ stow --adopt --restow \
   inputrc \
   jqp \
   k9s \
+  khal \
   kitty \
   koreader \
   lazydocker \
