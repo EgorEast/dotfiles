@@ -58,6 +58,7 @@ sudo pacman -S --noconfirm --needed \
   lnav \
   lsd \
   lshw \
+  mcfly \
   mousai \
   ncdu \
   networkmanager-openvpn \
