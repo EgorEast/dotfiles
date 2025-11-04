@@ -134,6 +134,7 @@
 - **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
 - **mousai** – Identify songs in seconds. ([docs](https://github.com/SeaDve/Mousai))
 - **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
+- **patat** – Terminal-based presentations using Pandoc. ([docs](https://github.com/jaspervdj/patat))
 - **playerctl** – Control media players from CLI. ([docs](https://github.com/altdesktop/playerctl))
 - **sc** – Curses-based spreadsheet program that uses key bindings similar to vim. ([docs](https://github.com/andmarti1424/sc-im))
 - **shotcut** – Cross-platform video editor. ([docs](https://www.shotcut.org/))

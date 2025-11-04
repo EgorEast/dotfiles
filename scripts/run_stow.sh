@@ -66,6 +66,7 @@ stow --adopt --restow \
   obs \
   onlyoffice \
   ovpn \
+  patat \
   pavucontrol \
   picom \
   pipewire \

@@ -39,6 +39,7 @@ yay -S --noconfirm --needed \
   onlyoffice-bin \
   opencode-bin \
   pantum-driver \
+  patat-bin \
   pokete-git \
   portproton \
   posting \
