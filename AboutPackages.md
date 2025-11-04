@@ -136,6 +136,7 @@
 - **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
 - **patat** – Terminal-based presentations using Pandoc. ([docs](https://github.com/jaspervdj/patat))
 - **playerctl** – Control media players from CLI. ([docs](https://github.com/altdesktop/playerctl))
+- **presenterm** – A markdown terminal slideshow tool. ([docs](https://github.com/mfontanini/presenterm))
 - **sc** – Curses-based spreadsheet program that uses key bindings similar to vim. ([docs](https://github.com/andmarti1424/sc-im))
 - **shotcut** – Cross-platform video editor. ([docs](https://www.shotcut.org/))
 - **spectacle** – KDE screenshot tool. ([docs](https://github.com/KDE/spectacle))

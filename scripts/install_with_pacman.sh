@@ -76,6 +76,7 @@ sudo pacman -S --noconfirm --needed \
   picom \
   playerctl \
   poketex \
+  presenterm \
   profanity \
   pyalpm \
   python-pipx \
