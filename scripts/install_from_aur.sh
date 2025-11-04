@@ -48,6 +48,7 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   sc-im \
+  slides \
   speedread-git \
   sysz \
   telegram-tg \
