@@ -197,6 +197,7 @@
 ## 🖼 Fonts & Graphics
 
 - **ttf-jetbrains-mono-nerd** – JetBrains Mono font patched with Nerd Fonts symbols. ([docs](https://www.nerdfonts.com/font-downloads))
+- **ttyplot** – Realtime plotting utility for terminal/console with data input from stdin. ([docs](https://github.com/tenox7/ttyplot))
 
 ## 📦 Miscellaneous & Fun
 

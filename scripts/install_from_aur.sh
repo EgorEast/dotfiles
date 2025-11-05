@@ -56,6 +56,7 @@ yay -S --noconfirm --needed \
   thokr-git \
   tinytetris \
   ttf-ms-fonts \
+  ttyplot \
   ventoy-bin \
   whatsapp-linux-desktop \
   wifitui-bin \
