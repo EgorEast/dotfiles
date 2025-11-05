@@ -81,6 +81,7 @@ stow --adopt --restow \
   ssh \
   sshm \
   taskwarrior \
+  television \
   termshark \
   tg \
   thokr \

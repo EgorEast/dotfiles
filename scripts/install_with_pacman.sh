@@ -93,6 +93,7 @@ sudo pacman -S --noconfirm --needed \
   tabiew \
   taskwarrior-tui \
   telegram-desktop \
+  television \
   termshark \
   tor \
   torbrowser-launcher \
