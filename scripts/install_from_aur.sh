@@ -37,6 +37,7 @@ yay -S --noconfirm --needed \
   nemu \
   nsnake \
   nudoku \
+  nyaa \
   obfs4proxy \
   onlyoffice-bin \
   opencode-bin \

@@ -65,6 +65,7 @@ stow --adopt --restow \
   nsnake \
   nvim \
   nwg-look \
+  nyaa \
   obs \
   onlyoffice \
   ovpn \

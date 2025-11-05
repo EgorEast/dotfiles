@@ -34,6 +34,7 @@
 - **lynx** – Text web browser. ([docs](https://lynx.invisible-island.net/))
 - **nekoray-bin** – GUI for V2Ray/XRay tunneling. ([docs](https://github.com/MatsuriDayo/nekoray))
 - **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
+- **nyaa** – TUI tool for browsing and downloading torrents. ([docs](https://github.com/Beastwick18))
 - **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))
 - **oryx** - TUI for sniffing network traffic using eBPF. ([docs](https://github.com/pythops/oryx))
 - **profanity** – Console based XMPP client. ([docs](https://github.com/profanity-im/profanity))
