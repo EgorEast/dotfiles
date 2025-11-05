@@ -61,7 +61,7 @@ stow --adopt --restow \
   ncdu \
   nekoray \
   nemu \
-  neovim \
+  nvim \
   nsnake \
   nwg-look \
   obs \
