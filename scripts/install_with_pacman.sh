@@ -91,6 +91,7 @@ sudo pacman -S --noconfirm --needed \
   soft-serve \
   spectacle \
   tabiew \
+  taskwarrior-tui \
   telegram-desktop \
   termshark \
   tor \

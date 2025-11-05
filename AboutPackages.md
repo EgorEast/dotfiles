@@ -169,6 +169,7 @@
 - **pandoc-bin** – Universal markup converter. ([docs](https://github.com/jgm/pandoc))
 - **puffin** – Terminal dashboard to manage personal finances. Built with hledger and bubbletea. ([docs](https://github.com/siddhantac/puffin))
 - **tabiew** – TUI tabular data viewer. ([docs](https://github.com/shshemi/tabiew))
+- **taskwarrior-tui** – Terminal user interface for taskwarrior. ([docs](https://github.com/kdheepak/taskwarrior-tui))
 - **tdf** – Terminal-based PDF viewer. ([docs](https://github.com/itsjunetime/tdf))
 
 ## 🎮 Gaming & Entertainment

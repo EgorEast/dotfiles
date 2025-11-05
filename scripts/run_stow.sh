@@ -80,6 +80,7 @@ stow --adopt --restow \
   spectacle \
   ssh \
   sshm \
+  taskwarrior \
   termshark \
   tg \
   thokr \
