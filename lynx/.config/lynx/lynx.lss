@@ -1,0 +1,111 @@
+# Base colors
+normal:		normal:			lightgray:black
+default:	normal:			white:black
+
+# Normal type styles corresponding to HTML tags
+em:		bold:			cyan
+strong:		bold:			yellow
+b:		bold:			yellow
+i:		bold:			cyan
+a:		bold:			green
+img:		dim:			brown
+fig:		normal:			gray
+caption:	reverse:		white:blue
+hr:		normal:			yellow
+blockquote:	normal:			cyan
+ul:		normal:			white
+address:	normal:			magenta
+title:		normal:			magenta
+tt:		normal:			cyan:black
+h1:		bold:			white:blue
+h2:		bold:			yellow:blue
+h3:		bold:			cyan:blue
+label:		normal:			magenta
+q:		normal:			yellow:blue
+small:		dim:			default
+big:		bold:			yellow
+sup:		bold:			yellow
+sub:		dim:			gray
+li:		normal:			white
+code:		normal:			green
+cite:		normal:			green
+
+# Table styles
+table:		normal:			cyan
+tr:		bold:			white
+td:		normal:			default
+th:		bold:			yellow
+
+# Special styles
+alink:		reverse:		yellow:black
+status:		reverse:		cyan:black
+alert:		bold:			yellow:red
+whereis:	bold+reverse:		black:yellow
+
+# Menu styles
+menu.bg:	normal:			black:lightgray
+menu.frame:	normal:			black:lightgray
+menu.entry:	normal:			lightgray:black
+menu.n:		normal:			red:lightgray
+menu.active:	normal:			yellow:black
+menu.sb:	normal:			brightred:lightgray
+
+# Other UI elements
+forwbackw.arrow:reverse
+hot.paste:	normal:			brightred:lightgray
+
+# Styles with classes
+ul.red:		underline:		brightred
+ul.blue:	bold:			cyan
+li.red:		reverse:		red:yellow
+li.blue:	bold:			cyan
+strong.a:	bold:			yellow:red
+em.a:		reverse:		cyan:blue
+strong.b:	bold:			white:red
+em.b:		reverse:		white:blue
+strong.debug:	reverse:		green
+font.letter:	normal:			white:blue
+input.submit:	normal:			cyan
+tr.baone:	bold:			yellow
+tr.batwo:	bold:			green
+tr.bathree:	bold:			red
+
+# Link styles
+link:		normal:			white
+link.green:	bold:			green
+link.red:	bold:			white:red
+link.blue:	bold:			cyan:blue
+link.toc:	bold:			black:white
+link.red.next:	bold:			red
+link.red.prev:	bold:			yellow:red
+link.blue.prev:	bold:			yellow:blue
+link.blue.next:	bold:			cyan
+link.green.toc:	bold:			white:green
+
+# Syntax highlighting styles
+span.htmlsrc_comment:normal:		gray
+span.htmlsrc_tag:normal:		cyan
+span.htmlsrc_attrib:normal:		green
+span.htmlsrc_attrval:normal:		magenta
+span.htmlsrc_abracket:normal:		white
+span.htmlsrc_entity:normal:		yellow
+span.htmlsrc_badseq:normal:		red
+span.htmlsrc_badtag:normal:		red
+span.htmlsrc_badattr:normal:		red
+span.htmlsrc_sgmlspecial:normal:	yellow
+
+# HTML5 elements
+nav:		bold:			cyan
+header:		bold:			yellow
+footer:		normal:			gray
+article:	normal:			white
+section:	normal:			white
+
+# Form elements
+input:		normal:			white:blue
+select:		normal:			white:blue
+textarea:	normal:			white:blue
+
+# Accessibility
+[aria-hidden="true"]: dim:		gray
+[role="alert"]:	bold:			yellow:red

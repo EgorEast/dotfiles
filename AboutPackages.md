@@ -31,6 +31,7 @@
 - **carbonyl** – Chromium running inside your terminal. ([docs](https://github.com/fathyb/carbonyl))
 - **chawan** – TUI web browser with CSS, inline image and JavaScript support. ([docs](https://sr.ht/~bptato/chawan/))
 - **firefox** – Web browser. ([docs](https://support.mozilla.org/))
+- **lynx** – Text web browser. ([docs](https://lynx.invisible-island.net/))
 - **nekoray-bin** – GUI for V2Ray/XRay tunneling. ([docs](https://github.com/MatsuriDayo/nekoray))
 - **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
 - **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))

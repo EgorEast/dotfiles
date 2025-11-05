@@ -54,6 +54,7 @@ stow --adopt --restow \
   lazysql \
   lnav \
   lsd \
+  lynx \
   mailcap \
   mineapp-list \
   mpv \
@@ -61,8 +62,8 @@ stow --adopt --restow \
   ncdu \
   nekoray \
   nemu \
-  nvim \
   nsnake \
+  nvim \
   nwg-look \
   obs \
   onlyoffice \
