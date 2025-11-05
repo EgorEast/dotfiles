@@ -86,6 +86,7 @@ sudo pacman -S --noconfirm --needed \
   rebels-in-the-sky \
   redshift \
   ripgrep \
+  rtorrent \
   rustup \
   seahorse \
   shotcut \
