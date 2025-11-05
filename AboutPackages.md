@@ -38,6 +38,7 @@
 - **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))
 - **oryx** - TUI for sniffing network traffic using eBPF. ([docs](https://github.com/pythops/oryx))
 - **profanity** – Console based XMPP client. ([docs](https://github.com/profanity-im/profanity))
+- **qbittorrent** – BitTorrent client. ([docs](https://github.com/qbittorrent/qBittorrent))
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
 - **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
