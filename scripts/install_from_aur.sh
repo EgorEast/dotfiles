@@ -9,6 +9,7 @@ yay -S --noconfirm --needed \
   bitchat-tui \
   blobdrop-git \
   bluetuith-bin \
+  bombadillo-git \
   brogue-ce \
   brows \
   calcure \

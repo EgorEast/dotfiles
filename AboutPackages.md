@@ -51,6 +51,7 @@
 - **@builder.io/ai-shell** – AI shell. ([docs](https://github.com/BuilderIO/ai-shell))
 - **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
 - **atac** – Arguably a Terminal API Client. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://atac.julien-cpsn.com/))
+- **bombadillo** – Non-web browser, designed for a growing list of protocols operating outside of the web. ([docs](https://bombadillo.colorfield.space/))
 - **brows** – CLI tool to browse GitHub releases. ([docs](https://github.com/rubysolo/brows))
 - **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
 - **cruise** – Docker TUI Client. ([docs](https://nucleofusion.github.io/cruise/))

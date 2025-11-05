@@ -10,6 +10,7 @@ stow --adopt --restow \
   bash \
   bat \
   bluetuith \
+  bombadillo \
   brows \
   btop \
   calcure \
