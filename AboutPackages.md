@@ -91,6 +91,7 @@
 - **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
 - **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
 - **television** – Fast and hackable fuzzy finder for the terminal. ([docs](https://github.com/alexpasmantier/television))
+- **termscp** – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB. ([docs](https://github.com/veeso/termscp))
 - **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
 - **virtualbox** – Virtualization software. ([docs](https://www.virtualbox.org/))
 
