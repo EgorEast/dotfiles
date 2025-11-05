@@ -28,6 +28,7 @@
 - **bandwhich** - CLI utility for displaying current network utilization by process, connection and remote IP/hostname. ([docs](https://github.com/imsnif/bandwhich))
 - **bitchat-tui** – TUI chat application. ([docs](https://github.com/vaibhav-mattoo/bitchat-tui))
 - **blobdrop-git** – Local network file sharing tool. ([docs](https://github.com/vimpostor/blobdrop))
+- **carbonyl** – Chromium running inside your terminal. ([docs](https://github.com/fathyb/carbonyl))
 - **chawan** – TUI web browser with CSS, inline image and JavaScript support. ([docs](https://sr.ht/~bptato/chawan/))
 - **firefox** – Web browser. ([docs](https://support.mozilla.org/))
 - **nekoray-bin** – GUI for V2Ray/XRay tunneling. ([docs](https://github.com/MatsuriDayo/nekoray))

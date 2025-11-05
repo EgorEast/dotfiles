@@ -13,6 +13,7 @@ yay -S --noconfirm --needed \
   brogue-ce \
   brows \
   calcure \
+  carbonyl \
   cbonsai \
   checkersland \
   clipse \
