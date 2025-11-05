@@ -106,6 +106,7 @@ sudo pacman -S --noconfirm --needed \
   ttyper \
   vim \
   virtualbox \
+  visidata \
   vulkan-icd-loader \
   vulkan-radeon \
   vulkan-tools \
