@@ -25,6 +25,7 @@ image/webp=feh.desktop;yandex-browser.desktop;firefox.desktop;
 text/html=yandex-browser.desktop;firefox.desktop;
 text/win-bat=wine.desktop;PortProton.desktop
 text/xml=yandex-browser.desktop;firefox.desktop;
+text/plain=onlyoffice-desktopeditors.desktop;koreader.desktop;
 video/mp4=mpv.desktop
 video/ogg=mpv.desktop;org.shotcut.Shotcut.desktop;yandex-browser.desktop;firefox.desktop;
 video/quicktime=mpv.desktop

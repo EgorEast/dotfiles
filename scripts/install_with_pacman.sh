@@ -115,6 +115,7 @@ sudo pacman -S --noconfirm --needed \
   wavemon \
   wine \
   xclip \
+  xorg-xprop \
   xsel \
   yazi \
   yt-dlp \
