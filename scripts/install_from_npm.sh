@@ -5,5 +5,4 @@ sudo npm i -g \
   @builder.io/ai-shell \
   @google/gemini-cli \
   live-server \
-  npm-check-updates \
-  pnq
+  npm-check-updates
