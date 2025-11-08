@@ -1,7 +1,7 @@
 password = []
 size = [
     9,
-    505,
+    33,
     1900,
     1011,
 ]
@@ -29,6 +29,7 @@ direct_failures = 0
 disable_audio = false
 disable_clipboard = false
 enable_file_transfer = false
+copying_and_pasting_files = false
 note = ''
 show_quality_monitor = false
 view_mode = false
