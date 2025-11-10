@@ -3,3 +3,5 @@
 -f "bestvideo[height<=720]+bestaudio[abr<=128]"
 
 --merge-output-format mp4
+
+--sleep-requests 5
