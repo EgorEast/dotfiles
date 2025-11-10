@@ -23,6 +23,7 @@ yay -S --noconfirm --needed \
   downloader-cli \
   durdraw \
   fish-done \
+  glicol-cli \
   gobang-bin \
   hellwal \
   jqp-bin \

@@ -141,6 +141,7 @@
 - **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
 - **feh** – X11 image viewer. ([docs](https://github.com/derf/feh))
 - **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
+- **glicol-cli** – Cross-platform music live coding in terminal. ([docs](https://github.com/glicol/glicol-cli))
 - **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
 - **mousai** – Identify songs in seconds. ([docs](https://github.com/SeaDve/Mousai))
 - **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
