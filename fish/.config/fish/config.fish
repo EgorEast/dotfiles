@@ -9,7 +9,7 @@ set -gx fish_user_paths $HOME/.cargo/bin $fish_user_paths
 zoxide init fish | source
 caniuse --completion-fish | source
 cruise completion fish | source
-mcfly init fish | source
+atuin init fish | source
 
 # Эти пути будут добавлены в $PATH единожды
 fish_add_path -m ~/bin ~/.local/bin
@@ -30,11 +30,6 @@ set -gx VISUAL nvim
 set -gx BROWSER xdg-open
 set -x TERMINAL kitty
 set -gx MANPAGER "sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
-set -gx MCFLY_KEY_SCHEME vim
-set -gx MCFLY_FUZZY 2
-set -gx MCFLY_RESULTS 50
-set -gx MCFLY_INTERFACE_VIEW BOTTOM
-set -gx MCFLY_PROMPT "❯"
 
 abbr -a --position anywhere -- --help '--help | bat -plhelp'
 abbr -a --position anywhere -- -h '-h | bat -plhelp'

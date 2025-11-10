@@ -209,11 +209,11 @@
 
 ## 📦 Miscellaneous & Fun
 
+- **atuin** – Magical shell history. ([docs](https://github.com/atuinsh/atuin))
 - **downloader-cli** – CLI file downloader. ([docs](https://github.com/deepjyoti30/downloader-cli))
 - **fish** – User-friendly shell with autosuggestions. ([docs](https://fishshell.com/docs/current/))
 - **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
 - **linutil** – distro-agnostic toolbox designed to simplify everyday Linux tasks. ([docs](https://github.com/ChrisTitusTech/linutil))
-- **mcfly** – Fly through your shell history. ([docs](https://github.com/cantino/mcfly))
 - **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
 - **poketex** – Simple Pokedex based on TUI. ([docs](https://github.com/ckaznable/poketex))
 - **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))

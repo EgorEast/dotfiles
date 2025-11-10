@@ -2,6 +2,7 @@
 
 sudo pacman -S --noconfirm --needed \
   atac \
+  atuin \
   bandwhich \
   bat \
   blueberry \
@@ -60,7 +61,6 @@ sudo pacman -S --noconfirm --needed \
   lsd \
   lshw \
   lynx \
-  mcfly \
   mousai \
   ncdu \
   networkmanager-openvpn \
