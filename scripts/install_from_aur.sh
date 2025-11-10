@@ -47,6 +47,7 @@ yay -S --noconfirm --needed \
   portproton \
   posting \
   puffin \
+  rmtrash \
   rofi-bluetooth-git \
   rofi-greenclip \
   rudesktop \

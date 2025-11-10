@@ -17,6 +17,7 @@
 - **gparted** – Graphical partition manager. ([docs](https://gparted.org/))
 - **mmtui** – TUI disk mounter for file managers. ([docs](https://github.com/SL-RU/mmtui))
 - **trash-cli** – CLI trash management. ([docs](https://github.com/andreafrancia/trash-cli))
+- **rmtrash** – Put files (and directories) in trash using the `trash-put` command in a way that is, otherwise as `trash-put` itself, compatible to GNUs `rm` and `rmdir`. ([docs](https://github.com/PhrozenByte/rmtrash))
 - **tree** – Directory tree listing. ([docs](https://linux.die.net/man/1/tree))
 - **ventoy-bin** – Bootable USB multiboot creator. ([docs](https://www.ventoy.net/en/doc_start.html))
 - **woeusb** – A Microsoft Windows® USB installation media preparer for GNU+Linux. ([docs](https://github.com/WoeUSB/WoeUSB))
