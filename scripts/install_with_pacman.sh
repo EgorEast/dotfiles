@@ -35,6 +35,7 @@ sudo pacman -S --noconfirm --needed \
   fx \
   galculator \
   gdu \
+  gemini-cli \
   git \
   git-delta \
   github-cli \
@@ -65,6 +66,7 @@ sudo pacman -S --noconfirm --needed \
   networkmanager-openvpn \
   nodejs-lts-jod \
   npm \
+  npm-check-updates \
   nvim \
   obs-studio \
   obsidian \
