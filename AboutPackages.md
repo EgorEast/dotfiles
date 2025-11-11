@@ -135,6 +135,7 @@
 
 ## 📷 Media Tools
 
+- **amazing-qr** – Amazing QRCode generator in Python. ([docs](https://github.com/x-hw/amazing-qr))
 - **cava** – Cross-platform Audio Visualizer. ([docs](https://github.com/karlstav/cava))
 - **chafa** – Powerful utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal. ([docs](https://hpjansson.org/chafa))
 - **cmus** – Console music player. ([docs](https://cmus.github.io/))

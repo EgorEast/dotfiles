@@ -2,6 +2,7 @@
 
 yay -S --noconfirm --needed \
   abook \
+  amazing-qr \
   anydesk-bin \
   bagels \
   balena-etcher \
