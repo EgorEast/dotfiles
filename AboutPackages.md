@@ -73,6 +73,7 @@
 - **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
 - **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **github-cli** – GitHub CLI. ([docs](https://github.com/cli/cli))
+- **glim** – TUI for monitoring GitLab CI/CD pipelines and projects. ([docs](https://github.com/junkdog/glim))
 - **gobang-bin** – TUI database management tool. ([docs](https://github.com/TaKO8Ki/gobang))
 - **jqp** – TUI playground for exploring jq. ([docs](https://github.com/noahgorstein/jqp))
 - **k9s** – TUI for managing a Kubernetes cluster. ([docs](https://github.com/derailed/k9s))

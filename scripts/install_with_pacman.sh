@@ -41,6 +41,7 @@ sudo pacman -S --noconfirm --needed \
   git \
   git-delta \
   github-cli \
+  glim \
   glow \
   gnome-keyring \
   gparted \
