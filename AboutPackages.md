@@ -125,6 +125,7 @@
 - **bluetuith** – TUI Bluetooth manager. ([docs](https://bluetuith-org.github.io/bluetuith/index.html))
 - **hellwal** – Wallpaper-based color scheme generator. ([docs](https://github.com/danihek/hellwal))
 - **impala** – TUI for managing wifi. ([docs](https://github.com/pythops/impala))
+- **otter-launcher** – Hackable cli/tui launcher built for keyboard-centric wm users, featuring vi & emacs keybinds, ansi decoration, etc. ([docs](https://github.com/kuokuo123/otter-launcher))
 - **picom** – X11 compositor for transparency & shadows. ([docs](https://wiki.archlinux.org/title/Picom))
 - **redshift** – Adjusts screen color temperature. ([docs](https://wiki.archlinux.org/title/Redshift))
 - **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))

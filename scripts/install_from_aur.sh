@@ -42,6 +42,7 @@ yay -S --noconfirm --needed \
   obfs4proxy \
   onlyoffice-bin \
   opencode-bin \
+  otter-launcher \
   pantum-driver \
   patat-bin \
   pokete-git \

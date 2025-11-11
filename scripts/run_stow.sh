@@ -69,6 +69,7 @@ stow --adopt --restow \
   nyaa \
   obs \
   onlyoffice \
+  otter-launcher \
   ovpn \
   patat \
   pavucontrol \
