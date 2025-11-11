@@ -152,6 +152,7 @@
 - **playerctl** – Control media players from CLI. ([docs](https://github.com/altdesktop/playerctl))
 - **presenterm** – A markdown terminal slideshow tool. ([docs](https://github.com/mfontanini/presenterm))
 - **sc-im** – Curses-based spreadsheet program that uses key bindings similar to vim. ([docs](https://github.com/andmarti1424/sc-im))
+- **scope-tui** – Simple oscilloscope/vectorscope/spectroscope for your terminal. ([docs](https://github.com/alemidev/scope-tui))
 - **shotcut** – Cross-platform video editor. ([docs](https://www.shotcut.org/))
 - **slides** – Terminal based presentation tool. ([docs](https://github.com/maaslalani/slides))
 - **spectacle** – KDE screenshot tool. ([docs](https://github.com/KDE/spectacle))
