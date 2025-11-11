@@ -14,6 +14,7 @@ sudo pacman -S --noconfirm --needed \
   chawan \
   cloc \
   cmus \
+  cpufetch \
   cronie \
   csvlens \
   ctop \
