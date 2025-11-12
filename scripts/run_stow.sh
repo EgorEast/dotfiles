@@ -4,6 +4,7 @@ rm -rf ~/.config/mineapps.list
 
 stow --adopt --restow \
   anydesk \
+  ls-fusion \
   atac \
   atuin \
   autostart \

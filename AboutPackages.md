@@ -83,6 +83,7 @@
 - **lazysql** – TUI database management tool. ([docs](https://github.com/jorgerojas26/lazysql))
 - **lazyssh** – Terminal-based, interactive SSH manager. ([docs](https://github.com/Adembc/lazyssh))
 - **live-server** – Little development server with live reload capability. ([docs](https://github.com/tapio/live-server))
+- **lsFusion** – Extremely declarative open-source language-based platform for information systems development. ([docs](https://github.com/lsfusion/platform))
 - **nemu** – Ncurses UI for QEMU. ([docs](https://github.com/nemuTUI/nemu))
 - **nodejs-lts-jod** – Long-term support version of Node.js. ([docs](https://nodejs.org/en/docs/))
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))

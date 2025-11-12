@@ -48,7 +48,11 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
+ls-fusion/lsFusion/*
+
 
 !anydesk/.anydesk/user.conf
 !gemini/.gemini/settings.json
 !calcure/.config/calcure/config.ini
+!ls-fusion/lsFusion/compose.yaml
+!ls-fusion/lsFusion/README.md
