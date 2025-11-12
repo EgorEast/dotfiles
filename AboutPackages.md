@@ -92,6 +92,7 @@
 - **oha** – Tiny program that sends some load to a web application and show realtime tui. ([docs](https://github.com/hatoo/oha))
 - **ollama** – Get up and running with large language models. ([docs](https://github.com/ollama/ollama))
 - **onefetch** – Git repository summary in terminal. ([docs](https://github.com/o2sh/onefetch))
+- **openapi-tui** – Terminal UI to list, browse and run APIs defined with openapi spec. ([docs](https://github.com/zaghaghi/openapi-tui))
 - **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))
 - **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
 - **posting** – TUI HTTP client, not unlike Postman and Insomnia. ([docs](https://github.com/darrenburns/posting))

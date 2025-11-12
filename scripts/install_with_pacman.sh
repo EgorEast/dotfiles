@@ -75,6 +75,7 @@ sudo pacman -S --noconfirm --needed \
   oha \
   ollama \
   onefetch \
+  openapi-tui \
   oryx \
   ouch \
   pandoc-cli \
