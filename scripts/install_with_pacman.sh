@@ -88,6 +88,7 @@ sudo pacman -S --noconfirm --needed \
   python-pipx \
   qbittorrent \
   qemu-full \
+  rainfrog \
   rebels-in-the-sky \
   redshift \
   ripgrep \

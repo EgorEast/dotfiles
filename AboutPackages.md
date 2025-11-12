@@ -97,6 +97,7 @@
 - **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
 - **posting** – TUI HTTP client, not unlike Postman and Insomnia. ([docs](https://github.com/darrenburns/posting))
 - **qemu** – Generic and open source machine & userspace emulator and virtualizer. ([docs](https://github.com/qemu/qemu))
+- **rainfrog** – Database tool for the terminal. ([docs](https://github.com/achristmascarl/rainfrog))
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
 - **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
