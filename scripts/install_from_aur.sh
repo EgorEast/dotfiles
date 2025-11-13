@@ -60,6 +60,7 @@ yay -S --noconfirm --needed \
   scope-tui \
   slides \
   speedread-git \
+  ssh-list \
   sshm-bin \
   sysz \
   telegram-tg \
