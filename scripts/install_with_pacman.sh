@@ -95,6 +95,7 @@ sudo pacman -S --noconfirm --needed \
   rtorrent \
   rustup \
   seahorse \
+  serie \
   shotcut \
   soft-serve \
   spectacle \

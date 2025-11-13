@@ -12,7 +12,8 @@
 	fsmonitor = true
 	untrackedCache = true
 [alias]
-	graph = log --oneline --graph --all --decorate
+	; graph = log --oneline --graph --all --decorate
+	graph = ! serie
 	graphgpg = log --graph --all --pretty=format:'%C(auto)%h %G? %an %d %s'
 	project-summary = !which onefetch && onefetch
 [column]

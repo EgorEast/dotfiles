@@ -101,6 +101,7 @@
 - **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
 - **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
 - **scooter** – Interactive find-and-replace in the terminal. ([docs](https://github.com/thomasschafer/scooter))
+- **serie** – A rich git commit graph in your terminal, like magic 📚. ([docs](https://github.com/lusingander/serie))
 - **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
 - **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
 - **television** – Fast and hackable fuzzy finder for the terminal. ([docs](https://github.com/alexpasmantier/television))
