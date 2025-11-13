@@ -180,7 +180,7 @@ set $obsidian "obsidian"
 bindsym $mod+Return exec --no-startup-id $terminal
 
 # kill focused window
-bindsym $mod+q kill
+bindsym $mod+Shift+q kill
 
 # exit-menu
 bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
