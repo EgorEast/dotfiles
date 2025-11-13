@@ -4,7 +4,6 @@ rm -rf ~/.config/mineapps.list
 
 stow --adopt --restow \
   anydesk \
-  ls-fusion \
   atac \
   atuin \
   autostart \
@@ -55,6 +54,7 @@ stow --adopt --restow \
   lazygit \
   lazysql \
   lnav \
+  ls-fusion \
   lsd \
   lynx \
   mailcap \
@@ -83,6 +83,7 @@ stow --adopt --restow \
   rofi \
   rudesktop \
   sc-im \
+  scooter \
   spectacle \
   ssh \
   sshm \

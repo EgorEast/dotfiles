@@ -55,6 +55,7 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   sc-im \
+  scooter \
   scope-tui \
   slides \
   speedread-git \
