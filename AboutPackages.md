@@ -36,6 +36,7 @@
 - **firefox** – Web browser. ([docs](https://support.mozilla.org/))
 - **lynx** – Text web browser. ([docs](https://lynx.invisible-island.net/))
 - **nekoray-bin** – GUI for V2Ray/XRay tunneling. ([docs](https://github.com/MatsuriDayo/nekoray))
+- **netscanner** – Terminal Network scanner & diagnostic tool with modern TUI. ([docs](https://github.com/Chleba/netscanner))
 - **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
 - **nyaa** – TUI tool for browsing and downloading torrents. ([docs](https://github.com/Beastwick18))
 - **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))

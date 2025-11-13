@@ -65,6 +65,7 @@ sudo pacman -S --noconfirm --needed \
   lynx \
   mousai \
   ncdu \
+  netscanner \
   networkmanager-openvpn \
   nodejs-lts-jod \
   npm \
