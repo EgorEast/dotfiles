@@ -307,6 +307,7 @@ bindsym $mod+n exec --no-startup-id $fileManager
 bindsym Print exec --no-startup-id flameshot screen
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 # bindsym $mod+Shift+s exec --no-startup-id scrot -s -z ~/Pictures/%Y-%m-%d-%T-screenshot.png && notify-send "Screenshot saved to ~/Pictures/$(date +"%Y-%m-%d-%T")-screenshot.png"
+bindsym $mod+F4 exec --no-startup-id spectacle
 bindsym $mod+Shift+x exec --no-startup-id dunstctl history-pop
 
 # Power Profiles menu switcher (rofi)
