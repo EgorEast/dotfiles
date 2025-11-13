@@ -45,6 +45,7 @@
 - **qbittorrent** – BitTorrent client. ([docs](https://github.com/qbittorrent/qBittorrent))
 - **rtorrent** – Ncurses-based command line torrent client for high performance. ([docs](https://github.com/rakshasa/rtorrent))
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
+- **rustnet** - A cross-platform network monitoring terminal UI tool built with Rust. ([docs](https://github.com/domcyrus/rustnet))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
 - **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
 - **tor** – Anonymity network. ([docs](https://2019.www.torproject.org/docs/documentation.html.en))
