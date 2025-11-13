@@ -48,7 +48,6 @@
 - **rtorrent** – Ncurses-based command line torrent client for high performance. ([docs](https://github.com/rakshasa/rtorrent))
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
 - **rustnet** - A cross-platform network monitoring terminal UI tool built with Rust. ([docs](https://github.com/domcyrus/rustnet))
-- **ssh-list** – SSH connection manager with a TUI interface. ([docs](https://github.com/akinoiro/ssh-list))
 - **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
 - **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
