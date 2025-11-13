@@ -11,6 +11,7 @@
 - **gdu** – Pretty fast disk usage analyzer written in Go. ([docs](https://github.com/dundee/gdu))
 - **lnav** – The Logfile Navigator. ([docs](https://github.com/tstack/lnav))
 - **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
+- **tracexec** – Tracer for execve{,at} and pre-exec behavior, launcher for debuggers.. ([docs](https://github.com/kxxt/tracexec))
 
 ## 📂 File & Disk Management
 

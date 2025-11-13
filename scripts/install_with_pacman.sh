@@ -108,6 +108,7 @@ sudo pacman -S --noconfirm --needed \
   tor \
   torbrowser-launcher \
   torsocks \
+  tracexec \
   trash-cli \
   tree \
   trippy \
