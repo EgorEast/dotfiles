@@ -67,7 +67,7 @@ yay -S --noconfirm --needed \
   tinytetris \
   ttf-ms-fonts \
   ttyplot \
-  ventoy-bin \
+  ventoy \
   whatsapp-linux-desktop \
   wifitui-bin \
   woeusb \
