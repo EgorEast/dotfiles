@@ -5,6 +5,7 @@ sudo pacman -S --noconfirm --needed \
   atuin \
   bandwhich \
   bat \
+  binsider \
   blueberry \
   brightnessctl \
   btop \
