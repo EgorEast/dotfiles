@@ -6,6 +6,7 @@ sudo pacman -S --noconfirm --needed \
   bandwhich \
   bat \
   binsider \
+  blendr \
   blueberry \
   brightnessctl \
   btop \

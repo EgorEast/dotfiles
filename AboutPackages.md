@@ -132,6 +132,7 @@
 
 ## 🎨 UI & Desktop Enhancements
 
+- **blendr** – The hacker's BLE (bluetooth low energy) browser terminal app. ([docs](https://github.com/dmtrKovalenko/blend))
 - **blueberry** – GUI Bluetooth manager. ([docs](https://github.com/linuxmint/blueberry))
 - **bluetuith** – TUI Bluetooth manager. ([docs](https://bluetuith-org.github.io/bluetuith/index.html))
 - **hellwal** – Wallpaper-based color scheme generator. ([docs](https://github.com/danihek/hellwal))
