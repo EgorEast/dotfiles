@@ -23,6 +23,7 @@ yay -S --noconfirm --needed \
   dblab \
   downloader-cli \
   durdraw \
+  envx \
   fish-done \
   glicol-cli \
   gobang-bin \

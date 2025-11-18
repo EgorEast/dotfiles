@@ -119,6 +119,7 @@
 - **brightnessctl** – CLI brightness control. ([docs](https://github.com/Hummer12007/brightnessctl))
 - **clipse** – Configurable, TUI-based clipboard manager application written in Go with minimal dependency. ([docs](https://github.com/savedra1/clipse))
 - **ddcutil** – Monitor settings control via DDC/CI. ([docs](https://www.ddcutil.com/))
+- **envx** – Powerful and secure environment variable manager for developers, featuring an intuitive Terminal User Interface (TUI) and comprehensive command-line interface. ([docs](https://github.com/mikeleppane/envx))
 - **gping** – Ping, but with a graph. ([docs](https://github.com/orf/gping))
 - **kitty** – GPU-accelerated terminal emulator. ([docs](https://sw.kovidgoyal.net/kitty/))
 - **lsd** – `ls` replacement with icons and colors. ([docs](https://github.com/lsd-rs/lsd))
