@@ -66,6 +66,7 @@ sudo pacman -S --noconfirm --needed \
   lsd \
   lshw \
   lynx \
+  mixxx \
   mousai \
   ncdu \
   netscanner \

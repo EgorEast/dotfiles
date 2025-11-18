@@ -157,6 +157,7 @@
 - **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
 - **glicol-cli** – Cross-platform music live coding in terminal. ([docs](https://github.com/glicol/glicol-cli))
 - **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
+- **mixxx** – Free DJ software that gives you everything you need to perform live mixes. ([docs](https://github.com/mixxxdj/mixxx))
 - **mousai** – Identify songs in seconds. ([docs](https://github.com/SeaDve/Mousai))
 - **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
 - **patat** – Terminal-based presentations using Pandoc. ([docs](https://github.com/jaspervdj/patat))
