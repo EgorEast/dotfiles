@@ -60,6 +60,7 @@ sudo pacman -S --noconfirm --needed \
   lazydocker \
   lazygit \
   libqalculate \
+  libreoffice-still \
   libsecret \
   lnav \
   lsd \

@@ -53,6 +53,7 @@ stow --adopt --restow \
   lazydocker \
   lazygit \
   lazysql \
+  libreoffice \
   lnav \
   ls-fusion \
   lsd \
