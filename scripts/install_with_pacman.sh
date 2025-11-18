@@ -36,6 +36,7 @@ sudo pacman -S --noconfirm --needed \
   fish \
   fisher \
   flameshot \
+  flawz \
   fx \
   galculator \
   gdu \
