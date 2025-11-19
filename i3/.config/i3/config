@@ -315,6 +315,8 @@ bindsym $mod+Shift+p exec --no-startup-id ~/.config/i3/scripts/power-profiles
 # show bluetooth menu
 bindsym $mod+Shift+b exec --no-startup-id rofi-bluetooth
 
+bindsym $mod+x exec --no-startup-id rofi -modi emoji -show emoji
+
 ##########################################
 # configuration for workspace behaviour: #
 ##########################################
