@@ -41,6 +41,8 @@ sudo pacman -S --noconfirm --needed \
   galculator \
   gdu \
   gemini-cli \
+  gimp \
+  gimp-help-ru \
   git \
   git-delta \
   github-cli \

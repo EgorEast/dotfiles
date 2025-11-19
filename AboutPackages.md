@@ -157,6 +157,7 @@
 - **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
 - **feh** – X11 image viewer. ([docs](https://github.com/derf/feh))
 - **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
+- **gimp** – Free & Open Source Image Editor. ([docs](https://www.gimp.org/))
 - **glicol-cli** – Cross-platform music live coding in terminal. ([docs](https://github.com/glicol/glicol-cli))
 - **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
 - **mixxx** – Free DJ software that gives you everything you need to perform live mixes. ([docs](https://github.com/mixxxdj/mixxx))
