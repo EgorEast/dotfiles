@@ -28,6 +28,7 @@ koreader/.config/koreader/settings/cloudstorage.lua
 libreoffice/.config/libreoffice/4/.lock
 libreoffice/.config/libreoffice/4/user/GraphicsRenderTests.log
 libreoffice/.config/libreoffice/4/user/autocorr
+libreoffice/.config/libreoffice/4/user/backup
 libreoffice/.config/libreoffice/4/user/autotext
 libreoffice/.config/libreoffice/4/user/database
 libreoffice/.config/libreoffice/4/user/extensions
