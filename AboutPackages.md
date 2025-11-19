@@ -143,6 +143,7 @@
 - **picom** – X11 compositor for transparency & shadows. ([docs](https://wiki.archlinux.org/title/Picom))
 - **redshift** – Adjusts screen color temperature. ([docs](https://wiki.archlinux.org/title/Redshift))
 - **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))
+- **rofi-calc** – Do live calculations in rofi. ([docs](https://github.com/svenstaro/rofi-calc))
 - **rofi-emoji** – Emoji selector plugin for Rofi. ([docs](https://github.com/Mange/rofi-emoji))
 - **termshark** – Terminal user-interface for tshark, inspired by Wireshark. ([docs](https://github.com/gcla/termshark))
 - **wavemon** – Ncurses-based monitoring application for wireless network devices on Linux. ([docs](https://github.com/uoaerg/wavemon))

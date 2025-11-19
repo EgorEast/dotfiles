@@ -100,6 +100,7 @@ sudo pacman -S --noconfirm --needed \
   rebels-in-the-sky \
   redshift \
   ripgrep \
+  rofi-calc \
   rofi-emoji \
   rtorrent \
   rustup \
