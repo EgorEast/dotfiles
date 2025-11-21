@@ -33,6 +33,7 @@ sudo pacman -S --noconfirm --needed \
   fd \
   feh \
   firefox \
+  firejail \
   fish \
   fisher \
   flameshot \

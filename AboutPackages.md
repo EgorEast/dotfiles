@@ -210,6 +210,7 @@
 - **brogue-ce** – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon. ([docs](https://github.com/tmewett/BrogueCE))
 - **cbonsai** – Bonsai tree generator. ([docs](https://gitlab.com/jallbrit/cbonsai))
 - **checkersland** – Checkers game. ([docs](https://checkersland.com/download/pc.html))
+- **firejail** – Linux namespaces and seccomp-bpf sandbox. ([docs](https://github.com/netblue30/firejail))
 - **nsnake** – Classic snake game on the terminal. ([docs](https://github.com/alexdantas/nSnake))
 - **nudoku** – Ncurses based sudoku game. ([docs](https://github.com/jubalh/nudoku))
 - **pokete** – Small terminal based game in the style of a very popular and old game by Gamefreak. ([docs](https://github.com/lxgr-linux/pokete))
