@@ -497,9 +497,6 @@ exec_always --no-startup-id export FLATPAK_ENABLE_SDK_EXT=dark-mode
 # if you do not use dex: exec --no-startup-id dex --autostart --environment i3
 # you need to have tray apps started manually one by one:
 
-# start blueberry app for managing bluetooth devices from tray:
-exec --no-startup-id blueberry-tray
-
 # networkmanager-applet
 exec --no-startup-id nm-applet
 
@@ -513,15 +510,12 @@ exec --no-startup-id nm-applet
 # set floating (nontiling) for apps needing it
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
-for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="spectacle" instance="spectacle"] floating enable
-
 
 # set floating (nontiling) for special apps
 for_window [class="Xsane" instance="xsane"] floating enable
 for_window [class="pavucontrol" instance="pavucontrol"] floating enable
 for_window [class="qt5ct" instance="qt5ct"] floating enable
-for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
