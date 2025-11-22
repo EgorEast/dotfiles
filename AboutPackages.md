@@ -146,6 +146,7 @@
 - **rofi-calc** – Do live calculations in rofi. ([docs](https://github.com/svenstaro/rofi-calc))
 - **rofi-emoji** – Emoji selector plugin for Rofi. ([docs](https://github.com/Mange/rofi-emoji))
 - **termshark** – Terminal user-interface for tshark, inspired by Wireshark. ([docs](https://github.com/gcla/termshark))
+- **vial** – Open-source cross-platform (Windows, Linux and Mac) GUI and a QMK fork for configuring your keyboard in real time. ([docs](https://github.com/vial-kb/vial-gui))
 - **wavemon** – Ncurses-based monitoring application for wireless network devices on Linux. ([docs](https://github.com/uoaerg/wavemon))
 - **wifitui** – fast, featureful, and friendly replacement for nmtui. ([docs](https://github.com/shazow/wifitui))
 

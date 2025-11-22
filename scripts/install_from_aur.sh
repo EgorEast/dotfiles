@@ -69,6 +69,7 @@ yay -S --noconfirm --needed \
   ttf-ms-fonts \
   ttyplot \
   ventoy \
+  vial-appimage \
   whatsapp-linux-desktop \
   wifitui-bin \
   woeusb \
