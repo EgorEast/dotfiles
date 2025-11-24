@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo ">>> Updating system..."
+pkg upgrade
+
 pkg install stow
 
 echo ">>> Creating symlinks with stow..."
