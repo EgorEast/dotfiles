@@ -55,6 +55,9 @@ pkg install \
   zoxide
 
 echo ">>> Installing global npm packages..."
-sudo npm i -g @bramus/caniuse-cli
+npm i -g @bramus/caniuse-cli
+
+echo ">>> Installing packages with pip..."
+pip install trtash-cli
 
 echo ">>> All done!"
