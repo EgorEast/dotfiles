@@ -32,7 +32,6 @@ pkg install \
   fastfetch \
   fd \
   fish \
-  fisher \
   fx \
   git \
   git-delta \
@@ -41,16 +40,10 @@ pkg install \
   lsd \
   ncdu \
   nodejs \
-  npm \
-  nvim \
+  neovim \
   onefetch \
-  ouch \
   ripgrep \
-  trash-cli \
   tree \
-  ttf-jetbrains-mono-nerd \
-  xclip \
-  xsel \
   yazi \
   zoxide
 
