@@ -27,7 +27,7 @@ echo ">>> Installing base packages..."
 
 pkg install \
   bat \
-  btop \
+  htop \
   curl \
   fastfetch \
   fd \
@@ -40,7 +40,7 @@ pkg install \
   lazygit \
   lsd \
   ncdu \
-  nodejs-lts-jod \
+  nodejs \
   npm \
   nvim \
   onefetch \
