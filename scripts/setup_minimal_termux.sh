@@ -22,6 +22,7 @@ stow --adopt --restow \
   mpv \
   nano \
   ncdu \
+  nvim \
   yazi \
   yt-dlp \
   -t ~
