@@ -58,6 +58,7 @@ sudo pacman -S --noconfirm --needed \
   hledger-ui \
   impala \
   jq \
+  jwt-ui \
   k9s \
   khal \
   kitty \

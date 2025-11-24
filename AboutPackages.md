@@ -82,6 +82,7 @@
 - **glim** – TUI for monitoring GitLab CI/CD pipelines and projects. ([docs](https://github.com/junkdog/glim))
 - **gobang-bin** – TUI database management tool. ([docs](https://github.com/TaKO8Ki/gobang))
 - **jqp** – TUI playground for exploring jq. ([docs](https://github.com/noahgorstein/jqp))
+- **jwt-ui** – Command line UI for decoding/encoding JSON Web Tokens. ([docs](https://github.com/jwt-rs/jwt-ui))
 - **k9s** – TUI for managing a Kubernetes cluster. ([docs](https://github.com/derailed/k9s))
 - **lazydocker** – TUI Docker manager. ([docs](https://github.com/jesseduffield/lazydocker))
 - **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
