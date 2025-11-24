@@ -29,6 +29,7 @@ stow --adopt --restow \
 echo ">>> Installing base packages..."
 
 pkg install \
+  atuin \
   bat \
   curl \
   fastfetch \
