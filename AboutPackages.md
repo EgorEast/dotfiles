@@ -76,6 +76,7 @@
 - **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
 - **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))
 - **fx** – Terminal JSON viewer & processor. ([docs](https://fx.wtf/getting-started))
+- **fzf-make** – Command line tool that executes commands using fuzzy finder with preview window for make, pnpm, yarn, just and task. ([docs](https://github.com/kyu08/fzf-make))
 - **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **github-cli** – GitHub CLI. ([docs](https://github.com/cli/cli))
 - **glim** – TUI for monitoring GitLab CI/CD pipelines and projects. ([docs](https://github.com/junkdog/glim))

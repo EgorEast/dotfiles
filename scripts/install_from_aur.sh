@@ -25,6 +25,7 @@ yay -S --noconfirm --needed \
   durdraw \
   envx \
   fish-done \
+  fzf-make \
   glicol-cli \
   gobang-bin \
   hellwal \
