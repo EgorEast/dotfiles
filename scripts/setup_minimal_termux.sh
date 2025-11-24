@@ -27,7 +27,6 @@ echo ">>> Installing base packages..."
 
 pkg install \
   bat \
-  htop \
   curl \
   fastfetch \
   fd \
@@ -36,14 +35,17 @@ pkg install \
   git \
   git-delta \
   glow \
+  htop \
   lazygit \
   lsd \
   ncdu \
-  nodejs \
   neovim \
+  nodejs \
   onefetch \
   ripgrep \
+  root-repo \
   tree \
+  x11-repo \
   yazi \
   zoxide
 
