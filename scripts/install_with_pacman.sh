@@ -49,7 +49,6 @@ sudo pacman -S --noconfirm --needed \
   github-cli \
   glim \
   glow \
-  gnome-keyring \
   gparted \
   gpg-tui \
   gping \
@@ -107,7 +106,6 @@ sudo pacman -S --noconfirm --needed \
   rofi-emoji \
   rtorrent \
   rustup \
-  seahorse \
   serie \
   shotcut \
   soft-serve \

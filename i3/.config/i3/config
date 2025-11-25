@@ -477,8 +477,6 @@ exec --no-startup-id redshift
 # enable natural scrolling for touchpad
 exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput Natural Scrolling Enabled" 1
 
-exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
-
 # Тёмная тема GTK
 exec_always --no-startup-id export GTK_THEME=Adwaita:dark
 
