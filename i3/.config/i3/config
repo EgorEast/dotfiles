@@ -355,6 +355,7 @@ assign [class="Anydesk"] $ws5
 assign [class="Rudesktop"] $ws5
 assign [class="TelegramDesktop"] $ws6
 assign [class="WhatsApp"] $ws6
+assign [class="KeePassXC"] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Yandex] focus
