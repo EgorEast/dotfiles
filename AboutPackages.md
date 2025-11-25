@@ -49,6 +49,7 @@
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
 - **rustnet** - A cross-platform network monitoring terminal UI tool built with Rust. ([docs](https://github.com/domcyrus/rustnet))
 - **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
+- **syncthing** – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol. ([docs](https://wiki.archlinux.org/title/Syncthing))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
 - **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
 - **tor** – Anonymity network. ([docs](https://2019.www.torproject.org/docs/documentation.html.en))

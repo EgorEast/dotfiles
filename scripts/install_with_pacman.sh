@@ -110,6 +110,7 @@ sudo pacman -S --noconfirm --needed \
   shotcut \
   soft-serve \
   spectacle \
+  syncthing \
   tabiew \
   taskwarrior-tui \
   telegram-desktop \
