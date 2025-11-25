@@ -17,6 +17,7 @@ yay -S --noconfirm --needed \
   carbonyl \
   cbonsai \
   checkersland \
+  chromium-extension-keepassxc-browser \
   clipse \
   cruise \
   crush-bin \

@@ -226,6 +226,7 @@
 
 - **gnome-keyring** – Password and key manager. ([docs](https://wiki.gnome.org/Projects/GnomeKeyring))
 - **gpg-tui** – TUI for GnuPG. ([docs](https://github.com/orhun/gpg-tui))
+- **keepassxc** – cross-platform community-driven port of the Windows application “KeePass Password Safe”. ([docs](https://github.com/keepassxreboot/keepassxc))
 - **libsecret** – Library for password/key storage. ([docs](https://github.com/GNOME/libsecret))
 - **seahorse** – GUI for GNOME Keyring. ([docs](https://wiki.gnome.org/Apps/Seahorse))
 
