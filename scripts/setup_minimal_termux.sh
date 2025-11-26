@@ -52,6 +52,7 @@ pkg install \
   ripgrep \
   root-repo \
   tree \
+  tsu \
   x11-repo \
   yazi \
   zoxide
