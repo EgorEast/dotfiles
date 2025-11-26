@@ -16,6 +16,7 @@ stow --adopt --restow \
   delta \
   fastfetch \
   fish \
+  git \
   glow \
   jqp \
   lazygit \
@@ -23,6 +24,7 @@ stow --adopt --restow \
   nano \
   ncdu \
   nvim \
+  termux \
   yazi \
   yt-dlp \
   -t ~
