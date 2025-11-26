@@ -56,8 +56,6 @@ sudo systemctl start docker
 sudo gpasswd -a egoreast docker
 yandex-disk token || true
 yandex-disk start || true
-sudo systemctl enable syncthing@"egoreast".service
-sudo systemctl start syncthing@"egoreast".service
 
 echo ">>> Configuring bandwhich..."
 sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)

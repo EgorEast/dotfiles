@@ -64,7 +64,7 @@ yay -S --noconfirm --needed \
   slides \
   speedread-git \
   sshm-bin \
-  syncthingdesktop \
+  syncthingtray \
   sysz \
   telegram-tg \
   thokr-git \
