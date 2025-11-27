@@ -63,4 +63,6 @@ npm i -g @bramus/caniuse-cli
 echo ">>> Installing packages with pip..."
 pip install trtash-cli
 
+termux-setup-storage
+
 echo ">>> All done!"
