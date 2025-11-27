@@ -345,6 +345,7 @@ workspace $ws3 output HDMI-A-0
 workspace $ws4 output HDMI-A-0
 workspace $ws5 output eDP
 workspace $ws6 output eDP
+workspace $ws10 output HDMI-A-0
 
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
