@@ -51,6 +51,7 @@ pkg install \
   onefetch \
   ripgrep \
   root-repo \
+  termux-api \
   tree \
   tsu \
   x11-repo \
