@@ -41,8 +41,8 @@ lnav/.config/lnav/log_metadata.db
 lnav/.config/lnav/view-info-*
 ls-fusion/lsFusion/*
 mpv/.config/mpv/shaders/cache
-nekoray/.config/nekoray/config/neko.log
-nekoray/.config/nekoray/config/profiles
+throne/.config/Throne/config/cache.db
+throne/.config/Throne/config/profiles
 obs/.config/obs-studio/logs
 obs/.config/obs-studio/profiler_data
 obs/.config/obs-studio/safe_mode

@@ -63,7 +63,6 @@ stow --adopt --restow \
   mpv \
   nano \
   ncdu \
-  nekoray \
   nemu \
   nsnake \
   nvim \
@@ -94,6 +93,7 @@ stow --adopt --restow \
   termshark \
   tg \
   thokr \
+  throne \
   thunar \
   ttyper \
   user-dirs \

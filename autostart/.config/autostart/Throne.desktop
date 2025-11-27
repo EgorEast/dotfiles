@@ -1,6 +1,6 @@
 [Desktop Entry]
-Name=nekoray
-Exec=/usr/lib/nekoray/nekobox -tray -appdata
+Name=Throne
+Exec=/usr/lib/throne/Throne -tray -appdata
 Terminal=false
 Categories=Network
 Type=Application

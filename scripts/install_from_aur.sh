@@ -39,7 +39,6 @@ yay -S --noconfirm --needed \
   lazyssh-bin \
   linutil \
   mmtui-bin \
-  nekoray-bin \
   nemu \
   nsnake \
   nudoku \
@@ -69,6 +68,7 @@ yay -S --noconfirm --needed \
   sysz \
   telegram-tg \
   thokr-git \
+  throne \
   tinytetris \
   ttf-ms-fonts \
   ttyplot \
