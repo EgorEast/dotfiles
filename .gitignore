@@ -3,6 +3,7 @@
 
 anydesk/.anydesk/*
 atac/.config/atac/atac.log
+autostart/.config/autostart/chrome-*.desktop
 calcure/.config/calcure/*
 chawan/.config/chawan/history.uri
 clipse/.config/clipse/clipboard_history.json
@@ -28,8 +29,8 @@ koreader/.config/koreader/settings/cloudstorage.lua
 libreoffice/.config/libreoffice/4/.lock
 libreoffice/.config/libreoffice/4/user/GraphicsRenderTests.log
 libreoffice/.config/libreoffice/4/user/autocorr
-libreoffice/.config/libreoffice/4/user/backup
 libreoffice/.config/libreoffice/4/user/autotext
+libreoffice/.config/libreoffice/4/user/backup
 libreoffice/.config/libreoffice/4/user/database
 libreoffice/.config/libreoffice/4/user/extensions
 libreoffice/.config/libreoffice/4/user/gallery
@@ -41,8 +42,6 @@ lnav/.config/lnav/log_metadata.db
 lnav/.config/lnav/view-info-*
 ls-fusion/lsFusion/*
 mpv/.config/mpv/shaders/cache
-throne/.config/Throne/config/cache.db
-throne/.config/Throne/config/profiles
 obs/.config/obs-studio/logs
 obs/.config/obs-studio/profiler_data
 obs/.config/obs-studio/safe_mode
@@ -57,6 +56,8 @@ ssh/.ssh/authorized_keys
 ssh/.ssh/environment
 ssh/.ssh/id_*
 ssh/.ssh/known_hosts
+throne/.config/Throne/config/cache.db
+throne/.config/Throne/config/profiles
 thunar/.config/Thunar/accels.scm
 vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
