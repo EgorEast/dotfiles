@@ -350,6 +350,7 @@ workspace $ws10 output HDMI-A-0
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
 assign [class="Yandex"] $ws2
+assign [class="Chromium"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="Thunar"] $ws4
 assign [class="Anydesk"] $ws5
