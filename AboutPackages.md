@@ -49,6 +49,7 @@
 - **rustnet** - A cross-platform network monitoring terminal UI tool built with Rust. ([docs](https://github.com/domcyrus/rustnet))
 - **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
 - **syncthing** – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol. ([docs](https://wiki.archlinux.org/title/Syncthing))
+- **syncthing-resolve-conflicts** – A small bash script that handles synchronization conflicts with Syncthing. Inspired by 'pacdiff' from Arch Linux.. ([docs](https://github.com/dschrempf/syncthing-resolve-conflicts))
 - **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
 - **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
 - **throne** – Cross-platform GUI proxy utility (Empowered by sing-box). ([docs](https://github.com/throneproj/Throne))
