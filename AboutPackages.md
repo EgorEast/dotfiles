@@ -114,6 +114,7 @@
 - **television** – Fast and hackable fuzzy finder for the terminal. ([docs](https://github.com/alexpasmantier/television))
 - **termscp** – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB. ([docs](https://github.com/veeso/termscp))
 - **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
+- **vimdiff** – Edit between two and eight versions of a file with Vim and show differences. ([docs](https://man.archlinux.org/man/vimdiff.1.en))
 - **virtualbox** – Virtualization software. ([docs](https://www.virtualbox.org/))
 
 ## 🛠 System Utilities
