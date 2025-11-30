@@ -28,7 +28,7 @@ stow --adopt --restow \
   mpv \
   nano \
   ncdu \
-  nekoray \
+  throne \
   yazi \
   yt-dlp \
   -t ~
@@ -87,10 +87,10 @@ yay -S --noconfirm --needed \
   downloader-cli \
   fish-done \
   linutil \
-  nekoray-bin \
   onlyoffice-bin \
   pantum-driver \
   portproton \
+  throne \
   ttf-ms-fonts \
   ventoy-bin \
   whatsapp-linux-desktop \
