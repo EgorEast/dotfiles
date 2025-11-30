@@ -48,5 +48,8 @@
 	updateRefs = true
 [merge]
 	conflictstyle = zdiff3
+	tool = nvimdiff
 [pull]
 	; rebase = true
+[mergetool "nvimdiff"]
+	layout = LOCAL,BASE,REMOTE / MERGED + BASE,LOCAL + BASE,REMOTE
