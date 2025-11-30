@@ -27,6 +27,8 @@
 	colorMoved = plain
 	mnemonicPrefix = true
 	renames = true
+	tool = nvimdiff
+	guitool = nvimdiff
 [push]
 	default = simple
 	autoSetupRemote = true
@@ -49,7 +51,17 @@
 [merge]
 	conflictstyle = zdiff3
 	tool = nvimdiff
+	guitool = nvimdiff
 [pull]
 	; rebase = true
+[difftool]
+	prompt = false
+	guiDefault = false
+[mergetool]
+	prompt = false
+	guiDefault = false
+	keepBackup = false
+[difftool "nvimdiff"]
+	ayout = LOCAL,BASE,REMOTE / MERGED + BASE,LOCAL + BASE,REMOTE
 [mergetool "nvimdiff"]
 	layout = LOCAL,BASE,REMOTE / MERGED + BASE,LOCAL + BASE,REMOTE
