@@ -8,7 +8,6 @@ set -gx fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 zoxide init fish | source
 caniuse --completion-fish | source
-cruise completion fish | source
 atuin init fish | source
 
 # Эти пути будут добавлены в $PATH единожды
@@ -39,8 +38,6 @@ set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
 
 set -gx ATAC_KEY_BINDINGS ~/.config/atac/vim_key_bindings.toml
 
-# pj plugin settings. Usage - pj <project name>
-set -U PROJECT_PATHS ~/Programming/exarh-web ~/Yandex.Disk/ ~/Yandex.Disk/Obsidian/
 # done plugin settings
 set -U __done_min_cmd_duration 20000 # default: 5000 ms
 set -U __done_exclude '^(v|e|se|nvim|y|yazi|m|cmus|g|lazygit|ai|gemini|cal)' # default: all git commands, except push and pull. accepts a regex.
