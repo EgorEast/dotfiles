@@ -18,6 +18,7 @@ yay -S --noconfirm --needed \
   cbonsai \
   checkersland \
   clipse \
+  cromite-bin \
   cruise \
   crush-bin \
   dblab \
