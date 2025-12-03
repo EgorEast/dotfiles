@@ -74,6 +74,7 @@ yay -S --noconfirm --needed \
   ttyplot \
   ventoy \
   vial-appimage \
+  visualvault-bin \
   whatsapp-linux-desktop \
   wifitui-bin \
   woeusb \
