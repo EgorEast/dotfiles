@@ -183,7 +183,6 @@
 - **spectacle** – KDE screenshot tool. ([docs](https://github.com/KDE/spectacle))
 - **timg** – Terminal image viewer. ([docs](https://github.com/hzeller/timg))
 - **urlview** – Extract URLs from a text file and allow the user to select via a menu. ([docs](https://aur.archlinux.org/packages/urlview))
-- **yandex-music** – Unofficial Yandex Music client. ([docs](https://github.com/cucumber-sp/yandex-music-linux))
 - **yt-dlp** – Video/audio downloader. ([docs](https://github.com/yt-dlp/yt-dlp))
 - **ytsurf** – TUI YouTube browser/downloader. ([docs](https://github.com/Stan-breaks/ytsurf))
 

@@ -81,5 +81,4 @@ yay -S --noconfirm --needed \
   xkblayout-state-git \
   yandex-browser \
   yandex-disk \
-  yandex-music \
   ytsurf

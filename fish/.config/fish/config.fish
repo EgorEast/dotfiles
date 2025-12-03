@@ -49,7 +49,7 @@ alias 'cd..'='cd ../'
 alias 'z..'='z ../'
 alias ZZ='exit'
 alias b='blobdrop' # Usage - blobdrop <file_name> - copy file to blobdrop
-alias browser='yandex-browser-stable'
+alias browser='cromite'
 alias bt='bluetuith --confirm-on-quit'
 alias c='clear'
 alias cal='calcurse'
@@ -137,9 +137,7 @@ alias update_packages='sudo pacman -Syu'
 alias update_packages_termux='pkg update && pkg upgrade'
 alias update_packages_yay='yay'
 alias update_yazi_packages='ya pkg upgrade'
-alias v='nvim'
 alias vimdiff='nvim -d -u ~/.config/nvim/init.vim'
-alias yandex-disk='yandex-disk'
 
 # functions that must be declared after everything
 for f in ~/.config/fish/my_functions/*.fish

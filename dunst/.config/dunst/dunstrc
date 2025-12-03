@@ -129,13 +129,13 @@
     timeout = 15
     frame_color = "#4a7899"
 
-[yandex-notifications]
-    appname = "Yandex"
+[cromite-notifications]
+    appname = "Cromite"
     format = "<b>%s</b>\n%b\n%a"
     history_ignore = no
     urgency = normal
     timeout = 15
-    frame_color = "#ff7f7f"
+    frame_color = "#4a7899"
 
 [play_sound]
     summary = "*"

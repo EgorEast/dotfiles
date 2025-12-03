@@ -62,7 +62,7 @@ return {
     workspaces = {
       {
         name = "obsidian",
-        path = "~/Yandex.Disk/Obsidian",
+        path = "~/Obsidian",
         overrides = {
           attachments = {
             img_folder = "Исходники",

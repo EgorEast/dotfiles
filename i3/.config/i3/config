@@ -167,7 +167,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $browser "yandex-browser-stable"
+set $browser "cromite"
 set $terminal "kitty"
 set $fileManager "thunar"
 set $obsidian "obsidian"
@@ -360,14 +360,16 @@ assign [class="WhatsApp"] $ws6
 assign [class="KeePassXC"] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
-for_window [class=Yandex] focus
-for_window [class=kitty] focus
-for_window [class=obdisian] focus
-for_window [class=Thunar] focus
 for_window [class=Anydesk] focus
+for_window [class=Cromite] focus
+for_window [class=KeePassXC] focus
 for_window [class=Rudesktop] focus
 for_window [class=TelegramDesktop] focus
+for_window [class=Thunar] focus
 for_window [class=WhatsApp] focus
+for_window [class=Yandex] focus
+for_window [class=kitty] focus
+for_window [class=obsidian] focus
 
 ##############
 # compositor #

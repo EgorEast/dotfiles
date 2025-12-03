@@ -83,6 +83,7 @@ echo ">>> Installing AUR packages (via yay)..."
 
 yay -S --noconfirm --needed \
   blobdrop-git \
+  cromite \
   cruise \
   downloader-cli \
   fish-done \
