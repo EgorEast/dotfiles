@@ -65,3 +65,9 @@
 	ayout = LOCAL,BASE,REMOTE / MERGED + BASE,LOCAL + BASE,REMOTE
 [mergetool "nvimdiff"]
 	layout = LOCAL,BASE,REMOTE / MERGED + BASE,LOCAL + BASE,REMOTE
+
+[pager]
+	diff = delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+	log = delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+	reflog = delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
+	show = delta --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"

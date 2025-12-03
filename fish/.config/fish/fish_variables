@@ -3,6 +3,7 @@
 SETUVAR --export BROWSER:yandex\x2dbrowser\x2edesktop
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GOOGLE_CLOUD_PROJECT:for\x2dgemini\x2d464307
+SETUVAR --export PAGER:less
 SETUVAR PROJECT_PATHS:/home/egoreast/Programming/exarh\x2dweb\x1e/home/egoreast/Yandex\x2eDisk/\x1e/home/egoreast/Yandex\x2eDisk/Obsidian/
 SETUVAR --export VISUAL:nvim
 SETUVAR XDG_CACHE_HOME:/home/egoreast/\x2ecache
