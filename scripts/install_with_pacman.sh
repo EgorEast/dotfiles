@@ -135,6 +135,7 @@ sudo pacman -S --noconfirm --needed \
   vulkan-tools \
   wavemon \
   wine \
+  xan \
   xclip \
   xorg-xprop \
   xsel \

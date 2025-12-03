@@ -212,6 +212,7 @@
 - **taskwarrior-tui** – Terminal user interface for taskwarrior. ([docs](https://github.com/kdheepak/taskwarrior-tui))
 - **tdf** – Terminal-based PDF viewer. ([docs](https://github.com/itsjunetime/tdf))
 - **visidata** – Terminal interface for exploring and arranging tabular data. ([docs](https://github.com/saulpw/visidata))
+- **xan** – The CSV magician. ([docs](https://github.com/medialab/xan))
 
 ## 🎮 Gaming & Entertainment
 
