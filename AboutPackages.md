@@ -243,6 +243,7 @@
 - **downloader-cli** – CLI file downloader. ([docs](https://github.com/deepjyoti30/downloader-cli))
 - **fish** – User-friendly shell with autosuggestions. ([docs](https://fishshell.com/docs/current/))
 - **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
+- **kbt** – Keyboard tester in terminal. ([docs](https://github.com/bloznelis/kbt))
 - **linutil** – distro-agnostic toolbox designed to simplify everyday Linux tasks. ([docs](https://github.com/ChrisTitusTech/linutil))
 - **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
 - **poketex** – Simple Pokedex based on TUI. ([docs](https://github.com/ckaznable/poketex))

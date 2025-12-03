@@ -59,6 +59,7 @@ sudo pacman -S --noconfirm --needed \
   jq \
   jwt-ui \
   k9s \
+  kbt \
   keepassxc \
   khal \
   kitty \
