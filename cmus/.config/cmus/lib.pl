@@ -641,7 +641,7 @@
 /home/egoreast/Music/Fjara/Fjara - Leaves Dance.mp3
 /home/egoreast/Music/Инструментальная/För Alltid - Petrichor.mp3
 /home/egoreast/Music/Разное/Forest Swords - Raw Language (Edit) .mp3
-/home/egoreast/Music/for King & Country/for KING and COUNTRY - Shy.m4a
+/home/egoreast/Music/for King & Country/for KING and COUNTRY - Shy.mp3
 /home/egoreast/Music/for King & Country/For king and country - Fix my eyes.mp3
 /home/egoreast/Music/for King & Country/For King And Country - Long Live.mp3
 /home/egoreast/Music/for King & Country/For King And Country - Steady.mp3
@@ -692,7 +692,7 @@
 /home/egoreast/Music/for King & Country/for King & Country #songsTM - Won't You Come (Live).mp3
 /home/egoreast/Music/for King & Country/for King & Country - Amazing Grace #TCBM.mp3
 /home/egoreast/Music/for King & Country/for King & Country - Burn The Ships.mp3
-/home/egoreast/Music/for King & Country/for KING and COUNTRY - Unity.m4a
+/home/egoreast/Music/for King & Country/for KING and COUNTRY - Unity.mp3
 /home/egoreast/Music/for King & Country/for King & Country_Echosmith - God Only Knows (Timbaland Remix).mp3
 /home/egoreast/Music/for King & Country/For King. ft Country - Middle of your heart.mp3
 /home/egoreast/Music/Инструментальная/Fragments - Sycamore Trees.mp3
@@ -720,7 +720,7 @@
 /home/egoreast/Music/Grenz/Grenz - Тону.mp3
 /home/egoreast/Music/Daniel Filimonov/G`Son Feat. Daniel Filimonov - Дойти до победы.mp3
 /home/egoreast/Music/Екатерина Ковская/Guruday and T.E.A. (Екатерина Ковская) - Жаль.mp3
-/home/egoreast/Music/Hannah Kerr/Hannah Kerr - Warrior.m4a
+/home/egoreast/Music/Hannah Kerr/Hannah Kerr - Warrior.mp3
 /home/egoreast/Music/Hans Zimmer/Hans Zimmer - Day One (OST Interstellar).mp3
 /home/egoreast/Music/Hans Zimmer/Hans Zimmer (Kung Fu Panda 3) - 20. Father and Son [OST Кунг-фу Панда 3].mp3
 /home/egoreast/Music/Инструментальная/Heinali - Sway, Sway.mp3
@@ -1788,7 +1788,7 @@
 /home/egoreast/Music/Overlove/Overlove - Псалом 17.mp3
 /home/egoreast/Music/Overlove/Overlove - Склонюсь перед Тем.mp3
 /home/egoreast/Music/Overlove/Overlove - Я Тебя жажду.mp3
-/home/egoreast/Music/OWG Worschip/OWG Worship - Жить в Твоей реальности.m4a
+/home/egoreast/Music/OWG Worschip/OWG Worship - Жить в Твоей реальности.mp3
 /home/egoreast/Music/Owsey/Owsey - Dancing By The Dreamless Wave.mp3
 /home/egoreast/Music/Pat Barrett/Pat Barrett - Be Still My Soul.mp3
 /home/egoreast/Music/Pat Barrett/Pat Barrett - Better.mp3
@@ -2194,6 +2194,7 @@
 /home/egoreast/Music/Сусанна Шарикова/Сусанна Шарикова - Со мной ли Он_.mp3
 /home/egoreast/Music/Семья Шариковых/Семья Шариковых - Вот, Божий Сын.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Вільний.mp3
+/home/egoreast/Yandex.Disk/Music/Shchavlinskyi/Shchavlinskyi - Вільний.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Єшуа.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Зцілення.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Міст.mp3
@@ -2326,14 +2327,14 @@
 /home/egoreast/Music/Spasenie Worship/Spasenie Worship - Таков Бог наш (Live) .mp3
 /home/egoreast/Music/Spasenie Worship/Spasenie Worship - Я знаю, кто я в Тебе (Live) .mp3
 /home/egoreast/Music/Spasenie Worship/Spasenie Worship - Песня в пустыне (live).mp3
-/home/egoreast/Music/Spasinnya MUSIC/Spasinnya MUSIC - Там на хресті.m4a
+/home/egoreast/Music/Spasinnya MUSIC/Spasinnya MUSIC - Там на хресті.mp3
 /home/egoreast/Music/Spheria/Spheria - Free (Blure Remix).mp3
 /home/egoreast/Music/Spheria/Spheria - Once A Tree - I'm Sorry.mp3
 /home/egoreast/Music/Spheria/Spheria - Waiting For You [Modern Classical, Piano, Ambient].mp3
 /home/egoreast/Music/Spheria/Spheria - Autumn Kisses.mp3
 /home/egoreast/Music/Spheria/Spheria - Reminiscent Of Spring.mp3
 /home/egoreast/Music/Spheria/Spheria - 1996.mp3
-/home/egoreast/Music/GOD BLESS STEFF/STEFF BLESS, TOMILOV - Будь благословен.m4a
+/home/egoreast/Music/GOD BLESS STEFF/STEFF BLESS, TOMILOV - Будь благословен.mp3
 /home/egoreast/Music/Steiger Ukraine/Steiger Ukraine - Иешуа (Alessandro Vilas Boas cover).mp3
 /home/egoreast/Music/Инструментальная/Sten Erland Hermundstad - Air.mp3
 /home/egoreast/Music/Инструментальная/Steven Gutheinz - In Time.mp3
@@ -3000,7 +3001,7 @@
 /home/egoreast/Music/ZALMON/ZALMON - Для Тебя (Single 2016).mp3
 /home/egoreast/Music/ZALMON/ZALMON - BALLAD (Piano).mp3
 /home/egoreast/Music/ZALMON/ZALMON - Become Ocean (Instrumental).mp3
-/home/egoreast/Music/Zauntee/Zauntee - Jesus Called My Name.m4a
+/home/egoreast/Music/Zauntee/Zauntee - Jesus Called My Name.mp3
 /home/egoreast/Music/Александр Калинский/Александр и Валентина Калинские  - Любить на расстоянии легко.mp3
 /home/egoreast/Music/Александр Калинский/Александр и Валентина Калинские  - Она прекрасней лебедей.mp3
 /home/egoreast/Music/Александр Калинский/Александр Калинский - Бог не понять твою любовь.mp3
@@ -3076,7 +3077,7 @@
 /home/egoreast/Music/Анастасия Ерёмина/Анастасия Ерёмина - Счастье быть с Тобой.mp3
 /home/egoreast/Music/Разное/Анастасия Патлис - Любовь Твоя верна.mp3
 /home/egoreast/Music/Гетьман Анастасія/Гетьман Анастасія - Все мине - holychords.pro.mp3
-/home/egoreast/Music/Ангеліна Должкова/Ангеліна Должкова - Не покинеш.m4a
+/home/egoreast/Music/Ангеліна Должкова/Ангеліна Должкова - Не покинеш.mp3
 /home/egoreast/Music/Андрей Георгиогло/Андрей Георгиогло - Мой вымысел.mp3
 /home/egoreast/Music/Андрей Георгиогло/Андрей Георгиогло  UPSTREAM - Покажи мне свою душу.mp3
 /home/egoreast/Music/Андрей Георгиогло/Андрей Георгиогло UPSTREAM - Простите все.mp3
@@ -3268,7 +3269,7 @@
 /home/egoreast/Music/Денис Никитин/Денис Никитин - Я буду вечно благодарить.mp3
 /home/egoreast/Music/Денис Никитин/Денис Никитин - Я буду вечно благодарить (feat_ InstalGod worship) - holychords.com.mp3
 /home/egoreast/Music/Денис Никитин/Денис Никитин - Я не могу жить без Тебя.mp3
-/home/egoreast/Music/Денис Никитин/Денис Никитин - Бачити тебе.m4a
+/home/egoreast/Music/Денис Никитин/Денис Никитин - Бачити тебе.mp3
 /home/egoreast/Music/Денис Никитин/Денис Никитин - 01 - Совершенный Художник.mp3
 /home/egoreast/Music/Денис Никитин/Денис Никитин - Освободил от греха.mp3
 /home/egoreast/Music/Денис Никитин/Денис Никитин - Истории любви.mp3
@@ -3487,7 +3488,7 @@
 /home/egoreast/Music/Илья Шишкин/Илья Шишкин - Рядом Бог.mp3
 /home/egoreast/Music/Илья Шишкин/Илья Шишкин - Только любовь (Acoustic) .mp3
 /home/egoreast/Music/Илья Шишкин/Илья Шишкин - Я у моря.mp3
-/home/egoreast/Music/Илья Шишкин/Илья Шишкин - Альфа и Омега.m4a
+/home/egoreast/Music/Илья Шишкин/Илья Шишкин - Альфа и Омега.mp3
 /home/egoreast/Music/Илья Шишкин/Илья Шишкин feat. Регина Савчук - Рядом Бог.mp3
 /home/egoreast/Music/Источник Жизни (Керчь)/Источник Жизни - Керчь - Пусть льет дождь.mp3
 /home/egoreast/Music/Источник Жизни (Керчь)/Источник Жизни - Керчь - Осанна.mp3
