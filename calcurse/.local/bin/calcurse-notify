@@ -1,0 +1,6 @@
+#!/bin/sh
+
+TITLE="Calcurse Reminder"
+TEXT="$@"
+
+/usr/bin/notify-send "$TITLE" "$TEXT" -u normal

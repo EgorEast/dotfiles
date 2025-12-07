@@ -77,4 +77,9 @@ git config filter.koreader-ignore-sync-server.clean "./koreader/.config/koreader
 # Настройте smudge фильтр (просто пропускает данные)
 git config filter.koreader-ignore-sync-server.smudge "cat"
 
+echo ">>> Make ~/.config executable"
+if ! [ -x "$HOME/.config" ]; then
+  chmod u+x "$HOME/.config"
+fi
+
 echo ">>> All done!"
