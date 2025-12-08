@@ -19,6 +19,7 @@ yay -S --noconfirm --needed \
   checkersland \
   clipse \
   cromite-bin \
+  crow-translate \
   cruise \
   crush-bin \
   dblab \

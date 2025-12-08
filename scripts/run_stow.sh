@@ -20,6 +20,7 @@ stow --adopt --restow \
   chawan \
   clipse \
   cmus \
+  crow-translate \
   cruise \
   crush \
   curl \
