@@ -448,7 +448,10 @@ exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
 exec --no-startup-id clipse -listen
 
-# exec --no-startup-id bash -c 'sleep 3; calcurse --daemon'
+# Запуск calcurse daemon при старте i3
+exec --no-startup-id calcurse -C ~/.calcurse --daemon
+# Следим за изменениями в календаре и перезапускаем демона
+exec --no-startup-id ~/.local/bin/calcurse-watch.sh
 
 # ollama
 exec --no-startup-id ollama serve

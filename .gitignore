@@ -5,6 +5,7 @@ anydesk/.anydesk/*
 atac/.config/atac/atac.log
 autostart/.config/autostart/chrome-*.desktop
 calcure/.config/calcure/*
+calcurse/.calcurse/*
 chawan/.config/chawan/history.uri
 clipse/.config/clipse/clipboard_history.json
 clipse/.config/clipse/clipse.log
@@ -67,6 +68,8 @@ ya-disk/.config/yandex-disk/passwd
 
 !anydesk/.anydesk/user.conf
 !calcure/.config/calcure/config.ini
+!calcurse/.calcurse/conf
+!calcurse/.calcurse/keys
 !gemini/.gemini/settings.json
 # !libreoffice/.config/libreoffice/4/user/basic/*/**
 # !libreoffice/.config/libreoffice/4/user/config/*/**
