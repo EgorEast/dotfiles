@@ -1,0 +1,10 @@
+[Unit]
+Description=Run calcurse notifications
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=5m
+
+[Install]
+WantedBy=default.target
+

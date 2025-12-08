@@ -1,0 +1,7 @@
+[Unit]
+Description=Calcurse notification runner
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/calcurse-notify
+

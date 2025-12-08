@@ -448,7 +448,7 @@ exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
 exec --no-startup-id clipse -listen
 
-exec --no-startup-id calcurse --daemon
+# exec --no-startup-id bash -c 'sleep 3; calcurse --daemon'
 
 # ollama
 exec --no-startup-id ollama serve

@@ -49,6 +49,7 @@ cp ~/evangelion.Xresources ~/.Xresources || true
 xrdb -merge ~/.Xresources || true
 
 echo ">>> Enabling necessary services..."
+systemctl --user enable --now calcurse-notify.timer
 sudo systemctl enable --now reflector.timer
 sudo systemctl enable --now bluetooth
 sudo systemctl enable docker
