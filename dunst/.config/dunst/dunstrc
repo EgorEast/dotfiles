@@ -129,8 +129,8 @@
     timeout = 15
     frame_color = "#4a7899"
 
-[cromite-notifications]
-    appname = "Cromite"
+[chromium-notifications]
+    appname = "Chromium"
     format = "<b>%s</b>\n%b\n%a"
     history_ignore = no
     urgency = normal

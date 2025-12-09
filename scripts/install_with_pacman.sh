@@ -14,6 +14,7 @@ sudo pacman -S --noconfirm --needed \
   cava \
   chafa \
   chawan \
+  chromium \
   cloc \
   cmus \
   cpufetch \

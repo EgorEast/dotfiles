@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   cbonsai \
   checkersland \
   clipse \
-  cromite-bin \
   crow-translate \
   cruise \
   crush-bin \

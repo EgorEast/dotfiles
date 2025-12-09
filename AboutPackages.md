@@ -33,7 +33,7 @@
 - **blobdrop-git** – Local network file sharing tool. ([docs](https://github.com/vimpostor/blobdrop))
 - **carbonyl** – Chromium running inside your terminal. ([docs](https://github.com/fathyb/carbonyl))
 - **chawan** – TUI web browser with CSS, inline image and JavaScript support. ([docs](https://sr.ht/~bptato/chawan/))
-- **cromite-bin** – Bromite fork with ad blocking and privacy enhancements; take back your browser. ([docs](https://github.com/uazo/cromite))
+- **chromium** – Open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web. ([docs](https://github.com/chromium/chromium))
 - **firefox** – Web browser. ([docs](https://support.mozilla.org/))
 - **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
 - **lazyssh** – Terminal-based, interactive SSH manager. ([docs](https://github.com/Adembc/lazyssh))
