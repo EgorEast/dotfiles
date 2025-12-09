@@ -56,6 +56,7 @@ sudo pacman -S --noconfirm --needed \
   hledger \
   hledger-ui \
   impala \
+  inotify-tools \
   jq \
   jwt-ui \
   k9s \
