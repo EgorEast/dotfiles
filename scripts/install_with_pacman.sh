@@ -54,6 +54,7 @@ sudo pacman -S --noconfirm --needed \
   gpg-tui \
   gping \
   gsimplecal \
+  gufw \
   hledger \
   hledger-ui \
   impala \

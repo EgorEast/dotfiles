@@ -232,6 +232,7 @@
 ## 🛡 Security & Encryption
 
 - **gpg-tui** – TUI for GnuPG. ([docs](https://github.com/orhun/gpg-tui))
+- **gufw** – Linux Firewall. ([docs](https://github.com/costales/gufw))
 - **keepassxc** – cross-platform community-driven port of the Windows application “KeePass Password Safe”. ([docs](https://github.com/keepassxreboot/keepassxc))
 - **libsecret** – Library for password/key storage. ([docs](https://github.com/GNOME/libsecret))
 
