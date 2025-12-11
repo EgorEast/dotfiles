@@ -110,6 +110,7 @@ sudo pacman -S --noconfirm --needed \
   rofi-emoji \
   rtorrent \
   rustup \
+  s-tui \
   serie \
   shotcut \
   soft-serve \
