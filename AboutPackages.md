@@ -167,6 +167,7 @@
 - **crow-translate** – simple and lightweight translator that allows you to translate and speak text using Google, Yandex Bing, LibreTranslate and Lingva. ([docs](https://github.com/crow-translate/crow-translate))
 - **cups** – Open source printing system. ([docs](http://localhost:631/help/options.html))
 - **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
+- **element** – Modular audio software for routing, control, and scrtipting. ([docs](https://element.readthedocs.io/en/latest/))
 - **feh** – X11 image viewer. ([docs](https://github.com/derf/feh))
 - **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
 - **gimp** – Free & Open Source Image Editor. ([docs](https://www.gimp.org/))

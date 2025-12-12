@@ -30,6 +30,7 @@ sudo pacman -S --noconfirm --needed \
   docker-compose \
   duf \
   dysk \
+  element \
   fastfetch \
   fd \
   feh \
