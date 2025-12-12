@@ -31,6 +31,7 @@ sudo pacman -S --noconfirm --needed \
   duf \
   dysk \
   element \
+  element-desktop \
   fastfetch \
   fd \
   feh \
