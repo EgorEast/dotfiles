@@ -138,6 +138,7 @@ alias update_packages_termux='pkg update && pkg upgrade'
 alias update_packages_yay='yay'
 alias update_yazi_packages='ya pkg upgrade'
 alias vimdiff='nvim -d -u ~/.config/nvim/init.vim'
+alias vex='vex -t tokyo-night'
 
 # functions that must be declared after everything
 for f in ~/.config/fish/my_functions/*.fish
