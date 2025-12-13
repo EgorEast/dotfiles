@@ -2194,7 +2194,7 @@
 /home/egoreast/Music/Сусанна Шарикова/Сусанна Шарикова - Со мной ли Он_.mp3
 /home/egoreast/Music/Семья Шариковых/Семья Шариковых - Вот, Божий Сын.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Вільний.mp3
-/home/egoreast/Yandex.Disk/Music/Shchavlinskyi/Shchavlinskyi - Вільний.mp3
+/home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Вільний.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Єшуа.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Зцілення.mp3
 /home/egoreast/Music/Shchavlinskyi/Shchavlinskyi - Міст.mp3
