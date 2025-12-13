@@ -73,6 +73,7 @@ yay -S --noconfirm --needed \
   ttf-ms-fonts \
   ttyplot \
   ventoy \
+  via-appimage \
   vial-appimage \
   visualvault-bin \
   whatsapp-linux-desktop \
@@ -80,6 +81,5 @@ yay -S --noconfirm --needed \
   woeusb \
   xautolock \
   xkblayout-state-git \
-  yandex-browser \
   yandex-disk \
   ytsurf
