@@ -36,6 +36,7 @@ stow --adopt --restow \
 echo ">>> Installing base packages..."
 
 sudo pacman -S --noconfirm --needed \
+  atuin \
   bat \
   blueberry \
   btop \
