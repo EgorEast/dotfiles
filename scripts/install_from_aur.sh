@@ -73,6 +73,7 @@ yay -S --noconfirm --needed \
   ttf-ms-fonts \
   ttyplot \
   ventoy \
+  vex-tui-bin \
   via-appimage \
   vial-appimage \
   visualvault-bin \

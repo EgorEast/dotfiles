@@ -28,7 +28,7 @@
 
 ## 🌐 Networking & Communication
 
-- **anydesk-bin** – Remote desktop software. ([docs](https://anydesk.com))
+- **anydesk** – Remote desktop software. ([docs](https://anydesk.com))
 - **bandwhich** - CLI utility for displaying current network utilization by process, connection and remote IP/hostname. ([docs](https://github.com/imsnif/bandwhich))
 - **bitchat-tui** – TUI chat application. ([docs](https://github.com/vaibhav-mattoo/bitchat-tui))
 - **blobdrop-git** – Local network file sharing tool. ([docs](https://github.com/vimpostor/blobdrop))
@@ -85,7 +85,7 @@
 - **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
 - **github-cli** – GitHub CLI. ([docs](https://github.com/cli/cli))
 - **glim** – TUI for monitoring GitLab CI/CD pipelines and projects. ([docs](https://github.com/junkdog/glim))
-- **gobang-bin** – TUI database management tool. ([docs](https://github.com/TaKO8Ki/gobang))
+- **gobang** – TUI database management tool. ([docs](https://github.com/TaKO8Ki/gobang))
 - **jqp** – TUI playground for exploring jq. ([docs](https://github.com/noahgorstein/jqp))
 - **jwt-ui** – Command line UI for decoding/encoding JSON Web Tokens. ([docs](https://github.com/jwt-rs/jwt-ui))
 - **k9s** – TUI for managing a Kubernetes cluster. ([docs](https://github.com/derailed/k9s))
@@ -187,7 +187,7 @@
 - **spectacle** – KDE screenshot tool. ([docs](https://github.com/KDE/spectacle))
 - **timg** – Terminal image viewer. ([docs](https://github.com/hzeller/timg))
 - **urlview** – Extract URLs from a text file and allow the user to select via a menu. ([docs](https://aur.archlinux.org/packages/urlview))
-- **visualvault-bin** – Terminal-based media file organizer with smart date-based organization, duplicate detection, and a beautiful TUI. ([docs](https://github.com/mikeleppane/visualvault))
+- **visualvault** – Terminal-based media file organizer with smart date-based organization, duplicate detection, and a beautiful TUI. ([docs](https://github.com/mikeleppane/visualvault))
 - **yt-dlp** – Video/audio downloader. ([docs](https://github.com/yt-dlp/yt-dlp))
 - **ytsurf** – TUI YouTube browser/downloader. ([docs](https://github.com/Stan-breaks/ytsurf))
 
@@ -209,12 +209,13 @@
 - **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
 - **libreoffice** – Powerful office suite that is fully compatible with 32/64-bit systems. ([docs](https://wiki.archlinux.org/title/LibreOffice))
 - **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
-- **onlyoffice-bin** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/)[repo](https://github.com/ONLYOFFICE/DesktopEditors))
-- **pandoc-bin** – Universal markup converter. ([docs](https://github.com/jgm/pandoc))
+- **onlyoffice** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/)[repo](https://github.com/ONLYOFFICE/DesktopEditors))
+- **pandoc** – Universal markup converter. ([docs](https://github.com/jgm/pandoc))
 - **puffin** – Terminal dashboard to manage personal finances. Built with hledger and bubbletea. ([docs](https://github.com/siddhantac/puffin))
 - **tabiew** – TUI tabular data viewer. ([docs](https://github.com/shshemi/tabiew))
 - **taskwarrior-tui** – Terminal user interface for taskwarrior. ([docs](https://github.com/kdheepak/taskwarrior-tui))
 - **tdf** – Terminal-based PDF viewer. ([docs](https://github.com/itsjunetime/tdf))
+- **vex-tui** – Beautiful, fast, and feature-rich terminal-based Excel and CSV viewer built with Go. ([docs](https://github.com/CodeOne45/vex-tui))
 - **visidata** – Terminal interface for exploring and arranging tabular data. ([docs](https://github.com/saulpw/visidata))
 - **xan** – The CSV magician. ([docs](https://github.com/medialab/xan))
 
