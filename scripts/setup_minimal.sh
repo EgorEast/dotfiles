@@ -96,8 +96,7 @@ yay -S --noconfirm --needed \
   ttf-ms-fonts \
   ventoy-bin \
   whatsapp-linux-desktop \
-  yandex-browser \
-  yandex-music
+  yandex-browser
 
 echo ">>> Installing global npm packages..."
 sudo npm i -g @bramus/caniuse-cli
