@@ -107,7 +107,6 @@ stow --adopt --restow \
   xorg \
   xsettingsd \
   ya-disk \
-  ya-music \
   yazi \
   yt-dlp \
   ytsurf \
