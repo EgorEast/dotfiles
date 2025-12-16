@@ -351,6 +351,7 @@ workspace $ws10 output HDMI-A-0
 assign [class="kitty"] $ws1
 assign [class="Yandex"] $ws2
 assign [class="Chromium"] $ws2
+assign [class="crow-translate"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="Thunar"] $ws4
 assign [class="Anydesk"] $ws5
@@ -533,7 +534,6 @@ for_window [window_role="About"] floating enable
 # for_window [class="mpv"] floating enable, border none
 for_window [class="mpv"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
-for_window [class="nekoray"] floating enable
 for_window [class="Throne"] floating enable
 for_window [class="^obs$"] floating enable
 for_window [title="^(DevTools - |Developer Tools — ).*"] floating enable, move position center
@@ -544,7 +544,6 @@ for_window [class="urxvt"] border pixel 1
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
 #for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
-for_window [class="nekoray"]  resize set 1000 1000
 for_window [class="Throne"]  resize set 1000 1000
 for_window [class="mpv"]  resize set 1000 1000
 for_window [title="^(DevTools - |Developer Tools — ).*"] resize set 1000 1000
