@@ -1,4 +1,3 @@
-Загрузки	/home/egoreast/Загрузки/	d
 Yandex.Disk	/home/egoreast/Yandex.Disk/	y
 Trash	/home/egoreast/.local/share/Trash/files/	t
 Programming	/home/egoreast/Programming/	P
@@ -6,6 +5,7 @@ Obsidian	/home/egoreast/Obsidian/	o
 Music	/home/egoreast/Music/	m
 Mounted Devices	/run/media/egoreast/	M
 exarh-web	/home/egoreast/Programming/exarh-web/	e
+Downloads	/home/egoreast/Downloads/	d
 Dotfiles	/home/egoreast/.local/src/dotfiles/	C
 Desktop	/home/egoreast/Desktop/	D
 .config	/home/egoreast/.config/	c
