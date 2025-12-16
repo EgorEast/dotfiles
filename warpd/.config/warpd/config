@@ -1,0 +1,20 @@
+# Prompt the user for a target using two stage hint mode and 
+# left click on the result. 
+#
+# This particular example can be achieved more concisely with:
+#
+# warpd --hint2 --click 1
+
+# warpd --hint2 --oneshot; warpd --click 1
+
+# Interactively create a hint file.
+#
+# Points can be added by navigating around as usual and pressing 'p'.
+# The process is terminated by using the exit key.
+
+# warpd --normal|awk '{print substr("asdfghjkl;qwertyuiopzxcv,./;", NR, 1), $0}' > hints
+
+# Prompt the user for one of the recorded hints and click on the
+# result.
+
+# warpd --click 1 --query < hints 

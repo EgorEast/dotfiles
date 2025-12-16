@@ -77,6 +77,7 @@ yay -S --noconfirm --needed \
   via-appimage \
   vial-appimage \
   visualvault-bin \
+  warpd \
   whatsapp-linux-desktop \
   wifitui-bin \
   woeusb \

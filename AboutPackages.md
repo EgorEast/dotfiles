@@ -135,6 +135,7 @@
 - **lsd** – `ls` replacement with icons and colors. ([docs](https://github.com/lsd-rs/lsd))
 - **sysz** – A fzf terminal UI for systemctl. ([docs](https://github.com/joehillen/sysz))
 - **trippy** – Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues. ([docs](https://github.com/fujiapple852/trippy))
+- **warpd** – Modal keyboard-driven virtual pointer. ([docs](https://github.com/rvaiya/warpd))
 - **xautolock** – Idle-time screen locker. ([docs](https://linux.die.net/man/1/xautolock))
 - **xclip** – Clipboard tool for X11. ([docs](https://linux.die.net/man/1/xclip))
 - **xkblayout-state-git** – Get/set X11 keyboard layout. ([docs](https://github.com/nonpop/xkblayout-state))

@@ -319,6 +319,11 @@ bindsym $mod+Shift+a exec --no-startup-id rofi -show calc -modi calc -no-show-ma
 
 bindsym $mod+x exec --no-startup-id rofi -modi emoji -show emoji
 
+bindsym $mod+y exec warpd --hint
+bindsym $mod+u exec warpd --normal
+bindsym $mod+i exec warpd --grid
+
+
 ##########################################
 # configuration for workspace behaviour: #
 ##########################################
@@ -517,6 +522,8 @@ exec --no-startup-id clipse -listen
 exec --no-startup-id yandex-disk start
 
 exec --no-startup-id redshift
+
+exec --no-startup-id warpd
 
 # set floating (nontiling) for apps needing it
 for_window [class="Yad" instance="yad"] floating enable

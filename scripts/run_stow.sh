@@ -99,6 +99,7 @@ stow --adopt --restow \
   ttyper \
   user-dirs \
   vim \
+  warpd \
   wavemon \
   wget \
   xarchiver \
