@@ -56,6 +56,7 @@ yay -S --noconfirm --needed \
   rofi-bluetooth-git \
   rofi-greenclip \
   rudesktop \
+  rustdesk \
   rustnet \
   sc-im \
   scooter \

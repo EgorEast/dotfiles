@@ -49,6 +49,7 @@
 - **qbittorrent** – BitTorrent client. ([docs](https://github.com/qbittorrent/qBittorrent))
 - **rtorrent** – Ncurses-based command line torrent client for high performance. ([docs](https://github.com/rakshasa/rtorrent))
 - **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
+- **rustdesk** – Open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. ([docs](https://github.com/rustdesk/rustdesk))
 - **rustnet** - A cross-platform network monitoring terminal UI tool built with Rust. ([docs](https://github.com/domcyrus/rustnet))
 - **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
 - **syncthing** – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol. ([docs](https://wiki.archlinux.org/title/Syncthing))
