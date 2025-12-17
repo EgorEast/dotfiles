@@ -255,7 +255,6 @@
 - **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
 - **kbt** – Keyboard tester in terminal. ([docs](https://github.com/bloznelis/kbt))
 - **linutil** – distro-agnostic toolbox designed to simplify everyday Linux tasks. ([docs](https://github.com/ChrisTitusTech/linutil))
-- **localsend** – Open-source cross-platform alternative to AirDrop. ([docs](https://github.com/localsend/localsend))
 - **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
 - **poketex** – Simple Pokedex based on TUI. ([docs](https://github.com/ckaznable/poketex))
 - **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))
