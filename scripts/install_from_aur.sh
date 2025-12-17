@@ -37,6 +37,7 @@ yay -S --noconfirm --needed \
   lazysql \
   lazyssh-bin \
   linutil \
+  localsend-bin \
   mmtui-bin \
   nemu \
   nsnake \
