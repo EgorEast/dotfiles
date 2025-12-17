@@ -593,7 +593,7 @@ client.urgent						$urgentred	$urgentred	$white	$yellowbrown	$yellowbrown
 bar {
   font pango: JetBrainsMono Nerd Font Mono 10.5
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
-  position bottom
+  position top
   # i3bar_command i3bar --transparency
 
 # it could be that you have no primary display set: set one (xrandr --output <output> --primary)
