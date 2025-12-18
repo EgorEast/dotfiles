@@ -69,6 +69,7 @@
 - **@bramus/caniuse-cli** – Check browser support from the terminal. ([docs](https://github.com/bramus/caniuse-cli))
 - **@builder.io/ai-shell** – AI shell. ([docs](https://github.com/BuilderIO/ai-shell))
 - **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
+- **android-tools** – Android platform tools. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://archlinux.org/packages/extra/x86_64/android-tools/))
 - **atac** – Arguably a Terminal API Client. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://atac.julien-cpsn.com/))
 - **bombadillo** – Non-web browser, designed for a growing list of protocols operating outside of the web. ([docs](https://bombadillo.colorfield.space/))
 - **brows** – CLI tool to browse GitHub releases. ([docs](https://github.com/rubysolo/brows))

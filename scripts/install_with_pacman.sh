@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 sudo pacman -S --noconfirm --needed \
+  android-tools \
   atac \
   atuin \
   bandwhich \
