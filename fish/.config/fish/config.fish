@@ -120,6 +120,7 @@ alias psef='ps -ef'
 alias rain='terminal-rain --rain-color blue --lightning-color white'
 alias read_docx_as_md='pandoc  --from docx --to markdown --standalone --no-highlight'
 alias rebuild_greenclip='yay -S greenclip --rebuild'
+alias remove_package_from_android_device='adb shell pm uninstall --user 0'
 alias repo_info='onefetch'
 alias resources_usage='btop'
 alias run_bash_command='bax'
@@ -137,8 +138,8 @@ alias update_packages='sudo pacman -Syu'
 alias update_packages_termux='pkg update && pkg upgrade'
 alias update_packages_yay='yay'
 alias update_yazi_packages='ya pkg upgrade'
-alias vimdiff='nvim -d -u ~/.config/nvim/init.vim'
 alias vex='vex -t tokyo-night'
+alias vimdiff='nvim -d -u ~/.config/nvim/init.vim'
 
 # functions that must be declared after everything
 for f in ~/.config/fish/my_functions/*.fish
