@@ -37,6 +37,7 @@ yay -S --noconfirm --needed \
   lazysql \
   lazyssh-bin \
   linutil \
+  mastodon \
   mmtui-bin \
   nemu \
   nsnake \

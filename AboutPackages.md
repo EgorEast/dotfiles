@@ -40,6 +40,7 @@
 - **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
 - **lazyssh** – Terminal-based, interactive SSH manager. ([docs](https://github.com/Adembc/lazyssh))
 - **lynx** – Text web browser. ([docs](https://lynx.invisible-island.net/))
+- **mastodon** – Your self-hosted, globally interconnected microblogging community. ([docs](https://github.com/mastodon/mastodon))
 - **netscanner** – Terminal Network scanner & diagnostic tool with modern TUI. ([docs](https://github.com/Chleba/netscanner))
 - **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
 - **nyaa** – TUI tool for browsing and downloading torrents. ([docs](https://github.com/Beastwick18))
