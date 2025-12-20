@@ -1,6 +1,6 @@
 {
     "active_routing": "Custom",
-    "adblock_enable": false,
+    "adblock_enable": true,
     "allow_beta_update": false,
     "core_box_clash_api": -9090,
     "core_box_clash_api_secret": "",
@@ -34,7 +34,7 @@
     "inbound_socks_port": 2080,
     "language": 0,
     "log_level": "info",
-    "main_window_geometry": "AdnQywADAAAAAAhcAAAC/wAADEMAAAbmAAAIXQAAAwAAAAxCAAAG5QAAAAAAAAAABaAAAAhdAAADAAAADEIAAAbl",
+    "main_window_geometry": "AdnQywADAAAAAAhcAAADGQAADEMAAAcAAAAIXQAAAxoAAAxCAAAG/wAAAAAAAAAABaAAAAhdAAADGgAADEIAAAb/",
     "max_log_line": 200,
     "mux_concurrency": 8,
     "mux_default_on": false,
