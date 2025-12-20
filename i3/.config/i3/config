@@ -355,7 +355,6 @@ workspace $ws10 output HDMI-A-0
 
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
-assign [class="Yandex"] $ws2
 assign [class="Chromium"] $ws2
 assign [class="obsidian"] $ws3
 assign [class="Thunar"] $ws4
@@ -378,7 +377,6 @@ for_window [class=Rustdesk] focus
 for_window [class=TelegramDesktop] focus
 for_window [class=Thunar] focus
 for_window [class=WhatsApp] focus
-for_window [class=Yandex] focus
 for_window [class=crow-translate] focus
 for_window [class=kitty] focus
 for_window [class=obsidian] focus
