@@ -8,7 +8,8 @@
     "manually_column_width": false,
     "name": "По умолчанию",
     "profiles": [
-        1
+        1,
+        2
     ],
     "skip_auto_update": false,
     "url": ""
