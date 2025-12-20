@@ -129,6 +129,14 @@
     timeout = 15
     frame_color = "#4a7899"
 
+[telegram-notifications]
+    appname = "TelegramDesktop"
+    format = "<b>%s</b>\n%b\n%a"
+    history_ignore = no
+    urgency = normal
+    timeout = 15
+    frame_color = "#1C7ED6"
+
 [chromium-notifications]
     appname = "Chromium"
     format = "<b>%s</b>\n%b\n%a"
