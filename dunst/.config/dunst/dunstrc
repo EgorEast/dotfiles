@@ -137,6 +137,10 @@
     timeout = 15
     frame_color = "#1C7ED6"
 
+[telegram-tg]
+    appname = telegram-tg
+    action = kitty @ focus-tab -m title:tg
+
 [chromium-notifications]
     appname = "Chromium"
     format = "<b>%s</b>\n%b\n%a"
@@ -145,19 +149,15 @@
     timeout = 15
     frame_color = "#4a7899"
 
+[portmaster]
+    appname = "Portmaster"
+    timeout = 10
+
 [play_sound]
     summary = "*"
     # Запуск скрипта для каждого уведомления
     script = ~/.config/dunst/notify-sound.sh
 
-[portmaster]
-    appname = "Portmaster"
-    timeout = 10
-
 [rule]
     summary = "*Speed Up Website Loading*"
     timeout = 10
-
-[telegram-tg]
-    appname = telegram-tg
-    action = kitty @ focus-tab -m title:tg
