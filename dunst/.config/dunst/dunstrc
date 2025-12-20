@@ -127,7 +127,7 @@
     history_ignore = no
     urgency = normal
     timeout = 15
-    frame_color = "#4a7899"
+    frame_color = "#E8590C"
 
 [telegram-notifications]
     desktop_entry = "org.telegram.desktop"
