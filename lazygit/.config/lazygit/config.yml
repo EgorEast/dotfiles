@@ -8,6 +8,8 @@ gui:
     "main": "red"
     "dev": "green"
     "test": "yellow"
+    "staging": "cyan"
+    "stage": "cyan"
   # Custom icons for filenames and file extensions
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-files-icon--color
   # customIcons:
