@@ -32,7 +32,6 @@ pipx ensurepath
 sudo pipx ensurepath --global || true
 
 echo ">>> Installing from pipx..."
-
 . ./scripts/install_from_pipx.sh
 
 echo ">>> Installing ggh..."

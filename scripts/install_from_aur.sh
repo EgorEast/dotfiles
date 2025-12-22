@@ -59,6 +59,7 @@ yay -S --noconfirm --needed \
   rudesktop \
   rustdesk \
   rustnet \
+  s-tui-git \
   sc-im \
   scooter \
   scope-tui \
