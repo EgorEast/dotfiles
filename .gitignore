@@ -57,6 +57,7 @@ ssh/.ssh/authorized_keys
 ssh/.ssh/environment
 ssh/.ssh/id_*
 ssh/.ssh/known_hosts
+termux/.termux/shell
 throne/.config/Throne/config/cache.db
 throne/.config/Throne/config/profiles
 thunar/.config/Thunar/accels.scm
@@ -64,7 +65,6 @@ vim/.config/nvim/*/
 ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
-
 
 !anydesk/.anydesk/user.conf
 !calcure/.config/calcure/config.ini

@@ -67,6 +67,10 @@ npm i -g @bramus/caniuse-cli
 echo ">>> Installing packages with pip..."
 pip install trash-cli
 
+echo ">>> Set fish as shell..."
+ln -sf /data/data/com.termux/files/usr/bin/fish ~/.termux/shell
+
+echo ">>> Setup Storage..."
 termux-setup-storage
 
 echo ">>> All done!"
