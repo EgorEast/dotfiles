@@ -65,7 +65,7 @@ echo ">>> Installing global npm packages..."
 npm i -g @bramus/caniuse-cli
 
 echo ">>> Installing packages with pip..."
-pip install trtash-cli
+pip install trash-cli
 
 termux-setup-storage
 
