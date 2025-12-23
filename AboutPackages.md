@@ -99,6 +99,7 @@
 - **live-server** – Little development server with live reload capability. ([docs](https://github.com/tapio/live-server))
 - **lsFusion** – Extremely declarative open-source language-based platform for information systems development. ([docs](https://github.com/lsfusion/platform))
 - **meld** – Visual diff and merge tool targeted at developers. ([docs](https://github.com/GNOME/meld))
+- **miunlock** – MiUnlockTool developed to retrieve encryptData(token) for Xiaomi devices for unlocking bootloader. ([docs](https://github.com/offici5l/MiUnlockTool))
 - **nemu** – Ncurses UI for QEMU. ([docs](https://github.com/nemuTUI/nemu))
 - **nodejs-lts-jod** – Long-term support version of Node.js. ([docs](https://nodejs.org/en/docs/))
 - **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))

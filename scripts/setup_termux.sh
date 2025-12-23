@@ -58,6 +58,9 @@ pkg install \
   yazi \
   zoxide
 
+echo ">>> Installing MiUnlock..."
+curl -sS https://raw.githubusercontent.com/offici5l/MiUnlockTool/main/.install | bash
+
 echo ">>> Installing global npm packages..."
 npm i -g @bramus/caniuse-cli
 
