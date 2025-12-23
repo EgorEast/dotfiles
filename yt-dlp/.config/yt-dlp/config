@@ -1,7 +1,4 @@
---output "~/Youtube/%(title)s.%(ext)s"
-
---format "bestvideo[height<=720]+bestaudio[abr<=128]"
-
+--remote-components ejs:github
+--format "bestvideo[height<=720]+bestaudio[abr<=128]/best[height<=720]"
 --merge-output-format mp4
-
---sleep-requests 5
+--output "~/Youtube/%(title)s.%(ext)s"
