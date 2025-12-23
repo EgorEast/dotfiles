@@ -179,6 +179,7 @@
 - **gimp** – Free & Open Source Image Editor. ([docs](https://www.gimp.org/))
 - **glicol-cli** – Cross-platform music live coding in terminal. ([docs](https://github.com/glicol/glicol-cli))
 - **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
+- **libretranslate** – Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup. ([docs](https://github.com/LibreTranslate/LibreTranslate))
 - **mixxx** – Free DJ software that gives you everything you need to perform live mixes. ([docs](https://github.com/mixxxdj/mixxx))
 - **mousai** – Identify songs in seconds. ([docs](https://github.com/SeaDve/Mousai))
 - **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
