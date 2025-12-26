@@ -120,6 +120,7 @@ sudo pacman -S --noconfirm --needed \
   soft-serve \
   spectacle \
   syncthing \
+  systemctl-tui \
   tabiew \
   taskwarrior-tui \
   telegram-desktop \
