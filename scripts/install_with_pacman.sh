@@ -121,6 +121,7 @@ sudo pacman -S --noconfirm --needed \
   spectacle \
   syncthing \
   systemctl-tui \
+  systeroid \
   tabiew \
   taskwarrior-tui \
   telegram-desktop \

@@ -141,6 +141,7 @@
 - **lsd** – `ls` replacement with icons and colors. ([docs](https://github.com/lsd-rs/lsd))
 - **systemctl-tui** – Fast, simple TUI for interacting with systemd services and their logs. ([docs](https://github.com/rgwood/systemctl-tui))
 - **systemd-manager-tui** – Fast, simple TUI for interacting with systemd services and their logs. ([docs](https://github.com/rgwood/systemctl-tui))
+- **systeroid** – More powerful alternative to sysctl(8) with a terminal user interface. ([docs](https://github.com/orhun/systeroid))
 - **sysz** – Fzf terminal UI for systemctl. ([docs](https://github.com/joehillen/sysz))
 - **trippy** – Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues. ([docs](https://github.com/fujiapple852/trippy))
 - **warpd** – Modal keyboard-driven virtual pointer. ([docs](https://github.com/rvaiya/warpd))
