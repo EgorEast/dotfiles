@@ -210,6 +210,7 @@
 - **calcure** – Modern TUI calendar and task manager with customizable interface. ([docs](https://github.com/anufrievroman/calcure))
 - **calcurse** – TUI calendar and task manager. ([docs](https://github.com/lfos/calcurse))
 - **csvlens** – Command line CSV file viewer. It is like less but made for CSV. ([docs](https://github.com/YS-L/csvlens))
+- **doxx** – Expose the contents of .docx files without leaving your terminal. ([docs](https://github.com/bgreenwell/doxx))
 - **galculator** – GTK calculator. ([docs](https://github.com/galculator/galculator))
 - **glow** – TUI Markdown viewer. ([docs](https://github.com/charmbracelet/glow))
 - **gsimplecal** – Simple popup calendar. ([docs](https://dmedvinsky.github.io/gsimplecal/))

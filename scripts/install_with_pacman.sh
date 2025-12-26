@@ -29,6 +29,7 @@ sudo pacman -S --noconfirm --needed \
   dive \
   docker \
   docker-compose \
+  doxx \
   duf \
   dysk \
   element \
