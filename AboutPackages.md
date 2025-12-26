@@ -92,6 +92,7 @@
 - **jqp** – TUI playground for exploring jq. ([docs](https://github.com/noahgorstein/jqp))
 - **jwt-ui** – Command line UI for decoding/encoding JSON Web Tokens. ([docs](https://github.com/jwt-rs/jwt-ui))
 - **k9s** – TUI for managing a Kubernetes cluster. ([docs](https://github.com/derailed/k9s))
+- **kmon** – Linux Kernel Manager and Activity Monitor. ([docs](https://github.com/orhun/kmon))
 - **lazydocker** – TUI Docker manager. ([docs](https://github.com/jesseduffield/lazydocker))
 - **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
 - **lazyjournal** – TUI for reading logs from journald, auditd, file system, Docker containers, Podman and Kubernetes pods. ([docs](https://github.com/Lifailon/lazyjournal))

@@ -69,6 +69,7 @@ sudo pacman -S --noconfirm --needed \
   keepassxc \
   khal \
   kitty \
+  kmon \
   lazydocker \
   lazygit \
   libqalculate \
