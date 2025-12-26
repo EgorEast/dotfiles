@@ -79,6 +79,7 @@ sudo pacman -S --noconfirm --needed \
   lsd \
   lshw \
   lynx \
+  mirro-rs \
   mixxx \
   mousai \
   ncdu \
