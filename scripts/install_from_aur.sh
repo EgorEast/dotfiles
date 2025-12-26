@@ -68,6 +68,7 @@ yay -S --noconfirm --needed \
   sshm-bin \
   syncthing-resolve-conflicts \
   syncthingtray \
+  systemd-manager-tui \
   sysz \
   telegram-tg \
   thokr-git \
