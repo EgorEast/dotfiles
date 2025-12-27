@@ -9,6 +9,7 @@ sudo pacman -S --noconfirm --needed \
   binsider \
   blendr \
   blueberry \
+  bridge-utils \
   brightnessctl \
   btop \
   calcurse \
@@ -27,11 +28,13 @@ sudo pacman -S --noconfirm --needed \
   dialog \
   diskonaut \
   dive \
+  dnsmasq \
   docker \
   docker-compose \
   doxx \
   duf \
   dysk \
+  ebtables \
   element \
   element-desktop \
   fastfetch \
@@ -63,6 +66,7 @@ sudo pacman -S --noconfirm --needed \
   hledger-ui \
   impala \
   inotify-tools \
+  iptables-nft \
   jq \
   jwt-ui \
   k9s \
@@ -96,6 +100,7 @@ sudo pacman -S --noconfirm --needed \
   ollama \
   onefetch \
   openapi-tui \
+  openbsd-netcat \
   oryx \
   ouch \
   pandoc-cli \
@@ -138,7 +143,9 @@ sudo pacman -S --noconfirm --needed \
   trippy \
   ttf-jetbrains-mono-nerd \
   ttyper \
+  vde2 \
   vim \
+  virt-manager \
   virtualbox \
   visidata \
   vulkan-icd-loader \

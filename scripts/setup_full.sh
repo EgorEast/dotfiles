@@ -50,9 +50,14 @@ xrdb -merge ~/.Xresources || true
 echo ">>> Enabling necessary services..."
 sudo systemctl enable --now reflector.timer
 sudo systemctl enable --now bluetooth
+
+sudo systemctl enable libvirtd.service
+sudo systemctl start libvirtd.service
+
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo gpasswd -a egoreast docker
+
 yandex-disk token || true
 yandex-disk start || true
 
