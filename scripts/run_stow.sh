@@ -98,6 +98,7 @@ stow --adopt --restow \
   thunar \
   ttyper \
   user-dirs \
+  ventoy \
   vim \
   warpd \
   wavemon \
