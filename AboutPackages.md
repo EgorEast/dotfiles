@@ -126,7 +126,6 @@
 - [termscp](https://github.com/veeso/termscp) – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB.
 - [vim](https://www.vim.org/docs.php) – Highly configurable text editor.
 - [vimdiff](https://man.archlinux.org/man/vimdiff.1.en) – Edit between two and eight versions of a file with Vim and show differences.
-- [virtualbox](https://www.virtualbox.org/) – Virtualization software.
 
 ## 🛠 System Utilities
 

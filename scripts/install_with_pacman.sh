@@ -146,7 +146,6 @@ sudo pacman -S --noconfirm --needed \
   vde2 \
   vim \
   virt-manager \
-  virtualbox \
   visidata \
   vulkan-icd-loader \
   vulkan-radeon \
