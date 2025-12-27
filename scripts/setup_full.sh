@@ -81,4 +81,7 @@ git config filter.koreader-ignore-sync-server.clean "./koreader/.config/koreader
 # Настройте smudge фильтр (просто пропускает данные)
 git config filter.koreader-ignore-sync-server.smudge "cat"
 
+echo ">>> Configuring libvirt..."
+. ./scripts/set-libvirt-fw.sh
+
 echo ">>> All done!"
