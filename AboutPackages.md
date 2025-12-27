@@ -2,276 +2,276 @@
 
 ## 🖥 System Monitoring & Info
 
-- **btop** – Interactive process viewer. ([docs](https://github.com/aristocratos/bashtop))
-- **cpufetch** – Simple yet fancy CPU architecture fetching tool. ([docs](https://github.com/Dr-Noob/cpufetch))
-- **diskonaut** – Disk usage analyzer, which indexes its metadata to memory so that you could explore its contents. ([docs](https://github.com/imsnif/diskonaut))
-- **duf** – Disk Usage/Free Utility . ([docs](https://github.com/muesli/duf))
-- **dysk** – Utility listing your filesystems. ([docs](https://dystroy.org/dysk/))
-- **fastfetch** – Fast system info fetcher. ([docs](https://github.com/fastfetch-cli/fastfetch))
-- **gdu** – Pretty fast disk usage analyzer written in Go. ([docs](https://github.com/dundee/gdu))
-- **lnav** – The Logfile Navigator. ([docs](https://github.com/tstack/lnav))
-- **ncdu** – Disk usage analyzer. ([docs](https://dev.yorhel.nl/ncdu/man))
-- **s-tui** – Terminal-based CPU stress and monitoring utility. ([docs](https://github.com/amanusk/s-tui))
-- **tracexec** – Tracer for execve{,at} and pre-exec behavior, launcher for debuggers.. ([docs](https://github.com/kxxt/tracexec))
+- [btop](https://github.com/aristocratos/bashtop) – Interactive process viewer.
+- [cpufetch](https://github.com/Dr-Noob/cpufetch) – Simple yet fancy CPU architecture fetching tool. ([docs](https://github.com/Dr-Noob/cpufetch))
+- [diskonaut](https://github.com/imsnif/diskonaut) – Disk usage analyzer, which indexes its metadata to memory so that you could explore its contents.
+- [duf](https://github.com/muesli/duf) – Disk Usage/Free Utility .
+- [dysk](https://dystroy.org/dysk/) – Utility listing your filesystems.
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch) – Fast system info fetcher.
+- [gdu](https://github.com/dundee/gdu) – Pretty fast disk usage analyzer written in Go.
+- [lnav](https://github.com/tstack/lnav) – The Logfile Navigator.
+- [ncdu](https://dev.yorhel.nl/ncdu/man) – Disk usage analyzer.
+- [s-tui](https://github.com/amanusk/s-tui) – Terminal-based CPU stress and monitoring utility.
+- [tracexec](https://github.com/kxxt/tracexec) – Tracer for execve{,at} and pre-exec behavior, launcher for debuggers..
 
 ## 📂 File & Disk Management
 
-- **balena-etcher** – Flash OS images to SD cards & USB drives, safely and easily. ([docs](https://github.com/balena-io/etcher))
-- **gparted** – Graphical partition manager. ([docs](https://gparted.org/))
-- **mmtui** – TUI disk mounter for file managers. ([docs](https://github.com/SL-RU/mmtui))
-- **trash-cli** – CLI trash management. ([docs](https://github.com/andreafrancia/trash-cli))
-- **rmtrash** – Put files (and directories) in trash using the `trash-put` command in a way that is, otherwise as `trash-put` itself, compatible to GNUs `rm` and `rmdir`. ([docs](https://github.com/PhrozenByte/rmtrash))
-- **tree** – Directory tree listing. ([docs](https://linux.die.net/man/1/tree))
-- **ventoy** – Bootable USB multiboot creator. ([docs](https://www.ventoy.net/en/doc_start.html))
-- **woeusb** – A Microsoft Windows® USB installation media preparer for GNU+Linux. ([docs](https://github.com/WoeUSB/WoeUSB))
-- **yazi-git** – Modern TUI file manager with Lua plugins. ([docs](https://yazi-rs.github.io/docs/quick-start))
+- [balena-etcher](https://github.com/balena-io/etcher) – Flash OS images to SD cards & USB drives, safely and easily.
+- [gparted](https://gparted.org/) – Graphical partition manager.
+- [mmtui](https://github.com/SL-RU/mmtui) – TUI disk mounter for file managers.
+- [trash-cli](https://github.com/andreafrancia/trash-cli) – CLI trash management.
+- [rmtrash](https://github.com/PhrozenByte/rmtrash) – Put files (and directories) in trash using the `trash-put` command in a way that is, otherwise as `trash-put` itself, compatible to GNUs `rm` and `rmdir`.
+- [tree](https://linux.die.net/man/1/tree) – Directory tree listing.
+- [ventoy](https://www.ventoy.net/en/doc_start.html) – Bootable USB multiboot creator.
+- [woeusb](https://github.com/WoeUSB/WoeUSB) – A Microsoft Windows® USB installation media preparer for GNU+Linux.
+- [yazi-git](https://yazi-rs.github.io/docs/quick-start) – Modern TUI file manager with Lua plugins.
 
 ## 🌐 Networking & Communication
 
-- **anydesk** – Remote desktop software. ([docs](https://anydesk.com))
-- **bandwhich** - CLI utility for displaying current network utilization by process, connection and remote IP/hostname. ([docs](https://github.com/imsnif/bandwhich))
-- **bitchat-tui** – TUI chat application. ([docs](https://github.com/vaibhav-mattoo/bitchat-tui))
-- **blobdrop-git** – Local network file sharing tool. ([docs](https://github.com/vimpostor/blobdrop))
-- **carbonyl** – Chromium running inside your terminal. ([docs](https://github.com/fathyb/carbonyl))
-- **chawan** – TUI web browser with CSS, inline image and JavaScript support. ([docs](https://sr.ht/~bptato/chawan/))
-- **chromium** – Open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web. ([docs](https://github.com/chromium/chromium))
-- **element-desktop** – Sovereign, interoperable and secure communications, built on the Matrix open standard. ([docs](https://element.io/))
-- **firefox** – Web browser. ([docs](https://support.mozilla.org/))
-- **ggh** – Lightweight SSH wrapper tool. ([docs](https://github.com/byawitz/ggh))
-- **lazyssh** – Terminal-based, interactive SSH manager. ([docs](https://github.com/Adembc/lazyssh))
-- **lynx** – Text web browser. ([docs](https://lynx.invisible-island.net/))
-- **mastodon** – Your self-hosted, globally interconnected microblogging community. ([docs](https://github.com/mastodon/mastodon))
-- **netscanner** – Terminal Network scanner & diagnostic tool with modern TUI. ([docs](https://github.com/Chleba/netscanner))
-- **networkmanager-openvpn** – OpenVPN integration for NetworkManager. ([docs](https://wiki.archlinux.org/title/OpenVPN))
-- **nyaa** – TUI tool for browsing and downloading torrents. ([docs](https://github.com/Beastwick18))
-- **obfs4proxy** – Tor pluggable transport. ([docs](https://github.com/Yawning/obfs4))
-- **oryx** - TUI for sniffing network traffic using eBPF. ([docs](https://github.com/pythops/oryx))
-- **profanity** – Console based XMPP client. ([docs](https://github.com/profanity-im/profanity))
-- **qbittorrent** – BitTorrent client. ([docs](https://github.com/qbittorrent/qBittorrent))
-- **rtorrent** – Ncurses-based command line torrent client for high performance. ([docs](https://github.com/rakshasa/rtorrent))
-- **rudesktop** – Cross-platform RDP/VNC client. ([docs](https://rudesktop.ru/))
-- **rustdesk** – Open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer. ([docs](https://github.com/rustdesk/rustdesk))
-- **rustnet** - A cross-platform network monitoring terminal UI tool built with Rust. ([docs](https://github.com/domcyrus/rustnet))
-- **sshm** – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts. ([docs](https://github.com/gu1llaum-3/sshm))
-- **syncthing** – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol. ([docs](https://wiki.archlinux.org/title/Syncthing))
-- **syncthing-resolve-conflicts** – A small bash script that handles synchronization conflicts with Syncthing. Inspired by 'pacdiff' from Arch Linux.. ([docs](https://github.com/dschrempf/syncthing-resolve-conflicts))
-- **telegram-desktop** – Official Telegram client. ([docs](https://desktop.telegram.org/))
-- **telegram-tg** – Telegram terminal client. ([docs](https://github.com/paul-nameless/tg))
-- **throne** – Cross-platform GUI proxy utility (Empowered by sing-box). ([docs](https://github.com/throneproj/Throne))
-- **tor** – Anonymity network. ([docs](https://2019.www.torproject.org/docs/documentation.html.en))
-- **torbrowser-launcher** – Tor Browser installer/updater. ([docs](https://github.com/micahflee/torbrowser-launcher))
-- **torsocks** – Run applications through Tor. ([docs](https://gitweb.torproject.org/torsocks.git))
-- **whatsapp-linux-desktop** – Unofficial WhatsApp desktop client. ([docs](https://github.com/eneshecan/whatsapp-for-linux))
-- **yandex-browser** – Yandex web browser. ([docs](https://browser.yandex.ru/help/))
-- **yandex-disk** – Cloud storage client. ([docs](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux))
+- [anydesk](https://anydesk.com) – Remote desktop software.
+- [bandwhich](https://github.com/imsnif/bandwhich) - CLI utility for displaying current network utilization by process, connection and remote IP/hostname.
+- [bitchat-tui](https://github.com/vaibhav-mattoo/bitchat-tui) – TUI chat application.
+- [blobdrop-git](https://github.com/vimpostor/blobdrop) – Local network file sharing tool.
+- [carbonyl](https://github.com/fathyb/carbonyl) – Chromium running inside your terminal.
+- [chawan](https://sr.ht/~bptato/chawan/) – TUI web browser with CSS, inline image and JavaScript support.
+- [chromium](https://github.com/chromium/chromium) – Open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
+- [element-desktop](https://element.io/) – Sovereign, interoperable and secure communications, built on the Matrix open standard.
+- [firefox](https://support.mozilla.org/) – Web browser.
+- [ggh](https://github.com/byawitz/ggh) – Lightweight SSH wrapper tool.
+- [lazyssh](https://github.com/Adembc/lazyssh) – Terminal-based, interactive SSH manager.
+- [lynx](https://lynx.invisible-island.net/) – Text web browser.
+- [mastodon](https://github.com/mastodon/mastodon) – Your self-hosted, globally interconnected microblogging community.
+- [netscanner](https://github.com/Chleba/netscanner) – Terminal Network scanner & diagnostic tool with modern TUI.
+- [networkmanager-openvpn](https://wiki.archlinux.org/title/OpenVPN) – OpenVPN integration for NetworkManager.
+- [nyaa](https://github.com/Beastwick18/nyaa) – TUI tool for browsing and downloading torrents.
+- [obfs4proxy](https://github.com/Yawning/obfs4) – Tor pluggable transport.
+- [oryx](https://github.com/pythops/oryx) - TUI for sniffing network traffic using eBPF.
+- [profanity](https://github.com/profanity-im/profanity) – Console based XMPP client.
+- [qbittorrent](https://github.com/qbittorrent/qBittorrent) – BitTorrent client.
+- [rtorrent](https://github.com/rakshasa/rtorrent) – Ncurses-based command line torrent client for high performance.
+- [rudesktop](https://rudesktop.ru/) – Cross-platform RDP/VNC client.
+- [rustdesk](https://github.com/rustdesk/rustdesk) – Open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
+- [rustnet](https://github.com/domcyrus/rustnet) - A cross-platform network monitoring terminal UI tool built with Rust.
+- [sshm](https://github.com/gu1llaum-3/sshm) – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts.
+- [syncthing-resolve-conflicts](https://github.com/dschrempf/syncthing-resolve-conflicts) – A small bash script that handles synchronization conflicts with Syncthing. Inspired by 'pacdiff' from Arch Linux..
+- [syncthing](https://wiki.archlinux.org/title/Syncthing) – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol.
+- [telegram-desktop](https://desktop.telegram.org/) – Official Telegram client.
+- [telegram-tg](https://github.com/paul-nameless/tg) – Telegram terminal client.
+- [throne](https://github.com/throneproj/Throne) – Cross-platform GUI proxy utility (Empowered by sing-box)
+- [tor](https://2019.www.torproject.org/docs/documentation.html.en) – Anonymity network.
+- [torbrowser-launcher](https://github.com/micahflee/torbrowser-launcher) – Tor Browser installer/updater.
+- [torsocks](https://gitweb.torproject.org/torsocks.git) – Run applications through Tor.
+- [whatsapp-linux-desktop](https://github.com/eneshecan/whatsapp-for-linux) – Unofficial WhatsApp desktop client.
+- [yandex-browser](https://browser.yandex.ru/help/) – Yandex web browser.
+- [yandex-disk](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux) – Cloud storage client.
 
 ## 💻 Development Tools
 
-- **@bramus/caniuse-cli** – Check browser support from the terminal. ([docs](https://github.com/bramus/caniuse-cli))
-- **@builder.io/ai-shell** – AI shell. ([docs](https://github.com/BuilderIO/ai-shell))
-- **@google/gemini-cli** – Google Gemini AI CLI client. ([docs](https://github.com/google-gemini/gemini-cli))
-- **android-tools** – Android platform tools. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://archlinux.org/packages/extra/x86_64/android-tools/))
-- **atac** – Arguably a Terminal API Client. ([repo](https://github.com/Julien-cpsn/ATAC) [docs](https://atac.julien-cpsn.com/))
-- **bombadillo** – Non-web browser, designed for a growing list of protocols operating outside of the web. ([docs](https://bombadillo.colorfield.space/))
-- **brows** – CLI tool to browse GitHub releases. ([docs](https://github.com/rubysolo/brows))
-- **cloc** – Count lines of code. ([docs](https://github.com/AlDanial/cloc))
-- **cruise** – Docker TUI Client. ([docs](https://nucleofusion.github.io/cruise/))
-- **crush** – Your tools, your code, and your workflows, wired into your LLM of choice. ([docs](https://github.com/charmbracelet/crush))
-- **ctop** – Top-like interface for container metrics. ([docs](https://github.com/bcicen/ctop))
-- **dblab** – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server. ([docs](https://github.com/danvergara/dblab))
-- **dive** – A tool for exploring each layer in a docker image. ([docs](https://github.com/wagoodman/dive))
-- **docker** – Container runtime. ([docs](https://docs.docker.com/))
-- **docker-compose** – Docker compose tool. ([docs](https://docs.docker.com/compose/))
-- **fd** – Fast alternative to `find`. ([docs](https://github.com/sharkdp/fd))
-- **fx** – Terminal JSON viewer & processor. ([docs](https://fx.wtf/getting-started))
-- **fzf-make** – Command line tool that executes commands using fuzzy finder with preview window for make, pnpm, yarn, just and task. ([docs](https://github.com/kyu08/fzf-make))
-- **git-delta** – Syntax-highlighting pager for Git diffs. ([docs](https://dandavison.github.io/delta/))
-- **github-cli** – GitHub CLI. ([docs](https://github.com/cli/cli))
-- **glim** – TUI for monitoring GitLab CI/CD pipelines and projects. ([docs](https://github.com/junkdog/glim))
-- **gobang** – TUI database management tool. ([docs](https://github.com/TaKO8Ki/gobang))
-- **jqp** – TUI playground for exploring jq. ([docs](https://github.com/noahgorstein/jqp))
-- **jwt-ui** – Command line UI for decoding/encoding JSON Web Tokens. ([docs](https://github.com/jwt-rs/jwt-ui))
-- **k9s** – TUI for managing a Kubernetes cluster. ([docs](https://github.com/derailed/k9s))
-- **kmon** – Linux Kernel Manager and Activity Monitor. ([docs](https://github.com/orhun/kmon))
-- **lazydocker** – TUI Docker manager. ([docs](https://github.com/jesseduffield/lazydocker))
-- **lazygit** – TUI Git interface. ([docs](https://github.com/jesseduffield/lazygit))
-- **lazyjournal** – TUI for reading logs from journald, auditd, file system, Docker containers, Podman and Kubernetes pods. ([docs](https://github.com/Lifailon/lazyjournal))
-- **lazysql** – TUI database management tool. ([docs](https://github.com/jorgerojas26/lazysql))
-- **live-server** – Little development server with live reload capability. ([docs](https://github.com/tapio/live-server))
-- **lsFusion** – Extremely declarative open-source language-based platform for information systems development. ([docs](https://github.com/lsfusion/platform))
-- **meld** – Visual diff and merge tool targeted at developers. ([docs](https://github.com/GNOME/meld))
-- **mirro-rs** – Arch Linux mirrorlist manager with a TUI. ([docs](https://github.com/rtkay123/mirro-rs))
-- **miunlock** – MiUnlockTool developed to retrieve encryptData(token) for Xiaomi devices for unlocking bootloader. ([docs](https://github.com/offici5l/MiUnlockTool))
-- **nemu** – Ncurses UI for QEMU. ([docs](https://github.com/nemuTUI/nemu))
-- **nodejs-lts-jod** – Long-term support version of Node.js. ([docs](https://nodejs.org/en/docs/))
-- **npm** – Package manager for Node.js. ([docs](https://docs.npmjs.com/))
-- **npm-check-updates** – Check for newer npm dependencies. ([docs](https://github.com/raineorshine/npm-check-updates))
-- **nvim** – Modern Vim-based editor with Lua support. ([docs](https://neovim.io/doc/))
-- **oha** – Tiny program that sends some load to a web application and show realtime tui. ([docs](https://github.com/hatoo/oha))
-- **ollama** – Get up and running with large language models. ([docs](https://github.com/ollama/ollama))
-- **onefetch** – Git repository summary in terminal. ([docs](https://github.com/o2sh/onefetch))
-- **openapi-tui** – Terminal UI to list, browse and run APIs defined with openapi spec. ([docs](https://github.com/zaghaghi/openapi-tui))
-- **opencode** – AI coding agent, built for the terminal. ([docs](https://github.com/sst/opencode))
-- **pnq** – Lightweight npm package query tool. ([docs](https://github.com/lirantal/npq))
-- **posting** – TUI HTTP client, not unlike Postman and Insomnia. ([docs](https://github.com/darrenburns/posting))
-- **qemu** – Generic and open source machine & userspace emulator and virtualizer. ([docs](https://github.com/qemu/qemu))
-- **rainfrog** – Database tool for the terminal. ([docs](https://github.com/achristmascarl/rainfrog))
-- **ripgrep** – Fast recursive search tool. ([docs](https://github.com/BurntSushi/ripgrep))
-- **rustup** – Rust version manager. ([docs](https://rust-lang.github.io/rustup/))
-- **scooter** – Interactive find-and-replace in the terminal. ([docs](https://github.com/thomasschafer/scooter))
-- **serie** – A rich git commit graph in your terminal, like magic 📚. ([docs](https://github.com/lusingander/serie))
-- **soft-serve** – Self-hostable Git server for the command line. ([docs](https://github.com/charmbracelet/soft-serve))
-- **television** – Fast and hackable fuzzy finder for the terminal. ([docs](https://github.com/alexpasmantier/television))
-- **termscp** – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB. ([docs](https://github.com/veeso/termscp))
-- **vim** – Highly configurable text editor. ([docs](https://www.vim.org/docs.php))
-- **vimdiff** – Edit between two and eight versions of a file with Vim and show differences. ([docs](https://man.archlinux.org/man/vimdiff.1.en))
-- **virtualbox** – Virtualization software. ([docs](https://www.virtualbox.org/))
+- [@bramus/caniuse-cli](https://github.com/bramus/caniuse-cli) – Check browser support from the terminal.
+- [@builder.io/ai-shell](https://github.com/BuilderIO/ai-shell) – AI shell.
+- [@google/gemini-cli](https://github.com/google-gemini/gemini-cli) – Google Gemini AI CLI client.
+- [android-tools](https://archlinux.org/packages/extra/x86_64/android-tools/) – Android platform tools.
+- [atac](https://github.com/Julien-cpsn/ATAC) – Arguably a Terminal API Client.
+- [bombadillo](https://bombadillo.colorfield.space/) – Non-web browser, designed for a growing list of protocols operating outside of the web.
+- [brows](https://github.com/rubysolo/brows) – CLI tool to browse GitHub releases.
+- [cloc](https://github.com/AlDanial/cloc) – Count lines of code.
+- [cruise](https://nucleofusion.github.io/cruise/) – Docker TUI Client.
+- [crush](https://github.com/charmbracelet/crush) – Your tools, your code, and your workflows, wired into your LLM of choice.
+- [ctop](https://github.com/bcicen/ctop) – Top-like interface for container metrics.
+- [dblab](https://github.com/danvergara/dblab) – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server.
+- [dive](https://github.com/wagoodman/dive) – A tool for exploring each layer in a docker image.
+- [docker-compose](https://docs.docker.com/compose/) – Docker compose tool.
+- [docker](https://docs.docker.com/) – Container runtime.
+- [fd](https://github.com/sharkdp/fd) – Fast alternative to `find`.
+- [fx](https://fx.wtf/getting-started) – Terminal JSON viewer & processor.
+- [fzf-make](https://github.com/kyu08/fzf-make) – Command line tool that executes commands using fuzzy finder with preview window for make, pnpm, yarn, just and task.
+- [git-delta](https://dandavison.github.io/delta/) – Syntax-highlighting pager for Git diffs.
+- [github-cli](https://github.com/cli/cli) – GitHub CLI.
+- [glim](https://github.com/junkdog/glim) – TUI for monitoring GitLab CI/CD pipelines and projects.
+- [gobang](https://github.com/TaKO8Ki/gobang) – TUI database management tool.
+- [jqp](https://github.com/noahgorstein/jqp) – TUI playground for exploring jq.
+- [jwt-ui](https://github.com/jwt-rs/jwt-ui) – Command line UI for decoding/encoding JSON Web Tokens.
+- [k9s](https://github.com/derailed/k9s) – TUI for managing a Kubernetes cluster.
+- [kmon](https://github.com/orhun/kmon) – Linux Kernel Manager and Activity Monitor.
+- [lazydocker](https://github.com/jesseduffield/lazydocker) – TUI Docker manager.
+- [lazygit](https://github.com/jesseduffield/lazygit) – TUI Git interface.
+- [lazyjournal](https://github.com/Lifailon/lazyjournal) – TUI for reading logs from journald, auditd, file system, Docker containers, Podman and Kubernetes pods.
+- [lazysql](https://github.com/jorgerojas26/lazysql) – TUI database management tool.
+- [live-server](https://github.com/tapio/live-server) – Little development server with live reload capability.
+- [lsFusion](https://github.com/lsfusion/platform) – Extremely declarative open-source language-based platform for information systems development.
+- [meld](https://github.com/GNOME/meld) – Visual diff and merge tool targeted at developers.
+- [mirro-rs](https://github.com/rtkay123/mirro-rs) – Arch Linux mirrorlist manager with a TUI.
+- [miunlock](https://github.com/offici5l/MiUnlockTool) – MiUnlockTool developed to retrieve encryptData(token) for Xiaomi devices for unlocking bootloader.
+- [nemu](https://github.com/nemuTUI/nemu) – Ncurses UI for QEMU.
+- [nodejs-lts-jod](https://nodejs.org/en/docs/) – Long-term support version of Node.js.
+- [npm-check-updates](https://github.com/raineorshine/npm-check-updates) – Check for newer npm dependencies.
+- [npm](https://docs.npmjs.com/) – Package manager for Node.js.
+- [nvim](https://neovim.io/doc/) – Modern Vim-based editor with Lua support.
+- [oha](https://github.com/hatoo/oha) – Tiny program that sends some load to a web application and show realtime tui.
+- [ollama](https://github.com/ollama/ollama) – Get up and running with large language models.
+- [onefetch](https://github.com/o2sh/onefetch) – Git repository summary in terminal.
+- [openapi-tui](https://github.com/zaghaghi/openapi-tui) – Terminal UI to list, browse and run APIs defined with openapi spec.
+- [opencode](https://github.com/sst/opencode) – AI coding agent, built for the terminal.
+- [pnq](https://github.com/lirantal/npq) – Lightweight npm package query tool.
+- [posting](https://github.com/darrenburns/posting) – TUI HTTP client, not unlike Postman and Insomnia.
+- [qemu](https://github.com/qemu/qemu) – Generic and open source machine & userspace emulator and virtualizer.
+- [rainfrog](https://github.com/achristmascarl/rainfrog) – Database tool for the terminal.
+- [ripgrep](https://github.com/BurntSushi/ripgrep) – Fast recursive search tool.
+- [rustup](https://rust-lang.github.io/rustup/) – Rust version manager.
+- [scooter](https://github.com/thomasschafer/scooter) – Interactive find-and-replace in the terminal.
+- [serie](https://github.com/lusingander/serie) – A rich git commit graph in your terminal, like magic 📚.
+- [soft-serve](https://github.com/charmbracelet/soft-serve) – Self-hostable Git server for the command line.
+- [television](https://github.com/alexpasmantier/television) – Fast and hackable fuzzy finder for the terminal.
+- [termscp](https://github.com/veeso/termscp) – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB.
+- [vim](https://www.vim.org/docs.php) – Highly configurable text editor.
+- [vimdiff](https://man.archlinux.org/man/vimdiff.1.en) – Edit between two and eight versions of a file with Vim and show differences.
+- [virtualbox](https://www.virtualbox.org/) – Virtualization software.
 
 ## 🛠 System Utilities
 
-- **bat** – `cat` replacement with syntax highlighting. ([docs](https://github.com/sharkdp/bat))
-- **binsider** – Analyze ELF binaries like a boss 😼🕵️‍♂️ ([docs](https://github.com/orhun/binsider))
-- **brightnessctl** – CLI brightness control. ([docs](https://github.com/Hummer12007/brightnessctl))
-- **clipse** – Configurable, TUI-based clipboard manager application written in Go with minimal dependency. ([docs](https://github.com/savedra1/clipse))
-- **ddcutil** – Monitor settings control via DDC/CI. ([docs](https://www.ddcutil.com/))
-- **envx** – Powerful and secure environment variable manager for developers, featuring an intuitive Terminal User Interface (TUI) and comprehensive command-line interface. ([docs](https://github.com/mikeleppane/envx))
-- **flawz** – Terminal UI for browsing security vulnerabilities (CVEs). ([docs](https://github.com/orhun/flawz))
-- **gping** – Ping, but with a graph. ([docs](https://github.com/orf/gping))
-- **kitty** – GPU-accelerated terminal emulator. ([docs](https://sw.kovidgoyal.net/kitty/))
-- **lsd** – `ls` replacement with icons and colors. ([docs](https://github.com/lsd-rs/lsd))
-- **systemctl-tui** – Fast, simple TUI for interacting with systemd services and their logs. ([docs](https://github.com/rgwood/systemctl-tui))
-- **systemd-manager-tui** – Fast, simple TUI for interacting with systemd services and their logs. ([docs](https://github.com/rgwood/systemctl-tui))
-- **systeroid** – More powerful alternative to sysctl(8) with a terminal user interface. ([docs](https://github.com/orhun/systeroid))
-- **sysz** – Fzf terminal UI for systemctl. ([docs](https://github.com/joehillen/sysz))
-- **trippy** – Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues. ([docs](https://github.com/fujiapple852/trippy))
-- **warpd** – Modal keyboard-driven virtual pointer. ([docs](https://github.com/rvaiya/warpd))
-- **xautolock** – Idle-time screen locker. ([docs](https://linux.die.net/man/1/xautolock))
-- **xclip** – Clipboard tool for X11. ([docs](https://linux.die.net/man/1/xclip))
-- **xkblayout-state-git** – Get/set X11 keyboard layout. ([docs](https://github.com/nonpop/xkblayout-state))
-- **xsel** – Alternative clipboard tool for X11. ([docs](https://linux.die.net/man/1/xsel))
-- **zoxide** – Smarter `cd` command based on usage history. ([docs](https://github.com/ajeetdsouza/zoxide))
+- [bat](https://github.com/sharkdp/bat) – `cat` replacement with syntax highlighting.
+- [binsider](https://github.com/orhun/binsider) – Analyze ELF binaries like a boss 😼🕵️‍♂️
+- [brightnessctl](https://github.com/Hummer12007/brightnessctl) – CLI brightness control.
+- [clipse](https://github.com/savedra1/clipse) – Configurable, TUI-based clipboard manager application written in Go with minimal dependency.
+- [ddcutil](https://www.ddcutil.com/) – Monitor settings control via DDC/CI.
+- [envx](https://github.com/mikeleppane/envx) – Powerful and secure environment variable manager for developers, featuring an intuitive Terminal User Interface (TUI) and comprehensive command-line interface.
+- [flawz](https://github.com/orhun/flawz) – Terminal UI for browsing security vulnerabilities (CVEs).
+- [gping](https://github.com/orf/gping) – Ping, but with a graph.
+- [kitty](https://sw.kovidgoyal.net/kitty/) – GPU-accelerated terminal emulator.
+- [lsd](https://github.com/lsd-rs/lsd) – `ls` replacement with icons and colors.
+- [systemctl-tui](https://github.com/rgwood/systemctl-tui) – Fast, simple TUI for interacting with systemd services and their logs.
+- [systemd-manager-tui](https://github.com/rgwood/systemctl-tui) – Fast, simple TUI for interacting with systemd services and their logs.
+- [systeroid](https://github.com/orhun/systeroid) – More powerful alternative to sysctl(8) with a terminal user interface.
+- [sysz](https://github.com/joehillen/sysz) – Fzf terminal UI for systemctl.
+- [trippy](https://github.com/fujiapple852/trippy) – Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
+- [warpd](https://github.com/rvaiya/warpd) – Modal keyboard-driven virtual pointer.
+- [xautolock](https://linux.die.net/man/1/xautolock) – Idle-time screen locker.
+- [xclip](https://linux.die.net/man/1/xclip) – Clipboard tool for X11.
+- [xkblayout-state-git](https://github.com/nonpop/xkblayout-state) – Get/set X11 keyboard layout.
+- [xsel](https://linux.die.net/man/1/xsel) – Alternative clipboard tool for X11.
+- [zoxide](https://github.com/ajeetdsouza/zoxide) – Smarter `cd` command based on usage history.
 
 ## 🎨 UI & Desktop Enhancements
 
-- **blendr** – The hacker's BLE (bluetooth low energy) browser terminal app. ([docs](https://github.com/dmtrKovalenko/blend))
-- **blueberry** – GUI Bluetooth manager. ([docs](https://github.com/linuxmint/blueberry))
-- **bluetuith** – TUI Bluetooth manager. ([docs](https://bluetuith-org.github.io/bluetuith/index.html))
-- **hellwal** – Wallpaper-based color scheme generator. ([docs](https://github.com/danihek/hellwal))
-- **impala** – TUI for managing wifi. ([docs](https://github.com/pythops/impala))
-- **otter-launcher** – Hackable cli/tui launcher built for keyboard-centric wm users, featuring vi & emacs keybinds, ansi decoration, etc. ([docs](https://github.com/kuokuo123/otter-launcher))
-- **picom** – X11 compositor for transparency & shadows. ([docs](https://wiki.archlinux.org/title/Picom))
-- **redshift** – Adjusts screen color temperature. ([docs](https://wiki.archlinux.org/title/Redshift))
-- **rofi-bluetooth-git** – Bluetooth control via Rofi. ([docs](https://github.com/ClydeDroid/rofi-bluetooth))
-- **rofi-calc** – Do live calculations in rofi. ([docs](https://github.com/svenstaro/rofi-calc))
-- **rofi-emoji** – Emoji selector plugin for Rofi. ([docs](https://github.com/Mange/rofi-emoji))
-- **termshark** – Terminal user-interface for tshark, inspired by Wireshark. ([docs](https://github.com/gcla/termshark))
-- **vial** – Open-source cross-platform (Windows, Linux and Mac) GUI and a QMK fork for configuring your keyboard in real time. ([docs](https://github.com/vial-kb/vial-gui))
-- **wavemon** – Ncurses-based monitoring application for wireless network devices on Linux. ([docs](https://github.com/uoaerg/wavemon))
-- **wifitui** – fast, featureful, and friendly replacement for nmtui. ([docs](https://github.com/shazow/wifitui))
+- [blendr](https://github.com/dmtrKovalenko/blend) – The hacker's BLE (bluetooth low energy) browser terminal app.
+- [blueberry](https://github.com/linuxmint/blueberry) – GUI Bluetooth manager.
+- [bluetuith](https://bluetuith-org.github.io/bluetuith/index.html) – TUI Bluetooth manager.
+- [hellwal](https://github.com/danihek/hellwal) – Wallpaper-based color scheme generator.
+- [impala](https://github.com/pythops/impala) – TUI for managing wifi.
+- [otter-launcher](https://github.com/kuokuo123/otter-launcher) – Hackable cli/tui launcher built for keyboard-centric wm users, featuring vi & emacs keybinds, ansi decoration, etc.
+- [picom](https://wiki.archlinux.org/title/Picom) – X11 compositor for transparency & shadows.
+- [redshift](https://wiki.archlinux.org/title/Redshift) – Adjusts screen color temperature.
+- [rofi-bluetooth-git](https://github.com/ClydeDroid/rofi-bluetooth) – Bluetooth control via Rofi.
+- [rofi-calc](https://github.com/svenstaro/rofi-calc) – Do live calculations in rofi.
+- [rofi-emoji](https://github.com/Mange/rofi-emoji) – Emoji selector plugin for Rofi.
+- [termshark](https://github.com/gcla/termshark) – Terminal user-interface for tshark, inspired by Wireshark.
+- [vial](https://github.com/vial-kb/vial-gui) – Open-source cross-platform (Windows, Linux and Mac) GUI and a QMK fork for configuring your keyboard in real time.
+- [wavemon](https://github.com/uoaerg/wavemon) – Ncurses-based monitoring application for wireless network devices on Linux.
+- [wifitui](https://github.com/shazow/wifitui) – fast, featureful, and friendly replacement for nmtui.
 
 ## 📷 Media Tools
 
-- **amazing-qr** – Amazing QRCode generator in Python. ([docs](https://github.com/x-hw/amazing-qr))
-- **cava** – Cross-platform Audio Visualizer. ([docs](https://github.com/karlstav/cava))
-- **chafa** – Powerful utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal. ([docs](https://hpjansson.org/chafa))
-- **cmus** – Console music player. ([docs](https://cmus.github.io/))
-- **crow-translate** – simple and lightweight translator that allows you to translate and speak text using Google, Yandex Bing, LibreTranslate and Lingva. ([docs](https://github.com/crow-translate/crow-translate))
-- **cups** – Open source printing system. ([docs](http://localhost:631/help/options.html))
-- **durdraw** – An ASCII, Unicode and ANSI art editor. ([docs](https://github.com/cmang/durdraw))
-- **element** – Modular audio software for routing, control, and scrtipting. ([docs](https://element.readthedocs.io/en/latest/))
-- **feh** – X11 image viewer. ([docs](https://github.com/derf/feh))
-- **flameshot** – Screenshot tool with annotation. ([docs](https://flameshot.org/docs))
-- **gimp** – Free & Open Source Image Editor. ([docs](https://www.gimp.org/))
-- **glicol-cli** – Cross-platform music live coding in terminal. ([docs](https://github.com/glicol/glicol-cli))
-- **koreader** – Document viewer primarily aimed at e-ink readers. ([docs](https://github.com/koreader/koreader))
-- **libretranslate** – Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup. ([docs](https://github.com/LibreTranslate/LibreTranslate))
-- **mixxx** – Free DJ software that gives you everything you need to perform live mixes. ([docs](https://github.com/mixxxdj/mixxx))
-- **mousai** – Identify songs in seconds. ([docs](https://github.com/SeaDve/Mousai))
-- **obs-studio** – Video recording & streaming software. ([docs](https://obsproject.com/wiki/))
-- **patat** – Terminal-based presentations using Pandoc. ([docs](https://github.com/jaspervdj/patat))
-- **playerctl** – Control media players from CLI. ([docs](https://github.com/altdesktop/playerctl))
-- **presenterm** – A markdown terminal slideshow tool. ([docs](https://github.com/mfontanini/presenterm))
-- **sc-im** – Curses-based spreadsheet program that uses key bindings similar to vim. ([docs](https://github.com/andmarti1424/sc-im))
-- **scope-tui** – Simple oscilloscope/vectorscope/spectroscope for your terminal. ([docs](https://github.com/alemidev/scope-tui))
-- **shotcut** – Cross-platform video editor. ([docs](https://www.shotcut.org/))
-- **slides** – Terminal based presentation tool. ([docs](https://github.com/maaslalani/slides))
-- **spectacle** – KDE screenshot tool. ([docs](https://github.com/KDE/spectacle))
-- **timg** – Terminal image viewer. ([docs](https://github.com/hzeller/timg))
-- **urlview** – Extract URLs from a text file and allow the user to select via a menu. ([docs](https://aur.archlinux.org/packages/urlview))
-- **visualvault** – Terminal-based media file organizer with smart date-based organization, duplicate detection, and a beautiful TUI. ([docs](https://github.com/mikeleppane/visualvault))
-- **yt-dlp** – Video/audio downloader. ([docs](https://github.com/yt-dlp/yt-dlp))
-- **ytsurf** – TUI YouTube browser/downloader. ([docs](https://github.com/Stan-breaks/ytsurf))
+- [amazing-qr](https://github.com/x-hw/amazing-qr) – Amazing QRCode generator in Python.
+- [cava](https://github.com/karlstav/cava) – Cross-platform Audio Visualizer.
+- [chafa](https://hpjansson.org/chafa) – Powerful utility that converts image data, including animated GIFs, into graphics formats or ANSI/Unicode character art suitable for display in a terminal.
+- [cmus](https://cmus.github.io/) – Console music player.
+- [crow-translate](https://github.com/crow-translate/crow-translate) – simple and lightweight translator that allows you to translate and speak text using Google, Yandex Bing, LibreTranslate and Lingva.
+- [cups](http://localhost:631/help/options.html) – Open source printing system.
+- [durdraw](https://github.com/cmang/durdraw) – An ASCII, Unicode and ANSI art editor.
+- [element](https://element.readthedocs.io/en/latest/) – Modular audio software for routing, control, and scrtipting.
+- [feh](https://github.com/derf/feh) – X11 image viewer.
+- [flameshot](https://flameshot.org/docs) – Screenshot tool with annotation.
+- [gimp](https://www.gimp.org/) – Free & Open Source Image Editor.
+- [glicol-cli](https://github.com/glicol/glicol-cli) – Cross-platform music live coding in terminal.
+- [koreader](https://github.com/koreader/koreader) – Document viewer primarily aimed at e-ink readers.
+- [libretranslate](https://github.com/LibreTranslate/LibreTranslate) – Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.
+- [mixxx](https://github.com/mixxxdj/mixxx) – Free DJ software that gives you everything you need to perform live mixes.
+- [mousai](https://github.com/SeaDve/Mousai) – Identify songs in seconds.
+- [obs-studio](https://obsproject.com/wiki/) – Video recording & streaming software.
+- [patat](https://github.com/jaspervdj/patat) – Terminal-based presentations using Pandoc.
+- [playerctl](https://github.com/altdesktop/playerctl) – Control media players from CLI.
+- [presenterm](https://github.com/mfontanini/presenterm) – A markdown terminal slideshow tool.
+- [sc-im](https://github.com/andmarti1424/sc-im) – Curses-based spreadsheet program that uses key bindings similar to vim.
+- [scope-tui](https://github.com/alemidev/scope-tui) – Simple oscilloscope/vectorscope/spectroscope for your terminal.
+- [shotcut](https://www.shotcut.org/) – Cross-platform video editor.
+- [slides](https://github.com/maaslalani/slides) – Terminal based presentation tool.
+- [spectacle](https://github.com/KDE/spectacle) – KDE screenshot tool.
+- [timg](https://github.com/hzeller/timg) – Terminal image viewer.
+- [urlview](https://aur.archlinux.org/packages/urlview) – Extract URLs from a text file and allow the user to select via a menu.
+- [visualvault](https://github.com/mikeleppane/visualvault) – Terminal-based media file organizer with smart date-based organization, duplicate detection, and a beautiful TUI.
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) – Video/audio downloader.
+- [ytsurf](https://github.com/Stan-breaks/ytsurf) – TUI YouTube browser/downloader.
 
 ## 📅 Productivity
 
-- **abook** – TUI addressbook with [mutt](http://www.mutt.org/) integration. ([docs](https://abook.sourceforge.io/))
-- **bagels** – Powerful expense tracker that lives in your terminal. ([docs](https://github.com/EnhancedJax/Bagels))
-- **basalt** – TUI Application to manage Obsidian vaults and notes directly from the terminal. ([docs](https://github.com/erikjuhani/basalt))
-- **calcure** – Modern TUI calendar and task manager with customizable interface. ([docs](https://github.com/anufrievroman/calcure))
-- **calcurse** – TUI calendar and task manager. ([docs](https://github.com/lfos/calcurse))
-- **csvlens** – Command line CSV file viewer. It is like less but made for CSV. ([docs](https://github.com/YS-L/csvlens))
-- **doxx** – Expose the contents of .docx files without leaving your terminal. ([docs](https://github.com/bgreenwell/doxx))
-- **galculator** – GTK calculator. ([docs](https://github.com/galculator/galculator))
-- **glow** – TUI Markdown viewer. ([docs](https://github.com/charmbracelet/glow))
-- **gsimplecal** – Simple popup calendar. ([docs](https://dmedvinsky.github.io/gsimplecal/))
-- **hledger** – Robust, intuitive plain text accounting. ([repo](https://github.com/simonmichael/hledger) [docs](https://hledger.org/))
-- **hledger-ui** – UI for hledger. ([tutor](https://hledger.org/ui.html))
-- **kabmat** – TUI program for managing kanban boards with vim-like keybindings. ([docs](https://github.com/PlankCipher/kabmat))
-- **khal** – CLI calendar application. ([docs](https://github.com/pimutils/khal))
-- **libqalculate** - TUI calculator. ([docs](https://github.com/Qalculate/libqalculate))
-- **libreoffice** – Powerful office suite that is fully compatible with 32/64-bit systems. ([docs](https://wiki.archlinux.org/title/LibreOffice))
-- **obsidian** – Markdown-based note-taking app. ([docs](https://help.obsidian.md/))
-- **onlyoffice** – Office suite with MS Office support. ([docs](https://help.onlyoffice.com/)[repo](https://github.com/ONLYOFFICE/DesktopEditors))
-- **pandoc** – Universal markup converter. ([docs](https://github.com/jgm/pandoc))
-- **puffin** – Terminal dashboard to manage personal finances. Built with hledger and bubbletea. ([docs](https://github.com/siddhantac/puffin))
-- **tabiew** – TUI tabular data viewer. ([docs](https://github.com/shshemi/tabiew))
-- **taskwarrior-tui** – Terminal user interface for taskwarrior. ([docs](https://github.com/kdheepak/taskwarrior-tui))
-- **tdf** – Terminal-based PDF viewer. ([docs](https://github.com/itsjunetime/tdf))
-- **vex-tui** – Beautiful, fast, and feature-rich terminal-based Excel and CSV viewer built with Go. ([docs](https://github.com/CodeOne45/vex-tui))
-- **visidata** – Terminal interface for exploring and arranging tabular data. ([docs](https://github.com/saulpw/visidata))
-- **xan** – The CSV magician. ([docs](https://github.com/medialab/xan))
+- [abook](https://abook.sourceforge.io/) – TUI addressbook with [mutt](http://www.mutt.org/) integration.
+- [bagels](https://github.com/EnhancedJax/Bagels) – Powerful expense tracker that lives in your terminal.
+- [basalt](https://github.com/erikjuhani/basalt) – TUI Application to manage Obsidian vaults and notes directly from the terminal.
+- [calcure](https://github.com/anufrievroman/calcure) – Modern TUI calendar and task manager with customizable interface.
+- [calcurse](https://github.com/lfos/calcurse) – TUI calendar and task manager.
+- [csvlens](https://github.com/YS-L/csvlens) – Command line CSV file viewer. It is like less but made for CSV.
+- [doxx](https://github.com/bgreenwell/doxx) – Expose the contents of .docx files without leaving your terminal.
+- [galculator](https://github.com/galculator/galculator) – GTK calculator.
+- [glow](https://github.com/charmbracelet/glow) – TUI Markdown viewer.
+- [gsimplecal](https://dmedvinsky.github.io/gsimplecal/) – Simple popup calendar.
+- [hledger-ui](https://hledger.org/ui.html) – UI for hledger.
+- [hledger](https://github.com/simonmichael/hledger) – Robust, intuitive plain text accounting.
+- [kabmat](https://github.com/PlankCipher/kabmat) – TUI program for managing kanban boards with vim-like keybindings.
+- [khal](https://github.com/pimutils/khal) – CLI calendar application.
+- [libqalculate](https://github.com/Qalculate/libqalculate) - TUI calculator.
+- [libreoffice](https://wiki.archlinux.org/title/LibreOffice) – Powerful office suite that is fully compatible with 32/64-bit systems.
+- [obsidian](https://help.obsidian.md/) – Markdown-based note-taking app.
+- [onlyoffice](https://github.com/ONLYOFFICE/DesktopEditors) – Office suite with MS Office support.
+- [pandoc](https://github.com/jgm/pandoc) – Universal markup converter.
+- [puffin](https://github.com/siddhantac/puffin) – Terminal dashboard to manage personal finances. Built with hledger and bubbletea.
+- [tabiew](https://github.com/shshemi/tabiew) – TUI tabular data viewer.
+- [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) – Terminal user interface for taskwarrior.
+- [tdf](https://github.com/itsjunetime/tdf) – Terminal-based PDF viewer.
+- [vex-tui](https://github.com/CodeOne45/vex-tui) – Beautiful, fast, and feature-rich terminal-based Excel and CSV viewer built with Go.
+- [visidata](https://github.com/saulpw/visidata) – Terminal interface for exploring and arranging tabular data.
+- [xan](https://github.com/medialab/xan) – The CSV magician.
 
 ## 🎮 Gaming & Entertainment
 
-- **brogue-ce** – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon. ([docs](https://github.com/tmewett/BrogueCE))
-- **cbonsai** – Bonsai tree generator. ([docs](https://gitlab.com/jallbrit/cbonsai))
-- **checkersland** – Checkers game. ([docs](https://checkersland.com/download/pc.html))
-- **firejail** – Linux namespaces and seccomp-bpf sandbox. ([docs](https://github.com/netblue30/firejail))
-- **nsnake** – Classic snake game on the terminal. ([docs](https://github.com/alexdantas/nSnake))
-- **nudoku** – Ncurses based sudoku game. ([docs](https://github.com/jubalh/nudoku))
-- **pokete** – Small terminal based game in the style of a very popular and old game by Gamefreak. ([docs](https://github.com/lxgr-linux/pokete))
-- **portproton** – Proton/Wine launcher for Windows games. ([docs](https://linux-gaming.ru/))
-- **rebels-in-the-sky** – It's the year 2101. Corporations have taken over the world.. ([docs](https://github.com/ricott1/rebels-in-the-sky))
-- **tinytetris** – 80x23 terminal tetris. ([docs](https://github.com/taylorconor/tinytetris))
-- **wine** – Run Windows apps on Linux. ([docs](https://wiki.winehq.org/))
+- [brogue-ce](https://github.com/tmewett/BrogueCE) – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon.
+- [cbonsai](https://gitlab.com/jallbrit/cbonsai) – Bonsai tree generator.
+- [checkersland](https://checkersland.com/download/pc.html) – Checkers game.
+- [firejail](https://github.com/netblue30/firejail) – Linux namespaces and seccomp-bpf sandbox.
+- [nsnake](https://github.com/alexdantas/nSnake) – Classic snake game on the terminal.
+- [nudoku](https://github.com/jubalh/nudoku) – Ncurses based sudoku game.
+- [pokete](https://github.com/lxgr-linux/pokete) – Small terminal based game in the style of a very popular and old game by Gamefreak.
+- [portproton](https://linux-gaming.ru/) – Proton/Wine launcher for Windows games.
+- [rebels-in-the-sky](https://github.com/ricott1/rebels-in-the-sky) – It's the year 2101. Corporations have taken over the world..
+- [tinytetris](https://github.com/taylorconor/tinytetris) – 80x23 terminal tetris.
+- [wine](https://wiki.winehq.org/) – Run Windows apps on Linux.
 
 ## 🛡 Security & Encryption
 
-- **gpg-tui** – TUI for GnuPG. ([docs](https://github.com/orhun/gpg-tui))
-- **gufw** – Linux Firewall. ([docs](https://github.com/costales/gufw))
-- **keepassxc** – cross-platform community-driven port of the Windows application “KeePass Password Safe”. ([docs](https://github.com/keepassxreboot/keepassxc))
-- **libsecret** – Library for password/key storage. ([docs](https://github.com/GNOME/libsecret))
+- [gpg-tui](https://github.com/orhun/gpg-tui) – TUI for GnuPG.
+- [gufw](https://github.com/costales/gufw) – Linux Firewall.
+- [keepassxc](https://github.com/keepassxreboot/keepassxc) – cross-platform community-driven port of the Windows application “KeePass Password Safe”.
+- [libsecret](https://github.com/GNOME/libsecret) – Library for password/key storage.
 
 ## 🖼 Fonts & Graphics
 
-- **ttf-jetbrains-mono-nerd** – JetBrains Mono font patched with Nerd Fonts symbols. ([docs](https://www.nerdfonts.com/font-downloads))
-- **ttyplot** – Realtime plotting utility for terminal/console with data input from stdin. ([docs](https://github.com/tenox7/ttyplot))
+- [ttf-jetbrains-mono-nerd](https://www.nerdfonts.com/font-downloads) – JetBrains Mono font patched with Nerd Fonts symbols.
+- [ttyplot](https://github.com/tenox7/ttyplot) – Realtime plotting utility for terminal/console with data input from stdin.
 
 ## 📦 Miscellaneous & Fun
 
-- **atuin** – Magical shell history. ([docs](https://github.com/atuinsh/atuin))
-- **downloader-cli** – CLI file downloader. ([docs](https://github.com/deepjyoti30/downloader-cli))
-- **fish** – User-friendly shell with autosuggestions. ([docs](https://fishshell.com/docs/current/))
-- **fish-done** – Notifications for long-running commands in Fish. ([docs](https://github.com/franciscolourenco/done))
-- **kbt** – Keyboard tester in terminal. ([docs](https://github.com/bloznelis/kbt))
-- **linutil** – distro-agnostic toolbox designed to simplify everyday Linux tasks. ([docs](https://github.com/ChrisTitusTech/linutil))
-- **ouch** – Compression and decompression tool. ([docs](https://github.com/ouch-org/ouch))
-- **poketex** – Simple Pokedex based on TUI. ([docs](https://github.com/ckaznable/poketex))
-- **speedread-git** – CLI speed-reading tool. ([docs](https://github.com/pasky/speedread))
-- **terminal-rain-lightning** – Animated rain & lightning in terminal. ([docs](https://github.com/rmaake1/terminal-rain-lightning))
-- **thokr** – Sleek typing tui with visualized results and historical logging. ([docs](https://github.com/jrnxf/thokr))
-- **ttyper** – Terminal-based typing test built with Rust and Ratatui. ([docs](https://github.com/max-niederman/ttyper))
-- **upiano** – Piano in your terminal. ([docs](https://github.com/eliasdorneles/upiano))
+- [atuin](https://github.com/atuinsh/atuin) – Magical shell history.
+- [downloader-cli](https://github.com/deepjyoti30/downloader-cli) – CLI file downloader.
+- [fish-done](https://github.com/franciscolourenco/done) – Notifications for long-running commands in Fish.
+- [fish](https://fishshell.com/docs/current/) – User-friendly shell with autosuggestions.
+- [kbt](https://github.com/bloznelis/kbt) – Keyboard tester in terminal.
+- [linutil](https://github.com/ChrisTitusTech/linutil) – distro-agnostic toolbox designed to simplify everyday Linux tasks.
+- [ouch](https://github.com/ouch-org/ouch) – Compression and decompression tool.
+- [poketex](https://github.com/ckaznable/poketex) – Simple Pokedex based on TUI.
+- [speedread-git](https://github.com/pasky/speedread) – CLI speed-reading tool.
+- [terminal-rain-lightning](https://github.com/rmaake1/terminal-rain-lightning) **terminal-rain-lightning** – Animated rain & lightning in terminal
+- [thokr](https://github.com/jrnxf/thokr) – Sleek typing tui with visualized results and historical logging
+- [ttyper](https://github.com/max-niederman/ttyper) – Terminal-based typing test built with Rust and Ratatui
+- [upiano](https://github.com/eliasdorneles/upiano) – Piano in your terminal
 
 ## 📚 Libraries for TUI
 
