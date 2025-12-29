@@ -66,11 +66,11 @@ this will symlink files like `config.fish` to `~/.config/fish`
 
 ## my dotfiles setup
 
-to fully "install" and setup this repo run the [setup script](https://github.com/EgorEast/dotfiles/blob/main/setup.sh) or something like this:
+to fully "install" and setup this repo run the [setup script](https://gitea.com/EgorEast/dotfiles/src/branch/main/setup.sh) or something like this:
 
 ```sh
 # clone and stow
-git clone git@github.com:EgorEast/dotfiles.git ~/.local/src/dotfiles &&
+git clone git@gitea.com:EgorEast/dotfiles.git ~/.local/src/dotfiles &&
  cd ~/.local/src/dotfiles &&
  stow bash calcurse cmus curl delta dunst fastfetch -t ~
 
@@ -87,7 +87,7 @@ navigate to your home directory
 
 clone the repo:
 
-`git clone git@github.com:EgorEast/dotfiles.git`
+`git clone git@gitea.com:EgorEast/dotfiles.git`
 
 enter the dotfiles directory
 
@@ -141,4 +141,4 @@ sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(co
 
 ## 📦 About packages
 
-About packages can be found [this page](https://github.com/EgorEast/dotfiles/blob/main/AboutPackages.md)
+About packages can be found [this page](https://gitea.com/EgorEast/dotfiles/src/branch/main/AboutPackages.md)
