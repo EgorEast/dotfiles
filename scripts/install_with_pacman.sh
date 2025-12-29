@@ -54,6 +54,7 @@ sudo pacman -S --noconfirm --needed \
   gimp-help-ru \
   git \
   git-delta \
+  gitea \
   github-cli \
   glim \
   glow \

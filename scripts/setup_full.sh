@@ -58,6 +58,9 @@ sudo systemctl enable docker
 sudo systemctl start docker
 sudo gpasswd -a egoreast docker
 
+sudo systemctl enable gitea
+sudo systemctl start gitea
+
 yandex-disk token || true
 yandex-disk start || true
 

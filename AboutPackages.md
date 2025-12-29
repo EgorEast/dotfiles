@@ -86,6 +86,7 @@
 - [fx](https://fx.wtf/getting-started) – Terminal JSON viewer & processor.
 - [fzf-make](https://github.com/kyu08/fzf-make) – Command line tool that executes commands using fuzzy finder with preview window for make, pnpm, yarn, just and task.
 - [git-delta](https://dandavison.github.io/delta/) – Syntax-highlighting pager for Git diffs.
+- [gitea](https://docs.gitea.com/) – Painless, self-hosted, all-in-one software development service.
 - [github-cli](https://github.com/cli/cli) – GitHub CLI.
 - [glim](https://github.com/junkdog/glim) – TUI for monitoring GitLab CI/CD pipelines and projects.
 - [gobang](https://github.com/TaKO8Ki/gobang) – TUI database management tool.
@@ -103,7 +104,6 @@
 - [mirro-rs](https://github.com/rtkay123/mirro-rs) – Arch Linux mirrorlist manager with a TUI.
 - [miunlock](https://github.com/offici5l/MiUnlockTool) – MiUnlockTool developed to retrieve encryptData(token) for Xiaomi devices for unlocking bootloader.
 - [nemu](https://github.com/nemuTUI/nemu) – Ncurses UI for QEMU.
-- [virt-manager](https://github.com/virt-manager/virt-manager) – Desktop tool for managing virtual machines via libvirt.
 - [nodejs-lts-jod](https://nodejs.org/en/docs/) – Long-term support version of Node.js.
 - [npm-check-updates](https://github.com/raineorshine/npm-check-updates) – Check for newer npm dependencies.
 - [npm](https://docs.npmjs.com/) – Package manager for Node.js.
@@ -126,6 +126,7 @@
 - [termscp](https://github.com/veeso/termscp) – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB.
 - [vim](https://www.vim.org/docs.php) – Highly configurable text editor.
 - [vimdiff](https://man.archlinux.org/man/vimdiff.1.en) – Edit between two and eight versions of a file with Vim and show differences.
+- [virt-manager](https://github.com/virt-manager/virt-manager) – Desktop tool for managing virtual machines via libvirt.
 
 ## 🛠 System Utilities
 
