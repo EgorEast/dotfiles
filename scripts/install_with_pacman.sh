@@ -99,6 +99,7 @@ sudo pacman -S --noconfirm --needed \
   obsidian \
   oha \
   ollama \
+  onboard \
   onefetch \
   openapi-tui \
   openbsd-netcat \

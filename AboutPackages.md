@@ -159,6 +159,7 @@
 - [bluetuith](https://bluetuith-org.github.io/bluetuith/index.html) – TUI Bluetooth manager.
 - [hellwal](https://github.com/danihek/hellwal) – Wallpaper-based color scheme generator.
 - [impala](https://github.com/pythops/impala) – TUI for managing wifi.
+- [onboard](https://launchpad.net/onboard) – Onscreen keyboard useful for tablet PC users and for mobility impaired users.
 - [otter-launcher](https://github.com/kuokuo123/otter-launcher) – Hackable cli/tui launcher built for keyboard-centric wm users, featuring vi & emacs keybinds, ansi decoration, etc.
 - [picom](https://wiki.archlinux.org/title/Picom) – X11 compositor for transparency & shadows.
 - [redshift](https://wiki.archlinux.org/title/Redshift) – Adjusts screen color temperature.
