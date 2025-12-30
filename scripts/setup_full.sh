@@ -87,4 +87,7 @@ git config filter.koreader-ignore-sync-server.smudge "cat"
 echo ">>> Configuring libvirt..."
 . ./scripts/set-libvirt-fw.sh
 
+echo ">>> Configuring onboard..."
+. ./onboard/install.sh
+
 echo ">>> All done!"
