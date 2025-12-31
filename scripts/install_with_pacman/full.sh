@@ -1,29 +1,25 @@
 #!/usr/bin/env bash
 
+. ./main.sh
+
 sudo pacman -S --noconfirm --needed \
   android-tools \
   atac \
-  atuin \
   bandwhich \
-  bat \
   binsider \
   blendr \
-  blueberry \
   bridge-utils \
   brightnessctl \
-  btop \
   calcurse \
   cava \
   chafa \
   chawan \
-  chromium \
   cloc \
   cmus \
   cpufetch \
   cronie \
   csvlens \
   ctop \
-  curl \
   ddcutil \
   dialog \
   diskonaut \
@@ -37,27 +33,16 @@ sudo pacman -S --noconfirm --needed \
   ebtables \
   element \
   element-desktop \
-  fastfetch \
-  fd \
-  feh \
-  firefox \
   firejail \
-  fish \
-  fisher \
-  flameshot \
   flawz \
-  fx \
   galculator \
   gdu \
   gemini-cli \
   gimp \
   gimp-help-ru \
-  git \
-  git-delta \
   gitea \
   github-cli \
   glim \
-  glow \
   gparted \
   gpg-tui \
   gping \
@@ -74,37 +59,26 @@ sudo pacman -S --noconfirm --needed \
   kbt \
   keepassxc \
   khal \
-  kitty \
   kmon \
   lazydocker \
-  lazygit \
   libqalculate \
   libreoffice-still-ru \
   libsecret \
   lnav \
-  lsd \
   lshw \
   lynx \
   mirro-rs \
   mixxx \
   mousai \
-  ncdu \
   netscanner \
-  networkmanager-openvpn \
-  nodejs-lts-jod \
-  npm \
   npm-check-updates \
-  nvim \
   obs-studio \
-  obsidian \
   oha \
   ollama \
   onboard \
-  onefetch \
   openapi-tui \
   openbsd-netcat \
   oryx \
-  ouch \
   pandoc-cli \
   picom \
   playerctl \
@@ -113,26 +87,21 @@ sudo pacman -S --noconfirm --needed \
   profanity \
   pyalpm \
   python-pipx \
-  qbittorrent \
   qemu-full \
   rainfrog \
   rebels-in-the-sky \
   redshift \
-  ripgrep \
   rofi-calc \
   rofi-emoji \
   rtorrent \
   rustup \
   serie \
-  shotcut \
   soft-serve \
-  spectacle \
   syncthing \
   systemctl-tui \
   systeroid \
   tabiew \
   taskwarrior-tui \
-  telegram-desktop \
   television \
   termscp \
   termshark \
@@ -140,24 +109,13 @@ sudo pacman -S --noconfirm --needed \
   torbrowser-launcher \
   torsocks \
   tracexec \
-  trash-cli \
-  tree \
   trippy \
-  ttf-jetbrains-mono-nerd \
   ttyper \
   vde2 \
   vim \
   virt-manager \
   visidata \
-  vulkan-icd-loader \
-  vulkan-radeon \
-  vulkan-tools \
   wavemon \
-  wine \
   xan \
-  xclip \
   xorg-xprop \
-  xsel \
-  yazi \
-  yt-dlp \
-  zoxide
+  yt-dlp

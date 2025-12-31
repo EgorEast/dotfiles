@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+. ./main.sh
+
 yay -S --noconfirm --needed \
   abook \
   amazing-qr \
@@ -8,7 +10,6 @@ yay -S --noconfirm --needed \
   balena-etcher \
   basalt \
   bitchat-tui \
-  blobdrop-git \
   bluetuith-bin \
   bombadillo-git \
   brogue-ce \
@@ -19,13 +20,10 @@ yay -S --noconfirm --needed \
   checkersland \
   clipse \
   crow-translate \
-  cruise \
   crush-bin \
   dblab \
-  downloader-cli \
   durdraw \
   envx \
-  fish-done \
   fzf-make \
   glicol-cli \
   gobang-bin \
@@ -36,7 +34,6 @@ yay -S --noconfirm --needed \
   lazyjournal \
   lazysql \
   lazyssh-bin \
-  linutil \
   mastodon \
   mmtui-bin \
   nemu \
@@ -44,13 +41,10 @@ yay -S --noconfirm --needed \
   nudoku \
   nyaa \
   obfs4proxy \
-  onlyoffice-bin \
   opencode-bin \
   otter-launcher \
-  pantum-driver \
   patat-bin \
   pokete-git \
-  portproton \
   posting \
   puffin \
   rmtrash \
@@ -72,20 +66,15 @@ yay -S --noconfirm --needed \
   sysz \
   telegram-tg \
   thokr-git \
-  throne \
   tinytetris \
-  ttf-ms-fonts \
   ttyplot \
-  ventoy \
   vex-tui-bin \
   via-appimage \
   vial-appimage \
   visualvault-bin \
   warpd \
-  whatsapp-linux-desktop \
   wifitui-bin \
   woeusb \
   xautolock \
   xkblayout-state-git \
-  yandex-disk \
   ytsurf

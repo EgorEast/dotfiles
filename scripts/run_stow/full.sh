@@ -2,18 +2,17 @@
 
 rm -rf ~/.config/mineapps.list
 
+. ./main.sh
+
 stow --adopt --restow \
   anydesk \
   atac \
   atuin \
   autostart \
   bagels \
-  bash \
-  bat \
   bluetuith \
   bombadillo \
   brows \
-  btop \
   calcure \
   calcurse \
   cava \
@@ -23,36 +22,24 @@ stow --adopt --restow \
   crow-translate \
   cruise \
   crush \
-  curl \
-  delta \
   dive \
   docker \
-  dunst \
   durdraw \
-  fastfetch \
-  feh \
-  fish \
-  flameshot \
   galculator \
   gdu \
   gemini \
   git \
   github-cli \
-  glow \
   gobang \
-  greenclip \
   gtk \
   hledger \
   i3 \
   icons \
   inputrc \
-  jqp \
   k9s \
   khal \
-  kitty \
   koreader \
   lazydocker \
-  lazygit \
   lazysql \
   libreoffice \
   lnav \
@@ -61,9 +48,6 @@ stow --adopt --restow \
   lynx \
   mailcap \
   mineapp-list \
-  mpv \
-  nano \
-  ncdu \
   nemu \
   nsnake \
   nvim \
@@ -94,7 +78,6 @@ stow --adopt --restow \
   termshark \
   tg \
   thokr \
-  throne \
   thunar \
   ttyper \
   user-dirs \
@@ -109,7 +92,5 @@ stow --adopt --restow \
   xorg \
   xsettingsd \
   ya-disk \
-  yazi \
-  yt-dlp \
   ytsurf \
   -t ~

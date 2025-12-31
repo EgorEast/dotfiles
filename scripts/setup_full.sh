@@ -9,15 +9,15 @@ sudo pacman -S stow
 echo ">>> Creating symlinks with stow..."
 cd ~/.local/src/dotfiles
 
-. ./scripts/run_stow.sh
+. ./run_stow/full.sh
 
 echo ">>> Installing base packages..."
 
-. ./scripts/install_with_pacman.sh
+. ./install_with_pacman/full.sh
 
 echo ">>> Installing AUR packages (via yay)..."
 
-. ./scripts/install_from_aur.sh
+. ./install_from_aur/full.sh
 
 echo ">>> Installing neovim..."
 nvim --headless "+Lazy! sync" +qa

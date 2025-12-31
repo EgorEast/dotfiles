@@ -9,94 +9,15 @@ sudo pacman -S stow
 echo ">>> Creating symlinks with stow..."
 cd ~/.local/src/dotfiles
 
-stow --adopt --restow \
-  bash \
-  bat \
-  btop \
-  curl \
-  delta \
-  dunst \
-  fastfetch \
-  feh \
-  fish \
-  flameshot \
-  glow \
-  greenclip \
-  jqp \
-  kitty \
-  lazygit \
-  mpv \
-  nano \
-  ncdu \
-  throne \
-  yazi \
-  yt-dlp \
-  -t ~
+. ./run_stow/main.sh
 
 echo ">>> Installing base packages..."
 
-sudo pacman -S --noconfirm --needed \
-  atuin \
-  bat \
-  blueberry \
-  btop \
-  chromium \
-  curl \
-  fastfetch \
-  fd \
-  feh \
-  firefox \
-  fish \
-  fisher \
-  flameshot \
-  fx \
-  git \
-  git-delta \
-  glow \
-  kitty \
-  lazygit \
-  lsd \
-  ncdu \
-  networkmanager-openvpn \
-  nodejs-lts-jod \
-  npm \
-  nvim \
-  obsidian \
-  onefetch \
-  ouch \
-  qbittorrent \
-  ripgrep \
-  shotcut \
-  spectacle \
-  telegram-desktop \
-  trash-cli \
-  tree \
-  ttf-jetbrains-mono-nerd \
-  vulkan-icd-loader \
-  vulkan-radeon \
-  vulkan-tools \
-  wine \
-  xclip \
-  xsel \
-  yazi \
-  zoxide
+. ./install_with_pacman/main.sh
 
 echo ">>> Installing AUR packages (via yay)..."
 
-yay -S --noconfirm --needed \
-  blobdrop-git \
-  cruise \
-  downloader-cli \
-  fish-done \
-  linutil \
-  onlyoffice-bin \
-  pantum-driver \
-  portproton \
-  throne \
-  ttf-ms-fonts \
-  ventoy-bin \
-  whatsapp-linux-desktop \
-  yandex-browser
+. ./install_from_aur/main.sh
 
 echo ">>> Installing global npm packages..."
 sudo npm i -g @bramus/caniuse-cli

@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+
+sudo pacman -S --noconfirm --needed \
+  atuin \
+  bat \
+  blueberry \
+  btop \
+  chromium \
+  curl \
+  fastfetch \
+  fd \
+  feh \
+  firefox \
+  fish \
+  fisher \
+  flameshot \
+  fx \
+  git \
+  git-delta \
+  glow \
+  kitty \
+  lazygit \
+  lsd \
+  ncdu \
+  networkmanager-openvpn \
+  nodejs-lts-jod \
+  npm \
+  nvim \
+  obsidian \
+  onefetch \
+  ouch \
+  qbittorrent \
+  ripgrep \
+  shotcut \
+  spectacle \
+  telegram-desktop \
+  trash-cli \
+  tree \
+  ttf-jetbrains-mono-nerd \
+  vulkan-icd-loader \
+  vulkan-radeon \
+  vulkan-tools \
+  wine \
+  xclip \
+  xsel \
+  yazi \
+  zoxide
