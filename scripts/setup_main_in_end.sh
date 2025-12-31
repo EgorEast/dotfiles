@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
 echo ">>> Installing neovim..."
 nvim --headless "+Lazy! sync" +qa
 nvim --headless "+Lazy! load mason.nvim" "+lua require('mason.api.command').MasonUpdate()" +qa
@@ -8,7 +10,7 @@ echo ">>> Setting up kitty as default terminal..."
 sudo ln -sf /usr/bin/kitty /usr/bin/x-terminal-emulator
 
 echo ">>> Configuring libvirt..."
-. ./scripts/set-libvirt-fw.sh
+. "$SCRIPT_DIR/set-libvirt-fw.sh"
 
 echo ">>> Configuring onboard..."
 . ./onboard/install.sh

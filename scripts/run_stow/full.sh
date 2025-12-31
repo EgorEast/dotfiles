@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+
 rm -rf ~/.config/mineapps.list
 
-. ./main.sh
+. "$SCRIPT_DIR/main.sh"
 
 stow --adopt --restow \
   anydesk \

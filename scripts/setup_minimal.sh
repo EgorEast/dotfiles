@@ -1,24 +1,26 @@
 #!/usr/bin/env bash
 
-. ./setup_main_start.sh
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-. ./run_stow/main.sh
+. "$SCRIPT_DIR/setup_main_start.sh"
+
+. "$SCRIPT_DIR/run_stow/main.sh"
 
 echo ">>> Installing base packages..."
 
-. ./install_with_pacman/main.sh
+. "$SCRIPT_DIR/install_with_pacman/main.sh"
 
 echo ">>> Installing AUR packages (via yay)..."
 
-. ./install_from_aur/main.sh
+. "$SCRIPT_DIR/install_from_aur/main.sh"
 
 echo ">>> Installing global npm packages..."
-. ./install_from_npm/main.sh
+. "$SCRIPT_DIR/install_from_npm/main.sh"
 
 echo ">>> Enabling necessary services..."
 sudo systemctl enable --now reflector.timer
 sudo systemctl enable --now bluetooth
 
-. ./setup_main_in_end.sh
+. "$SCRIPT_DIR/setup_main_in_end.sh"
 
 echo ">>> All done!"
