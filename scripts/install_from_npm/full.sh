@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
+. ./main.sh
+
 sudo npm i -g \
-  @bramus/caniuse-cli \
   @builder.io/ai-shell \
   live-server
