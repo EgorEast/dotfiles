@@ -2,6 +2,7 @@
 
 sudo pacman -S --noconfirm --needed \
   atuin \
+  bandwhich \
   bat \
   blueberry \
   btop \
@@ -15,28 +16,37 @@ sudo pacman -S --noconfirm --needed \
   fisher \
   flameshot \
   fx \
+  gdu \
+  gimp \
+  gimp-help-ru \
   git \
   git-delta \
   glow \
+  keepassxc \
   kitty \
   lazygit \
+  libreoffice-still-ru \
   lsd \
   ncdu \
   networkmanager-openvpn \
   nodejs-lts-jod \
   npm \
   nvim \
+  obs-studio \
   obsidian \
+  onboard \
   onefetch \
   ouch \
   qbittorrent \
   ripgrep \
   shotcut \
   spectacle \
+  syncthing \
   telegram-desktop \
   trash-cli \
   tree \
   ttf-jetbrains-mono-nerd \
+  vim \
   vulkan-icd-loader \
   vulkan-radeon \
   vulkan-tools \

@@ -5,7 +5,6 @@
 sudo pacman -S --noconfirm --needed \
   android-tools \
   atac \
-  bandwhich \
   binsider \
   blendr \
   bridge-utils \
@@ -36,10 +35,7 @@ sudo pacman -S --noconfirm --needed \
   firejail \
   flawz \
   galculator \
-  gdu \
   gemini-cli \
-  gimp \
-  gimp-help-ru \
   gitea \
   github-cli \
   glim \
@@ -57,12 +53,10 @@ sudo pacman -S --noconfirm --needed \
   jwt-ui \
   k9s \
   kbt \
-  keepassxc \
   khal \
   kmon \
   lazydocker \
   libqalculate \
-  libreoffice-still-ru \
   libsecret \
   lnav \
   lshw \
@@ -72,10 +66,8 @@ sudo pacman -S --noconfirm --needed \
   mousai \
   netscanner \
   npm-check-updates \
-  obs-studio \
   oha \
   ollama \
-  onboard \
   openapi-tui \
   openbsd-netcat \
   oryx \
@@ -97,7 +89,6 @@ sudo pacman -S --noconfirm --needed \
   rustup \
   serie \
   soft-serve \
-  syncthing \
   systemctl-tui \
   systeroid \
   tabiew \
@@ -112,7 +103,6 @@ sudo pacman -S --noconfirm --needed \
   trippy \
   ttyper \
   vde2 \
-  vim \
   virt-manager \
   visidata \
   wavemon \
