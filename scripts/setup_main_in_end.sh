@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(dirname -- "${BASH_SOURCE[0]}")"
 
 echo ">>> Installing neovim..."
 nvim --headless "+Lazy! sync" +qa
@@ -10,7 +10,7 @@ echo ">>> Setting up kitty as default terminal..."
 sudo ln -sf /usr/bin/kitty /usr/bin/x-terminal-emulator
 
 echo ">>> Configuring libvirt..."
-. "$SCRIPT_DIR/set-libvirt-fw.sh"
+sudo bash "$SCRIPT_DIR/set-libvirt-fw.sh"
 
 echo ">>> Configuring onboard..."
 . ./onboard/install.sh
@@ -18,8 +18,24 @@ echo ">>> Configuring onboard..."
 echo ">>> Configuring bat..."
 bat cache --build
 
+set_env_var() {
+  local key="$1"
+  local value="$2"
+  local file="/etc/environment"
+
+  if grep -q "^${key}=" "$file"; then
+    sudo sed -i "s|^${key}=.*|${key}=${value}|" "$file"
+  else
+    echo "${key}=${value}" | sudo tee -a "$file" >/dev/null
+  fi
+}
+
 echo ">>> Updating environment variables..."
-sudo bash -c 'grep -q "EDITOR=" /etc/environment && sed -i "s/^EDITOR=.*$/EDITOR=nvim/" /etc/environment || echo "EDITOR=nvim" >> /etc/environment; grep -q "BROWSER=" /etc/environment && sed -i "s/^BROWSER=.*$/BROWSER=chromium/" /etc/environment || echo "BROWSER=chromium" >> /etc/environment; grep -q "VISUAL=" /etc/environment || echo "VISUAL=nvim" >> /etc/environment; awk "!seen[\$0]++ && NF" /etc/environment > /tmp/env.tmp && mv /tmp/env.tmp /etc/environment'
+set_env_var EDITOR nvim
+set_env_var VISUAL nvim
+set_env_var BROWSER chromium
+
+sudo awk '!seen[$0]++ && NF' /etc/environment | sudo tee /etc/environment >/dev/null
 
 echo ">>> Configuring git..."
 git config filter.koreader-ignore-sync-server.clean "./koreader/.config/koreader/git-filter-script.sh"
