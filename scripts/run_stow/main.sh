@@ -29,7 +29,6 @@ stow --adopt --restow \
   ncdu \
   nvim \
   obs \
-  obs \
   onboard \
   onlyoffice \
   spectacle \
