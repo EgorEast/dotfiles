@@ -7,7 +7,6 @@ rm -rf ~/.config/mineapps.list
 stow --adopt --restow \
   anydesk \
   atac \
-  atuin \
   autostart \
   bagels \
   bluetuith \
@@ -19,16 +18,12 @@ stow --adopt --restow \
   chawan \
   clipse \
   cmus \
-  crow-translate \
-  cruise \
   crush \
   dive \
   docker \
   durdraw \
   galculator \
-  gdu \
   gemini \
-  git \
   github-cli \
   gobang \
   gtk \
@@ -38,22 +33,16 @@ stow --adopt --restow \
   inputrc \
   k9s \
   khal \
-  koreader \
   lazydocker \
   lazysql \
-  libreoffice \
   lnav \
   ls-fusion \
-  lsd \
   lynx \
   mailcap \
   mineapp-list \
   nsnake \
-  nvim \
   nwg-look \
   nyaa \
-  obs \
-  onlyoffice \
   otter-launcher \
   ovpn \
   patat \
@@ -68,7 +57,6 @@ stow --adopt --restow \
   rudesktop \
   sc-im \
   scooter \
-  spectacle \
   ssh \
   sshm \
   taskwarrior \
@@ -80,8 +68,6 @@ stow --adopt --restow \
   thunar \
   ttyper \
   user-dirs \
-  ventoy \
-  vim \
   warpd \
   wavemon \
   wget \

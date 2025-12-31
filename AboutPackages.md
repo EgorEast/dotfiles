@@ -61,7 +61,6 @@
 - [torbrowser-launcher](https://github.com/micahflee/torbrowser-launcher) – Tor Browser installer/updater.
 - [torsocks](https://gitweb.torproject.org/torsocks.git) – Run applications through Tor.
 - [whatsapp-linux-desktop](https://github.com/eneshecan/whatsapp-for-linux) – Unofficial WhatsApp desktop client.
-- [yandex-browser](https://browser.yandex.ru/help/) – Yandex web browser.
 - [yandex-disk](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux) – Cloud storage client.
 
 ## 💻 Development Tools

@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
 stow --adopt --restow \
+  atuin \
   bash \
   bat \
   btop \
+  crow-translate \
+  cruise \
   curl \
   delta \
   dunst \
@@ -11,15 +14,28 @@ stow --adopt --restow \
   feh \
   fish \
   flameshot \
+  gdu \
+  git \
   glow \
   greenclip \
   jqp \
   kitty \
+  koreader \
   lazygit \
+  libreoffice \
+  lsd \
   mpv \
   nano \
   ncdu \
+  nvim \
+  obs \
+  obs \
+  onboard \
+  onlyoffice \
+  spectacle \
   throne \
+  ventoy \
+  vim \
   yazi \
   yt-dlp \
   -t ~

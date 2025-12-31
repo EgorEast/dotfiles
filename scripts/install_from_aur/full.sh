@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   cbonsai \
   checkersland \
   clipse \
-  crow-translate \
   crush-bin \
   dblab \
   durdraw \
@@ -29,7 +28,6 @@ yay -S --noconfirm --needed \
   hellwal \
   jqp-bin \
   kabmat \
-  koreader-appimage \
   lazyjournal \
   lazysql \
   lazyssh-bin \
@@ -58,8 +56,6 @@ yay -S --noconfirm --needed \
   slides \
   speedread-git \
   sshm-bin \
-  syncthing-resolve-conflicts \
-  syncthingtray \
   systemd-manager-tui \
   sysz \
   telegram-tg \
