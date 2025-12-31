@@ -191,6 +191,7 @@
 - [mousai](https://github.com/SeaDve/Mousai) – Identify songs in seconds.
 - [obs-studio](https://obsproject.com/wiki/) – Video recording & streaming software.
 - [patat](https://github.com/jaspervdj/patat) – Terminal-based presentations using Pandoc.
+- [pinta](https://github.com/PintaProject/Pinta) – Simple GTK Paint Program.
 - [playerctl](https://github.com/altdesktop/playerctl) – Control media players from CLI.
 - [presenterm](https://github.com/mfontanini/presenterm) – A markdown terminal slideshow tool.
 - [sc-im](https://github.com/andmarti1424/sc-im) – Curses-based spreadsheet program that uses key bindings similar to vim.

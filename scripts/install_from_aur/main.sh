@@ -8,6 +8,7 @@ yay -S --noconfirm --needed \
   linutil \
   onlyoffice-bin \
   pantum-driver \
+  pinta \
   portproton \
   throne \
   ttf-ms-fonts \
