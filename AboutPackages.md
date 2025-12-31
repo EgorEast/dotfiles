@@ -102,7 +102,6 @@
 - [meld](https://github.com/GNOME/meld) – Visual diff and merge tool targeted at developers.
 - [mirro-rs](https://github.com/rtkay123/mirro-rs) – Arch Linux mirrorlist manager with a TUI.
 - [miunlock](https://github.com/offici5l/MiUnlockTool) – MiUnlockTool developed to retrieve encryptData(token) for Xiaomi devices for unlocking bootloader.
-- [nemu](https://github.com/nemuTUI/nemu) – Ncurses UI for QEMU.
 - [nodejs-lts-jod](https://nodejs.org/en/docs/) – Long-term support version of Node.js.
 - [npm-check-updates](https://github.com/raineorshine/npm-check-updates) – Check for newer npm dependencies.
 - [npm](https://docs.npmjs.com/) – Package manager for Node.js.

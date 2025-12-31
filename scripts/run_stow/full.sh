@@ -48,7 +48,6 @@ stow --adopt --restow \
   lynx \
   mailcap \
   mineapp-list \
-  nemu \
   nsnake \
   nvim \
   nwg-look \
