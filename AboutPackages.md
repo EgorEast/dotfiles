@@ -30,7 +30,6 @@
 
 - [anydesk](https://anydesk.com) – Remote desktop software.
 - [bandwhich](https://github.com/imsnif/bandwhich) - CLI utility for displaying current network utilization by process, connection and remote IP/hostname.
-- [bitchat-tui](https://github.com/vaibhav-mattoo/bitchat-tui) – TUI chat application.
 - [blobdrop-git](https://github.com/vimpostor/blobdrop) – Local network file sharing tool.
 - [carbonyl](https://github.com/fathyb/carbonyl) – Chromium running inside your terminal.
 - [chawan](https://sr.ht/~bptato/chawan/) – TUI web browser with CSS, inline image and JavaScript support.

@@ -9,7 +9,6 @@ yay -S --noconfirm --needed \
   bagels \
   balena-etcher \
   basalt \
-  bitchat-tui \
   bluetuith-bin \
   bombadillo-git \
   brogue-ce \
