@@ -29,10 +29,9 @@ function get_brightness {
 
 # Calculates brightness percentage
 function get_brightness_percent {
-  current=$(brightnessctl g)
-  max=$(brightnessctl m)
-  percent=$((100 * current / max))
-  echo $percent
+  screen_curr=$(brightnessctl -q get)
+  screen_max=$(brightnessctl -q max)
+  echo $((screen_curr * 100 / screen_max))
 }
 
 function get_volume_icon {
@@ -48,7 +47,14 @@ function get_volume_icon {
 }
 
 function get_brightness_icon {
-  brightness_icon=""
+  sc_brightness=$(get_brightness_percent)
+  if [ "$sc_brightness" -eq 0 ]; then
+    brightness_icon="" # unfilled circle
+  elif [ "$sc_brightness" -lt 50 ]; then
+    brightness_icon="" # fa-adjust (low brightness)
+  else
+    brightness_icon="" # full circle (high brightness)
+  fi
 }
 
 function show_volume_notif {
