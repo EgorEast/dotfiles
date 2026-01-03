@@ -25,6 +25,7 @@ prepend_previewers = [
   # { mime = "application/x-7z-compressed", run = 'piper --format=url -- 7z l "$1"' },
   # { mime = "application/x-xz", run = 'piper --format=url -- tar -t -f "$1"' },
   # { mime = "application/xz", run = 'piper --format=url -- tar -t -f "$1"' },
+  { mime = "application/sqlite3", run = 'piper -- sqlite3 "$1" ".schema --indent"' },
 ]
 
 [opener]
