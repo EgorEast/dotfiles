@@ -1,13 +1,15 @@
-#!/bin/bash
-# original source: https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
+#!/usr/bin/env bash
 
-# See README.md for usage instructions
+# original source: https://gitlab.com/Nmoleo/i3-volume-brightness-indicator
+# changed to use brightnessctl [xbacklight is non functional on modern hardware]
+# by joekamprad [Aug 2025]
+
 bar_color="#7f7fff"
 volume_step=1
 brightness_step=5
 max_volume=100
-max_brightness=255
 notification_timeout=1000
+DDC_BUSES=(6)
 
 # Uses regex to get volume from pactl
 function get_volume {
@@ -19,14 +21,20 @@ function get_mute {
   pactl get-sink-mute @DEFAULT_SINK@ | grep -Po '(?<=Mute: )(yes|no)'
 }
 
-# Uses regex to get brightness from xbacklight
+# Uses brightnessctl instead of xbacklight
 function get_brightness {
-  raw_brightness=$(brightnessctl g)
-  max_brightness=$(brightnessctl m)
-  echo $((raw_brightness * 100 / max_brightness))
+  brightnessctl g | awk '{print int($1)}'
+  # You could also use: brightnessctl info | grep -Po '(?<=Current brightness: )[0-9]+'
 }
 
-# Returns a mute icon, a volume-low icon, or a volume-high icon, depending on the volume
+# Calculates brightness percentage
+function get_brightness_percent {
+  current=$(brightnessctl g)
+  max=$(brightnessctl m)
+  percent=$((100 * current / max))
+  echo $percent
+}
+
 function get_volume_icon {
   volume=$(get_volume)
   mute=$(get_mute)
@@ -39,30 +47,37 @@ function get_volume_icon {
   fi
 }
 
-# Always returns the same icon - I couldn't get the brightness-low icon to work with fontawesome
 function get_brightness_icon {
   brightness_icon=""
 }
 
-# Displays a volume notification using notify-send
 function show_volume_notif {
   volume=$(get_volume)
   get_volume_icon
-  notify-send -i audio-volume-muted -t $notification_timeout "Volume" "$volume_icon $volume%" -h int:value:$volume -h string:x-canonical-private-synchronous:volume
+  notify-send -i volume_icon -t 1000 "Volume" "$volume_icon $volume%" -h int:value:$volume -h string:x-canonical-private-synchronous:volume
 }
 
-# Displays a brightness notification using dunstify
 function show_brightness_notif {
-  brightness=$(get_brightness)
-  echo $brightness
   get_brightness_icon
-  notify-send -i audio-volume-muted -t $notification_timeout "Brightness" "$brightness_icon $brightness%" -h int:value:$brightness -h string:x-dunst-stack-tag:brightness_notif
+  brightness=$(get_brightness_percent)
+  notify-send -i brightness_icon -t $notification_timeout -h string:x-dunst-stack-tag:brightness_notif -h int:value:$brightness "$brightness_icon $brightness%"
 }
 
-# Main function - Takes user input, "volume_up", "volume_down", "brightness_up", or "brightness_down"
+ddc_set() {
+  for bus in "${DDC_BUSES[@]}"; do
+    ddcutil \
+      --bus="$bus" \
+      --noverify \
+      --skip-ddc-checks \
+      --disable-dynamic-sleep \
+      --sleep-multiplier=0.5 \
+      setvcp 10 "$1" "$brightness_step" \
+      >/dev/null 2>&1
+  done
+}
+
 case $1 in
 volume_up)
-  # Unmutes and increases volume, then displays the notification
   pactl set-sink-mute @DEFAULT_SINK@ 0
   volume=$(get_volume)
   if [ $(("$volume" + "$volume_step")) -gt $max_volume ]; then
@@ -72,30 +87,24 @@ volume_up)
   fi
   show_volume_notif
   ;;
-
 volume_down)
-  # Raises volume and displays the notification
   pactl set-sink-volume @DEFAULT_SINK@ -$volume_step%
   show_volume_notif
   ;;
-
 volume_mute)
-  # Toggles mute and displays the notification
   pactl set-sink-mute @DEFAULT_SINK@ toggle
   show_volume_notif
   ;;
-
 brightness_up)
   # Increases brightness and displays the notification
-  brightnessctl set ${brightness_step}%+
-  ddcutil setvcp 10 + ${brightness_step}
+  brightnessctl s +$brightness_step% >/dev/null
+  ddc_set +
   show_brightness_notif
   ;;
-
 brightness_down)
   # Decreases brightness and displays the notification
-  brightnessctl set ${brightness_step}%-
-  ddcutil setvcp 10 - ${brightness_step}
+  brightnessctl s $brightness_step%- >/dev/null
+  ddc_set -
   show_brightness_notif
   ;;
 esac
