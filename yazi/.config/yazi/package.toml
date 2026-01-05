@@ -36,7 +36,7 @@ hash = "f107436db5d2cccccc11ab54bc97b761"
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
 rev = "03cdd4b"
-hash = "eb301feb9e125adf5aa4f59f2aa54e44"
+hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
@@ -50,8 +50,8 @@ hash = "2dd68af59418b631b9703a03f606b31f"
 
 [[plugin.deps]]
 use = "DreamMaoMao/fg"
-rev = "35b2805"
-hash = "c969898aa7d0bea4127c77eb21fa859d"
+rev = "b9fb819"
+hash = "7d62f2eae04f77d13a21917c169b151b"
 
 [[plugin.deps]]
 use = "AnirudhG07/plugins-yazi:copy-file-contents"
@@ -66,4 +66,4 @@ hash = "a3564fe0d051557df2a191ca0b212c2d"
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
 rev = "8e6296f"
-hash = "f9adc0d1e58cbcfc5f39046383a25d9f"
+hash = "d9da921c3bd37ba32ee27a8a7a40461f"
