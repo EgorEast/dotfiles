@@ -280,6 +280,7 @@
 
 ## 📚 Chromium extentions
 
+- [Automa](https://chromewebstore.google.com/detail/infppggnoaenmfagbfknfkancpbljcca?utm_source=item-share-cb)
 - [Dark Reader](https://chromewebstore.google.com/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh?utm_source=item-share-cb)
 - [KeePassXC-Browser](https://chromewebstore.google.com/detail/oboonakemofpalcgghocfoadofidjkkk?utm_source=item-share-cb)
 - [Picture-in-Picture](https://chromewebstore.google.com/detail/hkgfoiooedgoejojocmhlaklaeopbecg?utm_source=item-share-cb)
