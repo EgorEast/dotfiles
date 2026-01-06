@@ -21,6 +21,7 @@ yay -S --noconfirm --needed \
   checkersland \
   clipse \
   crush-bin \
+  cryptpad \
   dblab \
   durdraw \
   envx \
