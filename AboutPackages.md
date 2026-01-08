@@ -274,6 +274,10 @@
 - [ttyper](https://github.com/max-niederman/ttyper) – Terminal-based typing test built with Rust and Ratatui
 - [upiano](https://github.com/eliasdorneles/upiano) – Piano in your terminal
 
+## Education
+
+- [kumir2-git](https://github.com/a-a-maly/kumir2) – Programming system designed to support primary computer science and programming courses in middle and high school
+
 ## 📚 Libraries for TUI
 
 <https://github.com/rothgar/awesome-tuis?tab=readme-ov-file#libraries>

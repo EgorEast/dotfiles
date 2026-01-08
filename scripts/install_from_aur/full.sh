@@ -31,6 +31,7 @@ yay -S --noconfirm --needed \
   hellwal \
   jqp-bin \
   kabmat \
+  kumir2-git \
   lazyjournal \
   lazysql \
   lazyssh-bin \
