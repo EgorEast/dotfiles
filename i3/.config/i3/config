@@ -361,9 +361,10 @@ assign [class="Thunar"] $ws4
 assign [class="Anydesk"] $ws5
 assign [class="Rudesktop"] $ws5
 assign [class="Rustdesk"] $ws5
+assign [class="Element"] $ws6
 assign [class="TelegramDesktop"] $ws6
 assign [class="WhatsApp"] $ws6
-assign [class="Element"] $ws6
+assign [class="gajim"] $ws6
 assign [class="crow-translate"] $ws7
 assign [class="KeePassXC"] $ws10
 
@@ -378,6 +379,7 @@ for_window [class=TelegramDesktop] focus
 for_window [class=Thunar] focus
 for_window [class=WhatsApp] focus
 for_window [class=crow-translate] focus
+for_window [class=gajim] focus
 for_window [class=kitty] focus
 for_window [class=obsidian] focus
 

@@ -24,6 +24,7 @@ stow --adopt --restow \
   dive \
   docker \
   durdraw \
+  gajim \
   galculator \
   gemini \
   github-cli \

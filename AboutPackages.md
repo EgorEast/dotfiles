@@ -36,6 +36,7 @@
 - [chromium](https://github.com/chromium/chromium) – Open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
 - [element-desktop](https://element.io/) – Sovereign, interoperable and secure communications, built on the Matrix open standard.
 - [firefox](https://support.mozilla.org/) – Web browser.
+- [gajim](https://gajim.org/) – Free and fully featured chat app for XMPP.
 - [ggh](https://github.com/byawitz/ggh) – Lightweight SSH wrapper tool.
 - [lazyssh](https://github.com/Adembc/lazyssh) – Terminal-based, interactive SSH manager.
 - [lynx](https://lynx.invisible-island.net/) – Text web browser.

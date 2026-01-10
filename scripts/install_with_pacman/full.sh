@@ -81,7 +81,7 @@ sudo pacman -S --noconfirm --needed \
   profanity \
   pyalpm \
   python-pipx \
-  qemu-full \
+  qemu-base \
   rainfrog \
   rebels-in-the-sky \
   redshift \
