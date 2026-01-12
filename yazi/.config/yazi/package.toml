@@ -1,7 +1,7 @@
 [[plugin.deps]]
 use = "ndtoan96/ouch"
-rev = "cfb9140"
-hash = "b5067143415bd2d46c0dfa57319ddcef"
+rev = "594b8a2"
+hash = "c9e628fc0312d198db22ae2fa74883b"
 
 [[plugin.deps]]
 use = "dedukun/relative-motions"
@@ -20,7 +20,7 @@ hash = "699fe07e0d2d1b4af8dafb84168eeb04"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "4e55902"
+rev = "75f6f72"
 hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
 
 [[plugin.deps]]
@@ -35,18 +35,18 @@ hash = "778941e7f1ebbacd60f4e254bb3c51de"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "4e55902"
+rev = "75f6f72"
 hash = "36a484acf6a0a0219c543ccb4cee218f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "4e55902"
+rev = "75f6f72"
 hash = "3996fc74044bc44144b323686f887e1"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "4e55902"
-hash = "2dd68af59418b631b9703a03f606b31f"
+rev = "75f6f72"
+hash = "954922c883778c19c4a2dad5be08787f"
 
 [[plugin.deps]]
 use = "DreamMaoMao/fg"
@@ -60,8 +60,8 @@ hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:types"
-rev = "4e55902"
-hash = "a3564fe0d051557df2a191ca0b212c2d"
+rev = "75f6f72"
+hash = "daf9e3d12688cf855fce665839efcd6d"
 
 [[flavor.deps]]
 use = "BennyOe/tokyo-night"
