@@ -17,12 +17,7 @@
         "Gray": "#737aa2",
         "DiffAdded": "#449dab",
         "DiffRemoved": "#914c54",
-        "DiffModified": "#6183bb",
-        "GradientColors": [
-          "#7aa2f7",
-          "#9d7cd8",
-          "#f7768e"
-        ]
+        "GradientColors": ["#7aa2f7", "#9d7cd8", "#f7768e"]
       }
     },
     "showLineNumbers": true,
@@ -47,3 +42,4 @@
     "format": "text"
   }
 }
+
