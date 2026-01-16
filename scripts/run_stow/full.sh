@@ -57,7 +57,6 @@ stow --adopt --restow \
   qalculate \
   redshift \
   rofi \
-  rudesktop \
   rustdesk \
   sc-im \
   scooter \
