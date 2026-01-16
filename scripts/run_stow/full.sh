@@ -58,6 +58,7 @@ stow --adopt --restow \
   redshift \
   rofi \
   rudesktop \
+  rustdesk \
   sc-im \
   scooter \
   ssh \

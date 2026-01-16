@@ -50,8 +50,14 @@ qalculate/.config/qalculate/qalc.history
 rudesktop/.config/rudesktop/RuDesktop*_ThreadId*
 rudesktop/.config/rudesktop/RuDesktop.toml
 rudesktop/.config/rudesktop/RuDesktop2.toml
+rudesktop/.config/rudesktop/RuDesktop_lan_peers.toml
 rudesktop/.config/rudesktop/RuDesktop_local.toml
 rudesktop/.config/rudesktop/RuDesktop_logcollect.toml
+rudesktop/.config/rudesktop/peers
+rustdesk/.config/rustdesk/RustDesk.toml
+rustdesk/.config/rustdesk/RustDesk2.toml
+rustdesk/.config/rustdesk/peers
+rustdesk/.config/rustdesk/peers.toml
 ssh/.ssh/*.pub
 ssh/.ssh/authorized_keys
 ssh/.ssh/environment
