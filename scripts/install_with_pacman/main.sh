@@ -22,13 +22,14 @@ sudo pacman -S --noconfirm --needed \
   git \
   git-delta \
   glow \
+  jdk-openjdk \
   kitty \
   lazygit \
   libreoffice-still-ru \
+  libtd-git \
   lsd \
   ncdu \
   networkmanager-openvpn \
-  nodejs-lts-jod \
   npm \
   nvim \
   obs-studio \
@@ -55,4 +56,4 @@ sudo pacman -S --noconfirm --needed \
   yazi \
   zoxide
 
-sudo pacman -S --needed keepassxc
+sudo pacman -S --needed keepassxc nodejs-lts-jod
