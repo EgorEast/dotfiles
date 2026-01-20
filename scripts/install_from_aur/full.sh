@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts"
+SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts/install_from_aur"
 
 . "$SCRIPT_DIR/main.sh"
 

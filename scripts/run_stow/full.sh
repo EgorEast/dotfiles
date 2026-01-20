@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts"
+SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts/run_stow"
 
 rm -rf ~/.config/mineapps.list
 
