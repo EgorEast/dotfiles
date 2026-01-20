@@ -2,21 +2,21 @@
 
 SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts"
 
-. "$SCRIPT_DIR/setup_main_start.sh"
+"$SCRIPT_DIR/setup_main_start.sh"
 
-. "$SCRIPT_DIR/run_stow/full.sh"
+"$SCRIPT_DIR/run_stow/full.sh"
 
 echo ">>> Installing base packages..."
 
-. "$SCRIPT_DIR/install_with_pacman/full.sh"
+"$SCRIPT_DIR/install_with_pacman/full.sh"
 
 echo ">>> Installing AUR packages (via yay)..."
 
-. "$SCRIPT_DIR/install_from_aur/full.sh"
+"$SCRIPT_DIR/install_from_aur/full.sh"
 
 echo ">>> Installing global npm packages..."
 
-. "$SCRIPT_DIR/install_from_npm/full.sh"
+"$SCRIPT_DIR/install_from_npm/full.sh"
 
 echo ">>> Setting up pipx..."
 pipx ensurepath
@@ -24,7 +24,7 @@ sudo pipx ensurepath --global || true
 
 echo ">>> Installing from pipx..."
 
-. "$SCRIPT_DIR/install_from_pipx.sh"
+"$SCRIPT_DIR/install_from_pipx.sh"
 
 echo ">>> Installing ggh..."
 curl -fsSL https://raw.githubusercontent.com/byawitz/ggh/master/install/unix.sh | sh
@@ -50,7 +50,7 @@ sudo gpasswd -a egoreast docker
 sudo systemctl enable gitea
 sudo systemctl start gitea
 
-. "$SCRIPT_DIR/setup_main_in_end.sh"
+"$SCRIPT_DIR/setup_main_in_end.sh"
 
 yandex-disk token || true
 yandex-disk start || true
