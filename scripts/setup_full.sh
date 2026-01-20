@@ -54,13 +54,13 @@ sudo systemctl start gitea
 yandex-disk token || true
 yandex-disk start || true
 
+echo ">>> Configuring bandwhich..."
+sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)
+
 echo ">>> Run and pull ollama"
 ollama serve &
 ollama pull deepseek-coder-v2 &
 ollama pull gpt-oss &
 ollama pull qwen3-coder
-
-echo ">>> Configuring bandwhich..."
-sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)
 
 echo ">>> All done!"
