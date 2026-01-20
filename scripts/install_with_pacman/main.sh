@@ -22,7 +22,6 @@ sudo pacman -S --noconfirm --needed \
   git \
   git-delta \
   glow \
-  keepassxc \
   kitty \
   lazygit \
   libreoffice-still-ru \
@@ -55,3 +54,5 @@ sudo pacman -S --noconfirm --needed \
   xsel \
   yazi \
   zoxide
+
+sudo pacman -S --needed keepassxc

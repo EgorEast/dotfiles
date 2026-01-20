@@ -88,7 +88,6 @@ sudo pacman -S --noconfirm --needed \
   rofi-calc \
   rofi-emoji \
   rtorrent \
-  rustup \
   serie \
   soft-serve \
   systemctl-tui \
@@ -111,3 +110,5 @@ sudo pacman -S --noconfirm --needed \
   xan \
   xorg-xprop \
   yt-dlp
+
+sudo pacman -S --needed rustup
