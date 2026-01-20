@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$(dirname -- "${BASH_SOURCE[0]}")"
+SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts"
 
 echo ">>> Installing neovim..."
 nvim --headless "+Lazy! sync" +qa
