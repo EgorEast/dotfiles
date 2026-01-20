@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts/install_with_pacman"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-. "$SCRIPT_DIR/main.sh"
+"$SCRIPT_DIR/main.sh"
 
 sudo pacman -S --noconfirm --needed \
   android-tools \

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR="$HOME/.local/src/dotfiles/scripts/install_from_aur"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
-. "$SCRIPT_DIR/main.sh"
+"$SCRIPT_DIR/main.sh"
 
 yay -S --noconfirm --needed \
   abook \

@@ -15,7 +15,6 @@ echo ">>> Installing AUR packages (via yay)..."
 "$SCRIPT_DIR/install_from_aur/full.sh"
 
 echo ">>> Installing global npm packages..."
-
 "$SCRIPT_DIR/install_from_npm/full.sh"
 
 echo ">>> Setting up pipx..."
