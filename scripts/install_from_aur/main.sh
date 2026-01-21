@@ -18,5 +18,5 @@ yay -S --noconfirm --needed \
   syncthingtray \
   throne \
   ttf-ms-fonts \
-  ventoy-bin \
+  ventoy \
   whatsapp-linux-desktop
