@@ -35,7 +35,6 @@ yay -S --noconfirm --needed \
   lazyjournal \
   lazysql \
   lazyssh-bin \
-  mastodon \
   mmtui-bin \
   nsnake \
   nudoku \
