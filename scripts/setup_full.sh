@@ -58,9 +58,27 @@ echo ">>> Configuring bandwhich..."
 sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)
 
 echo ">>> Run and pull ollama"
-ollama serve &
-ollama pull deepseek-coder-v2 &
-ollama pull gpt-oss &
-ollama pull qwen3-coder
+
+ollama serve
+
+read -r -p "Do you want install ollama llms? (y/N): " choice
+
+# If no input, default to "n"
+choice=${choice:-"n"}
+
+case $choice in
+"n" | "N" | "")
+  echo "Skipping llms installation."
+  ;;
+"y")
+  echo "Running llms installation..."
+  "./install_llms.sh"
+  echo "Full setup completed."
+  ;;
+*)
+  echo "Invalid choice. Exiting."
+  exit 1
+  ;;
+esac
 
 echo ">>> All done!"
