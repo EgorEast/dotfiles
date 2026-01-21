@@ -4,7 +4,6 @@ sudo pacman -S --noconfirm --needed \
   atuin \
   bandwhich \
   bat \
-  blueberry \
   btop \
   chromium \
   curl \
@@ -26,7 +25,6 @@ sudo pacman -S --noconfirm --needed \
   kitty \
   lazygit \
   libreoffice-still-ru \
-  libtd-git \
   lsd \
   ncdu \
   networkmanager-openvpn \

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo ">>> Creating symlinks with stow..."
+cd ~/.local/src/dotfiles
+
 stow --adopt --restow \
   atuin \
   bash \

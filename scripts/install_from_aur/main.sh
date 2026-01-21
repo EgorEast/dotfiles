@@ -2,11 +2,13 @@
 
 yay -S --noconfirm --needed \
   blobdrop-git \
+  blueberry \
   crow-translate \
   cruise \
   downloader-cli \
   fish-done \
   koreader-appimage \
+  libtd-git \
   linutil \
   onlyoffice-bin \
   pantum-driver \
