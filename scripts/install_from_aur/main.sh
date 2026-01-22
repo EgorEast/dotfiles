@@ -8,7 +8,6 @@ yay -S --noconfirm --needed \
   downloader-cli \
   fish-done \
   koreader-appimage \
-  libtd-git \
   linutil \
   onlyoffice-bin \
   pantum-driver \
