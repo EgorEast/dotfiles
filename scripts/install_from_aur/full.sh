@@ -75,4 +75,5 @@ yay -S --noconfirm --needed \
   woeusb \
   xautolock \
   xkblayout-state-git \
+  yandex-disk \
   ytsurf
