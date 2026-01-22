@@ -18,4 +18,5 @@ yay -S --noconfirm --needed \
   throne \
   ttf-ms-fonts \
   ventoy \
-  whatsapp-linux-desktop
+  whatsapp-linux-desktop \
+  yandex-disk
