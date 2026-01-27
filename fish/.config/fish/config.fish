@@ -24,6 +24,8 @@ set -U fish_key_bindings fish_vi_key_bindings
 # Двойное нажатие ESC не работает, если выставить меньше
 set -g fish_escape_delay_ms 300
 
+set -gx PATH $HOME/.cargo/bin $PATH
+
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 set -gx BROWSER xdg-open
