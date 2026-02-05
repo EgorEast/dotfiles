@@ -552,7 +552,7 @@ exec_always --no-startup-id export FLATPAK_ENABLE_SDK_EXT=dark-mode
 exec --no-startup-id nm-applet
 
 # clipman-applet
-#exec --no-startup-id xfce4-clipman
+exec --no-startup-id xfce4-clipman
 
 ##################
 # floating rules #
