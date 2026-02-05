@@ -1,4 +1,4 @@
-remote_id = '56540838'
+remote_id = '299330052'
 kb_layout_type = ''
 size = [
     0,
@@ -9,15 +9,15 @@ size = [
 fav = []
 
 [options]
-remote-menubar-drag-left = '0.0'
 remote-menubar-drag-right = '1.0'
+remote-menubar-drag-left = '0.0'
 
 [ui_flutter]
-peer-sorting = 'Remote ID'
-wm_RemoteDesktop = '{"width":1912.0,"height":1023.0,"offsetWidth":3.0,"offsetHeight":53.0,"isMaximized":false,"isFullscreen":false}'
-draggablePositionMobile = '756.0,773.0'
-showMobileActions = 'N'
-wm_Terminal = '{"width":1912.0,"height":1023.0,"offsetWidth":3.0,"offsetHeight":53.0,"isMaximized":false,"isFullscreen":false}'
-wm_Main = '{"width":null,"height":null,"offsetWidth":null,"offsetHeight":null,"isMaximized":true,"isFullscreen":false}'
 remoteMenubarState = '{"pin":false}'
+wm_Terminal = '{"width":1912.0,"height":1023.0,"offsetWidth":3.0,"offsetHeight":53.0,"isMaximized":false,"isFullscreen":false}'
+draggablePositionMobile = '756.0,773.0'
 peer-tab-index = '0'
+peer-sorting = 'Remote ID'
+wm_Main = '{"width":957.0,"height":1048.0,"offsetWidth":3.0,"offsetHeight":29.0,"isMaximized":true,"isFullscreen":false}'
+wm_RemoteDesktop = '{"width":1912.0,"height":1023.0,"offsetWidth":3.0,"offsetHeight":53.0,"isMaximized":false,"isFullscreen":false}'
+showMobileActions = 'N'
