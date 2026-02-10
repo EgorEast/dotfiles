@@ -74,6 +74,7 @@
 - [bombadillo](https://bombadillo.colorfield.space/) – Non-web browser, designed for a growing list of protocols operating outside of the web.
 - [brows](https://github.com/rubysolo/brows) – CLI tool to browse GitHub releases.
 - [cloc](https://github.com/AlDanial/cloc) – Count lines of code.
+- [codex](https://github.com/openai/codex) – Lightweight coding agent that runs in your terminal.
 - [cruise](https://nucleofusion.github.io/cruise/) – Docker TUI Client.
 - [crush](https://github.com/charmbracelet/crush) – Your tools, your code, and your workflows, wired into your LLM of choice.
 - [ctop](https://github.com/bcicen/ctop) – Top-like interface for container metrics.

@@ -6,4 +6,5 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
 sudo npm i -g \
   @builder.io/ai-shell \
+  @openai/codex \
   live-server
