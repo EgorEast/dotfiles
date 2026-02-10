@@ -42,6 +42,7 @@ yay -S --noconfirm --needed \
   nyaa \
   obfs4proxy \
   opencode-bin \
+  cursor-cli \
   otter-launcher \
   patat-bin \
   pokete-git \
