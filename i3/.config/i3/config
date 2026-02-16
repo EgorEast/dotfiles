@@ -574,6 +574,8 @@ exec --no-startup-id /usr/lib/throne/Throne -tray -appdata
 
 exec --no-startup-id crow
 
+# exec --no-startup-id /usr/bin/firewall-applet
+
 ######################################
 # color settings for bar and windows #
 ######################################
