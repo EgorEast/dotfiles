@@ -568,6 +568,12 @@ exec --no-startup-id redshift
 
 exec --no-startup-id warpd
 
+exec --no-startup-id /usr/bin/syncthingtray qt-widgets-gui --single-instance --wait
+
+exec --no-startup-id /usr/lib/throne/Throne -tray -appdata
+
+exec --no-startup-id crow
+
 ######################################
 # color settings for bar and windows #
 ######################################
