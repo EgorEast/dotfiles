@@ -11,6 +11,7 @@ sudo pacman -S --noconfirm --needed \
   fd \
   feh \
   firefox \
+  firewall-applet \
   fish \
   fisher \
   flameshot \
