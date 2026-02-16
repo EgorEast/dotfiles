@@ -290,6 +290,7 @@
 - [Automa](https://chromewebstore.google.com/detail/infppggnoaenmfagbfknfkancpbljcca?utm_source=item-share-cb)
 - [Dark Reader](https://chromewebstore.google.com/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh?utm_source=item-share-cb)
 - [DuckDuckGo Search & Tracker Protection](https://chromewebstore.google.com/detail/bkdgflcldnnnapblkhphbgpggdiikppg?utm_source=item-share-cb)
+- [Floccus bookmarks sync](https://chromewebstore.google.com/detail/fnaicdffflnofjppbagibeoednhnbjhg?utm_source=item-share-cb)
 - [KeePassXC-Browser](https://chromewebstore.google.com/detail/oboonakemofpalcgghocfoadofidjkkk?utm_source=item-share-cb)
 - [Obsidian Web Clipper](https://chromewebstore.google.com/detail/cnjifjpddelmedmihgijeibhnjfabmlf?utm_source=item-share-cb)
 - [Picture-in-Picture](https://chromewebstore.google.com/detail/hkgfoiooedgoejojocmhlaklaeopbecg?utm_source=item-share-cb)
