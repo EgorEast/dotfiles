@@ -47,11 +47,32 @@ return {
   },
   {
     "nickjvandyke/opencode.nvim",
+    version = "*", -- Latest stable release
     dependencies = {
-      -- Recommended for `ask()` and `select()`.
-      -- Required for `snacks` provider.
-      ---@module 'snacks' <- Loads `snacks.nvim` types for configuration intellisense.
-      { "folke/snacks.nvim", opts = { input = {}, picker = {}, terminal = {} } },
+      {
+        -- `snacks.nvim` integration is recommended, but optional
+        ---@module "snacks" <- Loads `snacks.nvim` types for configuration intellisense
+        "folke/snacks.nvim",
+        optional = true,
+        opts = {
+          input = {}, -- Enhances `ask()`
+          picker = { -- Enhances `select()`
+            actions = {
+              opencode_send = function(...)
+                return require("opencode").snacks_picker_send(...)
+              end,
+            },
+            win = {
+              input = {
+                keys = {
+                  ["<a-a>"] = { "opencode_send", mode = { "n", "i" } },
+                },
+              },
+            },
+          },
+          terminal = {}, -- Enables the `snacks` provider
+        },
+      },
     },
     config = function()
       ---@type opencode.Opts
@@ -65,8 +86,7 @@ return {
         -- },
       }
 
-      -- Required for `opts.events.reload`.
-      vim.o.autoread = true
+      vim.o.autoread = true -- Required for `opts.events.reload`.
 
       local map = vim.keymap.set
 
@@ -97,6 +117,16 @@ return {
       map("n", "<S-C-d>", function()
         require("opencode").command("session.half.page.down")
       end, { desc = "Scroll opencode down" })
+
+      require("lualine").setup({
+        sections = {
+          lualine_z = {
+            {
+              require("opencode").statusline,
+            },
+          },
+        },
+      })
     end,
   },
 
