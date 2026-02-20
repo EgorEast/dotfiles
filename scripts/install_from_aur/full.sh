@@ -63,7 +63,6 @@ yay -S --noconfirm --needed \
   sshm-bin \
   systemd-manager-tui \
   sysz \
-  telegram-tg \
   thokr-git \
   tinytetris \
   ttyplot \

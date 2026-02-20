@@ -65,7 +65,6 @@ stow --adopt --restow \
   television \
   termscp \
   termshark \
-  tg \
   thokr \
   thunar \
   ttyper \

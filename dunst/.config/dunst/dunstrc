@@ -139,10 +139,6 @@
     timeout = 15
     frame_color = "#1C7ED6"
 
-[telegram-tg]
-    appname = telegram-tg
-    action = kitty @ focus-tab -m title:tg
-
 [chromium-notifications]
     appname = "Chromium"
     format = "<b>%s</b>\n%b\n%a"
