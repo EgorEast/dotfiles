@@ -361,7 +361,7 @@ assign [class="Thunar"] $ws4
 assign [class="Anydesk" window_type="normal"] $ws5
 assign [class="Rudesktop" window_type="normal"] $ws5
 assign [class="Rustdesk" window_type="normal"] $ws5
-assign [class="Element"] $ws6
+assign [class="SchildiChat"] $ws6
 assign [class="TelegramDesktop"] $ws6
 assign [class="WhatsApp"] $ws6
 assign [class="gajim"] $ws6
@@ -371,10 +371,10 @@ assign [class="KeePassXC" window_type="normal"] $ws10
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Anydesk] focus
 for_window [class=Chromium] focus
-for_window [class=Element] focus
 for_window [class=KeePassXC] focus
 for_window [class=Rudesktop] focus
 for_window [class=Rustdesk] focus
+for_window [class=SchildiChat] focus
 for_window [class=TelegramDesktop] focus
 for_window [class=Thunar] focus
 for_window [class=WhatsApp] focus
@@ -574,7 +574,7 @@ exec --no-startup-id /usr/lib/throne/Throne -tray -appdata
 
 exec --no-startup-id crow
 
-exec --no-startup-id element-desktop --hidden
+exec --no-startup-id schildichat-desktop --hidden
 
 # exec --no-startup-id /usr/bin/firewall-applet
 

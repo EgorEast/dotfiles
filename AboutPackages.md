@@ -34,7 +34,6 @@
 - [carbonyl](https://github.com/fathyb/carbonyl) – Chromium running inside your terminal.
 - [chawan](https://sr.ht/~bptato/chawan/) – TUI web browser with CSS, inline image and JavaScript support.
 - [chromium](https://github.com/chromium/chromium) – Open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
-- [element-desktop](https://element.io/) – Sovereign, interoperable and secure communications, built on the Matrix open standard.
 - [firefox](https://support.mozilla.org/) – Web browser.
 - [gajim](https://gajim.org/) – Free and fully featured chat app for XMPP.
 - [ggh](https://github.com/byawitz/ggh) – Lightweight SSH wrapper tool.
@@ -52,6 +51,7 @@
 - [rudesktop](https://rudesktop.ru/) – Cross-platform RDP/VNC client.
 - [rustdesk](https://github.com/rustdesk/rustdesk) – Open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 - [rustnet](https://github.com/domcyrus/rustnet) - A cross-platform network monitoring terminal UI tool built with Rust.
+- [schildichat-desktop](https://schildi.chat/) – Family of instant messengers based on the Matrix.
 - [sshm](https://github.com/gu1llaum-3/sshm) – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts.
 - [syncthing-resolve-conflicts](https://github.com/dschrempf/syncthing-resolve-conflicts) – A small bash script that handles synchronization conflicts with Syncthing. Inspired by 'pacdiff' from Arch Linux..
 - [syncthing](https://wiki.archlinux.org/title/Syncthing) – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol.

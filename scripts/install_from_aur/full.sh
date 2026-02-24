@@ -22,6 +22,7 @@ yay -S --noconfirm --needed \
   clipse \
   crush-bin \
   cryptpad \
+  cursor-cli \
   dblab \
   durdraw \
   envx \
@@ -29,6 +30,7 @@ yay -S --noconfirm --needed \
   glicol-cli \
   gobang-bin \
   hellwal \
+  hokr-git \
   jqp-bin \
   kabmat \
   kumir2-git \
@@ -42,7 +44,6 @@ yay -S --noconfirm --needed \
   nyaa \
   obfs4proxy \
   opencode-bin \
-  cursor-cli \
   otter-launcher \
   patat-bin \
   pokete-git \
@@ -56,6 +57,7 @@ yay -S --noconfirm --needed \
   rustnet \
   s-tui-git \
   sc-im \
+  schildichat-desktop-bin \
   scooter \
   scope-tui \
   slides \
@@ -63,7 +65,6 @@ yay -S --noconfirm --needed \
   sshm-bin \
   systemd-manager-tui \
   sysz \
-  thokr-git \
   tinytetris \
   ttyplot \
   vex-tui-bin \
