@@ -34,7 +34,7 @@
     "inbound_socks_port": 2080,
     "language": 0,
     "log_level": "info",
-    "main_window_geometry": "AdnQywADAAAAAAHMAAAANQAABbMAAAQcAAABzQAAADYAAAWyAAAEGwAAAAAAAAAAB4AAAAHNAAAANgAABbIAAAQb",
+    "main_window_geometry": "AdnQywADAAAAAAhcAAADGQAADEMAAAcAAAAIXQAAAxoAAAxCAAAG/wAAAAEAAAAABaAAAAhdAAADGgAADEIAAAb/",
     "max_log_line": 200,
     "mux_concurrency": 8,
     "mux_default_on": false,
@@ -51,14 +51,15 @@
     "redirect_listen_address": "127.0.0.1",
     "redirect_listen_port": 443,
     "remember_enable": true,
-    "remember_id": 1,
+    "remember_id": 0,
     "show_system_dns": false,
     "skip_cert": false,
     "speed_test_mode": 0,
     "speed_test_timeout_ms": 5000,
     "splitter_state": "AAAA/wAAAAEAAAACAAAAZwAAAGcB/////wEAAAACAA==",
     "spmode2": [
-        "vpn"
+        "vpn",
+        "system_proxy"
     ],
     "start_minimal": false,
     "stats_tab": 0,
