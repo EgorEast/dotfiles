@@ -31,6 +31,7 @@ yay -S --noconfirm --needed \
   gobang-bin \
   hellwal \
   hokr-git \
+  iamb-git \
   jqp-bin \
   kabmat \
   kumir2-git \

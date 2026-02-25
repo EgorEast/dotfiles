@@ -31,6 +31,7 @@ stow --adopt --restow \
   gtk \
   hledger \
   i3 \
+  iamb \
   icons \
   inputrc \
   k9s \
