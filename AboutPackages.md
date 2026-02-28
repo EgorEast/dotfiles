@@ -241,6 +241,7 @@
 - [cbonsai](https://gitlab.com/jallbrit/cbonsai) – Bonsai tree generator.
 - [checkersland](https://checkersland.com/download/pc.html) – Checkers game.
 - [firejail](https://github.com/netblue30/firejail) – Linux namespaces and seccomp-bpf sandbox.
+- [luanti](https://www.luanti.org/) – Open-source voxel game creation platform.
 - [nsnake](https://github.com/alexdantas/nSnake) – Classic snake game on the terminal.
 - [nudoku](https://github.com/jubalh/nudoku) – Ncurses based sudoku game.
 - [pokete](https://github.com/lxgr-linux/pokete) – Small terminal based game in the style of a very popular and old game by Gamefreak.

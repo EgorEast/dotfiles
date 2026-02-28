@@ -61,6 +61,7 @@ sudo pacman -S --noconfirm --needed \
   libsecret \
   lnav \
   lshw \
+  luanti \
   lynx \
   mirro-rs \
   mixxx \
