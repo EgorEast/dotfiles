@@ -20,8 +20,8 @@ hash = "699fe07e0d2d1b4af8dafb84168eeb04"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "b224ddf"
-hash = "815dd20e682dec52bb92864037fa5f53"
+rev = "1962818"
+hash = "f0c8c378184d5f8abd1b095a443d336d"
 
 [[plugin.deps]]
 use = "Lil-Dank/lazygit"
@@ -35,17 +35,17 @@ hash = "778941e7f1ebbacd60f4e254bb3c51de"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "b224ddf"
-hash = "270915fa8282a19908449530ff66f7e2"
+rev = "1962818"
+hash = "26db011a778f261d730d4f5f8bf24b3f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "b224ddf"
+rev = "1962818"
 hash = "6fa6a05a81c98dd000fbca3cca6e9682"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "b224ddf"
+rev = "1962818"
 hash = "384464b6df8cb807425c521f8cd790f3"
 
 [[plugin.deps]]
@@ -60,7 +60,7 @@ hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:types"
-rev = "b224ddf"
+rev = "1962818"
 hash = "4161cfa043b5ba3341d82c6869007b41"
 
 [[flavor.deps]]
