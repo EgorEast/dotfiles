@@ -252,6 +252,7 @@
 
 ## 🛡 Security & Encryption
 
+- [fawkes](https://github.com/Shawn-Shan/fawkes) – Privacy preserving tool against facial recognition systems.
 - [gpg-tui](https://github.com/orhun/gpg-tui) – TUI for GnuPG.
 - [gufw](https://github.com/costales/gufw) – Linux Firewall.
 - [keepassxc](https://github.com/keepassxreboot/keepassxc) – cross-platform community-driven port of the Windows application “KeePass Password Safe”.

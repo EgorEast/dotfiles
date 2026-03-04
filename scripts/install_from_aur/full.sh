@@ -26,6 +26,7 @@ yay -S --noconfirm --needed \
   dblab \
   durdraw \
   envx \
+  fawkes-bin \
   fzf-make \
   glicol-cli \
   gobang-bin \
