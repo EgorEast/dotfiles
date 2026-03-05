@@ -48,6 +48,7 @@ pkg install \
   ncdu \
   neovim \
   nodejs \
+  ollama \
   onefetch \
   ripgrep \
   root-repo \
@@ -72,5 +73,11 @@ ln -sf /data/data/com.termux/files/usr/bin/fish ~/.termux/shell
 
 echo ">>> Setup Storage..."
 termux-setup-storage
+
+echo ">>> Instal ollama models"
+
+ollama pull gemma3:4b
+
+ollama serve
 
 echo ">>> All done!"
