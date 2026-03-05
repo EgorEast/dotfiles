@@ -77,6 +77,7 @@ termux-setup-storage
 echo ">>> Instal ollama models"
 
 ollama pull gemma3:4b
+ollama pull gemma3:1b
 
 ollama serve
 
