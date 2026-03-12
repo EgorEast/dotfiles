@@ -27,6 +27,7 @@ yay -S --noconfirm --needed \
   durdraw \
   envx \
   fawkes-bin \
+  freetube-bin \
   fzf-make \
   glicol-cli \
   gobang-bin \

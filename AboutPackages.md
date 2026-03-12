@@ -183,6 +183,7 @@
 - [element](https://element.readthedocs.io/en/latest/) – Modular audio software for routing, control, and scrtipting.
 - [feh](https://github.com/derf/feh) – X11 image viewer.
 - [flameshot](https://flameshot.org/docs) – Screenshot tool with annotation.
+- [freetube](https://github.com/FreeTubeApp/FreeTube) – Open Source YouTube app for privacy.
 - [gimp](https://www.gimp.org/) – Free & Open Source Image Editor.
 - [glicol-cli](https://github.com/glicol/glicol-cli) – Cross-platform music live coding in terminal.
 - [koreader](https://github.com/koreader/koreader) – Document viewer primarily aimed at e-ink readers.
@@ -297,6 +298,7 @@
 - [Obsidian Web Clipper](https://chromewebstore.google.com/detail/cnjifjpddelmedmihgijeibhnjfabmlf?utm_source=item-share-cb)
 - [Picture-in-Picture](https://chromewebstore.google.com/detail/hkgfoiooedgoejojocmhlaklaeopbecg?utm_source=item-share-cb)
 - [React Developer Tools](https://chromewebstore.google.com/detail/fmkadmapgofadopljbjfkapdkoienihi?utm_source=item-share-cb)
+- [RedirectTube](https://chromewebstore.google.com/detail/jpbaggklodpddjcadlebabhiopjkjfjh?utm_source=item-share-cb)
 - [Redux DevTools](https://chromewebstore.google.com/detail/lmhkpmbekcpmknklioeibfkpmmfibljd?utm_source=item-share-cb)
 - [Tampermonkey](https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo?utm_source=item-share-cb) - [voice-over-translation](https://github.com/ilyhalight/voice-over-translation)
 - [VK Music Saver](https://chromewebstore.google.com/detail/vk-music-saver-%E2%80%94-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C/ijgkbcbalaekboipcmaefchfjpognmog)
