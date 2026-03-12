@@ -25,6 +25,7 @@ yay -S --noconfirm --needed \
   cursor-cli \
   dblab \
   durdraw \
+  element-desktop \
   envx \
   fawkes-bin \
   freetube-bin \
@@ -60,7 +61,6 @@ yay -S --noconfirm --needed \
   rustnet \
   s-tui-git \
   sc-im \
-  schildichat-desktop-bin \
   scooter \
   scope-tui \
   slides \
