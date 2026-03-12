@@ -46,6 +46,7 @@ stow --adopt --restow \
   nsnake \
   nwg-look \
   nyaa \
+  opencode \
   otter-launcher \
   ovpn \
   patat \
