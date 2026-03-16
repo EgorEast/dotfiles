@@ -107,6 +107,7 @@
 - [npm-check-updates](https://github.com/raineorshine/npm-check-updates) – Check for newer npm dependencies.
 - [npm](https://docs.npmjs.com/) – Package manager for Node.js.
 - [nvim](https://neovim.io/doc/) – Modern Vim-based editor with Lua support.
+- [ocx](https://github.com/kdcokenny/ocx) – OpenCode extension manager with portable, isolated profiles. Your setup, anywhere.
 - [oha](https://github.com/hatoo/oha) – Tiny program that sends some load to a web application and show realtime tui.
 - [ollama](https://github.com/ollama/ollama) – Get up and running with large language models.
 - [onefetch](https://github.com/o2sh/onefetch) – Git repository summary in terminal.
