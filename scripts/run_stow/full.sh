@@ -20,7 +20,6 @@ stow --adopt --restow \
   chawan \
   clipse \
   cmus \
-  crush \
   dive \
   docker \
   durdraw \

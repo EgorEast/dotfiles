@@ -2,4 +2,44 @@
   "$schema": "https://opencode.ai/config.json",
   // "model": "anthropic/claude-sonnet-4-5",
   "autoupdate": true,
+  "provider": {
+    // "anthropic": {
+    //   "options": {
+    //     "baseURL": "https://api.anthropic.com/v1",
+    //   },
+    // },
+    "ollama": {
+      // "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1",
+      },
+      "models": {
+        "llama2": {
+          "name": "Llama 2",
+        },
+        "qwen3-coder:a3b": {
+          "name": "Qwen3-Coder: a3b-30b (local)",
+          "limit": {
+            "context": 128000,
+            "output": 65536,
+          },
+        },
+        "deepseek-coder-v2:latest": {
+          "name": "Deepseek Coder: latest (local)",
+          "limit": {
+            "context": 128000,
+            "output": 65536,
+          },
+        },
+        "gpt-oss:latest": {
+          "name": "GPT OSS: latest (local)",
+          "limit": {
+            "context": 128000,
+            "output": 65536,
+          },
+        },
+      },
+    },
+  },
 }

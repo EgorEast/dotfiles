@@ -20,7 +20,6 @@ yay -S --noconfirm --needed \
   cbonsai \
   checkersland \
   clipse \
-  crush-bin \
   cryptpad \
   cursor-cli \
   dblab \

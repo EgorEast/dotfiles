@@ -76,7 +76,6 @@
 - [cloc](https://github.com/AlDanial/cloc) – Count lines of code.
 - [codex](https://github.com/openai/codex) – Lightweight coding agent that runs in your terminal.
 - [cruise](https://nucleofusion.github.io/cruise/) – Docker TUI Client.
-- [crush](https://github.com/charmbracelet/crush) – Your tools, your code, and your workflows, wired into your LLM of choice.
 - [ctop](https://github.com/bcicen/ctop) – Top-like interface for container metrics.
 - [cursor-cli](https://cursor.com/cli) – Ship code with agents Right from your terminal.
 - [dblab](https://github.com/danvergara/dblab) – Interactive client for PostgreSQL, MySQL, SQLite3, Oracle and SQL Server.
