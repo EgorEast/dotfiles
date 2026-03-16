@@ -77,6 +77,7 @@ sudo pacman -S --noconfirm --needed \
   pandoc-cli \
   picom \
   playerctl \
+  pnpm \
   poketex \
   presenterm \
   profanity \
