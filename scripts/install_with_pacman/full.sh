@@ -57,6 +57,7 @@ sudo pacman -S --noconfirm --needed \
   khal \
   kmon \
   lazydocker \
+  libnotify \
   libqalculate \
   libsecret \
   lnav \

@@ -1,5 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "plugin": ["@mohak34/opencode-notifier"],
   // "model": "anthropic/claude-sonnet-4-5",
   "autoupdate": true,
   "provider": {

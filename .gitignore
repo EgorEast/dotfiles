@@ -46,6 +46,10 @@ mpv/.config/mpv/shaders/cache
 obs/.config/obs-studio/logs
 obs/.config/obs-studio/profiler_data
 obs/.config/obs-studio/safe_mode
+opencode/.config/opencode/.gitignore
+opencode/.config/opencode/bun.lock
+opencode/.config/opencode/node_modules
+opencode/.config/opencode/package.json
 qalculate/.config/qalculate/qalc.history
 rudesktop/.config/rudesktop/RuDesktop*_ThreadId*
 rudesktop/.config/rudesktop/RuDesktop.toml
