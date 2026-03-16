@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "root": "/home/egoreast/.config/opencode/profiles/ws",
+  "root": "/home/egoreast/.config/opencode/profiles/free",
   "installed": {
     "https://registry.kdco.dev::kdco/kdco-primitives@sha256:688d2d5f536e8db0b44fdff5d588000a5a9ed7028ec715828cc458d27f34dd8d": {
       "registryUrl": "https://registry.kdco.dev",
@@ -46,7 +46,7 @@
           "hash": "012301f644639e930b30ea09f43b0a3808d8dfed3970c242dd60ab1c530fc5e6"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.732Z"
+      "installedAt": "2026-03-16T20:16:59.207Z"
     },
     "https://registry.kdco.dev::kdco/background-agents@sha256:48f0844d9959996a41458acc2c35e8729683255142bce09f12888c4ab0c4d71d": {
       "registryUrl": "https://registry.kdco.dev",
@@ -60,7 +60,7 @@
           "hash": "58888250845d02e2d3d305a8004659d5938e8f49eb34c0d02dc37af7de341b26"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.733Z",
+      "installedAt": "2026-03-16T20:16:59.208Z",
       "opencode": {
         "permission": {
           "task": "deny"
@@ -79,7 +79,7 @@
           "hash": "aae8ff0b6bcf7994c81dccea4a92a352ffb9d772edd83e886992d4a70adb36e5"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.733Z"
+      "installedAt": "2026-03-16T20:16:59.208Z"
     },
     "https://registry.kdco.dev::kdco/plan-protocol@sha256:50dae3e515ac7d89b2081ec501cc05f7e00c6a706635abc2b6a6e9a52347bdc0": {
       "registryUrl": "https://registry.kdco.dev",
@@ -93,7 +93,7 @@
           "hash": "3e2708c8c62e34c84eea8d0b09976ccfb7557493c250555939aaf75cf3b82177"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.733Z"
+      "installedAt": "2026-03-16T20:16:59.209Z"
     },
     "https://registry.kdco.dev::kdco/researcher@sha256:123019a6e34f563ce0cf16cc17ab780c0316e097cf4577cf6feb5c3d47948f4c": {
       "registryUrl": "https://registry.kdco.dev",
@@ -107,7 +107,7 @@
           "hash": "2b5138f97cada5d5048d1c015d8c11a96c3d72f5e2705ca268d4a1858dcfd614"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.734Z",
+      "installedAt": "2026-03-16T20:16:59.209Z",
       "opencode": {
         "agent": {
           "researcher": {
@@ -201,7 +201,7 @@
           "hash": "2d42f3e18b4017006b84f8f462c6736c66626ad01b820b2e367e080482d1728c"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.734Z",
+      "installedAt": "2026-03-16T20:16:59.210Z",
       "opencode": {
         "agent": {
           "scribe": {
@@ -232,7 +232,7 @@
           "hash": "0d2437ac14530fb3d21675a8e1a90b578577e3f205abfffc390d516e3439f7e5"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.734Z",
+      "installedAt": "2026-03-16T20:16:59.210Z",
       "opencode": {
         "agent": {
           "coder": {
@@ -265,7 +265,7 @@
           "hash": "98200cc8992cdebd921e33cd426db5d9a9a80bb82bed19520c947289d55215ad"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.735Z"
+      "installedAt": "2026-03-16T20:16:59.210Z"
     },
     "https://registry.kdco.dev::kdco/plan-review@sha256:cb99ef1ef4518ecbbc0083d892327f1819d045c50c8765733dd9de1470e4b8b6": {
       "registryUrl": "https://registry.kdco.dev",
@@ -279,7 +279,7 @@
           "hash": "73a2c9310024940ee6e87f24c34bea60a6c27c5f2776c8e41c59184cfa6ac0e7"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.735Z"
+      "installedAt": "2026-03-16T20:16:59.211Z"
     },
     "https://registry.kdco.dev::kdco/reviewer@sha256:a15138b10262d8481e24a848f1da5501cce2025f3b2f5bd12eed0a5f03fc0375": {
       "registryUrl": "https://registry.kdco.dev",
@@ -293,7 +293,7 @@
           "hash": "b18c61724c795de926d2c5d0b060da92cb470a8072a0d55d63cc7640be493854"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.735Z",
+      "installedAt": "2026-03-16T20:16:59.211Z",
       "opencode": {
         "agent": {
           "reviewer": {
@@ -329,7 +329,7 @@
           "hash": "4dd8c9ab0b80f7b97a9ce662b5270557d7cb134e4739ed96b8ac707cf9e1efaf"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.735Z"
+      "installedAt": "2026-03-16T20:16:59.211Z"
     },
     "https://registry.kdco.dev::kdco/notify@sha256:ec7f564f771d8c48292b359d2a0e2f2b4f7b90c48a24c148b61a0ec252c8b797": {
       "registryUrl": "https://registry.kdco.dev",
@@ -343,7 +343,7 @@
           "hash": "5074901fb8c538d589bbf26cf298c83ad8deb0785534d4d673f50b0f6797ca14"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.736Z"
+      "installedAt": "2026-03-16T20:16:59.212Z"
     },
     "https://registry.kdco.dev::kdco/worktree@sha256:f1c3ab2c9ad86bd213759d5e555cb04dbc20ddcb1f794050befdb66bfedcb870": {
       "registryUrl": "https://registry.kdco.dev",
@@ -365,7 +365,7 @@
           "hash": "1ba5371d1df784de21d53c5c731fd2ee35e9a51b32bd2c54175a6cb7dbc51576"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.737Z"
+      "installedAt": "2026-03-16T20:16:59.213Z"
     },
     "https://registry.kdco.dev::kdco/code-philosophy@sha256:c41fffa9bb00b6e3b7df547158a0ba29d47a783d4b3299af5f0c8ed3dfcd621c": {
       "registryUrl": "https://registry.kdco.dev",
@@ -379,7 +379,7 @@
           "hash": "7f15b42b52e5f47c44c6d3cf93613f1918d69b74b3ae70d4115100368e1eb7c9"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.737Z"
+      "installedAt": "2026-03-16T20:16:59.213Z"
     },
     "https://registry.kdco.dev::kdco/frontend-philosophy@sha256:b90812b8ffb040eef0d31a87222eaa9471e168cc1792425e2767f2235268febe": {
       "registryUrl": "https://registry.kdco.dev",
@@ -393,7 +393,7 @@
           "hash": "42d577992ad9fe5349a522870b14d69ba60da6d00442b1d744d15d155666bf8b"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.737Z"
+      "installedAt": "2026-03-16T20:16:59.213Z"
     },
     "https://registry.kdco.dev::kdco/philosophy@sha256:f0b040317909a32d044167a65f37bf96710713f27860960405eec15003c4b88d": {
       "registryUrl": "https://registry.kdco.dev",
@@ -407,7 +407,7 @@
           "hash": "910f20e1b2d2a68238d68b3d4090302a0b41acadb7b8e6a9f0fbde4405db25c9"
         }
       ],
-      "installedAt": "2026-03-16T14:21:14.738Z",
+      "installedAt": "2026-03-16T20:16:59.213Z",
       "opencode": {
         "instructions": [
           "./tools/philosophy.md"
@@ -421,7 +421,7 @@
       "revision": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "files": [],
-      "installedAt": "2026-03-16T14:21:14.738Z",
+      "installedAt": "2026-03-16T20:16:59.213Z",
       "opencode": {
         "plugin": [
           "@tarquinen/opencode-dcp@1.2.7",
