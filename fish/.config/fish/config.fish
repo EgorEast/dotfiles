@@ -118,6 +118,7 @@ alias ollama_run='ollama serve'
 alias open_spreadsheet_tui='sc-im'
 alias opencode_free_profile='ocx oc -p free' # open opencode in free profile
 alias opencode_zai_profile='ocx oc -p zai' # open opencode in z.AI profile
+alias opencode_zai_and_free_profile='ocx oc -p zai_and_free' # open opencode in z.AI profile
 alias ovpn_connect='~/ovpn/run-ovpn.sh'
 alias print_file='lp' # lp -d ИМЯ_ПРИНТЕРА -n КОЛИЧЕСТВО_КОПИЙ image.png
 alias project_jump='pj'
