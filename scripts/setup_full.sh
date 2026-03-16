@@ -49,6 +49,8 @@ sudo gpasswd -a egoreast docker
 sudo systemctl enable gitea
 sudo systemctl start gitea
 
+ocx init --global
+
 "$SCRIPT_DIR/setup_main_in_end.sh"
 
 yandex-disk token || true

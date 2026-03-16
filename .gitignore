@@ -47,6 +47,7 @@ obs/.config/obs-studio/logs
 obs/.config/obs-studio/profiler_data
 obs/.config/obs-studio/safe_mode
 opencode/.config/opencode/.gitignore
+opencode/.config/opencode/.ocx/receipt.jsonc
 opencode/.config/opencode/bun.lock
 opencode/.config/opencode/node_modules
 opencode/.config/opencode/opencode-notifier-state.json
