@@ -49,6 +49,7 @@ obs/.config/obs-studio/safe_mode
 opencode/.config/opencode/.gitignore
 opencode/.config/opencode/bun.lock
 opencode/.config/opencode/node_modules
+opencode/.config/opencode/opencode-notifier-state.json
 opencode/.config/opencode/package.json
 qalculate/.config/qalculate/qalc.history
 rudesktop/.config/rudesktop/RuDesktop*_ThreadId*
