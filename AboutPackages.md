@@ -69,6 +69,7 @@
 - [@bramus/caniuse-cli](https://github.com/bramus/caniuse-cli) – Check browser support from the terminal.
 - [@builder.io/ai-shell](https://github.com/BuilderIO/ai-shell) – AI shell.
 - [@google/gemini-cli](https://github.com/google-gemini/gemini-cli) – Google Gemini AI CLI client.
+- [android-studio](https://developer.android.com/studio) – Official IDE for Android app development.
 - [android-tools](https://archlinux.org/packages/extra/x86_64/android-tools/) – Android platform tools.
 - [atac](https://github.com/Julien-cpsn/ATAC) – Arguably a Terminal API Client.
 - [bombadillo](https://bombadillo.colorfield.space/) – Non-web browser, designed for a growing list of protocols operating outside of the web.
