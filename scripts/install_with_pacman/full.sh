@@ -73,6 +73,7 @@ sudo pacman -S --noconfirm --needed \
   ollama \
   openapi-tui \
   openbsd-netcat \
+  opencode \
   oryx \
   pandoc-cli \
   picom \

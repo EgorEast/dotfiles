@@ -47,7 +47,6 @@ yay -S --noconfirm --needed \
   nudoku \
   nyaa \
   obfs4proxy \
-  opencode-bin \
   otter-launcher \
   patat-bin \
   pokete-git \
