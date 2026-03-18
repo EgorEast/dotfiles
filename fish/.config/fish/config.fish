@@ -42,7 +42,7 @@ set -gx ATAC_KEY_BINDINGS ~/.config/atac/vim_key_bindings.toml
 
 # done plugin settings
 set -U __done_min_cmd_duration 20000 # default: 5000 ms
-set -U __done_exclude '^(v|e|se|nvim|y|yazi|m|cmus|g|lazygit|ai|gemini|cal)' # default: all git commands, except push and pull. accepts a regex.
+set -U __done_exclude '^(v|e|se|nvim|y|yazi|m|cmus|g|lazygit|ai|gemini|cal|opencode.*)' # default: all git commands, except push and pull. accepts a regex.
 set -U __done_notify_sound 1
 # pisces plugin settings - autoclose pair sybols
 set -U pisces_only_insert_at_eol 1
