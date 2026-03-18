@@ -74,6 +74,7 @@ yay -S --noconfirm --needed \
   vial-appimage \
   visualvault-bin \
   warpd \
+  watchman-bin \
   wifitui-bin \
   woeusb \
   xautolock \
