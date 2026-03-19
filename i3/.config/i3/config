@@ -190,8 +190,6 @@ bindsym $mod+Shift+e exec --no-startup-id ~/.config/i3/scripts/powermenu
 #bindsym $mod+l exec --no-startup-id i3lock -i  ~/.config/i3/i3-lock-screen.png -p default|win -t
 # lock by blurring the screen:
 bindsym $mod+m exec --no-startup-id ~/.config/i3/scripts/blur-lock
-# Run blur-lock script after ten minutes of inactivity
-exec --no-startup-id xset s 600
 # lock in case after sleep
 exec --no-startup-id xss-lock -l ~/.config/i3/scripts/blur-lock
 
@@ -481,7 +479,7 @@ exec --no-startup-id ~/.config/i3/screenlayout/with-second-screen-laptop.sh
 exec --no-startup-id sleep 1 && feh --bg-fill ~/.local/src/dotfiles/wallpaper/EOS-JWST.png
 
 # set powersavings for display:
-exec --no-startup-id xset s 480 dpms 600 600 600
+exec --no-startup-id xset s 1800 dpms 2400 2400 2400
 
 # disable power saving (for example if using xscreensaver)
 #exec --no-startup-id xset -dpms

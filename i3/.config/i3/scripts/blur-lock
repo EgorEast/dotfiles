@@ -9,6 +9,6 @@ BLUR="5x4"
 
 $SCREENSHOT
 magick $PICTURE -blur $BLUR $PICTURE
-i3lock -i $PICTURE
+i3lock -i $PICTURE --dpms 600
 shred $PICTURE
 rm $PICTURE
