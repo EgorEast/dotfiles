@@ -38,6 +38,9 @@ abbr -a --position anywhere -- -h '-h | bat -plhelp'
 set -Ux PAGER less
 set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
 
+set -x JAVA_HOME /usr/lib/jvm/java-17-openjdk
+set -x ANDROID_HOME ~/Android/Sdk
+
 set -gx ATAC_KEY_BINDINGS ~/.config/atac/vim_key_bindings.toml
 
 # done plugin settings
