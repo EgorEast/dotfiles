@@ -38,8 +38,11 @@ abbr -a --position anywhere -- -h '-h | bat -plhelp'
 set -Ux PAGER less
 set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
 
+# Android SDK
+set -x ANDROID_HOME $HOME/Android/Sdk
+set -x PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $PATH
+
 set -x JAVA_HOME /usr/lib/jvm/java-17-openjdk
-set -x ANDROID_HOME ~/Android/Sdk
 
 set -gx ATAC_KEY_BINDINGS ~/.config/atac/vim_key_bindings.toml
 
