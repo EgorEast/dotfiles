@@ -515,11 +515,11 @@ exec --no-startup-id /usr/bin/dunst
 #exec_always --no-startup-id autotiling
 
 # Autostart apps as you like
-exec --no-startup-id sleep 2 && $terminal
+exec --no-startup-id sleep 4 && $terminal
 # exec --no-startup-id sleep 7 && $browser https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/force-knowledge.md
 exec --no-startup-id sleep 3 && $browser 
-exec --no-startup-id sleep 3 && $obsidian
-exec --no-startup-id sleep 4 && keepassxc
+exec --no-startup-id sleep 2 && $obsidian
+exec --no-startup-id sleep 1 && keepassxc
 
 # enable natural scrolling for touchpad
 exec --no-startup-id xinput set-prop "SYNA2BA6:00 06CB:CE2D Touchpad" "libinput Natural Scrolling Enabled" 1
