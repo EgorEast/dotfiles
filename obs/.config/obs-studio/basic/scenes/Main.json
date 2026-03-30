@@ -1,6 +1,7 @@
 {
+    "name": "Main",
     "DesktopAudioDevice1": {
-        "prev_ver": 536870914,
+        "prev_ver": 536936448,
         "name": "Звук раб. стола",
         "uuid": "66a17881-b280-448a-a5e0-d5fe6faf4f91",
         "id": "pulse_output_capture",
@@ -31,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870914,
+        "prev_ver": 536936448,
         "name": "Микр/доп",
         "uuid": "cc379b49-0b6d-4a7f-a481-f1430b284879",
         "id": "pulse_input_capture",
@@ -61,20 +62,9 @@
         "monitoring_type": 0,
         "private_settings": {}
     },
-    "current_scene": "Horisontal main sxreen",
-    "current_program_scene": "Horisontal main sxreen",
-    "scene_order": [
-        {
-            "name": "Horisontal main sxreen"
-        },
-        {
-            "name": "Horisontal/Vertical two screens"
-        }
-    ],
-    "name": "Main",
     "sources": [
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536936448,
             "name": "Main screen",
             "uuid": "45bb4ea6-43d7-4614-ade1-f8aecf592078",
             "id": "xshm_input_v2",
@@ -101,7 +91,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536936448,
             "name": "Micro",
             "uuid": "fff00452-d975-4869-8165-1355d2af3895",
             "id": "pulse_input_capture",
@@ -130,7 +120,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536936448,
             "name": "Sound",
             "uuid": "50924270-f055-4299-a683-5d7fb27eb095",
             "id": "pulse_output_capture",
@@ -159,7 +149,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536936448,
             "name": "Second screen",
             "uuid": "6d4bddd3-00b9-41be-b4c1-883f5fdc5d2b",
             "id": "xshm_input_v2",
@@ -185,7 +175,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536936448,
             "name": "Horisontal/Vertical two screens",
             "uuid": "aa20ffab-686c-4a53-8403-90836dab8ba4",
             "id": "scene",
@@ -445,7 +435,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536870914,
+            "prev_ver": 536936448,
             "name": "Horisontal main sxreen",
             "uuid": "86a3a070-28c7-48eb-a261-f44a5583a105",
             "id": "scene",
@@ -649,6 +639,20 @@
         }
     ],
     "groups": [],
+    "scene_order": [
+        {
+            "name": "Horisontal main sxreen"
+        },
+        {
+            "name": "Horisontal/Vertical two screens"
+        }
+    ],
+    "current_scene": "Horisontal main sxreen",
+    "current_program_scene": "Horisontal main sxreen",
+    "canvases": [],
+    "current_transition": "Затухание",
+    "transition_duration": 300,
+    "transitions": [],
     "quick_transitions": [
         {
             "name": "Обрезка",
@@ -672,14 +676,10 @@
             "fade_to_black": true
         }
     ],
-    "transitions": [],
     "saved_projectors": [],
-    "canvases": [],
-    "current_transition": "Затухание",
-    "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -5,
+    "scaling_level": -12,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "modules": {
