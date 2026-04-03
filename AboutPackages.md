@@ -305,3 +305,11 @@
 - [Tokyo Night Storm Theme](https://chromewebstore.google.com/detail/pgbjifpikialeahbdendkjioeafbmfkn?utm_source=item-share-cb)
 - [VK Music Saver](https://chromewebstore.google.com/detail/vk-music-saver-%E2%80%94-%D1%81%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C/ijgkbcbalaekboipcmaefchfjpognmog)
 - [Vimium](https://chromewebstore.google.com/detail/dbepggeogbaibhgnhhndojpepiihcmeb?utm_source=item-share-cb)
+
+## 📚 Firefox extentions
+
+- [KeePassXC-Browser](https://addons.mozilla.org/ru/firefox/addon/keepassxc-browser/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+- [Redux DevTools](https://addons.mozilla.org/ru/firefox/addon/reduxdevtools/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+- [Tokyo Night V3](https://addons.mozilla.org/en-US/firefox/addon/tokyo-night-v3/)
+- [Vimium](https://addons.mozilla.org/ru/firefox/addon/vimium-ff/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+- [floccus](https://addons.mozilla.org/ru/firefox/addon/floccus/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
