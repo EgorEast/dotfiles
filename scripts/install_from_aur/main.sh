@@ -9,6 +9,7 @@ yay -S --noconfirm --needed \
   fish-done \
   koreader-appimage \
   linutil \
+  logseq-desktop \
   onlyoffice-bin \
   pantum-driver \
   pinta \
