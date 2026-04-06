@@ -297,7 +297,6 @@
 - [Floccus bookmarks sync](https://chromewebstore.google.com/detail/fnaicdffflnofjppbagibeoednhnbjhg?utm_source=item-share-cb)
 - [KeePassXC-Browser](https://chromewebstore.google.com/detail/oboonakemofpalcgghocfoadofidjkkk?utm_source=item-share-cb)
 - [Logseq Web Clipper](https://chromewebstore.google.com/detail/logseq-web-clipper/fhjehofpeafndgabgbehflkncpmdldgg)
-- [Obsidian Web Clipper](https://chromewebstore.google.com/detail/cnjifjpddelmedmihgijeibhnjfabmlf?utm_source=item-share-cb)
 - [Picture-in-Picture](https://chromewebstore.google.com/detail/hkgfoiooedgoejojocmhlaklaeopbecg?utm_source=item-share-cb)
 - [React Developer Tools](https://chromewebstore.google.com/detail/fmkadmapgofadopljbjfkapdkoienihi?utm_source=item-share-cb)
 - [RedirectTube](https://chromewebstore.google.com/detail/jpbaggklodpddjcadlebabhiopjkjfjh?utm_source=item-share-cb)
