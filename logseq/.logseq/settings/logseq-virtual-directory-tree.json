@@ -1,0 +1,9 @@
+{
+  "hiddenPages": "card, Favorites, Contents",
+  "disabled": false,
+  "expandedFolders": [
+    "Обучение программированию",
+    "Обучение программированию/Git",
+    "textgenerator/configs/llm"
+  ]
+}

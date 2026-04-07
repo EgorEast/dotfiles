@@ -1,0 +1,7 @@
+{
+  "mermaid": true,
+  "echarts": true,
+  "htmlmixed": true,
+  "tikzjax": false,
+  "disabled": false
+}

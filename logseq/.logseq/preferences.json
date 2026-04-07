@@ -1,0 +1,39 @@
+{
+  "theme": null,
+  "themes": {
+    "mode": "dark",
+    "light": null,
+    "dark": {
+      "name": "Default Dark Theme",
+      "url": null,
+      "description": "Logseq default dark theme.",
+      "mode": "dark",
+      "selected": false,
+      "group-first": true,
+      "group-desc": "dark themes"
+    }
+  },
+  "externals": [],
+  "pinnedToolbarItems": [
+    "logseq-graph-analysis:logseq-graph-analysis",
+    "logseq-find-and-replace:open-find-and-replace",
+    "logseq-heatmap:heatmap-plugin-open",
+    "logseq-syncthing-conflicts-helper:syncthing-conflicts",
+    "logseq-calibre-annotation:logseg-calibre-annotation",
+    "logseq-get-link-title:get-link-title",
+    "logseq-file-manager:logseq-plugin-file-manager",
+    "logseq-journals-calendar:open-calendar",
+    "logseq-plugin-bullet-point-style:logseq-plugin-bullet-point-style",
+    "logseq-agenda:Agenda2-Legacy",
+    "logseq-todo-plugin:logseq-plugin-todo",
+    "logseq-virtual-directory-tree:virtual-directory-tree",
+    "logseq-tags:tags-plugin-open",
+    "logseq-awesome-styler:AwesomeStyler",
+    "logseq-journals-calendar:goto-today",
+    "ollama-logseq:ollama-ui-open",
+    "logseq-vim-shortcuts:vim-shortcuts-marks",
+    "logseq-git:git",
+    "logseq-pdf-export-plugin:logseq-pdf-export-plugin",
+    "logseq-agenda:Agenda3"
+  ]
+}

@@ -29,6 +29,7 @@ koreader/.config/koreader/settings/cloudstorage.lua
 libreoffice/.config/libreoffice/**/*
 lnav/.config/lnav/log_metadata.db
 lnav/.config/lnav/view-info-*
+logseq/.logseq/graphs
 ls-fusion/lsFusion/*
 mpv/.config/mpv/shaders/cache
 obs/.config/obs-studio/logs

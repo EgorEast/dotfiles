@@ -1,0 +1,38 @@
+{
+  "triggerSettings": null,
+  "dollarTrigger": true,
+  "selectEdit": true,
+  "selectModifier": "<none>",
+  "formatSettings": null,
+  "preferDisplay": false,
+  "switchHotkey": "ctrl+shift+4",
+  "preferMultiline": false,
+  "smartFormat": true,
+  "mathliveSettings": null,
+  "inlinePreview": false,
+  "smartFence": true,
+  "smartMode": false,
+  "smartSuperscript": false,
+  "keybindings": [
+    {
+      "key": "ctrl+b",
+      "command": [
+        "insert",
+        "\\mathbf{#@}"
+      ]
+    }
+  ],
+  "inlineShortcuts": {
+    "align": "\\begin{align*}\n#? &= #? \\\\\n #? &= #?\\end{align*}"
+  },
+  "macros": {
+    "phase": {
+      "def": "\\enclose{phasorangle}{#1}",
+      "args": 1,
+      "captureSelection": false,
+      "expand": false
+    }
+  },
+  "disableDefaultShortcuts": false,
+  "disabled": false
+}
