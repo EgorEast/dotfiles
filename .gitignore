@@ -26,19 +26,7 @@ koreader/.config/koreader/history.lua
 koreader/.config/koreader/settings.reader.lua*
 koreader/.config/koreader/settings/battery_stats.lua
 koreader/.config/koreader/settings/cloudstorage.lua
-# libreoffice/.config/libreoffice/*
-libreoffice/.config/libreoffice/4/.lock
-libreoffice/.config/libreoffice/4/user/GraphicsRenderTests.log
-libreoffice/.config/libreoffice/4/user/autocorr
-libreoffice/.config/libreoffice/4/user/autotext
-libreoffice/.config/libreoffice/4/user/backup
-libreoffice/.config/libreoffice/4/user/database
-libreoffice/.config/libreoffice/4/user/extensions
-libreoffice/.config/libreoffice/4/user/gallery
-libreoffice/.config/libreoffice/4/user/pack
-libreoffice/.config/libreoffice/4/user/registrymodifications.xcu
-libreoffice/.config/libreoffice/4/user/store
-libreoffice/.config/libreoffice/4/user/uno_packages
+libreoffice/.config/libreoffice/**/*
 lnav/.config/lnav/log_metadata.db
 lnav/.config/lnav/view-info-*
 ls-fusion/lsFusion/*
@@ -84,8 +72,8 @@ ya-disk/.config/yandex-disk/passwd
 !calcurse/.calcurse/conf
 !calcurse/.calcurse/keys
 !gemini/.gemini/settings.json
-# !libreoffice/.config/libreoffice/4/user/basic/*/**
-# !libreoffice/.config/libreoffice/4/user/config/*/**
-# !libreoffice/.config/libreoffice/4/user/wordbook/*/**
+!libreoffice/.config/libreoffice/4/user/basic/*/**
+!libreoffice/.config/libreoffice/4/user/config/*/**
+!libreoffice/.config/libreoffice/4/user/wordbook/*/**
 !ls-fusion/lsFusion/README.md
 !ls-fusion/lsFusion/compose.yaml
