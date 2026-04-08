@@ -52,6 +52,7 @@ sudo pacman -S --noconfirm --needed \
   inotify-tools \
   iptables-nft \
   jq \
+  just \
   jwt-ui \
   k9s \
   kbt \
