@@ -41,6 +41,7 @@ x-scheme-handler/httpxdg-mime=chromium.desktop;firefox.desktop;
 x-scheme-handler/mailto=chromium.desktop
 x-scheme-handler/terminal=kitty.desktop
 x-scheme-handler/webcal=chromium.desktop
+x-scheme-handler/freetube=freetube.desktop
 
 [Added Associations]
 application/x-msdownload=wine.desktop;
