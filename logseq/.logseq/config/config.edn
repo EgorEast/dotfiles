@@ -10,4 +10,5 @@
 ;;                :ui/toggle-brackets "t b"}}
 
 {:shortcuts {:plugin.logseq-markdown-table/$shortcut$mod_shift_t []
- :plugin.logseq-todo-plugin/$shortcut$mod_shift_t []}}
+ :plugin.logseq-todo-plugin/$shortcut$mod_shift_t []
+ :window/close []}}
