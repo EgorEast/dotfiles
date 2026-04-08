@@ -25,7 +25,6 @@
  :logseq-fenced-code-plus {:version "0.0.11", :repo "xyhp915/logseq-fenced-code-plus", :effect true, :theme false}
  :logtools {:version "0.1.1", :repo "cannibalox/logtools", :effect false, :theme false}
  :logseq-diagrams-as-code {:version "0.0.21", :repo "npgrosser/logseq-diagrams-as-code", :effect false, :theme false}
- :logseq-sticky-headers {:version "v1.4.4", :repo "yoyurec/logseq-sticky-headers", :effect true, :theme false}
  :logseq13-full-house {:version "v4.3.6", :repo "stdword/logseq13-full-house-plugin", :effect true, :theme false}
  :logseq-todo-plugin {:version "v1.22.0", :repo "ahonn/logseq-plugin-todo", :effect true, :theme false}
  :logseq-agenda {:version "v3.13.1", :repo "haydenull/logseq-plugin-agenda", :effect true, :theme false}
