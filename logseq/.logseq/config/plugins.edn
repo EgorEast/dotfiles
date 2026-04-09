@@ -10,7 +10,6 @@
  :logseq-pdf-export-plugin {:version "2.2.11", :repo "sawhney17/logseq-pdf-export", :effect true, :theme false}
  :logseq-heatmap {:version "v2.4.3", :repo "pengx17/logseq-plugin-heatmap", :effect true, :theme false}
  :logseq-link-preview {:version "v2.3.0", :repo "pengx17/logseq-plugin-link-preview", :effect true, :theme false}
- :logseq-kanban-plugin {:version "v3.8.1", :repo "benjypng/logseq-kanban-plugin", :effect true, :theme false}
  :logseq-block-to-page {:version "v1.3.0", :repo "hyrijk/logseq-plugin-block-to-page", :effect false, :theme false}
  :logseq-vim-shortcuts {:version "v0.2.0", :repo "vipzhicheng/logseq-plugin-vim-shortcuts", :effect true, :theme false}
  :logseq-graph-analysis {:version "0.12.0", :repo "trashhalo/logseq-graph-analysis", :effect true, :theme false}
@@ -26,7 +25,6 @@
  :logtools {:version "0.1.1", :repo "cannibalox/logtools", :effect false, :theme false}
  :logseq-diagrams-as-code {:version "0.0.21", :repo "npgrosser/logseq-diagrams-as-code", :effect false, :theme false}
  :logseq13-full-house {:version "v4.3.6", :repo "stdword/logseq13-full-house-plugin", :effect true, :theme false}
- :logseq-todo-plugin {:version "v1.22.0", :repo "ahonn/logseq-plugin-todo", :effect true, :theme false}
  :logseq-agenda {:version "v3.13.1", :repo "haydenull/logseq-plugin-agenda", :effect true, :theme false}
  :logseq-live-math {:version "v1.4.5", :repo "AllanChain/logseq-live-math", :effect true, :theme false}
  :logseq-vim-editor {:version "v0.0.6", :repo "vipzhicheng/logseq-plugin-vim-editor", :effect true, :theme false}
