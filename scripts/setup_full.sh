@@ -59,8 +59,12 @@ yandex-disk start || true
 echo ">>> Configuring bandwhich..."
 sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)
 
-echo ">>> Run and pull ollama"
+echo ">>> Cloning matrix docker ansible deploy..."
+git clone https://github.com/spantaleev/matrix-docker-ansible-deploy.git ~/.local/src/matrix-docker-ansible-deploy
 
+git clone ssh://git@codeberg.org/egoreast/matrix-ansible-deploy_inventory.git ~/.local/src/matrix-docker-ansible-deploy/inventory
+
+echo ">>> Run and pull ollama"
 ollama serve
 
 read -r -p "Do you want install ollama llms? (y/N): " choice
