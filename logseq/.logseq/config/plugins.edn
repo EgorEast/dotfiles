@@ -1,4 +1,4 @@
-{:logseq-virtual-directory-tree {:version "v0.1.3", :repo "KazunagaIida/Logseq-Virtual-Directory-Tree-Plugin", :effect false, :theme false}
+{:logseq-virtual-directory-tree {:version "v0.1.6", :repo "KazunagaIida/Logseq-Virtual-Directory-Tree-Plugin", :effect false, :theme false}
  :logseq-tablerender-plugin {:version "v2.9.0", :repo "benjypng/logseq-tablerender-plugin", :effect false, :theme false}
  :logseq-chartrender-plugin {:version "v2.0.4", :repo "benjypng/logseq-chartrender-plugin", :effect true, :theme false}
  :logseq-tabs {:version "v1.19.4", :repo "pengx17/logseq-plugin-tabs", :effect true, :theme false}
