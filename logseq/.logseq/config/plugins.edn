@@ -16,7 +16,6 @@
  :logseq-rainbow-tags {:version "0.1.0", :repo "swk777/logseq-rainbow-tags", :effect false, :theme false}
  :logseq-get-link-title {:version "0.0.2", :repo "abcvav/logseq-get-link-title", :effect true, :theme false}
  :logseq-find-and-replace {:version "v1.1.1", :repo "sawhney17/logseq-find-replace", :effect false, :theme false}
- :logseq-move-block {:version "v1.1.0", :repo "vipzhicheng/logseq-plugin-move-block", :effect true, :theme false}
  :logseq-emoji-picker-fork {:version "v0.0.6", :repo "walsvid/logseq-emoji-picker-fork", :effect false, :theme false}
  :ollama-logseq {:version "v1.1.6", :repo "omagdy7/ollama-logseq", :effect true, :theme false}
  :logseq-webpage-title {:version "v1.3.0", :repo "paulkinlan/logseq-webpage-title", :effect true, :theme false}
