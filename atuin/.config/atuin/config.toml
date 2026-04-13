@@ -116,7 +116,7 @@ search_mode = "fuzzy"
 #   "^secret-cmd",
 #   "^innocuous-cmd .*--secret=.+",
 # ]
-history_filter = ["*setup.yml --extra-vars='username=*"]
+history_filter = [".*setup\\.yml --extra-vars='username=.*"]
 
 ## prevent commands run with cwd matching any of these regexes from being written
 ## to history. Note that these regular expressions are unanchored, i.e. if they don't
