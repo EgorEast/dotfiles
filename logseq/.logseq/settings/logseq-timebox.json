@@ -1,0 +1,10 @@
+{
+  "startOfDayHour": 8,
+  "firstDayOfWeek": 1,
+  "multiDayViewSpan": 3,
+  "clickAction": "none",
+  "doubleClickAction": "goto",
+  "externalIcsUrls": "",
+  "showExternalCalendars": true,
+  "disabled": false
+}

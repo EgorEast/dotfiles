@@ -15,6 +15,7 @@
   },
   "externals": [],
   "pinnedToolbarItems": [
+    "logseq-timebox:logseq-timebox",
     "logseq-graph-analysis:logseq-graph-analysis",
     "logseq-find-and-replace:open-find-and-replace",
     "logseq-heatmap:heatmap-plugin-open",
@@ -33,6 +34,7 @@
     "ollama-logseq:ollama-ui-open",
     "logseq-vim-shortcuts:vim-shortcuts-marks",
     "logseq-git:git",
+    "logseq-calendars-plugin:open-calendar2",
     "logseq-pdf-export-plugin:logseq-pdf-export-plugin",
     "logseq-agenda:Agenda3"
   ]
