@@ -226,6 +226,7 @@
 - [khal](https://github.com/pimutils/khal) – CLI calendar application.
 - [libqalculate](https://github.com/Qalculate/libqalculate) - TUI calculator.
 - [libreoffice](https://wiki.archlinux.org/title/LibreOffice) – Powerful office suite that is fully compatible with 32/64-bit systems.
+- [logseq](https://github.com/logseq/logseq) – Privacy-first, open-source platform for knowledge management and collaboration.
 - [obsidian](https://help.obsidian.md/) – Markdown-based note-taking app.
 - [onlyoffice](https://github.com/ONLYOFFICE/DesktopEditors) – Office suite with MS Office support.
 - [pandoc](https://github.com/jgm/pandoc) – Universal markup converter.
