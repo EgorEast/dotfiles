@@ -1,10 +1,10 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "zai-coding-plan/glm-5",
+  "model": "zai-coding-plan/glm-5-turbo",
   "small_model": "opencode/big-pickle",
   "agent": {
     "plan": {
-      "model": "zai-coding-plan/glm-5",
+      "model": "zai-coding-plan/glm-5-turbo",
       "temperature": 0.3,
       "reasoningEffort": "high",
 			"textVerbosity": "low",
@@ -19,7 +19,7 @@
 			}
     },
     "build": {
-      "model": "zai-coding-plan/glm-5",
+      "model": "zai-coding-plan/glm-5-turbo",
       "temperature": 0.3,
       "reasoningEffort": "high",
 			"textVerbosity": "low",
@@ -93,7 +93,7 @@
 			}
     },
     "researcher": {
-      "model": "zai-coding-plan/glm-5",
+      "model": "zai-coding-plan/glm-5-turbo",
       "temperature": 0.4,
       "reasoningEffort": "high",
 			"textVerbosity": "medium",
@@ -167,7 +167,7 @@
 			}
     },
     "reviewer": {
-      "model": "zai-coding-plan/glm-5",
+      "model": "zai-coding-plan/glm-5-turbo",
       "temperature": 0.1,
       "reasoningEffort": "high",
 			"textVerbosity": "medium",
@@ -218,7 +218,7 @@
 		"./tools/philosophy.md"
 	],
 	"plugin": [
-		"@tarquinen/opencode-dcp@1.2.7",
-		"@franlol/opencode-md-table-formatter@0.0.3"
+		"@tarquinen/opencode-dcp@3.1.3",
+		"@franlol/opencode-md-table-formatter@0.0.6"
 	]
 }
