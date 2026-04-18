@@ -19,6 +19,7 @@ expect
 export
 github
 import
+instanceof
 js
 keymaps
 lazyvim
