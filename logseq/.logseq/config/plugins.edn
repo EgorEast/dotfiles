@@ -1,5 +1,4 @@
 {:logseq-virtual-directory-tree {:version "v0.1.6", :repo "KazunagaIida/Logseq-Virtual-Directory-Tree-Plugin", :effect false, :theme false}
- :logseq-tablerender-plugin {:version "v2.9.0", :repo "benjypng/logseq-tablerender-plugin", :effect false, :theme false}
  :logseq-chartrender-plugin {:version "v2.0.4", :repo "benjypng/logseq-chartrender-plugin", :effect true, :theme false}
  :logseq-tabs {:version "v1.19.4", :repo "pengx17/logseq-plugin-tabs", :effect true, :theme false}
  :logseq-bullet-threading {:version "v1.1.4", :repo "pengx17/logseq-plugin-bullet-threading", :effect false, :theme false}
@@ -12,13 +11,8 @@
  :logseq-block-to-page {:version "v1.3.0", :repo "hyrijk/logseq-plugin-block-to-page", :effect false, :theme false}
  :logseq-vim-shortcuts {:version "v0.2.0", :repo "vipzhicheng/logseq-plugin-vim-shortcuts", :effect true, :theme false}
  :logseq-graph-analysis {:version "0.12.0", :repo "trashhalo/logseq-graph-analysis", :effect true, :theme false}
- :logseq-rainbow-tags {:version "0.1.0", :repo "swk777/logseq-rainbow-tags", :effect false, :theme false}
- :logseq-get-link-title {:version "0.0.2", :repo "abcvav/logseq-get-link-title", :effect true, :theme false}
- :logseq-find-and-replace {:version "v1.1.1", :repo "sawhney17/logseq-find-replace", :effect false, :theme false}
  :logseq-emoji-picker-fork {:version "v0.0.6", :repo "walsvid/logseq-emoji-picker-fork", :effect false, :theme false}
  :ollama-logseq {:version "v1.1.6", :repo "omagdy7/ollama-logseq", :effect true, :theme false}
- :logseq-webpage-title {:version "v1.3.0", :repo "paulkinlan/logseq-webpage-title", :effect true, :theme false}
- :logseq-syncthing-conflicts-helper {:version "v0.0.5", :repo "raubel/logseq-syncthing-conflicts-helper", :effect false, :theme false}
  :logseq-fenced-code-plus {:version "0.0.11", :repo "xyhp915/logseq-fenced-code-plus", :effect true, :theme false}
  :logtools {:version "0.1.1", :repo "cannibalox/logtools", :effect false, :theme false}
  :logseq-diagrams-as-code {:version "0.0.21", :repo "npgrosser/logseq-diagrams-as-code", :effect false, :theme false}
@@ -26,6 +20,5 @@
  :logseq-agenda {:version "v3.13.1", :repo "haydenull/logseq-plugin-agenda", :effect true, :theme false}
  :logseq-live-math {:version "v1.4.5", :repo "AllanChain/logseq-live-math", :effect true, :theme false}
  :logseq-vim-editor {:version "v0.0.6", :repo "vipzhicheng/logseq-plugin-vim-editor", :effect true, :theme false}
- :logseq-plugin-automatic-url-title {:version "v1.1.0", :repo "0x7b1/logseq-plugin-automatic-url-title", :effect true, :theme false}
  :logseq-timebox {:version "v0.2.3", :repo "yusuf8834/logseq-timebox", :effect false, :theme false}
  :logseq-journals-calendar {:version "v0.11.1", :repo "xyhp915/logseq-journals-calendar", :effect false, :theme false}}
