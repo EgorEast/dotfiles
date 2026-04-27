@@ -1,7 +1,0 @@
-{
-  "host": "localhost:11434",
-  "model": "llama3.1:8b",
-  "shortcut": "mod+shift+o",
-  "custom_prompt_block": "Translate in Russian : ",
-  "disabled": false
-}
