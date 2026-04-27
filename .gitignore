@@ -52,6 +52,7 @@ rudesktop/.config/rudesktop/peers
 rustdesk/.config/rustdesk/RustDesk.toml
 rustdesk/.config/rustdesk/RustDesk2.toml
 rustdesk/.config/rustdesk/RustDesk_ab
+rustdesk/.config/rustdesk/RustDesk_group
 rustdesk/.config/rustdesk/peers
 rustdesk/.config/rustdesk/peers.toml
 ssh/.ssh/*.pub
