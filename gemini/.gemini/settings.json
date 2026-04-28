@@ -17,7 +17,11 @@
         "Gray": "#737aa2",
         "DiffAdded": "#449dab",
         "DiffRemoved": "#914c54",
-        "GradientColors": ["#7aa2f7", "#9d7cd8", "#f7768e"]
+        "GradientColors": [
+          "#7aa2f7",
+          "#9d7cd8",
+          "#f7768e"
+        ]
       }
     },
     "showLineNumbers": true,
@@ -40,6 +44,19 @@
   },
   "output": {
     "format": "text"
+  },
+  "hooks": {
+    "BeforeTool": [
+      {
+        "matcher": "exit_plan_mode",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "plannotator",
+            "timeout": 345600
+          }
+        ]
+      }
+    ]
   }
 }
-
