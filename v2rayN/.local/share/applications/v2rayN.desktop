@@ -2,15 +2,12 @@
 Version=1.0
 Type=Application
 Name=v2rayN
-Comment=V2Ray Client for Linux (i3 optimized)
-Exec=/home/egoreast/.local/bin/v2rayN-i3 %u
+GenericName=V2Ray Client
+Comment=V2Ray/XRay Proxy Client with GUI
+Exec=v2rayN %F
 Icon=v2rayN
 Terminal=false
-Categories=Network;Proxy;
+Categories=Network;Proxy;Utility;
 StartupWMClass=v2rayN
+Keywords=proxy;vpn;v2ray;xray;clash;
 SingleMainWindow=true
-Actions=Toggle;
-
-[Desktop Action Toggle]
-Name=Toggle v2rayN Window
-Exec=/home/egoreast/.local/bin/v2rayN-i3

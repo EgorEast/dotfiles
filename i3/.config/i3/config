@@ -171,7 +171,7 @@ set $browser "chromium"
 set $terminal "kitty"
 set $fileManager "thunar"
 set $md_editor "logseq"
-set $vpn "~/.local/bin/v2rayN-i3"
+set $vpn "v2rayN"
 
 ######################################
 # keybindings for different actions: #
@@ -316,7 +316,7 @@ bindsym $mod+Shift+b exec --no-startup-id rofi-bluetooth
 
 bindsym $mod+Shift+a exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 
-bindsym $mod+Shift+v exec --no-startup-id ~/.config/rofi/scripts/v2rayN-menu.sh
+bindsym $mod+Shift+v exec $vpn
 
 bindsym $mod+x exec --no-startup-id rofi -modi emoji -show emoji
 
