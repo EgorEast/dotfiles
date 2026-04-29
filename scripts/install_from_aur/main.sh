@@ -16,7 +16,7 @@ yay -S --noconfirm --needed \
   portproton \
   syncthing-resolve-conflicts \
   syncthingtray \
-  throne \
   ttf-ms-fonts \
+  v2rayn-bin \
   ventoy \
   whatsapp-linux-desktop

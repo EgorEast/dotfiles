@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/opt/v2rayn-bin/v2rayN
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=v2rayN
+Name=v2rayN
+Comment[en_US]=v2rayN
+Comment=v2rayN

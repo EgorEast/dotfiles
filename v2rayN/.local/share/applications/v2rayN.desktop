@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=v2rayN
+Exec=/home/egoreast/.local/bin/v2rayN-i3 %F
+Icon=v2rayN
+Terminal=false
+Type=Application
+Categories=Network;
+StartupWMClass=v2rayN

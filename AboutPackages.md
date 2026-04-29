@@ -57,10 +57,10 @@
 - [syncthing-resolve-conflicts](https://github.com/dschrempf/syncthing-resolve-conflicts) – A small bash script that handles synchronization conflicts with Syncthing. Inspired by 'pacdiff' from Arch Linux..
 - [syncthing](https://wiki.archlinux.org/title/Syncthing) – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol.
 - [telegram-desktop](https://desktop.telegram.org/) – Official Telegram client.
-- [throne](https://github.com/throneproj/Throne) – Cross-platform GUI proxy utility (Empowered by sing-box)
 - [tor](https://2019.www.torproject.org/docs/documentation.html.en) – Anonymity network.
 - [torbrowser-launcher](https://github.com/micahflee/torbrowser-launcher) – Tor Browser installer/updater.
 - [torsocks](https://gitweb.torproject.org/torsocks.git) – Run applications through Tor.
+- [v2rayn](https://github.com/2dust/v2rayN) – A GUI client for Windows, Linux and macOS, support Xray and sing-box and others
 - [whatsapp-linux-desktop](https://github.com/eneshecan/whatsapp-for-linux) – Unofficial WhatsApp desktop client.
 - [yandex-disk](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux) – Cloud storage client.
 

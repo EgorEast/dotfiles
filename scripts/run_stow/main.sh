@@ -35,8 +35,8 @@ stow --adopt --restow \
   onboard \
   onlyoffice \
   spectacle \
-  throne \
   ventoy \
+  v2rayN \
   vim \
   yazi \
   yt-dlp \

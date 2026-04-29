@@ -171,6 +171,7 @@ set $browser "chromium"
 set $terminal "kitty"
 set $fileManager "thunar"
 set $md_editor "logseq"
+set $vpn "~/.local/bin/v2rayN-i3"
 
 ######################################
 # keybindings for different actions: #
@@ -315,6 +316,8 @@ bindsym $mod+Shift+b exec --no-startup-id rofi-bluetooth
 
 bindsym $mod+Shift+a exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 
+bindsym $mod+Shift+v exec --no-startup-id $vpn
+
 bindsym $mod+x exec --no-startup-id rofi -modi emoji -show emoji
 
 bindsym $mod+y exec warpd --hint
@@ -365,6 +368,7 @@ assign [class="WhatsApp"] $ws6
 assign [class="gajim"] $ws6
 assign [class="crow-translate"] $ws7
 assign [class="KeePassXC" window_type="normal"] $ws10
+assign [class="v2rayN"] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Anydesk] focus
@@ -380,6 +384,7 @@ for_window [class=crow-translate] focus
 for_window [class=gajim] focus
 for_window [class=kitty] focus
 for_window [class=Logseq] focus
+for_window [class=v2rayN] focus
 
 # set floating (nontiling) for apps needing it
 for_window [class="Yad" instance="yad"] floating enable
@@ -397,9 +402,10 @@ for_window [window_role="About"] floating enable
 # for_window [class="mpv"] floating enable, border none
 for_window [class="mpv"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
-for_window [class="Throne"] floating enable
+# for_window [class="v2rayN"] floating enable
 for_window [class="^obs$"] floating enable
 for_window [title="^(DevTools - |Developer Tools — ).*"] floating enable, move position center
+# for_window [class="v2rayN"] floating enable, move position center
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
@@ -407,9 +413,10 @@ for_window [class="urxvt"] border pixel 1
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
 #for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
-for_window [class="Throne"]  resize set 1000 1000
+for_window [class="v2rayN"] resize set 800 600
 for_window [class="mpv"]  resize set 1000 1000
 for_window [title="^(DevTools - |Developer Tools — ).*"] resize set 1000 1000
+
 
 # set position of floating window
 for_window [class=".*"] move position center
@@ -569,8 +576,6 @@ exec --no-startup-id warpd
 exec --no-startup-id syncthing serve --no-browser --logflags=3
 
 exec --no-startup-id /usr/bin/syncthingtray qt-widgets-gui --single-instance --wait
-
-exec --no-startup-id /usr/lib/throne/Throne -tray -appdata
 
 exec --no-startup-id crow
 

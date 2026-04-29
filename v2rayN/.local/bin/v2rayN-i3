@@ -1,0 +1,132 @@
+#!/bin/bash
+# =============================================================================
+# v2rayN-i3 - Wrapper для запуска v2rayN в i3wm с поддержкой:
+# - Единственного инстанса (singleton)
+# - Активации скрытого/свернутого окна
+# - Перемещения между workspace'ами
+# =============================================================================
+
+APP_NAME="v2rayN"
+APP_CMD="/opt/v2rayn-bin/v2rayN"
+LOCK_FILE="/tmp/v2rayN-i3.lock"
+LOG_FILE="/tmp/v2rayN-i3.log"
+
+log() {
+    echo "[$(date '+%H:%M:%S')] $1" >> "$LOG_FILE"
+}
+
+# Функция: Поиск ID окна v2rayN через i3 tree
+find_v2rayn_window_id() {
+    i3-msg -t get_tree | \
+    python3 -c "
+import sys, json
+
+def find_window(nodes, target='v2rayN'):
+    for node in nodes:
+        # Проверяем name и window_properties class
+        if node.get('name') and target.lower() in node.get('name', '').lower():
+            return node.get('window')
+        if node.get('window_properties', {}).get('class', '').lower() == target.lower():
+            return node.get('window')
+        # Рекурсивный поиск в дочерних узлах
+        if 'nodes' in node:
+            result = find_window(node['nodes'], target)
+            if result:
+                return result
+        if 'floating_nodes' in node:
+            result = find_window(node['floating_nodes'], target)
+            if result:
+                return result
+    return None
+
+tree = json.load(sys.stdin)
+window_id = find_window([tree])
+if window_id:
+    print(window_id)
+" 2>/dev/null
+}
+
+# Функция: Активация окна v2rayN
+activate_v2rayn_window() {
+    local window_id=$(find_v2rayn_window_id)
+    
+    if [ -n "$window_id" ]; then
+        log "Найдено окно v2rayN (ID: $window_id)"
+        
+        # Активируем окно (переключаем на него)
+        i3-msg "[id=\"$window_id\"] focus" > /dev/null 2>&1
+        
+        # Если окно в floating режиме - показываем его
+        i3-msg "[id=\"$window_id\"] move position center" > /dev/null 2>&1 || true
+        
+        # Перемещаем на текущий workspace (опционально, раскомментируйте если нужно)
+        # i3-msg "[id=\"$window_id\"] move window to workspace current" > /dev/null 2>&1
+        
+        log "Окно активировано!"
+        return 0
+    else
+        log "Окно v2rayN не найдено в i3 tree"
+        return 1
+    fi
+}
+
+# Главная логика
+main() {
+    log "=== Запуск v2rayN-i3 ==="
+    
+    # Проверка: запущен ли процесс?
+    if pgrep -x "$APP_NAME" > /dev/null; then
+        log "Процесс $APP_NAME уже запущен (PID: $(pgrep -x $APP_NAME))"
+        
+        # Попытка найти и активировать окно
+        if activate_v2rayn_window; then
+            exit 0
+        else
+            log "Окно не найдено, но процесс есть. Пробуем альтернативные методы..."
+            
+            # Альтернатива: xdotool (если установлен)
+            if command -v xdotool &> /dev/null; then
+                xdotool search --name "$APP_NAME" windowactivate --sync 2>/dev/null && exit 0
+            fi
+            
+            # Альтернатива: wmctrl (если установлен)
+            if command -v wmctrl &> /dev/null; then
+                wmctrl -a "$APP_NAME" 2>/dev/null && exit 0
+            fi
+            
+            echo "⚠️  v2rayN запущен, но окно не может быть активировано"
+            exit 1
+        fi
+    fi
+    
+    # Запуск нового экземпляра
+    log "Запуск нового экземпляра $APP_NAME..."
+    
+    # Используем flock для предотвращения race condition
+    (
+        flock -n 9 || {
+            echo "❌ Другой экземпляр скрипта уже работает"
+            exit 1
+        }
+        
+        # Запускаем v2rayN
+        $APP_CMD "$@" &
+        APP_PID=$!
+        log "Запущен с PID: $APP_PID"
+        
+        # Ждем появления окна (до 5 секунд)
+        for i in {1..10}; do
+            sleep 0.5
+            if pgrep -x "$APP_NAME" > /dev/null; then
+                log "Процесс обнаружен, активирую окно..."
+                sleep 1  # Даем время на создание окна
+                activate_v2rayn_window
+                break
+            fi
+        done
+        
+        wait $APP_PID 2>/dev/null
+    ) 9>"$LOCK_FILE"
+}
+
+main "$@"
