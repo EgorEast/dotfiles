@@ -316,7 +316,7 @@ bindsym $mod+Shift+b exec --no-startup-id rofi-bluetooth
 
 bindsym $mod+Shift+a exec --no-startup-id rofi -show calc -modi calc -no-show-match -no-sort
 
-bindsym $mod+Shift+v exec --no-startup-id $vpn
+bindsym $mod+Shift+v exec --no-startup-id ~/.config/rofi/scripts/v2rayN-menu.sh
 
 bindsym $mod+x exec --no-startup-id rofi -modi emoji -show emoji
 
@@ -368,7 +368,6 @@ assign [class="WhatsApp"] $ws6
 assign [class="gajim"] $ws6
 assign [class="crow-translate"] $ws7
 assign [class="KeePassXC" window_type="normal"] $ws10
-assign [class="v2rayN"] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Anydesk] focus
@@ -400,12 +399,12 @@ for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enabl
 for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
 # for_window [class="mpv"] floating enable, border none
-for_window [class="mpv"] floating enable
+for_window [class="mpv"] floating enable, resize set 1000 1000
 for_window [class="Nm-connection-editor"] floating enable
-# for_window [class="v2rayN"] floating enable
 for_window [class="^obs$"] floating enable
-for_window [title="^(DevTools - |Developer Tools — ).*"] floating enable, move position center
-# for_window [class="v2rayN"] floating enable, move position center
+for_window [title="^(DevTools - |Developer Tools — ).*"] floating enable, move position center, resize set 1000 1000
+for_window [class="v2rayN"] floating enable, resize set 900 600, move position center
+for_window [title="v2rayN"] floating enable, resize set 900 600, move position center
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
@@ -413,10 +412,6 @@ for_window [class="urxvt"] border pixel 1
 # set size of floating window
 #for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
 #for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
-for_window [class="v2rayN"] resize set 800 600
-for_window [class="mpv"]  resize set 1000 1000
-for_window [title="^(DevTools - |Developer Tools — ).*"] resize set 1000 1000
-
 
 # set position of floating window
 for_window [class=".*"] move position center
@@ -559,6 +554,13 @@ exec --no-startup-id nm-applet
 # clipman-applet
 # exec --no-startup-id xfce4-clipman
 
+# =============================================================================
+# System Tray Proxy для AvaloniaUI приложений (v2rayN и др.)
+# Конвертирует AppIndicator → XEmbed (понятный i3)
+# =============================================================================
+
+exec --no-startup-id snixembed --fork
+
 ##################
 # floating rules #
 ##################
@@ -699,3 +701,4 @@ bindsym $mod+o exec --no-startup-id rofi -show window \
 exec --no-startup-id greenclip daemon>/dev/null
 bindsym $mod+c exec --no-startup-id rofi -modi "clipboard:greenclip print" -show clipboard \
 		-config ~/.config/rofi/rofidmenu.rasi
+exec --no-startup-id snixembed --fork

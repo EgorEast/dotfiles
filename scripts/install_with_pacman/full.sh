@@ -94,6 +94,7 @@ sudo pacman -S --noconfirm --needed \
   rofi-emoji \
   rtorrent \
   serie \
+  snixembed \
   soft-serve \
   systemctl-tui \
   systeroid \

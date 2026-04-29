@@ -1,8 +1,16 @@
 [Desktop Entry]
+Version=1.0
+Type=Application
 Name=v2rayN
-Exec=/home/egoreast/.local/bin/v2rayN-i3 %F
+Comment=V2Ray Client for Linux (i3 optimized)
+Exec=/home/egoreast/.local/bin/v2rayN-i3 %u
 Icon=v2rayN
 Terminal=false
-Type=Application
-Categories=Network;
+Categories=Network;Proxy;
 StartupWMClass=v2rayN
+SingleMainWindow=true
+Actions=Toggle;
+
+[Desktop Action Toggle]
+Name=Toggle v2rayN Window
+Exec=/home/egoreast/.local/bin/v2rayN-i3

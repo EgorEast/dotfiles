@@ -141,6 +141,7 @@
 - [gping](https://github.com/orf/gping) – Ping, but with a graph.
 - [kitty](https://sw.kovidgoyal.net/kitty/) – GPU-accelerated terminal emulator.
 - [lsd](https://github.com/lsd-rs/lsd) – `ls` replacement with icons and colors.
+- [snixembed](https://man.archlinux.org/man/snixembed.1.en) – proxy the StatusNotifierItem protocol to the XEmbed System Tray.
 - [systemctl-tui](https://github.com/rgwood/systemctl-tui) – Fast, simple TUI for interacting with systemd services and their logs.
 - [systemd-manager-tui](https://github.com/rgwood/systemctl-tui) – Fast, simple TUI for interacting with systemd services and their logs.
 - [systeroid](https://github.com/orhun/systeroid) – More powerful alternative to sysctl(8) with a terminal user interface.
