@@ -127,6 +127,7 @@ alias opencode_free_profile='ocx oc -p free'
 alias opencode_zai-lite_and_free_profile='ocx oc -p zai-lite_and_free'
 alias opencode_zai-lite_profile='ocx oc -p zai-lite'
 alias opencode_zai_and_free_profile='ocx oc -p zai_and_free'
+alias opencode_zai_mixed_profile='ocx oc -p zai_mixed'
 alias opencode_zai_profile='ocx oc -p zai'
 alias ovpn_connect='~/ovpn/run-ovpn.sh'
 alias print_file='lp' # lp -d ИМЯ_ПРИНТЕРА -n КОЛИЧЕСТВО_КОПИЙ image.png
