@@ -368,6 +368,7 @@ assign [class="WhatsApp"] $ws6
 assign [class="gajim"] $ws6
 assign [class="crow-translate"] $ws7
 assign [class="KeePassXC" window_type="normal"] $ws10
+assign [class=v2rayN] $ws10
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Anydesk] focus
@@ -403,8 +404,8 @@ for_window [class="mpv"] floating enable, resize set 1000 1000
 for_window [class="Nm-connection-editor"] floating enable
 for_window [class="^obs$"] floating enable
 for_window [title="^(DevTools - |Developer Tools — ).*"] floating enable, move position center, resize set 1000 1000
-for_window [class="v2rayN"] floating enable, resize set 900 600, move position center
-for_window [title="v2rayN"] floating enable, resize set 900 600, move position center
+# for_window [class="v2rayN"] floating enable, resize set 900 600, move position center
+# for_window [title="v2rayN"] floating enable, resize set 900 600, move position center
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
