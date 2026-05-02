@@ -12,7 +12,6 @@
  :logtools {:version "0.1.1", :repo "cannibalox/logtools", :effect false, :theme false}
  :logseq-diagrams-as-code {:version "0.0.21", :repo "npgrosser/logseq-diagrams-as-code", :effect false, :theme false}
  :logseq13-full-house {:version "v4.3.6", :repo "stdword/logseq13-full-house-plugin", :effect true, :theme false}
- :logseq-agenda {:version "v3.13.1", :repo "haydenull/logseq-plugin-agenda", :effect true, :theme false}
  :logseq-live-math {:version "v1.4.5", :repo "AllanChain/logseq-live-math", :effect true, :theme false}
  :logseq-vim-editor {:version "v0.0.6", :repo "vipzhicheng/logseq-plugin-vim-editor", :effect true, :theme false}
  :logseq-journals-calendar {:version "v0.11.1", :repo "xyhp915/logseq-journals-calendar", :effect false, :theme false}
