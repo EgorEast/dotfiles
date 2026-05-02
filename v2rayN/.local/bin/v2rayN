@@ -1,49 +1,26 @@
 #!/usr/bin/env bash
-# =============================================================================
-# v2rayN - Wrapper-перехватчик для i3wm (BASH version)
-# =============================================================================
-
 ORIGINAL="/opt/v2rayn-bin/v2rayN"
 
-# Если процесс уже запущен → активируем окно
 if pgrep -x "v2rayN" >/dev/null 2>&1; then
-  # Метод 1: xdotool
   if command -v xdotool &>/dev/null; then
-    xdotool search --name "v2rayN" windowactivate --sync 2>/dev/null ||
-      xdotool search --class "v2rayN" windowactivate --sync 2>/dev/null || true
-    exit 0
+    # Ищем все окна v2rayN
+    WINDOWS=$(xdotool search --name "v2ray" 2>/dev/null)
+
+    for WID in $WINDOWS; do
+      NAME=$(xdotool getwindowname "$WID" 2>/dev/null)
+
+      # Если у окна НЕТ имени → это tray icon → КЛИКАЕМ!
+      if [ -z "$NAME" ]; then
+        xdotool mousemove --window "$WID" 3 3 click 1 2>/dev/null
+        exit 0
+      fi
+    done
+
+    # Если дошли сюда - активируем первое найденное окно с именем
+    echo "$WINDOWS" | head -1 | xargs -I{} xdotool windowactivate --sync {} 2>/dev/null
   fi
-
-  # Метод 2: i3-msg
-  if command -v i3-msg &>/dev/null; then
-    WINDOW_ID=$(i3-msg -t get_tree | python3 -c "
-import sys, json
-def find(nodes, target='v2rayN'):
-    for n in nodes:
-        name = n.get('name', '') or ''
-        cls = n.get('window_properties', {}).get('class', '') or ''
-        if target.lower() in name.lower() or target.lower() == cls.lower():
-            return n.get('window')
-        for c in ['nodes', 'floating_nodes']:
-            if c in n:
-                r = find(n[c], target)
-                if r: return r
-    return None
-print(find([json.load(sys.stdin)]))
-" 2>/dev/null)
-
-    if [ -n "$WINDOW_ID" ]; then
-      i3-msg "[id=\"$WINDOW_ID\"] focus" >/dev/null 2>&1
-      exit 0
-    fi
-  fi
-
-  # Метод 3: wmctrl
-  command -v wmctrl &>/dev/null && wmctrl -a "v2rayN" 2>/dev/null && exit 0
-
   exit 0
 fi
 
-# Если не запущен → запускаем оригинал через nohup (самый надежный способ!)
 nohup "$ORIGINAL" "$@" >/dev/null 2>&1 &
 exit 0
