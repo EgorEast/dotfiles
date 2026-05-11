@@ -13,12 +13,18 @@ wrap = "yes"
 max_width = 600
 max_height = 900
 
+[opener]
+extract = [
+  { run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
+  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+]
+
 [plugin]
 prepend_previewers = [
-  { name = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
-  { name = "*.csv", run = 'piper -- bat -p --color=always "$1"' },
+  { url = "*.md", run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"' },
+  { url = "*.csv", run = 'piper -- bat -p --color=always "$1"' },
   # Archive previewer
-  { name = "*.tar*", run = 'piper --format=url -- tar -t -f "$1"' },
+  { url = "*.tar*", run = 'piper --format=url -- tar -t -f "$1"' },
   { mime = "application/{*zip,bzip2,7z*,rar,xz,x-rar,x-xz,zstd,java-archive}", run = "ouch" },
   # { mime = "application/*zip", run = 'piper --format=url -- unzip -l "$1"' },
   # { mime = "application/x-bzip2", run = 'piper --format=url -- tar -t -f "$1"' },
@@ -27,19 +33,6 @@ prepend_previewers = [
   # { mime = "application/xz", run = 'piper --format=url -- tar -t -f "$1"' },
   { mime = "application/sqlite3", run = 'piper -- sqlite3 "$1" ".schema --indent"' },
 ]
-
-[opener]
-extract = [
-  { run = 'ouch d -y "%*"', desc = "Extract here with ouch", for = "windows" },
-  { run = 'ouch d -y "$@"', desc = "Extract here with ouch", for = "unix" },
+prepend_fetchers = [
+  { group = "git", id = "git", name = "Git", run = "git", url = "*/" },
 ]
-
-[[plugin.prepend_fetchers]]
-id = "git"
-name = "*"
-run = "git"
-
-[[plugin.prepend_fetchers]]
-id = "git"
-name = "*/"
-run = "git"
