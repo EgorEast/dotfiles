@@ -3,26 +3,23 @@
 # Завершаем скрипт при любой ошибке
 set -e
 
-# Определяем реального пользователя (даже если скрипт запущен через sudo)
-ACTUAL_USER=${SUDO_USER:-$USER}
-ACTUAL_HOME=$(eval echo ~$ACTUAL_USER)
+# Определяем домашнюю директорию
+ACTUAL_HOME="$HOME"
 
 echo "========================================"
 echo " Настройка зеркалирования папок"
-echo " Пользователь: $ACTUAL_USER"
 echo "========================================"
 
 # 1. Запрос путей у пользователя
 echo ""
 read -p "Введите путь к ИСХОДНОЙ папке (Source, например ~/Logseq): " RAW_SOURCE
-read -p "Введите путь к ЦЕЛЕВОЙ папке (Target, например /run/media/$ACTUAL_USER/MyDAS/Backup/Logseq): " RAW_TARGET
+read -p "Введите путь к ЦЕЛЕВОЙ папке (Target, например /run/media/$USER/MyDAS/Backup/Logseq): " RAW_TARGET
 
 # 2. Обработка путей (замена ~ на домашнюю директорию и добавление слэша в конец)
 SOURCE="${RAW_SOURCE/#\~/$ACTUAL_HOME}"
 TARGET="${RAW_TARGET/#\~/$ACTUAL_HOME}"
 
 # Убираем слэш в конце, если он есть, а затем обязательно добавляем его.
-# Это критически важно для правильной работы rsync!
 SOURCE="${SOURCE%/}/"
 TARGET="${TARGET%/}/"
 
@@ -43,7 +40,6 @@ if [ ! -d "$TARGET" ]; then
   read -p "⚠️ Целевая папка не существует. Создать её? (y/n): " CREATE_DIR
   if [[ "$CREATE_DIR" =~ ^[YyДд]$ ]]; then
     mkdir -p "$TARGET"
-    chown "$ACTUAL_USER:$ACTUAL_USER" "$TARGET"
     echo "✅ Папка $TARGET создана."
   else
     echo "❌ Отмена. Целевая папка не создана."
@@ -51,19 +47,31 @@ if [ ! -d "$TARGET" ]; then
   fi
 fi
 
-SCRIPT_PATH="${ACTUAL_HOME}/.local/bin/mirror-sync.sh"
-SERVICE_PATH="/etc/systemd/system/mirror-sync.service"
+# 5. Генерация уникальных имен на основе имени исходной папки
+# Берем последнее имя папки из пути, переводим в нижний регистр, убираем спецсимволы
+DIR_NAME=$(basename "${SOURCE%/}")
+SYNC_NAME="sync-$(echo "$DIR_NAME" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g')"
 
-# 5. Установка зависимостей
+# На случай, если имя получится пустым
+if [ -z "$SYNC_NAME" ] || [ "$SYNC_NAME" == "sync-" ]; then
+  SYNC_NAME="sync-custom"
+fi
+
+SCRIPT_PATH="${ACTUAL_HOME}/.local/bin/${SYNC_NAME}.sh"
+SERVICE_PATH="/etc/systemd/system/${SYNC_NAME}.service"
+
+echo "Имя сервиса будет: $SYNC_NAME"
 echo ""
-echo "[1/6] Установка пакетов rsync и inotify-tools..."
-pacman -S --needed --noconfirm rsync inotify-tools
 
-# 6. Создание директории для скрипта
-echo "[2/6] Создание директории для скрипта..."
+# 6. Установка зависимостей (запросит пароль sudo)
+echo "[1/6] Проверка и установка пакетов rsync и inotify-tools..."
+sudo pacman -S --needed --noconfirm rsync inotify-tools
+
+# 7. Создание директории для скриптов
+echo "[2/6] Создание директории для скриптов..."
 mkdir -p "${ACTUAL_HOME}/.local/bin"
 
-# 7. Создание скрипта синхронизации
+# 8. Создание скрипта синхронизации
 echo "[3/6] Создание скрипта $SCRIPT_PATH..."
 cat <<EOF >"$SCRIPT_PATH"
 #!/bin/bash
@@ -87,20 +95,19 @@ while true; do
 done
 EOF
 
-# Выдаем права на выполнение и меняем владельца на вашего пользователя
+# Выдаем права на выполнение
 chmod +x "$SCRIPT_PATH"
-chown "$ACTUAL_USER:$ACTUAL_USER" "$SCRIPT_PATH"
 
-# 8. Создание systemd сервиса
+# 9. Создание systemd сервиса (запросит пароль sudo для записи в /etc)
 echo "[4/6] Создание сервиса $SERVICE_PATH..."
-cat <<EOF >"$SERVICE_PATH"
+cat <<EOF | sudo tee "$SERVICE_PATH" >/dev/null
 [Unit]
 Description=Real-time mirror sync using inotify ($SOURCE -> $TARGET)
 After=network.target
 
 [Service]
 Type=simple
-User=$ACTUAL_USER
+User=$USER
 ExecStart=$SCRIPT_PATH
 Restart=on-failure
 RestartSec=10
@@ -109,20 +116,20 @@ RestartSec=10
 WantedBy=multi-user.target
 EOF
 
-# 9. Перезагрузка systemd
+# 10. Перезагрузка systemd (запросит пароль sudo)
 echo "[5/6] Перезагрузка systemd..."
-systemctl daemon-reload
+sudo systemctl daemon-reload
 
 # Сбрасываем возможные предыдущие ошибки
-systemctl reset-failed mirror-sync.service 2>/dev/null || true
+sudo systemctl reset-failed "${SYNC_NAME}.service" 2>/dev/null || true
 
-# 10. Запуск и добавление в автозагрузку
+# 11. Запуск и добавление в автозагрузку (запросит пароль sudo)
 echo "[6/6] Запуск сервиса..."
-systemctl enable --now mirror-sync.service
+sudo systemctl enable --now "${SYNC_NAME}.service"
 
 echo ""
 echo "========================================"
-echo " ✅ Готово! Синхронизация настроена и запущена!"
-echo " Статус сервиса:"
+echo " ✅ Готово! Синхронизация настроена!"
+echo " Имя сервиса: $SYNC_NAME"
 echo "========================================"
-systemctl status mirror-sync.service --no-pager
+sudo systemctl status "${SYNC_NAME}.service" --no-pager
