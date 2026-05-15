@@ -8,7 +8,7 @@
       "url": null,
       "description": "Logseq default dark theme.",
       "mode": "dark",
-      "selected": false,
+      "selected": true,
       "group-first": true,
       "group-desc": "dark themes"
     }
