@@ -44,6 +44,7 @@ x-scheme-handler/webcal=chromium.desktop
 x-scheme-handler/freetube=freetube.desktop
 x-scheme-handler/io.element.desktop=element.desktop
 x-scheme-handler/element=element.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 
 [Added Associations]
 application/x-msdownload=wine.desktop;

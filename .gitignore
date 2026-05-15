@@ -7,6 +7,7 @@ autostart/.config/autostart/chrome-*.desktop
 calcure/.config/calcure/*
 calcurse/.calcurse/*
 chawan/.config/chawan/history.uri
+claude/.claude/*
 clipse/.config/clipse/clipboard_history.json
 clipse/.config/clipse/clipse.log
 clipse/.config/clipse/tmp_files/*
@@ -71,6 +72,11 @@ ya-disk/.config/yandex-disk/passwd
 !calcure/.config/calcure/config.ini
 !calcurse/.calcurse/conf
 !calcurse/.calcurse/keys
+!claude/.claude/commands
+!claude/.claude/plugins
+!claude/.claude/settings.json
+!claude/.claude/skills
+!claude/.claude/themes
 !gemini/.gemini/settings.json
 !libreoffice/.config/libreoffice/4/user/basic/*/**
 !libreoffice/.config/libreoffice/4/user/config/*/**

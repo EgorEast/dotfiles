@@ -18,6 +18,7 @@ stow --adopt --restow \
   calcurse \
   cava \
   chawan \
+  claude \
   clipse \
   cmus \
   dive \
