@@ -106,3 +106,48 @@ disks() {
 
   df -h
 }
+
+# Защита от запуска Claude без VPN или из РФ
+claude() {
+  # 1. Проверка активного VPN-интерфейса
+  local VPN_INTERFACES=("tun0" "singbox_tun")
+  local vpn_on=false
+
+  for iface in "${VPN_INTERFACES[@]}"; do
+    if ip link show "$iface" up &>/dev/null; then
+      vpn_on=true
+      break
+    fi
+  done
+
+  if [ "$vpn_on" = false ]; then
+    echo "❌ Ошибка: VPN не подключен (ожидаются интерфейсы: ${VPN_INTERFACES[*]})"
+    echo "Запуск claude отменен в целях безопасности."
+    return 1
+  fi
+
+  # 2. Проверка страны через GeoIP
+  local COUNTRY
+  COUNTRY=$(curl -s --max-time 5 https://ipinfo.io/country)
+
+  if [ -z "$COUNTRY" ]; then
+    echo "❌ Ошибка: Не удалось определить IP/страну. Проверьте интернет."
+    return 1
+  fi
+
+  # Очищаем от лишних символов
+  COUNTRY=$(echo "$COUNTRY" | tr -d '[:space:]')
+
+  # 3. Список заблокированных стран
+  local BLOCKED_COUNTRIES=("RU" "BY" "CN" "IR" "KP")
+
+  for cc in "${BLOCKED_COUNTRIES[@]}"; do
+    if [ "$COUNTRY" == "$cc" ]; then
+      echo "❌ Ошибка: Ваша текущая локация - $COUNTRY. Запуск из этой страны заблокирован."
+      return 1
+    fi
+  done
+
+  # 4. Запуск оригинального /usr/bin/claude
+  command claude "$@"
+}
