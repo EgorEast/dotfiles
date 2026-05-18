@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/egoreast/.gtkrc-2.0.mine"
-gtk-theme-name="Arc-Dark"
+gtk-theme-name="Arc"
 gtk-icon-theme-name="Qogir"
 gtk-font-name="JetBrainsMono Nerd Font Mono Medium 10.5"
 gtk-cursor-theme-name="Qogir"
