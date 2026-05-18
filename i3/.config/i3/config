@@ -573,6 +573,8 @@ exec --no-startup-id clipse -listen
 
 exec --no-startup-id yandex-disk start
 
+exec --no-startup-id nextcloud --background
+
 exec --no-startup-id redshift
 
 exec --no-startup-id warpd
