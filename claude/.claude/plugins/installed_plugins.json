@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "plugins": {
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/egoreast/Programming/exarh-web",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown",
+        "version": "unknown",
+        "installedAt": "2026-05-26T06:18:47.891Z",
+        "lastUpdated": "2026-05-26T06:18:47.891Z"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/egoreast/Programming/exarh-web",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-05-26T06:19:16.958Z",
+        "lastUpdated": "2026-05-26T06:19:16.958Z"
+      }
+    ],
+    "claude-md-management@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/egoreast/Programming/exarh-web",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/claude-md-management/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-05-26T06:27:14.798Z",
+        "lastUpdated": "2026-05-26T06:27:14.798Z"
+      }
+    ],
+    "code-review@claude-plugins-official": [
+      {
+        "scope": "project",
+        "projectPath": "/home/egoreast/Programming/exarh-web",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/code-review/unknown",
+        "version": "unknown",
+        "installedAt": "2026-05-26T06:27:37.458Z",
+        "lastUpdated": "2026-05-26T06:27:37.458Z"
+      }
+    ],
+    "typescript-lsp@claude-plugins-official": [
+      {
+        "scope": "project",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-05-26T06:28:02.556Z",
+        "lastUpdated": "2026-05-26T06:28:02.556Z",
+        "projectPath": "/home/egoreast/Programming/exarh-web"
+      }
+    ]
+  }
+}

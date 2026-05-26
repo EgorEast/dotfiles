@@ -1,7 +1,4 @@
 {
-  "syntaxHighlightingDisabled": false,
-  "theme": "custom:tokyo-night-ansi",
-  "editorMode": "vim",
   "hooks": {
     "Notification": [
       {
@@ -23,5 +20,9 @@
         ]
       }
     ]
-  }
+  },
+  "enabledPlugins": {},
+  "syntaxHighlightingDisabled": false,
+  "theme": "custom:tokyo-night-ansi",
+  "editorMode": "vim"
 }
