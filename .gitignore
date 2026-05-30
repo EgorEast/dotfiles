@@ -83,3 +83,6 @@ ya-disk/.config/yandex-disk/passwd
 !libreoffice/.config/libreoffice/4/user/wordbook/*/**
 !ls-fusion/lsFusion/README.md
 !ls-fusion/lsFusion/compose.yaml
+
+
+claude/.claude/plugins/cache
