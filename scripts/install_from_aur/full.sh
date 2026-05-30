@@ -25,7 +25,6 @@ yay -S --noconfirm --needed \
   cursor-cli \
   dblab \
   durdraw \
-  element-desktop \
   envx \
   fawkes-bin \
   freetube-bin \

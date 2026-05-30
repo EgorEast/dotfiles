@@ -35,6 +35,7 @@ sudo pacman -S --noconfirm --needed \
   dysk \
   ebtables \
   element \
+  element-desktop \
   firejail \
   flawz \
   galculator \
