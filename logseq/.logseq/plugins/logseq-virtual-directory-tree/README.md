@@ -14,18 +14,18 @@ A Logseq plugin that interprets namespace-separated page names (e.g. `dev/react/
   - Drop to root to remove namespace prefix
   - Multi-select drag & drop (move multiple items at once)
 - **Multi-Select** -- Select multiple pages/folders with Ctrl+Click and Shift+Click
-- **Right-Click Context Menu** -- Rename, delete, copy path, or create a page in a folder
-- **Inline Rename** -- Rename pages and folders directly in the tree
+- **Right-Click Context Menu** -- Rename, delete, copy path, or create a child page
+- **Inline Rename** -- Rename pages and page-folders directly in the tree
 - **Create Page** -- Create new pages, optionally under a selected folder
 - **Sorting** -- Sort the tree by name or last-updated date, ascending or descending, with an optional folders-first toggle
 - **Reveal Current Page** -- Highlight and scroll to the currently opened page in the tree
 - **Expand/Collapse All** -- Quickly expand or collapse the entire tree
 - **Independent Panel** -- Side panel does not overlap Logseq's main content area
 - **Smart Reload** -- Efficiently refreshes the tree using diff-based updates to preserve expand/collapse state
-- **Confirmation Dialogs** -- Review affected pages before any rename or move operation
+- **Confirmation Dialogs** -- Review affected pages before any rename, move, or delete operation
 - **Theme Support** -- Automatically syncs colors with Logseq's theme (background, text, accent, borders, icons)
 - **Persistent State** -- Folder expand/collapse state and sort preferences are saved across reloads
-- **Keyboard Support** -- Press Escape to close any open dialog or menu
+- **Keyboard Support** -- Press Escape to close open dialogs, the sort menu, or inline rename
 
 ## Installation
 
@@ -92,10 +92,10 @@ memo
 
 Right-click any node to access:
 
-- **Rename** -- Inline rename of the page or folder (available for pages and page-folders)
-- **Delete** -- Delete the page with a confirmation dialog (available for pages and page-folders)
+- **Rename** -- Inline rename of pages and page-folders (not pure virtual folders)
+- **Delete** -- Delete a page, page-folder subtree, or virtual folder contents with a confirmation dialog
 - **Copy path** -- Copy the original page name to clipboard
-- **Create page here** -- Create a new child page under a folder (available for folders and page-folders)
+- **Create page here** -- Create a new child page under any node
 
 ### Sorting
 
@@ -131,14 +131,14 @@ Open **Plugins > Virtual Directory Tree > Settings** to configure the plugin.
 - **File graph only** -- This plugin works with Logseq file-based graphs. DB graphs are not supported.
 - **Journal pages excluded** -- Journal pages are automatically excluded from the tree and cannot be managed through this plugin.
 - **No undo** -- Rename and delete operations cannot be undone through the plugin. Use Logseq's git versioning if you need to revert.
-- **API timing** -- A small delay is inserted between rename operations to avoid overwhelming Logseq's API.
+- **API timing** -- A small delay is inserted between bulk rename and delete operations to avoid overwhelming Logseq's API.
 - **Page names with spaces around `/`** -- Logseq allows page names like `A / B`. The tree displays these with trimmed segments but preserves the original name for all API operations.
 
 ## Development
 
 ### Prerequisites
 
-- Node.js 18+
+- Node.js 20.19+, 22.13+, or 24+
 - npm
 
 ### Setup
@@ -153,7 +153,11 @@ npm install
 |---------|-------------|
 | `npm run dev` | Start Vite dev server |
 | `npm run build` | Build for production |
+| `npm run typecheck` | Run TypeScript type checking without emitting files |
 | `npm test` | Run all tests |
+| `npm run test:coverage` | Run tests with coverage thresholds |
+| `npm run test:visual` | Run Playwright visual smoke tests |
+| `npm run test:visual:update` | Update Playwright visual snapshots |
 | `npm run test:watch` | Run tests in watch mode |
 | `npm run lint` | Run ESLint |
 | `npm run format` | Format code with Prettier |
@@ -165,7 +169,7 @@ npm install
 - HTML5 Drag and Drop API
 - Linting: ESLint, Prettier
 - Testing: Vitest, jsdom, @testing-library/preact
-- CI: GitHub Actions (lint, format, test, build on every PR)
+- CI: GitHub Actions (lint, format, typecheck, coverage tests, build, and non-blocking visual smoke tests on every PR)
 
 ### Project Structure
 
@@ -181,6 +185,7 @@ src/
     ConfirmDialog.tsx   # Confirm/loading/result dialogs
     ContextMenu.tsx     # Right-click context menu
     CreatePageDialog.tsx # New page creation dialog
+    DeleteDialog.tsx    # Delete confirmation/loading/result dialogs
     InlineRenameInput.tsx # Inline rename input
     SortMenu.tsx        # Sort dropdown menu
   hooks/
@@ -191,11 +196,17 @@ src/
   utils/
     validation.ts       # Name validation, circular drop detection
     rename.ts           # Rename list generation + execution
+    delete.ts           # Delete list generation + execution
     panelLayout.ts      # Panel positioning & main content layout
     themeSync.ts        # Logseq theme color synchronization
     treeDiff.ts         # Diff-based tree update for smart reload
+    clipboard.ts        # Clipboard copy with Logseq sandbox fallback
     debounce.ts         # Custom debounce function
   __tests__/            # Unit and integration tests
+tests/
+  visual/               # Playwright visual smoke tests
+scripts/
+  extract-release-notes.mjs # Release note extraction helper
 ```
 
 ## Contributing

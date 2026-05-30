@@ -1,4 +1,4 @@
-{:logseq-virtual-directory-tree {:version "v0.1.6", :repo "KazunagaIida/Logseq-Virtual-Directory-Tree-Plugin", :effect false, :theme false}
+{:logseq-virtual-directory-tree {:version "v0.1.9", :repo "KazunagaIida/Logseq-Virtual-Directory-Tree-Plugin", :effect false, :theme false}
  :logseq-bullet-threading {:version "v1.1.4", :repo "pengx17/logseq-plugin-bullet-threading", :effect false, :theme false}
  :logseq-mark-map {:version "v0.4.6", :repo "vipzhicheng/logseq-plugin-mark-map", :effect false, :theme false}
  :logseq-tags {:version "v0.1.2", :repo "gidongkwon/logseq-plugin-tags", :effect false, :theme false}
