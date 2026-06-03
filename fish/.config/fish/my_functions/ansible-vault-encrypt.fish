@@ -1,5 +1,5 @@
 function ansible-vault-encrypt
-    set -l vault_pass_file ~/.matrix-vault-pass
+    set -l vault_pass_file ~/.ansible-vault-pass
 
     # Проверяем наличие файла с мастер-паролем
     if not test -f $vault_pass_file
