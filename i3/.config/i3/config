@@ -171,7 +171,7 @@ set $browser "chromium"
 set $terminal "kitty"
 set $fileManager "thunar"
 set $md_editor "logseq"
-set $vpn "v2rayN"
+set $vpn "AmneziaVPN"
 set $passwordManager "keepassxc"
 
 ######################################

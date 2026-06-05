@@ -28,6 +28,7 @@
 
 ## 🌐 Networking & Communication
 
+- [amneziavpn](https://github.com/amnezia-vpn/amnezia-client) – Amnezia VPN Client (Desktop+Mobile).
 - [anydesk](https://anydesk.com) – Remote desktop software.
 - [bandwhich](https://github.com/imsnif/bandwhich) - CLI utility for displaying current network utilization by process, connection and remote IP/hostname.
 - [blobdrop-git](https://github.com/vimpostor/blobdrop) – Local network file sharing tool.

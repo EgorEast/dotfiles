@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 yay -S --noconfirm --needed \
+  amneziavpn-bin \
   blobdrop-git \
   blueberry \
   crow-translate \
