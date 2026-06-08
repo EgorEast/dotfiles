@@ -68,7 +68,6 @@ sudo pacman -S --noconfirm --needed \
   dysk \
   flawz \
   gemini-cli \
-  gitea \
   github-cli \
   glim \
   gparted \
@@ -170,9 +169,6 @@ sudo systemctl enable --now bluetooth
 sudo systemctl enable docker
 sudo systemctl start docker
 sudo gpasswd -a egoreast docker
-
-sudo systemctl enable gitea
-sudo systemctl start gitea
 
 "$SCRIPT_DIR/setup_main_in_end.sh"
 

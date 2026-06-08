@@ -40,7 +40,6 @@ sudo pacman -S --noconfirm --needed \
   flawz \
   galculator \
   gemini-cli \
-  gitea \
   github-cli \
   glim \
   gparted \
