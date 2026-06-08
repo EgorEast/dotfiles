@@ -524,7 +524,7 @@ exec --no-startup-id element-desktop --hidden
 exec --no-startup-id ollama serve
 exec --no-startup-id yandex-disk start
 exec --no-startup-id sleep 2 && $terminal
-exec --no-startup-id sleep 2 && $vpn
+# exec --no-startup-id sleep 2 && $vpn
 exec --no-startup-id sleep 3 && $passwordManager
 exec --no-startup-id sleep 4 && $md_editor
 exec --no-startup-id sleep 5 && nextcloud --background
