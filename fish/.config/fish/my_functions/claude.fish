@@ -1,6 +1,6 @@
 function claude
     # 1. Проверка активного VPN-интерфейса
-    set -l VPN_INTERFACES tun0 singbox_tun
+    set -l VPN_INTERFACES tun0 singbox_tun amn0
     set -l vpn_on false
 
     for iface in $VPN_INTERFACES
