@@ -22,10 +22,12 @@ sudo pacman -S --noconfirm --needed \
   git \
   git-delta \
   glow \
+  gnome-keyring \
   jdk-openjdk \
   kitty \
   lazygit \
   libreoffice-still-ru \
+  libsecret \
   lsd \
   ncdu \
   networkmanager-openvpn \
@@ -38,6 +40,7 @@ sudo pacman -S --noconfirm --needed \
   ouch \
   qbittorrent \
   ripgrep \
+  seahorse \
   shotcut \
   spectacle \
   syncthing \
