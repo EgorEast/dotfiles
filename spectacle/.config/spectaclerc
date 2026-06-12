@@ -1,5 +1,4 @@
 [Annotations]
-annotationToolType=6
 arrowShadow=false
 blurStrength=0.25510204081632654
 ellipseShadow=false
@@ -17,6 +16,7 @@ textShadow=false
 [General]
 clipboardGroup=PostScreenshotCopyImage
 launchAction=UseLastUsedCapturemode
+ocrLanguages=rus
 
 [GuiConfig]
 captureMode=0
