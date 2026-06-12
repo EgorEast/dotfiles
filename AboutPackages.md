@@ -183,7 +183,6 @@
 - [crow-translate](https://github.com/crow-translate/crow-translate) – simple and lightweight translator that allows you to translate and speak text using Google, Yandex Bing, LibreTranslate and Lingva.
 - [cups](http://localhost:631/help/options.html) – Open source printing system.
 - [durdraw](https://github.com/cmang/durdraw) – An ASCII, Unicode and ANSI art editor.
-- [element](https://element.readthedocs.io/en/latest/) – Modular audio software for routing, control, and scrtipting.
 - [feh](https://github.com/derf/feh) – X11 image viewer.
 - [flameshot](https://flameshot.org/docs) – Screenshot tool with annotation.
 - [freetube](https://github.com/FreeTubeApp/FreeTube) – Open Source YouTube app for privacy.

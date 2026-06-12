@@ -7,6 +7,7 @@ sudo pacman -S --noconfirm --needed \
   btop \
   chromium \
   curl \
+  element-desktop \
   fastfetch \
   fd \
   feh \
