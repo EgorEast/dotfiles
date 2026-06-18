@@ -58,6 +58,7 @@ rustdesk/.config/rustdesk/peers
 rustdesk/.config/rustdesk/peers.toml
 ssh/.ssh/*.pub
 ssh/.ssh/authorized_keys
+ssh/.ssh/config.d
 ssh/.ssh/environment
 ssh/.ssh/id_*
 ssh/.ssh/known_hosts
