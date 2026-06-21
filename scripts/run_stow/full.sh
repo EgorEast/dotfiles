@@ -61,6 +61,7 @@ stow --adopt --restow \
   rustdesk \
   sc-im \
   scooter \
+  screenlayout \
   ssh \
   sshm \
   taskwarrior \
