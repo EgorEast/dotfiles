@@ -269,7 +269,6 @@
 ## 📦 Miscellaneous & Fun
 
 - [atuin](https://github.com/atuinsh/atuin) – Magical shell history.
-- [downloader-cli](https://github.com/deepjyoti30/downloader-cli) – CLI file downloader.
 - [fish-done](https://github.com/franciscolourenco/done) – Notifications for long-running commands in Fish.
 - [fish](https://fishshell.com/docs/current/) – User-friendly shell with autosuggestions.
 - [kbt](https://github.com/bloznelis/kbt) – Keyboard tester in terminal.

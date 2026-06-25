@@ -5,7 +5,6 @@ yay -S --noconfirm --needed \
   blobdrop-git \
   crow-translate \
   cruise \
-  downloader-cli \
   fish-done \
   koreader-appimage \
   linutil \
