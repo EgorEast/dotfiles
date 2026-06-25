@@ -62,6 +62,7 @@ ssh/.ssh/config.d
 ssh/.ssh/environment
 ssh/.ssh/id_*
 ssh/.ssh/known_hosts
+sshm/.config/sshm/sshm_history.json
 termux/.termux/shell
 thunar/.config/Thunar/accels.scm
 vim/.config/nvim/*/
