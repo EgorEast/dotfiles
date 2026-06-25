@@ -3,7 +3,6 @@
 yay -S --noconfirm --needed \
   amneziavpn-bin \
   blobdrop-git \
-  blueberry \
   crow-translate \
   cruise \
   downloader-cli \
