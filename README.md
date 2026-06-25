@@ -70,7 +70,7 @@ to fully "install" and setup this repo run the [setup script](https://codeberg.o
 
 ```sh
 # clone and stow
-git clone ssh://git@codeberg.org/egoreast/dotfiles.git ~/.local/src/dotfiles &&
+git clone ssh://git@git.lightnode.ru/EgorEast/dotfiles.git ~/.local/src/dotfiles &&
  cd ~/.local/src/dotfiles &&
  stow bash calcurse cmus curl delta dunst fastfetch -t ~
 
