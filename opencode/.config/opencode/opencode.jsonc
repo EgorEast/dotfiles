@@ -9,6 +9,7 @@
     "@franlol/opencode-md-table-formatter@latest",
     "opencode-vibeguard",
     "@tarquinen/opencode-dcp@latest",
+    "@vymalo/opencode-browser",
   ],
   // "model": "anthropic/claude-sonnet-4-5",
   "autoupdate": true,
