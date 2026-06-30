@@ -228,7 +228,6 @@
 
 ## 🎮 Gaming & Entertainment
 
-- [cbonsai](https://gitlab.com/jallbrit/cbonsai) – Bonsai tree generator.
 - [checkersland](https://checkersland.com/download/pc.html) – Checkers game.
 - [firejail](https://github.com/netblue30/firejail) – Linux namespaces and seccomp-bpf sandbox.
 - [luanti](https://www.luanti.org/) – Open-source voxel game creation platform.
