@@ -23,7 +23,6 @@ stow --adopt --restow \
   greenclip \
   jqp \
   kitty \
-  koreader \
   lazygit \
   libreoffice \
   lsd \

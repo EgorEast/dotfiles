@@ -6,7 +6,6 @@ yay -S --noconfirm --needed \
   crow-translate \
   cruise \
   fish-done \
-  koreader-appimage \
   linutil \
   logseq-desktop \
   onlyoffice-bin \

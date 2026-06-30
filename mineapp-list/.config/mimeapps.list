@@ -1,12 +1,12 @@
 [Default Applications]
 application/json=chromium.desktop;firefox.desktop;
 application/msexcel=onlyoffice-desktopeditors.desktop;libreoffice.desktop;
-application/msword=onlyoffice-desktopeditors.desktop;libreoffice.desktop;koreader.desktop;
+application/msword=onlyoffice-desktopeditors.desktop;libreoffice.desktop;
 application/pdf=onlyoffice-desktopeditors.desktop;chromium.desktop;firefox.desktop;
 application/rdf+xml=chromium.desktop;firefox.desktop;
 application/rss+xml=chromium.desktop;firefox.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;PortProton.desktop
-application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;libreoffice.desktop;koreader.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=onlyoffice-desktopeditors.desktop;libreoffice.desktop;
 application/x-ms-dos-executable=wine.desktop;PortProton.desktop
 application/x-ms-dos-program=wine.desktop
 application/x-msdos-program=wine.desktop;PortProton.desktop
@@ -26,7 +26,7 @@ image/webp=feh.desktop;chromium.desktop;firefox.desktop;
 text/html=chromium.desktop;firefox.desktop;
 text/win-bat=wine.desktop;PortProton.desktop
 text/xml=chromium.desktop;firefox.desktop;
-text/plain=libreoffice.desktop;desktopeditors.desktop;koreader.desktop;
+text/plain=libreoffice.desktop;desktopeditors.desktop;
 video/mp4=mpv.desktop
 video/ogg=mpv.desktop;org.shotcut.Shotcut.desktop;chromium.desktop;firefox.desktop;
 video/quicktime=mpv.desktop

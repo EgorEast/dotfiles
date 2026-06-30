@@ -187,7 +187,6 @@
 - [freetube](https://github.com/FreeTubeApp/FreeTube) – Open Source YouTube app for privacy.
 - [gimp](https://www.gimp.org/) – Free & Open Source Image Editor.
 - [glicol-cli](https://github.com/glicol/glicol-cli) – Cross-platform music live coding in terminal.
-- [koreader](https://github.com/koreader/koreader) – Document viewer primarily aimed at e-ink readers.
 - [libretranslate](https://github.com/LibreTranslate/LibreTranslate) – Free and Open Source Machine Translation API. Self-hosted, offline capable and easy to setup.
 - [mixxx](https://github.com/mixxxdj/mixxx) – Free DJ software that gives you everything you need to perform live mixes.
 - [mousai](https://github.com/SeaDve/Mousai) – Identify songs in seconds.

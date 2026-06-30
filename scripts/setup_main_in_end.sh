@@ -36,8 +36,3 @@ set_env_var VISUAL nvim
 set_env_var BROWSER chromium
 
 sudo awk '!seen[$0]++ && NF' /etc/environment | sudo tee /etc/environment >/dev/null
-
-echo ">>> Configuring git..."
-git config filter.koreader-ignore-sync-server.clean "./koreader/.config/koreader/git-filter-script.sh"
-# Настройте smudge фильтр (просто пропускает данные)
-git config filter.koreader-ignore-sync-server.smudge "cat"
