@@ -292,7 +292,10 @@
 ## 📚 Chromium extentions
 
 - [Automa](https://chromewebstore.google.com/detail/infppggnoaenmfagbfknfkancpbljcca?utm_source=item-share-cb)
+- [Calendar for Nextcloud](https://chromewebstore.google.com/detail/pkglpdilpddhklfedbddedmnciggjjcm?utm_source=item-share-cb)
+- [Contacts for Nextcloud](https://chromewebstore.google.com/detail/hcjciadbhinnmhpkckbpldlmkipbbpnj?utm_source=item-share-cb)
 - [Dark Reader](https://chromewebstore.google.com/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh?utm_source=item-share-cb)
+- [Deck for Nextcloud](https://chromewebstore.google.com/detail/faggnpcfgbpaepmbcnhcidobcjkaklfa?utm_source=item-share-cb)
 - [DuckDuckGo Search & Tracker Protection](https://chromewebstore.google.com/detail/bkdgflcldnnnapblkhphbgpggdiikppg?utm_source=item-share-cb)
 - [Floccus bookmarks sync](https://chromewebstore.google.com/detail/fnaicdffflnofjppbagibeoednhnbjhg?utm_source=item-share-cb)
 - [KeePassXC-Browser](https://chromewebstore.google.com/detail/oboonakemofpalcgghocfoadofidjkkk?utm_source=item-share-cb)
