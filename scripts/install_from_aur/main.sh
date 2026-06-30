@@ -9,7 +9,6 @@ yay -S --noconfirm --needed \
   logseq-desktop \
   onlyoffice-bin \
   pantum-driver \
-  pinta \
   portproton \
   syncthing-resolve-conflicts \
   syncthingtray \

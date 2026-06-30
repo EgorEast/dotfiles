@@ -181,6 +181,7 @@
 - [cmus](https://cmus.github.io/) – Console music player.
 - [crow-translate](https://github.com/crow-translate/crow-translate) – simple and lightweight translator that allows you to translate and speak text using Google, Yandex Bing, LibreTranslate and Lingva.
 - [cups](http://localhost:631/help/options.html) – Open source printing system.
+- [drawing](https://maoschanz.github.io/drawing/) – This free basic raster image editor is similar to Microsoft Paint, but aiming at the GNOME desktop.
 - [durdraw](https://github.com/cmang/durdraw) – An ASCII, Unicode and ANSI art editor.
 - [feh](https://github.com/derf/feh) – X11 image viewer.
 - [flameshot](https://flameshot.org/docs) – Screenshot tool with annotation.
@@ -192,7 +193,6 @@
 - [mousai](https://github.com/SeaDve/Mousai) – Identify songs in seconds.
 - [obs-studio](https://obsproject.com/wiki/) – Video recording & streaming software.
 - [patat](https://github.com/jaspervdj/patat) – Terminal-based presentations using Pandoc.
-- [pinta](https://github.com/PintaProject/Pinta) – Simple GTK Paint Program.
 - [playerctl](https://github.com/altdesktop/playerctl) – Control media players from CLI.
 - [presenterm](https://github.com/mfontanini/presenterm) – A markdown terminal slideshow tool.
 - [sc-im](https://github.com/andmarti1424/sc-im) – Curses-based spreadsheet program that uses key bindings similar to vim.
