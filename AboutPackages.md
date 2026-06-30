@@ -247,7 +247,6 @@
 - [nsnake](https://github.com/alexdantas/nSnake) – Classic snake game on the terminal.
 - [nudoku](https://github.com/jubalh/nudoku) – Ncurses based sudoku game.
 - [pokete](https://github.com/lxgr-linux/pokete) – Small terminal based game in the style of a very popular and old game by Gamefreak.
-- [portproton](https://linux-gaming.ru/) – Proton/Wine launcher for Windows games.
 - [rebels-in-the-sky](https://github.com/ricott1/rebels-in-the-sky) – It's the year 2101. Corporations have taken over the world..
 - [tinytetris](https://github.com/taylorconor/tinytetris) – 80x23 terminal tetris.
 - [wine](https://wiki.winehq.org/) – Run Windows apps on Linux.
