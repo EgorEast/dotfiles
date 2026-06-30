@@ -32,7 +32,6 @@
 - [anydesk](https://anydesk.com) – Remote desktop software.
 - [bandwhich](https://github.com/imsnif/bandwhich) - CLI utility for displaying current network utilization by process, connection and remote IP/hostname.
 - [blobdrop-git](https://github.com/vimpostor/blobdrop) – Local network file sharing tool.
-- [carbonyl](https://github.com/fathyb/carbonyl) – Chromium running inside your terminal.
 - [chawan](https://sr.ht/~bptato/chawan/) – TUI web browser with CSS, inline image and JavaScript support.
 - [chromium](https://github.com/chromium/chromium) – Open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.
 - [element-desktop](https://github.com/element-hq/element-desktop) – Glossy Matrix collaboration client for desktop.
