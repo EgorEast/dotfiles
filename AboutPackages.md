@@ -271,7 +271,6 @@
 - [fish-done](https://github.com/franciscolourenco/done) – Notifications for long-running commands in Fish.
 - [fish](https://fishshell.com/docs/current/) – User-friendly shell with autosuggestions.
 - [kbt](https://github.com/bloznelis/kbt) – Keyboard tester in terminal.
-- [linutil](https://github.com/ChrisTitusTech/linutil) – distro-agnostic toolbox designed to simplify everyday Linux tasks.
 - [ouch](https://github.com/ouch-org/ouch) – Compression and decompression tool.
 - [poketex](https://github.com/ckaznable/poketex) – Simple Pokedex based on TUI.
 - [speedread-git](https://github.com/pasky/speedread) – CLI speed-reading tool.

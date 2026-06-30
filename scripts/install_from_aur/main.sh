@@ -6,7 +6,6 @@ yay -S --noconfirm --needed \
   crow-translate \
   cruise \
   fish-done \
-  linutil \
   logseq-desktop \
   onlyoffice-bin \
   pantum-driver \
