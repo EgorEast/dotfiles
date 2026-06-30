@@ -4,7 +4,6 @@
 anydesk/.anydesk/*
 atac/.config/atac/atac.log
 autostart/.config/autostart/chrome-*.desktop
-calcure/.config/calcure/*
 calcurse/.calcurse/*
 chawan/.config/chawan/history.uri
 claude/.claude/*
@@ -64,7 +63,6 @@ ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
 
 !anydesk/.anydesk/user.conf
-!calcure/.config/calcure/config.ini
 !calcurse/.calcurse/conf
 !calcurse/.calcurse/keys
 !claude/.claude/commands
