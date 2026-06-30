@@ -10,7 +10,6 @@ stow --adopt --restow \
   anydesk \
   atac \
   autostart \
-  bagels \
   bluetuith \
   bombadillo \
   brows \

@@ -7,7 +7,6 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 yay -S --noconfirm --needed \
   android-studio \
   anydesk-bin \
-  bagels \
   balena-etcher \
   basalt \
   bluetuith-bin \
