@@ -12,5 +12,4 @@ yay -S --noconfirm --needed \
   syncthingtray \
   ttf-ms-fonts \
   v2rayn-bin \
-  ventoy \
-  whatsapp-linux-desktop
+  ventoy
