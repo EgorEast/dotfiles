@@ -72,7 +72,6 @@
 - [android-studio](https://developer.android.com/studio) – Official IDE for Android app development.
 - [android-tools](https://archlinux.org/packages/extra/x86_64/android-tools/) – Android platform tools.
 - [atac](https://github.com/Julien-cpsn/ATAC) – Arguably a Terminal API Client.
-- [brows](https://github.com/rubysolo/brows) – CLI tool to browse GitHub releases.
 - [cloc](https://github.com/AlDanial/cloc) – Count lines of code.
 - [codex](https://github.com/openai/codex) – Lightweight coding agent that runs in your terminal.
 - [cruise](https://nucleofusion.github.io/cruise/) – Docker TUI Client.

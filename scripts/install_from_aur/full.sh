@@ -9,7 +9,6 @@ yay -S --noconfirm --needed \
   anydesk-bin \
   balena-etcher \
   bluetuith-bin \
-  brows \
   calcure \
   carbonyl \
   cbonsai \

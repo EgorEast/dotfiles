@@ -11,7 +11,6 @@ stow --adopt --restow \
   atac \
   autostart \
   bluetuith \
-  brows \
   calcure \
   calcurse \
   cava \

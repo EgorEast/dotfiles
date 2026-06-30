@@ -121,7 +121,6 @@ echo ">>> Installing AUR packages (via yay)..."
 
 yay -S --noconfirm --needed \
   bluetuith-bin \
-  brows \
   clipse \
   dblab \
   envx \
