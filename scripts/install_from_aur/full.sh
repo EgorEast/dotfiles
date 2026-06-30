@@ -8,7 +8,6 @@ yay -S --noconfirm --needed \
   android-studio \
   anydesk-bin \
   balena-etcher \
-  basalt \
   bluetuith-bin \
   bombadillo-git \
   brogue-ce \
