@@ -206,7 +206,6 @@
 
 ## 📅 Productivity
 
-- [abook](https://abook.sourceforge.io/) – TUI addressbook with [mutt](http://www.mutt.org/) integration.
 - [bagels](https://github.com/EnhancedJax/Bagels) – Powerful expense tracker that lives in your terminal.
 - [basalt](https://github.com/erikjuhani/basalt) – TUI Application to manage Obsidian vaults and notes directly from the terminal.
 - [calcure](https://github.com/anufrievroman/calcure) – Modern TUI calendar and task manager with customizable interface.
