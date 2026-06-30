@@ -9,7 +9,6 @@ yay -S --noconfirm --needed \
   logseq-desktop \
   onlyoffice-bin \
   pantum-driver \
-  syncthing-resolve-conflicts \
   syncthingtray \
   ttf-ms-fonts \
   v2rayn-bin \
