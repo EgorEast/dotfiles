@@ -232,7 +232,6 @@
 
 ## 🎮 Gaming & Entertainment
 
-- [brogue-ce](https://github.com/tmewett/BrogueCE) – Single-player strategy game set in the halls of a mysterious and randomly-generated dungeon.
 - [cbonsai](https://gitlab.com/jallbrit/cbonsai) – Bonsai tree generator.
 - [checkersland](https://checkersland.com/download/pc.html) – Checkers game.
 - [firejail](https://github.com/netblue30/firejail) – Linux namespaces and seccomp-bpf sandbox.
