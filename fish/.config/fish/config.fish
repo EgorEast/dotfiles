@@ -64,7 +64,6 @@ alias b='blobdrop' # Usage - blobdrop <file_name> - copy file to blobdrop
 alias browser='chromium'
 alias bt='bluetuith --confirm-on-quit'
 alias c='clear'
-alias cal='calcurse -C ~/.calcurse'
 alias calc='LC_ALL=en_US.UTF-8 qalc'
 alias cat='bat'
 alias check_saved_git_passwords_in_terminal='secret-tool'

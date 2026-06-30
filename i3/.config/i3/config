@@ -489,11 +489,6 @@ exec --no-startup-id xset s 1800 dpms 2400 2400 2400
 # https://wiki.archlinux.org/title/Session_lock#xautolock
 exec --no-startup-id xautolock -time 60 -locker "systemctl suspend"
 
-# Запуск calcurse daemon при старте i3
-# exec --no-startup-id calcurse -C ~/.calcurse --daemon
-# Следим за изменениями в календаре и перезапускаем демона
-exec --no-startup-id ~/.local/bin/calcurse-watch.sh
-
 # xscreensaver
 # https://www.jwz.org/xscreensaver
 #exec --no-startup-id xscreensaver --no-splash

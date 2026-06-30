@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-NEXT=$(/usr/bin/calcurse -n 2>/dev/null)
-
-if [[ -n "$NEXT" ]]; then
-  notify-send "Calcurse" "$NEXT"
-fi

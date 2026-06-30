@@ -13,7 +13,6 @@ sudo pacman -S --noconfirm --needed \
   blendr \
   bridge-utils \
   brightnessctl \
-  calcurse \
   cava \
   chafa \
   chawan \
