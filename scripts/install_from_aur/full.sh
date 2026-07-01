@@ -11,7 +11,6 @@ yay -S --noconfirm --needed \
   checkersland \
   clipse \
   freetube-bin \
-  glicol-cli \
   gobang-bin \
   hellwal \
   hokr-git \
