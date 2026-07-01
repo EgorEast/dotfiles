@@ -28,7 +28,6 @@ stow --adopt --restow \
   k9s \
   khal \
   lazydocker \
-  lazysql \
   lnav \
   ls-fusion \
   lynx \

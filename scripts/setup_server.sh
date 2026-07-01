@@ -19,7 +19,6 @@ stow --adopt --restow \
   inputrc \
   k9s \
   lazydocker \
-  lazysql \
   lnav \
   mineapp-list \
   nwg-look \
@@ -121,7 +120,6 @@ echo ">>> Installing AUR packages (via yay)..."
 
 yay -S --noconfirm --needed \
   clipse \
-  lazysql \
   lazyssh-bin \
   mmtui-bin \
   obfs4proxy \
