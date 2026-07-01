@@ -202,7 +202,6 @@
 
 ## 📅 Productivity
 
-- [cryptpad](https://github.com/cryptpad/cryptpad) – Collaborative office suite, end-to-end encrypted and open-source.
 - [csvlens](https://github.com/YS-L/csvlens) – Command line CSV file viewer. It is like less but made for CSV.
 - [doxx](https://github.com/bgreenwell/doxx) – Expose the contents of .docx files without leaving your terminal.
 - [galculator](https://github.com/galculator/galculator) – GTK calculator.

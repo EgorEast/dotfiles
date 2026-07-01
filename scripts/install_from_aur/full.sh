@@ -11,7 +11,6 @@ yay -S --noconfirm --needed \
   bluetuith-bin \
   checkersland \
   clipse \
-  cryptpad \
   cursor-cli \
   dblab \
   durdraw \
