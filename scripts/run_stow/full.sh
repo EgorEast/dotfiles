@@ -36,7 +36,6 @@ stow --adopt --restow \
   nwg-look \
   opencode \
   ovpn \
-  patat \
   pavucontrol \
   picom \
   pipewire \
