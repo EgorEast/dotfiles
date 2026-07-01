@@ -122,7 +122,6 @@ echo ">>> Installing AUR packages (via yay)..."
 yay -S --noconfirm --needed \
   bluetuith-bin \
   clipse \
-  envx \
   fzf-make \
   gobang-bin \
   jqp-bin \

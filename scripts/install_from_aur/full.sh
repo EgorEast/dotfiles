@@ -11,7 +11,6 @@ yay -S --noconfirm --needed \
   bluetuith-bin \
   checkersland \
   clipse \
-  envx \
   fawkes-bin \
   freetube-bin \
   fzf-make \
