@@ -83,7 +83,6 @@
 - [git-delta](https://dandavison.github.io/delta/) – Syntax-highlighting pager for Git diffs.
 - [github-cli](https://github.com/cli/cli) – GitHub CLI.
 - [glim](https://github.com/junkdog/glim) – TUI for monitoring GitLab CI/CD pipelines and projects.
-- [gobang](https://github.com/TaKO8Ki/gobang) – TUI database management tool.
 - [jqp](https://github.com/noahgorstein/jqp) – TUI playground for exploring jq.
 - [jwt-ui](https://github.com/jwt-rs/jwt-ui) – Command line UI for decoding/encoding JSON Web Tokens.
 - [k9s](https://github.com/derailed/k9s) – TUI for managing a Kubernetes cluster.

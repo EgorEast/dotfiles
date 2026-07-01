@@ -20,7 +20,6 @@ stow --adopt --restow \
   galculator \
   gemini \
   github-cli \
-  gobang \
   gtk \
   hledger \
   i3 \

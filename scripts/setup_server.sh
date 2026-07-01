@@ -121,7 +121,6 @@ echo ">>> Installing AUR packages (via yay)..."
 
 yay -S --noconfirm --needed \
   clipse \
-  gobang-bin \
   jqp-bin \
   lazyjournal \
   lazysql \
