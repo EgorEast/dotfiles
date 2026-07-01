@@ -38,7 +38,6 @@
 - [firefox](https://support.mozilla.org/) – Web browser.
 - [gajim](https://gajim.org/) – Free and fully featured chat app for XMPP.
 - [ggh](https://github.com/byawitz/ggh) – Lightweight SSH wrapper tool.
-- [lazyssh](https://github.com/Adembc/lazyssh) – Terminal-based, interactive SSH manager.
 - [lynx](https://lynx.invisible-island.net/) – Text web browser.
 - [mastodon](https://github.com/mastodon/mastodon) – Your self-hosted, globally interconnected microblogging community.
 - [netscanner](https://github.com/Chleba/netscanner) – Terminal Network scanner & diagnostic tool with modern TUI.

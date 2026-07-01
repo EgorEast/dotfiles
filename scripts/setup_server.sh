@@ -120,7 +120,6 @@ echo ">>> Installing AUR packages (via yay)..."
 
 yay -S --noconfirm --needed \
   clipse \
-  lazyssh-bin \
   mmtui-bin \
   obfs4proxy \
   posting \

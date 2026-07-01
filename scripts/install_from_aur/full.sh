@@ -12,7 +12,6 @@ yay -S --noconfirm --needed \
   clipse \
   freetube-bin \
   kumir2-git \
-  lazyssh-bin \
   libtd-git \
   mmtui-bin \
   nsnake \
