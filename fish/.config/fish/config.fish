@@ -62,7 +62,7 @@ alias ansible_setup_all='just setup-all --vault-password-file=~/.ansible-vault-p
 alias ansible_update_all='just roles && ansible_install_all'
 alias b='blobdrop' # Usage - blobdrop <file_name> - copy file to blobdrop
 alias browser='chromium'
-alias bt='bluetuith --confirm-on-quit'
+alias bt='bluetui'
 alias c='clear'
 alias calc='LC_ALL=en_US.UTF-8 qalc'
 alias cat='bat'

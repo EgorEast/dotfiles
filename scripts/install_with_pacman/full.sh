@@ -6,11 +6,11 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
 sudo pacman -S --noconfirm --needed \
   android-tools \
-  nextcloud-client \
   ansible \
   atac \
   binsider \
   blendr \
+  bluetui \
   bridge-utils \
   brightnessctl \
   cava \
@@ -68,6 +68,7 @@ sudo pacman -S --noconfirm --needed \
   mixxx \
   mousai \
   netscanner \
+  nextcloud-client \
   npm-check-updates \
   oha \
   ollama \

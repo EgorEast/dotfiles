@@ -120,7 +120,6 @@ echo ">>> Installing AUR packages (via yay)..."
 "$SCRIPT_DIR/install_from_aur/main.sh"
 
 yay -S --noconfirm --needed \
-  bluetuith-bin \
   clipse \
   fzf-make \
   gobang-bin \

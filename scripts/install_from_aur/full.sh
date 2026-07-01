@@ -8,7 +8,6 @@ yay -S --noconfirm --needed \
   android-studio \
   anydesk-bin \
   balena-etcher \
-  bluetuith-bin \
   checkersland \
   clipse \
   freetube-bin \
