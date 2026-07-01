@@ -33,7 +33,6 @@ stow --adopt --restow \
   lynx \
   mailcap \
   mineapp-list \
-  nsnake \
   nwg-look \
   nyaa \
   opencode \
