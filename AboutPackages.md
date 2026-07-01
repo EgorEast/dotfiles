@@ -87,7 +87,6 @@
 - [kmon](https://github.com/orhun/kmon) – Linux Kernel Manager and Activity Monitor.
 - [lazydocker](https://github.com/jesseduffield/lazydocker) – TUI Docker manager.
 - [lazygit](https://github.com/jesseduffield/lazygit) – TUI Git interface.
-- [lazyjournal](https://github.com/Lifailon/lazyjournal) – TUI for reading logs from journald, auditd, file system, Docker containers, Podman and Kubernetes pods.
 - [lazysql](https://github.com/jorgerojas26/lazysql) – TUI database management tool.
 - [live-server](https://github.com/tapio/live-server) – Little development server with live reload capability.
 - [lsFusion](https://github.com/lsfusion/platform) – Extremely declarative open-source language-based platform for information systems development.
