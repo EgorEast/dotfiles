@@ -18,7 +18,6 @@ stow --adopt --restow \
   cmus \
   dive \
   docker \
-  durdraw \
   galculator \
   gemini \
   github-cli \
