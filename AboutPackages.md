@@ -149,7 +149,6 @@
 
 - [blendr](https://github.com/dmtrKovalenko/blend) – The hacker's BLE (bluetooth low energy) browser terminal app.
 - [bluetui](https://github.com/pythops/bluetui) – TUI for managing bluetooth on Linux.
-- [hellwal](https://github.com/danihek/hellwal) – Wallpaper-based color scheme generator.
 - [impala](https://github.com/pythops/impala) – TUI for managing wifi.
 - [onboard](https://launchpad.net/onboard) – Onscreen keyboard useful for tablet PC users and for mobility impaired users.
 - [otter-launcher](https://github.com/kuokuo123/otter-launcher) – Hackable cli/tui launcher built for keyboard-centric wm users, featuring vi & emacs keybinds, ansi decoration, etc.
