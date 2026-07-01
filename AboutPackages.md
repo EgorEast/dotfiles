@@ -80,7 +80,6 @@
 - [docker](https://docs.docker.com/) – Container runtime.
 - [fd](https://github.com/sharkdp/fd) – Fast alternative to `find`.
 - [fx](https://fx.wtf/getting-started) – Terminal JSON viewer & processor.
-- [fzf-make](https://github.com/kyu08/fzf-make) – Command line tool that executes commands using fuzzy finder with preview window for make, pnpm, yarn, just and task.
 - [git-delta](https://dandavison.github.io/delta/) – Syntax-highlighting pager for Git diffs.
 - [github-cli](https://github.com/cli/cli) – GitHub CLI.
 - [glim](https://github.com/junkdog/glim) – TUI for monitoring GitLab CI/CD pipelines and projects.
