@@ -13,7 +13,6 @@ yay -S --noconfirm --needed \
   freetube-bin \
   kumir2-git \
   mmtui-bin \
-  otter-launcher \
   patat-bin \
   pokete-git \
   posting \

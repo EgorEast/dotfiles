@@ -144,7 +144,6 @@
 - [bluetui](https://github.com/pythops/bluetui) – TUI for managing bluetooth on Linux.
 - [impala](https://github.com/pythops/impala) – TUI for managing wifi.
 - [onboard](https://launchpad.net/onboard) – Onscreen keyboard useful for tablet PC users and for mobility impaired users.
-- [otter-launcher](https://github.com/kuokuo123/otter-launcher) – Hackable cli/tui launcher built for keyboard-centric wm users, featuring vi & emacs keybinds, ansi decoration, etc.
 - [picom](https://wiki.archlinux.org/title/Picom) – X11 compositor for transparency & shadows.
 - [redshift](https://wiki.archlinux.org/title/Redshift) – Adjusts screen color temperature.
 - [rofi-bluetooth-git](https://github.com/ClydeDroid/rofi-bluetooth) – Bluetooth control via Rofi.

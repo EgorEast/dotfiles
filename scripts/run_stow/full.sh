@@ -35,7 +35,6 @@ stow --adopt --restow \
   mineapp-list \
   nwg-look \
   opencode \
-  otter-launcher \
   ovpn \
   patat \
   pavucontrol \
