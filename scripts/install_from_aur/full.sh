@@ -11,7 +11,6 @@ yay -S --noconfirm --needed \
   checkersland \
   clipse \
   freetube-bin \
-  kabmat \
   kumir2-git \
   lazyjournal \
   lazysql \
