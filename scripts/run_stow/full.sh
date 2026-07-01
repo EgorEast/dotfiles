@@ -60,7 +60,6 @@ stow --adopt --restow \
   television \
   termscp \
   termshark \
-  thokr \
   thunar \
   ttyper \
   user-dirs \

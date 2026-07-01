@@ -251,7 +251,6 @@
 - [poketex](https://github.com/ckaznable/poketex) – Simple Pokedex based on TUI.
 - [speedread-git](https://github.com/pasky/speedread) – CLI speed-reading tool.
 - [terminal-rain-lightning](https://github.com/rmaake1/terminal-rain-lightning) **terminal-rain-lightning** – Animated rain & lightning in terminal
-- [thokr](https://github.com/jrnxf/thokr) – Sleek typing tui with visualized results and historical logging
 - [ttyper](https://github.com/max-niederman/ttyper) – Terminal-based typing test built with Rust and Ratatui
 - [upiano](https://github.com/eliasdorneles/upiano) – Piano in your terminal
 

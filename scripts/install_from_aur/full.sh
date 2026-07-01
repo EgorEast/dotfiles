@@ -11,7 +11,6 @@ yay -S --noconfirm --needed \
   checkersland \
   clipse \
   freetube-bin \
-  hokr-git \
   iamb-git \
   jqp-bin \
   kabmat \
