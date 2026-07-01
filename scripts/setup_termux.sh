@@ -18,7 +18,6 @@ stow --adopt --restow \
   fish \
   git \
   glow \
-  jqp \
   lazygit \
   mpv \
   nano \

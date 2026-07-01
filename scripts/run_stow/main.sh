@@ -21,7 +21,6 @@ stow --adopt --restow \
   git \
   glow \
   greenclip \
-  jqp \
   kitty \
   lazygit \
   libreoffice \
