@@ -121,7 +121,6 @@ echo ">>> Installing AUR packages (via yay)..."
 yay -S --noconfirm --needed \
   clipse \
   mmtui-bin \
-  obfs4proxy \
   posting \
   rmtrash \
   rofi-bluetooth-git \

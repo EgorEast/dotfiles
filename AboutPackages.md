@@ -43,7 +43,6 @@
 - [netscanner](https://github.com/Chleba/netscanner) – Terminal Network scanner & diagnostic tool with modern TUI.
 - [networkmanager-openvpn](https://wiki.archlinux.org/title/OpenVPN) – OpenVPN integration for NetworkManager.
 - [nextcloud-client](https://archlinux.org/packages/extra/x86_64/nextcloud-client/) – Cloud storage client.
-- [obfs4proxy](https://github.com/Yawning/obfs4) – Tor pluggable transport.
 - [oryx](https://github.com/pythops/oryx) - TUI for sniffing network traffic using eBPF.
 - [profanity](https://github.com/profanity-im/profanity) – Console based XMPP client.
 - [qbittorrent](https://github.com/qbittorrent/qBittorrent) – BitTorrent client.
