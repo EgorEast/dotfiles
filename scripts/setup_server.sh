@@ -122,7 +122,6 @@ echo ">>> Installing AUR packages (via yay)..."
 yay -S --noconfirm --needed \
   bluetuith-bin \
   clipse \
-  dblab \
   envx \
   fzf-make \
   gobang-bin \
