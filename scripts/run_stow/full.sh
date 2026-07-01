@@ -34,7 +34,6 @@ stow --adopt --restow \
   mailcap \
   mineapp-list \
   nwg-look \
-  nyaa \
   opencode \
   otter-launcher \
   ovpn \

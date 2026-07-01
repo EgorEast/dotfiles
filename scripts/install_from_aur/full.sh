@@ -13,7 +13,6 @@ yay -S --noconfirm --needed \
   freetube-bin \
   kumir2-git \
   mmtui-bin \
-  nyaa \
   obfs4proxy \
   otter-launcher \
   patat-bin \
