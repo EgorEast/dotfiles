@@ -212,7 +212,6 @@
 - [checkersland](https://checkersland.com/download/pc.html) – Checkers game.
 - [firejail](https://github.com/netblue30/firejail) – Linux namespaces and seccomp-bpf sandbox.
 - [luanti](https://www.luanti.org/) – Open-source voxel game creation platform.
-- [pokete](https://github.com/lxgr-linux/pokete) – Small terminal based game in the style of a very popular and old game by Gamefreak.
 - [rebels-in-the-sky](https://github.com/ricott1/rebels-in-the-sky) – It's the year 2101. Corporations have taken over the world..
 - [tinytetris](https://github.com/taylorconor/tinytetris) – 80x23 terminal tetris.
 - [wine](https://wiki.winehq.org/) – Run Windows apps on Linux.
