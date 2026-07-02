@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   rustdesk-bin \
-  scope-tui \
   slides \
   speedread-git \
   sshm-bin \

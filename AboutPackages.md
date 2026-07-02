@@ -171,7 +171,6 @@
 - [obs-studio](https://obsproject.com/wiki/) – Video recording & streaming software.
 - [playerctl](https://github.com/altdesktop/playerctl) – Control media players from CLI.
 - [presenterm](https://github.com/mfontanini/presenterm) – A markdown terminal slideshow tool.
-- [scope-tui](https://github.com/alemidev/scope-tui) – Simple oscilloscope/vectorscope/spectroscope for your terminal.
 - [shotcut](https://www.shotcut.org/) – Cross-platform video editor.
 - [slides](https://github.com/maaslalani/slides) – Terminal based presentation tool.
 - [spectacle](https://github.com/KDE/spectacle) – KDE screenshot tool.
