@@ -26,7 +26,6 @@ stow --adopt --restow \
   pavucontrol \
   picom \
   pipewire \
-  posting \
   rofi \
   rustdesk \
   scooter \
@@ -121,7 +120,6 @@ echo ">>> Installing AUR packages (via yay)..."
 yay -S --noconfirm --needed \
   clipse \
   mmtui-bin \
-  posting \
   rmtrash \
   rofi-bluetooth-git \
   rofi-greenclip \

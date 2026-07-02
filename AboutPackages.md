@@ -100,7 +100,6 @@
 - [openapi-tui](https://github.com/zaghaghi/openapi-tui) – Terminal UI to list, browse and run APIs defined with openapi spec.
 - [opencode](https://github.com/sst/opencode) – AI coding agent, built for the terminal.
 - [pnq](https://github.com/lirantal/npq) – Lightweight npm package query tool.
-- [posting](https://github.com/darrenburns/posting) – TUI HTTP client, not unlike Postman and Insomnia.
 - [qemu](https://github.com/qemu/qemu) – Generic and open source machine & userspace emulator and virtualizer.
 - [rainfrog](https://github.com/achristmascarl/rainfrog) – Database tool for the terminal.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) – Fast recursive search tool.

@@ -39,7 +39,6 @@ stow --adopt --restow \
   pavucontrol \
   picom \
   pipewire \
-  posting \
   profanity \
   qalculate \
   redshift \
