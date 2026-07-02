@@ -93,6 +93,7 @@ sudo pacman -S --noconfirm --needed \
   rofi-emoji \
   rtorrent \
   rustnet \
+  s-tui \
   serie \
   snixembed \
   soft-serve \

@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   rustdesk-bin \
-  s-tui-git \
   sc-im \
   scooter \
   scope-tui \
