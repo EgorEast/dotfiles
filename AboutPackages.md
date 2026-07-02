@@ -172,7 +172,6 @@
 - [playerctl](https://github.com/altdesktop/playerctl) – Control media players from CLI.
 - [presenterm](https://github.com/mfontanini/presenterm) – A markdown terminal slideshow tool.
 - [shotcut](https://www.shotcut.org/) – Cross-platform video editor.
-- [slides](https://github.com/maaslalani/slides) – Terminal based presentation tool.
 - [spectacle](https://github.com/KDE/spectacle) – KDE screenshot tool.
 - [timg](https://github.com/hzeller/timg) – Terminal image viewer.
 - [urlview](https://aur.archlinux.org/packages/urlview) – Extract URLs from a text file and allow the user to select via a menu.
