@@ -50,7 +50,7 @@
 - [rudesktop](https://rudesktop.ru/) – Cross-platform RDP/VNC client.
 - [rustdesk](https://github.com/rustdesk/rustdesk) – Open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.
 - [rustnet](https://github.com/domcyrus/rustnet) - A cross-platform network monitoring terminal UI tool built with Rust.
-- [sshm](https://github.com/gu1llaum-3/sshm) – Beautiful command-line tool that transforms how you manage and connect to your SSH hosts.
+- [sshs](https://github.com/quantumsheep/sshs) – Terminal user interface for SSH.
 - [syncthing](https://wiki.archlinux.org/title/Syncthing) – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol.
 - [telegram-desktop](https://desktop.telegram.org/) – Official Telegram client.
 - [tor](https://2019.www.torproject.org/docs/documentation.html.en) – Anonymity network.

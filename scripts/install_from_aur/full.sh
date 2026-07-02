@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   rustdesk-bin \
-  sshm-bin \
   systemd-manager-tui \
   sysz \
   tinytetris \

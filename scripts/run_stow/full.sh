@@ -46,7 +46,6 @@ stow --adopt --restow \
   rustdesk \
   screenlayout \
   ssh \
-  sshm \
   taskwarrior \
   television \
   termscp \

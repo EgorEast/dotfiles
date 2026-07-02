@@ -98,6 +98,7 @@ sudo pacman -S --noconfirm --needed \
   serie \
   snixembed \
   soft-serve \
+  sshs \
   systemctl-tui \
   systeroid \
   tabiew \

@@ -30,7 +30,6 @@ stow --adopt --restow \
   rustdesk \
   scooter \
   ssh \
-  sshm \
   termscp \
   termshark \
   thunar \
@@ -127,7 +126,6 @@ yay -S --noconfirm --needed \
   rustnet \
   s-tui-git \
   scooter \
-  sshm-bin \
   systemd-manager-tui \
   sysz \
   warpd \
