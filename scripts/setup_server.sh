@@ -126,7 +126,6 @@ yay -S --noconfirm --needed \
   rustnet \
   s-tui-git \
   scooter \
-  systemd-manager-tui \
   sysz \
   warpd \
   wifitui-bin \
