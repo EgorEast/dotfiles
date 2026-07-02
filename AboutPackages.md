@@ -198,7 +198,6 @@
 - [obsidian](https://help.obsidian.md/) – Markdown-based note-taking app.
 - [onlyoffice](https://github.com/ONLYOFFICE/DesktopEditors) – Office suite with MS Office support.
 - [pandoc](https://github.com/jgm/pandoc) – Universal markup converter.
-- [puffin](https://github.com/siddhantac/puffin) – Terminal dashboard to manage personal finances. Built with hledger and bubbletea.
 - [tabiew](https://github.com/shshemi/tabiew) – TUI tabular data viewer.
 - [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) – Terminal user interface for taskwarrior.
 - [tdf](https://github.com/itsjunetime/tdf) – Terminal-based PDF viewer.
