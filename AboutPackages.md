@@ -105,7 +105,6 @@
 - [rainfrog](https://github.com/achristmascarl/rainfrog) – Database tool for the terminal.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) – Fast recursive search tool.
 - [rustup](https://rust-lang.github.io/rustup/) – Rust version manager.
-- [scooter](https://github.com/thomasschafer/scooter) – Interactive find-and-replace in the terminal.
 - [serie](https://github.com/lusingander/serie) – A rich git commit graph in your terminal, like magic 📚.
 - [soft-serve](https://github.com/charmbracelet/soft-serve) – Self-hostable Git server for the command line.
 - [television](https://github.com/alexpasmantier/television) – Fast and hackable fuzzy finder for the terminal.
