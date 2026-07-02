@@ -71,6 +71,7 @@
 - [codex](https://github.com/openai/codex) – Lightweight coding agent that runs in your terminal.
 - [cruise](https://nucleofusion.github.io/cruise/) – Docker TUI Client.
 - [ctop](https://github.com/bcicen/ctop) – Top-like interface for container metrics.
+- [dart](https://dart.dev/) – Approachable, portable, and productive language for high-quality apps on any platform.
 - [dive](https://github.com/wagoodman/dive) – A tool for exploring each layer in a docker image.
 - [docker-compose](https://docs.docker.com/compose/) – Docker compose tool.
 - [docker](https://docs.docker.com/) – Container runtime.
