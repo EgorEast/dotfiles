@@ -92,6 +92,7 @@ sudo pacman -S --noconfirm --needed \
   rofi-calc \
   rofi-emoji \
   rtorrent \
+  rustnet \
   serie \
   snixembed \
   soft-serve \
