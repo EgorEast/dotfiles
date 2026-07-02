@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   rustdesk-bin \
-  speedread-git \
   sshm-bin \
   systemd-manager-tui \
   sysz \
