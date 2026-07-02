@@ -44,7 +44,6 @@ stow --adopt --restow \
   redshift \
   rofi \
   rustdesk \
-  sc-im \
   scooter \
   screenlayout \
   ssh \
