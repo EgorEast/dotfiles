@@ -20,7 +20,6 @@ yay -S --noconfirm --needed \
   rustdesk-bin \
   via-appimage \
   vial-appimage \
-  visualvault-bin \
   warpd \
   watchman-bin \
   wifitui-bin \

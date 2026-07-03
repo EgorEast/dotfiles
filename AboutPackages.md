@@ -173,7 +173,6 @@
 - [spectacle](https://github.com/KDE/spectacle) – KDE screenshot tool.
 - [timg](https://github.com/hzeller/timg) – Terminal image viewer.
 - [urlview](https://aur.archlinux.org/packages/urlview) – Extract URLs from a text file and allow the user to select via a menu.
-- [visualvault](https://github.com/mikeleppane/visualvault) – Terminal-based media file organizer with smart date-based organization, duplicate detection, and a beautiful TUI.
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) – Video/audio downloader.
 - [ytsurf](https://github.com/Stan-breaks/ytsurf) – TUI YouTube browser/downloader.
 
