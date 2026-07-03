@@ -127,7 +127,6 @@
 - [snixembed](https://man.archlinux.org/man/snixembed.1.en) – proxy the StatusNotifierItem protocol to the XEmbed System Tray.
 - [systemctl-tui](https://github.com/rgwood/systemctl-tui) – Fast, simple TUI for interacting with systemd services and their logs.
 - [systeroid](https://github.com/orhun/systeroid) – More powerful alternative to sysctl(8) with a terminal user interface.
-- [sysz](https://github.com/joehillen/sysz) – Fzf terminal UI for systemctl.
 - [trippy](https://github.com/fujiapple852/trippy) – Combines the functionality of traceroute and ping and is designed to assist with the analysis of networking issues.
 - [warpd](https://github.com/rvaiya/warpd) – Modal keyboard-driven virtual pointer.
 - [xautolock](https://linux.die.net/man/1/xautolock) – Idle-time screen locker.

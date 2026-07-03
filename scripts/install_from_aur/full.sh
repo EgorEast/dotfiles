@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   rustdesk-bin \
-  sysz \
   tinytetris \
   ttyplot \
   vex-tui-bin \
