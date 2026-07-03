@@ -128,7 +128,6 @@ yay -S --noconfirm --needed \
   scooter \
   warpd \
   wifitui-bin \
-  woeusb \
   xautolock \
   xkblayout-state-git
 

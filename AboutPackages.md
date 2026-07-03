@@ -23,7 +23,6 @@
 - [rmtrash](https://github.com/PhrozenByte/rmtrash) – Put files (and directories) in trash using the `trash-put` command in a way that is, otherwise as `trash-put` itself, compatible to GNUs `rm` and `rmdir`.
 - [tree](https://linux.die.net/man/1/tree) – Directory tree listing.
 - [ventoy](https://www.ventoy.net/en/doc_start.html) – Bootable USB multiboot creator.
-- [woeusb](https://github.com/WoeUSB/WoeUSB) – A Microsoft Windows® USB installation media preparer for GNU+Linux.
 - [yazi-git](https://yazi-rs.github.io/docs/quick-start) – Modern TUI file manager with Lua plugins.
 
 ## 🌐 Networking & Communication

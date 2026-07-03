@@ -22,7 +22,6 @@ yay -S --noconfirm --needed \
   vial-appimage \
   warpd \
   wifitui-bin \
-  woeusb \
   xautolock \
   xkblayout-state-git \
   yandex-disk \
