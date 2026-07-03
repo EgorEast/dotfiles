@@ -206,7 +206,6 @@
 - [firejail](https://github.com/netblue30/firejail) – Linux namespaces and seccomp-bpf sandbox.
 - [luanti](https://www.luanti.org/) – Open-source voxel game creation platform.
 - [rebels-in-the-sky](https://github.com/ricott1/rebels-in-the-sky) – It's the year 2101. Corporations have taken over the world..
-- [tinytetris](https://github.com/taylorconor/tinytetris) – 80x23 terminal tetris.
 - [wine](https://wiki.winehq.org/) – Run Windows apps on Linux.
 
 ## 🛡 Security & Encryption
