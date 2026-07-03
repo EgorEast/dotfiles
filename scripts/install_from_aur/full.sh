@@ -21,7 +21,6 @@ yay -S --noconfirm --needed \
   via-appimage \
   vial-appimage \
   warpd \
-  watchman-bin \
   wifitui-bin \
   woeusb \
   xautolock \
