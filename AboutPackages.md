@@ -196,7 +196,6 @@
 - [tabiew](https://github.com/shshemi/tabiew) – TUI tabular data viewer.
 - [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) – Terminal user interface for taskwarrior.
 - [tdf](https://github.com/itsjunetime/tdf) – Terminal-based PDF viewer.
-- [vex-tui](https://github.com/CodeOne45/vex-tui) – Beautiful, fast, and feature-rich terminal-based Excel and CSV viewer built with Go.
 - [visidata](https://github.com/saulpw/visidata) – Terminal interface for exploring and arranging tabular data.
 - [xan](https://github.com/medialab/xan) – The CSV magician.
 

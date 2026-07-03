@@ -18,7 +18,6 @@ yay -S --noconfirm --needed \
   rofi-greenclip \
   rudesktop \
   rustdesk-bin \
-  vex-tui-bin \
   via-appimage \
   vial-appimage \
   visualvault-bin \
