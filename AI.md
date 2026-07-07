@@ -21,3 +21,21 @@ Reviewer (z.AI)
 ↓
 Scribe (BigPickle)
 ```
+
+### для opencode go
+
+```text
+User
+↓
+Orchestrator (GLM-5.2)
+↓
+Explorer (MiniMax-M3)
+↓
+Researcher (GLM-5.2)
+↓
+Coder (MiniMax-M3)
+↓
+Reviewer (GLM-5.2)
+↓
+Scribe (MiniMax-M3)
+```
