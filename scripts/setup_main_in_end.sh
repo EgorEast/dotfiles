@@ -36,3 +36,7 @@ set_env_var VISUAL nvim
 set_env_var BROWSER chromium
 
 sudo awk '!seen[$0]++ && NF' /etc/environment | sudo tee /etc/environment >/dev/null
+
+echo ">>> Setup local nvim directory for npm global packages"
+mkdir ~/.npm-global
+npm config set prefix "$HOME/.npm-global"

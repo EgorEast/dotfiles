@@ -32,6 +32,7 @@ export MANWIDTH=999
 export EDITOR=nvim
 export VISUAL=nvim
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=~/.npm-global/bin:$PATH
 # options
 PS1='\n\w\n\$ '
 set -o noclobber

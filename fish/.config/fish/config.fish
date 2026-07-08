@@ -6,12 +6,13 @@ end
 set PATH $PATH /home/egoreast/.local/bin
 set -gx fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
+# Эти пути будут добавлены в $PATH единожды
+fish_add_path -m ~/bin ~/.local/bin
+fish_add_path ~/.npm-global/bin
+
 zoxide init fish | source
 caniuse --completion-fish | source
 atuin init fish | source
-
-# Эти пути будут добавлены в $PATH единожды
-fish_add_path -m ~/bin ~/.local/bin
 
 # Определим переменные XDG
 set -q XDG_DATA_HOME || set -U XDG_DATA_HOME $HOME/.local/share
