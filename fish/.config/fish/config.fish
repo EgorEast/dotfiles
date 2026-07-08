@@ -3,8 +3,7 @@ if not status is-interactive
 end
 
 # Created by `pipx` on 2025-03-14 06:55:59
-set PATH $PATH /home/egoreast/.local/bin
-set -gx fish_user_paths $HOME/.cargo/bin $fish_user_paths
+fish_add_path ~/.local/bin
 
 # Эти пути будут добавлены в $PATH единожды
 fish_add_path -m ~/bin ~/.local/bin
@@ -25,7 +24,7 @@ set -U fish_key_bindings fish_vi_key_bindings
 # Двойное нажатие ESC не работает, если выставить меньше
 set -g fish_escape_delay_ms 300
 
-set -gx PATH $HOME/.cargo/bin $PATH
+fish_add_path ~/.cargo/bin
 
 set -gx EDITOR nvim
 set -gx VISUAL nvim
@@ -41,7 +40,7 @@ set -x GOOGLE_CLOUD_PROJECT for-gemini-464307
 
 # Android SDK
 set -x ANDROID_HOME $HOME/Android/Sdk
-set -x PATH $ANDROID_HOME/platform-tools $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin $PATH
+fish_add_path $ANDROID_HOME/platform-tools $ANDROID_HOME/emulator $ANDROID_HOME/tools $ANDROID_HOME/tools/bin
 
 set -x JAVA_HOME /usr/lib/jvm/java-17-openjdk
 
