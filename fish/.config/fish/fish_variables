@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export BROWSER:chromium\x2edesktop
+SETUVAR --export CHROME_EXECUTABLE:/usr/bin/chromium
 SETUVAR --export EDITOR:nvim
 SETUVAR --export GOOGLE_CLOUD_PROJECT:for\x2dgemini\x2d464307
 SETUVAR --export PAGER:less
