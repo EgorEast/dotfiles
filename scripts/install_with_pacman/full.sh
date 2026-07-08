@@ -22,7 +22,6 @@ sudo pacman -S --noconfirm --needed \
   cronie \
   csvlens \
   ctop \
-  dart \
   ddcutil \
   dialog \
   diskonaut \

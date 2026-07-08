@@ -75,6 +75,7 @@
 - [docker-compose](https://docs.docker.com/compose/) – Docker compose tool.
 - [docker](https://docs.docker.com/) – Container runtime.
 - [fd](https://github.com/sharkdp/fd) – Fast alternative to `find`.
+- [flutter](https://docs.flutter.dev/) – Open-source framework for building beautiful, natively compiled, multi-platform applications from a single codebase.
 - [fx](https://fx.wtf/getting-started) – Terminal JSON viewer & processor.
 - [git-delta](https://dandavison.github.io/delta/) – Syntax-highlighting pager for Git diffs.
 - [github-cli](https://github.com/cli/cli) – GitHub CLI.

@@ -10,6 +10,7 @@ yay -S --noconfirm --needed \
   balena-etcher \
   checkersland \
   clipse \
+  flutter-bin \
   freetube-bin \
   kumir2-git \
   mmtui-bin \
