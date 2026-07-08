@@ -13,6 +13,7 @@ yay -S --noconfirm --needed \
   freetube-bin \
   kumir2-git \
   mmtui-bin \
+  ocx \
   rmtrash \
   rofi-bluetooth-git \
   rofi-greenclip \

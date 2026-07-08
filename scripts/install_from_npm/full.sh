@@ -6,6 +6,5 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 
 npm i -g \
   live-server \
-  ocx \
   eas-cli \
   npq
