@@ -81,6 +81,7 @@ sudo pacman -S --noconfirm --needed \
   picom \
   playerctl \
   pnpm \
+  pnpm \
   poketex \
   presenterm \
   profanity \
@@ -112,12 +113,14 @@ sudo pacman -S --noconfirm --needed \
   tracexec \
   trippy \
   ttyper \
+  typescript-language-server \
   vde2 \
   virt-manager \
   visidata \
   wavemon \
   xan \
   xorg-xprop \
+  yarn \
   yt-dlp
 
 sudo pacman -S --needed rustup
