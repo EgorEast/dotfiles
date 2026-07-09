@@ -1,0 +1,41 @@
+// lib/features/{{entity_name}}/data/datasources/{{entity_name}}_remote_ds.dart
+import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
+import 'package:retrofit/retrofit.dart';
+import '../../../../core/constants/api_constants.dart';
+import '../../../../shared/models/base_response.dart';
+import '../../../../shared/models/page_data.dart';
+import '../models/{{entity_name}}_model.dart';
+import '../models/create_{{entity_name}}_request.dart';
+import '../models/update_{{entity_name}}_request.dart';
+import '../models/{{entity_name}}_filter_request.dart';
+
+part '{{entity_name}}_remote_ds.g.dart';
+
+@RestApi()
+@injectable
+abstract class {{EntityName}}RemoteDs {
+  @factoryMethod
+  factory {{EntityName}}RemoteDs(Dio dio) = _{{EntityName}}RemoteDs;
+
+  @GET('${ApiConstants.{{entityName}}s}/{id}')
+  Future<BaseResponse<{{EntityName}}Model>> getById(@Path('id') int id);
+
+  @POST('${ApiConstants.{{entityName}}s}/filter')
+  Future<BaseResponse<PageData<{{EntityName}}Model>>> filter(
+    @Body() {{EntityName}}FilterRequest request,
+  );
+
+  @POST(ApiConstants.{{entityName}}s)
+  Future<BaseResponse<{{EntityName}}Model>> create(
+    @Body() Create{{EntityName}}Request request,
+  );
+
+  @PUT(ApiConstants.{{entityName}}s)
+  Future<BaseResponse<{{EntityName}}Model>> update(
+    @Body() Update{{EntityName}}Request request,
+  );
+
+  @DELETE('${ApiConstants.{{entityName}}s}/{id}')
+  Future<BaseResponse<void>> delete(@Path('id') int id);
+}

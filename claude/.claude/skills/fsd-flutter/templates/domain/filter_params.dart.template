@@ -1,0 +1,16 @@
+// lib/features/{{entity_name}}/domain/params/{{entity_name}}_filter_params.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '{{entity_name}}_filter_params.freezed.dart';
+
+@freezed
+class {{EntityName}}FilterParams with _${{EntityName}}FilterParams {
+  const factory {{EntityName}}FilterParams({
+    @Default(0) int page,
+    @Default(15) int size,
+    String? search,
+    @Default('createdAt') String sortBy,
+    @Default('DESC') String sortDirection,
+    // TODO: Add entity-specific filter fields
+  }) = _{{EntityName}}FilterParams;
+}

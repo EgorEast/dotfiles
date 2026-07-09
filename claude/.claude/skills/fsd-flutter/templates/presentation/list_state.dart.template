@@ -1,0 +1,19 @@
+// lib/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_state.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../domain/entities/{{entity_name}}_entity.dart';
+import '../../domain/params/{{entity_name}}_filter_params.dart';
+
+part '{{entity_name}}_list_state.freezed.dart';
+
+@freezed
+class {{EntityName}}ListState with _${{EntityName}}ListState {
+  const factory {{EntityName}}ListState({
+    @Default([]) List<{{EntityName}}Entity> items,
+    @Default({{EntityName}}FilterParams()) {{EntityName}}FilterParams filter,
+    @Default(false) bool isLoading,
+    @Default(false) bool isLoadingMore,
+    @Default(false) bool hasReachedEnd,
+    @Default(0) int totalElements,
+    String? errorMessage,
+  }) = _{{EntityName}}ListState;
+}

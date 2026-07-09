@@ -1,0 +1,10 @@
+// lib/features/{{entity_name}}/presentation/bloc/{{entity_name}}_detail_event.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '{{entity_name}}_detail_event.freezed.dart';
+
+@freezed
+class {{EntityName}}DetailEvent with _${{EntityName}}DetailEvent {
+  const factory {{EntityName}}DetailEvent.load(int id) = _Load;
+  const factory {{EntityName}}DetailEvent.delete(int id) = _Delete;
+}

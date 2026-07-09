@@ -1,0 +1,16 @@
+// lib/features/{{entity_name}}/data/models/update_{{entity_name}}_request.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'update_{{entity_name}}_request.freezed.dart';
+part 'update_{{entity_name}}_request.g.dart';
+
+@freezed
+class Update{{EntityName}}Request with _$Update{{EntityName}}Request {
+  const factory Update{{EntityName}}Request({
+    required int id,
+    // TODO: Add entity-specific fields (without createdAt, updatedAt)
+  }) = _Update{{EntityName}}Request;
+
+  factory Update{{EntityName}}Request.fromJson(Map<String, dynamic> json) =>
+      _$Update{{EntityName}}RequestFromJson(json);
+}

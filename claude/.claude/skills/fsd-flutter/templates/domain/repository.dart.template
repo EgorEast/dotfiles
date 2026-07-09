@@ -1,0 +1,16 @@
+// lib/features/{{entity_name}}/domain/repositories/{{entity_name}}_repository.dart
+import 'package:fpdart/fpdart.dart';
+import '../../../../core/error/failures.dart';
+import '../../../../shared/models/page_data.dart';
+import '../entities/{{entity_name}}_entity.dart';
+import '../params/{{entity_name}}_filter_params.dart';
+import '../params/create_{{entity_name}}_params.dart';
+import '../params/update_{{entity_name}}_params.dart';
+
+abstract class {{EntityName}}Repository {
+  Future<Either<Failure, {{EntityName}}Entity>> getById(int id);
+  Future<Either<Failure, PageData<{{EntityName}}Entity>>> filter({{EntityName}}FilterParams params);
+  Future<Either<Failure, {{EntityName}}Entity>> create(Create{{EntityName}}Params params);
+  Future<Either<Failure, {{EntityName}}Entity>> update(Update{{EntityName}}Params params);
+  Future<Either<Failure, void>> delete(int id);
+}

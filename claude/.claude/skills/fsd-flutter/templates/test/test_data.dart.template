@@ -1,0 +1,22 @@
+// test/helpers/test_data.dart
+// Add these test data for {{EntityName}} feature:
+import 'package:your_app/features/{{entity_name}}/domain/entities/{{entity_name}}_entity.dart';
+import 'package:your_app/features/{{entity_name}}/domain/params/{{entity_name}}_filter_params.dart';
+import 'package:your_app/shared/models/page_data.dart';
+
+const t{{EntityName}}Entity = {{EntityName}}Entity(
+  id: 1,
+  // TODO: Add entity-specific test values
+  createdAt: '2024-01-01T00:00:00',
+  updatedAt: '2024-01-01T00:00:00',
+);
+
+const t{{EntityName}}FilterParams = {{EntityName}}FilterParams();
+
+final t{{EntityName}}PageData = PageData<{{EntityName}}Entity>(
+  content: [t{{EntityName}}Entity],
+  page: 0,
+  size: 15,
+  totalElements: 1,
+  totalPages: 1,
+);

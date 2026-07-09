@@ -1,0 +1,12 @@
+// lib/features/{{entity_name}}/domain/params/update_{{entity_name}}_params.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'update_{{entity_name}}_params.freezed.dart';
+
+@freezed
+class Update{{EntityName}}Params with _$Update{{EntityName}}Params {
+  const factory Update{{EntityName}}Params({
+    required int id,
+    // TODO: Add entity-specific fields (without createdAt, updatedAt)
+  }) = _Update{{EntityName}}Params;
+}

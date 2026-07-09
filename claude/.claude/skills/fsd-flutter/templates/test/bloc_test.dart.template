@@ -1,0 +1,74 @@
+// test/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_bloc_test.dart
+import 'package:bloc_test/bloc_test.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:fpdart/fpdart.dart';
+import 'package:mocktail/mocktail.dart';
+import 'package:your_app/core/error/failures.dart';
+import 'package:your_app/features/{{entity_name}}/domain/params/{{entity_name}}_filter_params.dart';
+import 'package:your_app/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_bloc.dart';
+import 'package:your_app/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_event.dart';
+import 'package:your_app/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_state.dart';
+import '../../../../helpers/mock_helpers.dart';
+import '../../../../helpers/test_data.dart';
+
+void main() {
+  late MockGet{{EntityName}}s mockGet{{EntityName}}s;
+
+  setUp(() {
+    mockGet{{EntityName}}s = MockGet{{EntityName}}s();
+  });
+
+  setUpAll(() {
+    registerFallbackValue(const {{EntityName}}FilterParams());
+  });
+
+  group('{{EntityName}}ListBloc', () {
+    blocTest<{{EntityName}}ListBloc, {{EntityName}}ListState>(
+      'emits [loading, loaded] when fetch is successful',
+      build: () {
+        when(() => mockGet{{EntityName}}s(any()))
+            .thenAnswer((_) async => Right(t{{EntityName}}PageData));
+        return {{EntityName}}ListBloc(mockGet{{EntityName}}s);
+      },
+      act: (bloc) => bloc.add(const {{EntityName}}ListEvent.fetch()),
+      expect: () => [
+        const {{EntityName}}ListState(isLoading: true),
+        {{EntityName}}ListState(
+          items: t{{EntityName}}PageData.content,
+          totalElements: t{{EntityName}}PageData.totalElements,
+          hasReachedEnd: true,
+        ),
+      ],
+    );
+
+    blocTest<{{EntityName}}ListBloc, {{EntityName}}ListState>(
+      'emits [loading, error] when fetch fails',
+      build: () {
+        when(() => mockGet{{EntityName}}s(any()))
+            .thenAnswer((_) async => const Left(Failure.serverError(message: 'Server error')));
+        return {{EntityName}}ListBloc(mockGet{{EntityName}}s);
+      },
+      act: (bloc) => bloc.add(const {{EntityName}}ListEvent.fetch()),
+      expect: () => [
+        const {{EntityName}}ListState(isLoading: true),
+        const {{EntityName}}ListState(errorMessage: 'Server error'),
+      ],
+    );
+
+    blocTest<{{EntityName}}ListBloc, {{EntityName}}ListState>(
+      'does not emit when loadMore and already loading',
+      build: () => {{EntityName}}ListBloc(mockGet{{EntityName}}s),
+      seed: () => const {{EntityName}}ListState(isLoadingMore: true),
+      act: (bloc) => bloc.add(const {{EntityName}}ListEvent.loadMore()),
+      expect: () => [],
+    );
+
+    blocTest<{{EntityName}}ListBloc, {{EntityName}}ListState>(
+      'does not emit when loadMore and hasReachedEnd',
+      build: () => {{EntityName}}ListBloc(mockGet{{EntityName}}s),
+      seed: () => const {{EntityName}}ListState(hasReachedEnd: true),
+      act: (bloc) => bloc.add(const {{EntityName}}ListEvent.loadMore()),
+      expect: () => [],
+    );
+  });
+}

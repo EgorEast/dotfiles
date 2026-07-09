@@ -1,0 +1,20 @@
+// lib/features/{{entity_name}}/data/models/{{entity_name}}_filter_request.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '{{entity_name}}_filter_request.freezed.dart';
+part '{{entity_name}}_filter_request.g.dart';
+
+@freezed
+class {{EntityName}}FilterRequest with _${{EntityName}}FilterRequest {
+  const factory {{EntityName}}FilterRequest({
+    @Default(0) int page,
+    @Default(15) int size,
+    String? search,
+    @Default('createdAt') String sortBy,
+    @Default('DESC') String sortDirection,
+    // TODO: Add entity-specific filter fields
+  }) = _{{EntityName}}FilterRequest;
+
+  factory {{EntityName}}FilterRequest.fromJson(Map<String, dynamic> json) =>
+      _${{EntityName}}FilterRequestFromJson(json);
+}

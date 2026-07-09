@@ -1,0 +1,15 @@
+// lib/features/{{entity_name}}/data/models/create_{{entity_name}}_request.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'create_{{entity_name}}_request.freezed.dart';
+part 'create_{{entity_name}}_request.g.dart';
+
+@freezed
+class Create{{EntityName}}Request with _$Create{{EntityName}}Request {
+  const factory Create{{EntityName}}Request({
+    // TODO: Add entity-specific fields (without id, createdAt, updatedAt)
+  }) = _Create{{EntityName}}Request;
+
+  factory Create{{EntityName}}Request.fromJson(Map<String, dynamic> json) =>
+      _$Create{{EntityName}}RequestFromJson(json);
+}

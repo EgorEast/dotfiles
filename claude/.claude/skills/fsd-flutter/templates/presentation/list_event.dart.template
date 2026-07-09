@@ -1,0 +1,13 @@
+// lib/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_event.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../domain/params/{{entity_name}}_filter_params.dart';
+
+part '{{entity_name}}_list_event.freezed.dart';
+
+@freezed
+class {{EntityName}}ListEvent with _${{EntityName}}ListEvent {
+  const factory {{EntityName}}ListEvent.fetch() = _Fetch;
+  const factory {{EntityName}}ListEvent.loadMore() = _LoadMore;
+  const factory {{EntityName}}ListEvent.refresh() = _Refresh;
+  const factory {{EntityName}}ListEvent.updateFilter({{EntityName}}FilterParams filter) = _UpdateFilter;
+}

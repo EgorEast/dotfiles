@@ -1,0 +1,20 @@
+// lib/features/{{entity_name}}/domain/usecases/update_{{entity_name}}.dart
+import 'package:fpdart/fpdart.dart';
+import 'package:injectable/injectable.dart';
+import '../../../../core/error/failures.dart';
+import '../../../../core/usecases/usecase.dart';
+import '../entities/{{entity_name}}_entity.dart';
+import '../repositories/{{entity_name}}_repository.dart';
+import '../params/update_{{entity_name}}_params.dart';
+
+@injectable
+class Update{{EntityName}} implements UseCase<{{EntityName}}Entity, Update{{EntityName}}Params> {
+  final {{EntityName}}Repository _repository;
+
+  Update{{EntityName}}(this._repository);
+
+  @override
+  Future<Either<Failure, {{EntityName}}Entity>> call(Update{{EntityName}}Params params) {
+    return _repository.update(params);
+  }
+}

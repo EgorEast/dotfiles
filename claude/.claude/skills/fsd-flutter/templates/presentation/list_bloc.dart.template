@@ -1,0 +1,68 @@
+// lib/features/{{entity_name}}/presentation/bloc/{{entity_name}}_list_bloc.dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
+import '../../domain/usecases/get_{{entity_name}}s.dart';
+import '../../domain/params/{{entity_name}}_filter_params.dart';
+import '{{entity_name}}_list_event.dart';
+import '{{entity_name}}_list_state.dart';
+
+@injectable
+class {{EntityName}}ListBloc extends Bloc<{{EntityName}}ListEvent, {{EntityName}}ListState> {
+  final Get{{EntityName}}s _get{{EntityName}}s;
+
+  {{EntityName}}ListBloc(this._get{{EntityName}}s) : super(const {{EntityName}}ListState()) {
+    on<{{EntityName}}ListEvent>((event, emit) async {
+      await event.map(
+        fetch: (_) => _onFetch(emit),
+        loadMore: (_) => _onLoadMore(emit),
+        refresh: (_) => _onRefresh(emit),
+        updateFilter: (e) => _onUpdateFilter(e.filter, emit),
+      );
+    });
+  }
+
+  Future<void> _onFetch(Emitter<{{EntityName}}ListState> emit) async {
+    emit(state.copyWith(isLoading: true, errorMessage: null));
+    final result = await _get{{EntityName}}s(state.filter);
+    result.fold(
+      (failure) => emit(state.copyWith(isLoading: false, errorMessage: failure.message)),
+      (pageData) => emit(state.copyWith(
+        isLoading: false,
+        items: pageData.content,
+        totalElements: pageData.totalElements,
+        hasReachedEnd: pageData.page + 1 >= pageData.totalPages,
+      )),
+    );
+  }
+
+  Future<void> _onLoadMore(Emitter<{{EntityName}}ListState> emit) async {
+    if (state.isLoadingMore || state.hasReachedEnd) return;
+    emit(state.copyWith(isLoadingMore: true));
+    final nextFilter = state.filter.copyWith(page: state.filter.page + 1);
+    final result = await _get{{EntityName}}s(nextFilter);
+    result.fold(
+      (failure) => emit(state.copyWith(isLoadingMore: false, errorMessage: failure.message)),
+      (pageData) => emit(state.copyWith(
+        isLoadingMore: false,
+        items: [...state.items, ...pageData.content],
+        filter: nextFilter,
+        totalElements: pageData.totalElements,
+        hasReachedEnd: pageData.page + 1 >= pageData.totalPages,
+      )),
+    );
+  }
+
+  Future<void> _onRefresh(Emitter<{{EntityName}}ListState> emit) async {
+    final freshFilter = state.filter.copyWith(page: 0);
+    emit(state.copyWith(filter: freshFilter, hasReachedEnd: false));
+    await _onFetch(emit);
+  }
+
+  Future<void> _onUpdateFilter(
+    {{EntityName}}FilterParams filter,
+    Emitter<{{EntityName}}ListState> emit,
+  ) async {
+    emit(state.copyWith(filter: filter.copyWith(page: 0), items: [], hasReachedEnd: false));
+    await _onFetch(emit);
+  }
+}

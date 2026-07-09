@@ -1,0 +1,14 @@
+// lib/features/{{entity_name}}/presentation/bloc/{{entity_name}}_detail_state.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../domain/entities/{{entity_name}}_entity.dart';
+
+part '{{entity_name}}_detail_state.freezed.dart';
+
+@freezed
+class {{EntityName}}DetailState with _${{EntityName}}DetailState {
+  const factory {{EntityName}}DetailState.initial() = _Initial;
+  const factory {{EntityName}}DetailState.loading() = _Loading;
+  const factory {{EntityName}}DetailState.loaded({{EntityName}}Entity {{entityName}}) = _Loaded;
+  const factory {{EntityName}}DetailState.deleted() = _Deleted;
+  const factory {{EntityName}}DetailState.error(String message) = _Error;
+}

@@ -1,0 +1,41 @@
+// lib/features/{{entity_name}}/presentation/bloc/{{entity_name}}_detail_bloc.dart
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
+import '../../domain/usecases/get_{{entity_name}}.dart';
+import '../../domain/usecases/delete_{{entity_name}}.dart';
+import '{{entity_name}}_detail_event.dart';
+import '{{entity_name}}_detail_state.dart';
+
+@injectable
+class {{EntityName}}DetailBloc extends Bloc<{{EntityName}}DetailEvent, {{EntityName}}DetailState> {
+  final Get{{EntityName}} _get{{EntityName}};
+  final Delete{{EntityName}} _delete{{EntityName}};
+
+  {{EntityName}}DetailBloc(this._get{{EntityName}}, this._delete{{EntityName}})
+      : super(const {{EntityName}}DetailState.initial()) {
+    on<{{EntityName}}DetailEvent>((event, emit) async {
+      await event.map(
+        load: (e) => _onLoad(e.id, emit),
+        delete: (e) => _onDelete(e.id, emit),
+      );
+    });
+  }
+
+  Future<void> _onLoad(int id, Emitter<{{EntityName}}DetailState> emit) async {
+    emit(const {{EntityName}}DetailState.loading());
+    final result = await _get{{EntityName}}(id);
+    result.fold(
+      (failure) => emit({{EntityName}}DetailState.error(failure.message)),
+      ({{entityName}}) => emit({{EntityName}}DetailState.loaded({{entityName}})),
+    );
+  }
+
+  Future<void> _onDelete(int id, Emitter<{{EntityName}}DetailState> emit) async {
+    emit(const {{EntityName}}DetailState.loading());
+    final result = await _delete{{EntityName}}(id);
+    result.fold(
+      (failure) => emit({{EntityName}}DetailState.error(failure.message)),
+      (_) => emit(const {{EntityName}}DetailState.deleted()),
+    );
+  }
+}

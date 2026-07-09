@@ -1,0 +1,64 @@
+// test/features/{{entity_name}}/data/repositories/{{entity_name}}_repository_impl_test.dart
+import 'package:flutter_test/flutter_test.dart';
+import 'package:fpdart/fpdart.dart';
+import 'package:mocktail/mocktail.dart';
+import 'package:your_app/core/error/failures.dart';
+import 'package:your_app/features/{{entity_name}}/data/models/{{entity_name}}_model.dart';
+import 'package:your_app/features/{{entity_name}}/data/models/{{entity_name}}_filter_request.dart';
+import 'package:your_app/features/{{entity_name}}/data/repositories/{{entity_name}}_repository_impl.dart';
+import 'package:your_app/features/{{entity_name}}/domain/params/{{entity_name}}_filter_params.dart';
+import 'package:your_app/shared/models/base_response.dart';
+import 'package:your_app/shared/models/page_data.dart';
+import '../../../../helpers/mock_helpers.dart';
+import '../../../../helpers/test_data.dart';
+
+void main() {
+  late {{EntityName}}RepositoryImpl repository;
+  late Mock{{EntityName}}RemoteDs mockRemoteDs;
+
+  setUp(() {
+    mockRemoteDs = Mock{{EntityName}}RemoteDs();
+    repository = {{EntityName}}RepositoryImpl(mockRemoteDs);
+  });
+
+  setUpAll(() {
+    registerFallbackValue(const {{EntityName}}FilterRequest());
+  });
+
+  group('filter', () {
+    test('should return PageData<{{EntityName}}Entity> on success', () async {
+      const model = {{EntityName}}Model(
+        id: 1,
+        // TODO: Add entity-specific test values
+        createdAt: '2024-01-01T00:00:00',
+        updatedAt: '2024-01-01T00:00:00',
+      );
+      when(() => mockRemoteDs.filter(any())).thenAnswer(
+        (_) async => BaseResponse(
+          success: true,
+          result: PageData(content: [model], page: 0, size: 15, totalElements: 1, totalPages: 1),
+        ),
+      );
+
+      final result = await repository.filter(t{{EntityName}}FilterParams);
+
+      expect(result.isRight(), true);
+      result.fold(
+        (l) => fail('Should be Right'),
+        (r) {
+          expect(r.content.length, 1);
+        },
+      );
+    });
+
+    test('should return Failure when success is false', () async {
+      when(() => mockRemoteDs.filter(any())).thenAnswer(
+        (_) async => const BaseResponse(success: false, message: 'Error'),
+      );
+
+      final result = await repository.filter(t{{EntityName}}FilterParams);
+
+      expect(result.isLeft(), true);
+    });
+  });
+}

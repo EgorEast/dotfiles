@@ -1,0 +1,14 @@
+// lib/features/{{entity_name}}/domain/entities/{{entity_name}}_entity.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part '{{entity_name}}_entity.freezed.dart';
+
+@freezed
+class {{EntityName}}Entity with _${{EntityName}}Entity {
+  const factory {{EntityName}}Entity({
+    required int id,
+    // TODO: Add entity-specific fields
+    required String createdAt,
+    required String updatedAt,
+  }) = _{{EntityName}}Entity;
+}

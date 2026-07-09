@@ -1,0 +1,144 @@
+// lib/features/{{entity_name}}/data/repositories/{{entity_name}}_repository_impl.dart
+import 'package:dio/dio.dart';
+import 'package:fpdart/fpdart.dart';
+import 'package:injectable/injectable.dart';
+import '../../../../core/error/failures.dart';
+import '../../../../shared/models/page_data.dart';
+import '../../domain/entities/{{entity_name}}_entity.dart';
+import '../../domain/params/{{entity_name}}_filter_params.dart';
+import '../../domain/params/create_{{entity_name}}_params.dart';
+import '../../domain/params/update_{{entity_name}}_params.dart';
+import '../../domain/repositories/{{entity_name}}_repository.dart';
+import '../datasources/{{entity_name}}_remote_ds.dart';
+import '../models/create_{{entity_name}}_request.dart';
+import '../models/{{entity_name}}_filter_request.dart';
+import '../models/update_{{entity_name}}_request.dart';
+
+@Injectable(as: {{EntityName}}Repository)
+class {{EntityName}}RepositoryImpl implements {{EntityName}}Repository {
+  final {{EntityName}}RemoteDs _remoteDs;
+
+  {{EntityName}}RepositoryImpl(this._remoteDs);
+
+  @override
+  Future<Either<Failure, {{EntityName}}Entity>> getById(int id) async {
+    try {
+      final response = await _remoteDs.getById(id);
+      if (!response.success || response.result == null) {
+        return Left(Failure.serverError(
+          message: response.message ?? 'Failed to get {{entityName}}',
+        ));
+      }
+      return Right(response.result!.toEntity());
+    } on DioException catch (e) {
+      return Left(_mapDioError(e));
+    } catch (e) {
+      return Left(Failure.unexpected(message: e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, PageData<{{EntityName}}Entity>>> filter(
+    {{EntityName}}FilterParams params,
+  ) async {
+    try {
+      final request = {{EntityName}}FilterRequest(
+        page: params.page,
+        size: params.size,
+        search: params.search,
+        sortBy: params.sortBy,
+        sortDirection: params.sortDirection,
+        // TODO: Map entity-specific filter fields
+      );
+      final response = await _remoteDs.filter(request);
+      if (!response.success || response.result == null) {
+        return Left(Failure.serverError(
+          message: response.message ?? 'Failed to filter {{entityName}}s',
+        ));
+      }
+      final pageData = response.result!;
+      return Right(PageData(
+        content: pageData.content.map((m) => m.toEntity()).toList(),
+        page: pageData.page,
+        size: pageData.size,
+        totalElements: pageData.totalElements,
+        totalPages: pageData.totalPages,
+      ));
+    } on DioException catch (e) {
+      return Left(_mapDioError(e));
+    } catch (e) {
+      return Left(Failure.unexpected(message: e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, {{EntityName}}Entity>> create(Create{{EntityName}}Params params) async {
+    try {
+      final request = Create{{EntityName}}Request(
+        // TODO: Map entity-specific fields from params
+      );
+      final response = await _remoteDs.create(request);
+      if (!response.success || response.result == null) {
+        return Left(Failure.serverError(
+          message: response.message ?? 'Failed to create {{entityName}}',
+        ));
+      }
+      return Right(response.result!.toEntity());
+    } on DioException catch (e) {
+      return Left(_mapDioError(e));
+    } catch (e) {
+      return Left(Failure.unexpected(message: e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, {{EntityName}}Entity>> update(Update{{EntityName}}Params params) async {
+    try {
+      final request = Update{{EntityName}}Request(
+        id: params.id,
+        // TODO: Map entity-specific fields from params
+      );
+      final response = await _remoteDs.update(request);
+      if (!response.success || response.result == null) {
+        return Left(Failure.serverError(
+          message: response.message ?? 'Failed to update {{entityName}}',
+        ));
+      }
+      return Right(response.result!.toEntity());
+    } on DioException catch (e) {
+      return Left(_mapDioError(e));
+    } catch (e) {
+      return Left(Failure.unexpected(message: e.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> delete(int id) async {
+    try {
+      final response = await _remoteDs.delete(id);
+      if (!response.success) {
+        return Left(Failure.serverError(
+          message: response.message ?? 'Failed to delete {{entityName}}',
+        ));
+      }
+      return const Right(null);
+    } on DioException catch (e) {
+      return Left(_mapDioError(e));
+    } catch (e) {
+      return Left(Failure.unexpected(message: e.toString()));
+    }
+  }
+
+  Failure _mapDioError(DioException e) {
+    final statusCode = e.response?.statusCode;
+    final message = e.response?.data?['message'] as String? ?? e.message ?? 'Unknown error';
+    return switch (statusCode) {
+      400 => Failure.badRequest(message: message),
+      401 => const Failure.unauthorized(),
+      403 => const Failure.forbidden(),
+      404 => Failure.notFound(message: message),
+      409 => Failure.conflict(message: message),
+      _ => Failure.serverError(message: message),
+    };
+  }
+}

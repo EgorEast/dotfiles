@@ -1,0 +1,28 @@
+// lib/features/{{entity_name}}/data/models/{{entity_name}}_model.dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+import '../../domain/entities/{{entity_name}}_entity.dart';
+
+part '{{entity_name}}_model.freezed.dart';
+part '{{entity_name}}_model.g.dart';
+
+@freezed
+class {{EntityName}}Model with _${{EntityName}}Model {
+  const {{EntityName}}Model._();
+
+  const factory {{EntityName}}Model({
+    required int id,
+    // TODO: Add entity-specific fields
+    required String createdAt,
+    required String updatedAt,
+  }) = _{{EntityName}}Model;
+
+  factory {{EntityName}}Model.fromJson(Map<String, dynamic> json) =>
+      _${{EntityName}}ModelFromJson(json);
+
+  {{EntityName}}Entity toEntity() => {{EntityName}}Entity(
+        id: id,
+        // TODO: Map entity-specific fields
+        createdAt: createdAt,
+        updatedAt: updatedAt,
+      );
+}

@@ -1,0 +1,203 @@
+# Flutter Project — CLAUDE.md
+
+## Архитектура
+
+Проект следует **Clean Architecture + Feature-Sliced Design**.
+
+- **Clean Architecture**: Dependency Rule — зависимости направлены внутрь (`presentation → domain ← data`). Domain не знает о data и presentation.
+- **FSD**: Каждая фича изолирована. Общее — в `shared/`.
+
+### Структура
+
+```
+lib/
+├── app/          # App entry point, DI, Router
+├── core/         # Error types, Network, Theme, Constants, Utils
+├── features/     # Feature modules (data / domain / presentation)
+└── shared/       # Shared models (BaseResponse, PageData) и виджеты
+```
+
+### Слои фичи
+
+```
+features/{name}/
+├── data/
+│   ├── datasources/     # Retrofit API clients
+│   ├── models/          # Freezed DTOs, Request models (с fromJson/toJson)
+│   └── repositories/    # Repository implementations (params → request конвертация)
+├── domain/
+│   ├── entities/        # Freezed domain entities
+│   ├── params/          # Freezed params (БЕЗ fromJson/toJson)
+│   ├── repositories/    # Abstract repositories (используют domain params)
+│   └── usecases/        # Business operations (используют domain params)
+└── presentation/
+    ├── bloc/            # BLoC (lists, complex flows) — используют domain params
+    ├── cubit/           # Cubit (forms, simple state) — используют domain params
+    ├── pages/           # Full-screen pages (@RoutePage)
+    └── widgets/         # Feature-specific widgets
+```
+
+## Правила зависимостей
+
+| Слой | Может импортировать | НЕ может импортировать |
+|------|--------------------|-----------------------|
+| domain/ | dart:core, fpdart, freezed_annotation | data/, presentation/, Flutter SDK |
+| data/ | domain/ (entities, params, repositories), core/, shared/models/ | presentation/ |
+| presentation/ | domain/ (entities, params, usecases), core/, shared/ | data/ (только через DI) |
+| core/ | Пакеты, shared/models/ | features/ |
+| Между фичами | shared/ | Друг друга напрямую |
+
+**ВАЖНО: Domain Params**
+- Абстрактный Repository и UseCases принимают **domain params** (`domain/params/`), а НЕ data request DTOs.
+- RepositoryImpl в `data/` конвертирует `params → request DTO` перед вызовом API.
+- Presentation (BLoC/Cubit) создаёт и передаёт **domain params**, никогда не data DTOs.
+
+## Технологический стек
+
+- **State**: `flutter_bloc` (BLoC для списков, Cubit для форм)
+- **Network**: `dio` + `retrofit`
+- **Models**: `freezed` + `json_serializable`
+- **DI**: `get_it` + `injectable`
+- **Navigation**: `auto_route`
+- **Errors**: `fpdart` (Either<Failure, T>)
+- **Forms**: `formz`
+- **Code Gen**: `build_runner`
+- **Testing**: `bloc_test` + `mocktail`
+
+## Совместимость с бэкендом
+
+API-контракт (fsd-backend / Spring Boot):
+
+| Метод | URL | Назначение |
+|-------|-----|-----------|
+| GET /{id} | Получить по ID |
+| POST /filter | Список с пагинацией |
+| POST / | Создание |
+| PUT / | Обновление |
+| DELETE /{id} | Удаление |
+
+**ЗАПРЕЩЕНО**: GET /all, GET /search, GET /list — используй POST /filter.
+
+Ответы обёрнуты в `BaseResponse<T>` с полями `success`, `message`, `result`.
+
+### HTTP-ошибки
+
+| Код | Failure |
+|-----|---------|
+| 400 | `Failure.badRequest(message)` |
+| 401 | `Failure.unauthorized()` |
+| 403 | `Failure.forbidden()` |
+| 404 | `Failure.notFound(message)` |
+| 409 | `Failure.conflict(message)` |
+| 500+ | `Failure.serverError(message)` |
+
+## Naming Conventions
+
+| Элемент | Формат | Пример |
+|---------|--------|--------|
+| Файлы | snake_case | `product_model.dart` |
+| Классы | PascalCase | `ProductModel` |
+| Entity | {Name}Entity | `ProductEntity` |
+| Model (DTO) | {Name}Model | `ProductModel` |
+| Params (Filter) | {Name}FilterParams | `ProductFilterParams` |
+| Params (CUD) | {Action}{Name}Params | `CreateProductParams`, `UpdateProductParams` |
+| Repository | {Name}Repository | `ProductRepository` |
+| UseCase | {ActionName} | `GetProducts` |
+| Remote DS | {Name}RemoteDs | `ProductRemoteDs` |
+| Request | {Action}{Name}Request | `CreateProductRequest` |
+| Filter | {Name}FilterRequest | `ProductFilterRequest` |
+| BLoC | {Name}{Action}Bloc | `ProductListBloc` |
+| Cubit | {Name}FormCubit | `ProductFormCubit` |
+| Page | {Name}{Action}Page | `ProductListPage` |
+
+## Anti-patterns
+
+- **НЕ** используй `GET /all` для списков → `POST /filter`
+- **НЕ** вызывай Dio напрямую в BLoC → через UseCase → Repository
+- **НЕ** помещай бизнес-логику в Widget → BLoC/Cubit/UseCase
+- **НЕ** импортируй `data/` в `presentation/` → через DI
+- **НЕ** используй data DTOs в сигнатурах domain → Domain Params (`domain/params/`)
+- **НЕ** создавай Mapper-классы → `toEntity()` в Model
+- **НЕ** используй `dynamic` в моделях → типизированные поля
+- **НЕ** передавай `BuildContext` в BLoC → передавай данные
+- **НЕ** используй `setState()` для сложного состояния → BLoC/Cubit
+
+## Linting и форматирование
+
+- **Длина строки**: 80 символов (`dart format --line-length=80`)
+- **Кавычки**: одинарные (`'string'`)
+- **Trailing commas**: обязательны для multi-line аргументов
+- **`const`**: везде, где возможно (конструкторы, литералы, виджеты)
+- **`final`**: для всех локальных переменных, которые не переприсваиваются
+- **Импорты**: 3 группы (`dart:`, `package:`, relative), алфавитная сортировка внутри группы
+- **Сгенерированные файлы** (`*.g.dart`, `*.freezed.dart`, `*.gr.dart`, `*.config.dart`): исключены из анализа
+- **Запрещено**: `print()` (используй `debugPrint()`), `dynamic` в моделях, хардкод цветов/размеров
+
+```bash
+# Форматирование
+dart format --line-length=80 lib/
+
+# Анализ (0 errors, 0 warnings)
+flutter analyze
+```
+
+## Code Generation
+
+```bash
+# Основная команда (после изменения моделей, API клиентов, DI, роутера)
+dart run build_runner build --delete-conflicting-outputs
+
+# Watch mode для разработки
+dart run build_runner watch --delete-conflicting-outputs
+```
+
+## Тестирование
+
+```bash
+# Все тесты
+flutter test
+
+# Тесты конкретной фичи
+flutter test test/features/product/
+
+# Тесты с coverage
+flutter test --coverage
+```
+
+Тесты располагаются в `test/features/{name}/` с той же структурой слоёв (data/domain/presentation). Моки — в `test/helpers/mock_helpers.dart`, тестовые данные — в `test/helpers/test_data.dart`.
+
+## Шаблоны
+
+Шаблоны per-feature файлов — в `templates/`. При генерации фичи используй шаблоны как основу, заменяя плейсхолдеры `{{EntityName}}`, `{{entityName}}`, `{{entity_name}}` на конкретное имя сущности.
+
+## Чеклист новой фичи
+
+При создании фичи `{name}`:
+
+### Domain
+- [ ] `entities/{name}_entity.dart`
+- [ ] `params/{name}_filter_params.dart` (без fromJson/toJson)
+- [ ] `params/create_{name}_params.dart` (без fromJson/toJson)
+- [ ] `params/update_{name}_params.dart` (без fromJson/toJson)
+- [ ] `repositories/{name}_repository.dart` (abstract, использует params)
+- [ ] `usecases/get_{name}.dart`, `get_{name}s.dart`, `create_{name}.dart`, `update_{name}.dart`, `delete_{name}.dart`
+
+### Data
+- [ ] `models/{name}_model.dart` (+ toEntity())
+- [ ] `models/create_{name}_request.dart`
+- [ ] `models/update_{name}_request.dart`
+- [ ] `models/{name}_filter_request.dart`
+- [ ] `datasources/{name}_remote_ds.dart` (Retrofit)
+- [ ] `repositories/{name}_repository_impl.dart` (конвертация params → request)
+
+### Presentation
+- [ ] `bloc/{name}_list_bloc.dart` + event + state (используют domain params)
+- [ ] `cubit/{name}_form_cubit.dart` (если есть форма, использует domain params)
+- [ ] `pages/{name}_list_page.dart`, `{name}_detail_page.dart`, `{name}_form_page.dart`
+- [ ] `widgets/{name}_card.dart`
+
+### После
+- [ ] `dart run build_runner build --delete-conflicting-outputs`
+- [ ] Добавить маршруты в `app_router.dart`
+- [ ] Проверить что domain/ не импортирует data/
+- [ ] Проверить что presentation/ не импортирует data/
