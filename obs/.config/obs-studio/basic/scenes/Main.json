@@ -1,7 +1,7 @@
 {
     "name": "Main",
     "DesktopAudioDevice1": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936450,
         "name": "Звук раб. стола",
         "uuid": "66a17881-b280-448a-a5e0-d5fe6faf4f91",
         "id": "pulse_output_capture",
@@ -32,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936450,
         "name": "Микр/доп",
         "uuid": "cc379b49-0b6d-4a7f-a481-f1430b284879",
         "id": "pulse_input_capture",
@@ -64,7 +64,7 @@
     },
     "sources": [
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936450,
             "name": "Main screen",
             "uuid": "45bb4ea6-43d7-4614-ade1-f8aecf592078",
             "id": "xshm_input_v2",
@@ -91,12 +91,14 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936450,
             "name": "Micro",
             "uuid": "fff00452-d975-4869-8165-1355d2af3895",
             "id": "pulse_input_capture",
             "versioned_id": "pulse_input_capture",
-            "settings": {},
+            "settings": {
+                "device_id": "alsa_input.pci-0000_05_00.6.analog-stereo"
+            },
             "mixers": 255,
             "sync": 0,
             "flags": 0,
@@ -120,7 +122,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936450,
             "name": "Sound",
             "uuid": "50924270-f055-4299-a683-5d7fb27eb095",
             "id": "pulse_output_capture",
@@ -149,7 +151,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936450,
             "name": "Second screen",
             "uuid": "6d4bddd3-00b9-41be-b4c1-883f5fdc5d2b",
             "id": "xshm_input_v2",
@@ -175,7 +177,35 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936450,
+            "name": "Устройство захвата видео V4L2",
+            "uuid": "63a4943c-97dc-489c-b04a-b2dda8366795",
+            "id": "v4l2_input",
+            "versioned_id": "v4l2_input",
+            "settings": {
+                "device_id": "/dev/video0",
+                "input": 0,
+                "pixelformat": 1196444237
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936450,
             "name": "Horisontal/Vertical two screens",
             "uuid": "aa20ffab-686c-4a53-8403-90836dab8ba4",
             "id": "scene",
@@ -435,19 +465,19 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936450,
             "name": "Horisontal main sxreen",
             "uuid": "86a3a070-28c7-48eb-a261-f44a5583a105",
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "id_counter": 5,
+                "id_counter": 6,
                 "custom_size": false,
                 "items": [
                     {
                         "name": "Main screen",
                         "source_uuid": "45bb4ea6-43d7-4614-ade1-f8aecf592078",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -465,20 +495,20 @@
                         "id": 3,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 0.0,
-                            "y": 0.0
+                            "x": 390.0,
+                            "y": 138.0
                         },
                         "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
+                            "x": -1.0555555820465088,
+                            "y": -0.7444444298744202
                         },
                         "scale": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.3708333373069763,
+                            "y": 0.3707031309604645
                         },
                         "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
+                            "x": 0.3708333373069763,
+                            "y": 0.3707031309604645
                         },
                         "bounds": {
                             "x": 0.0,
@@ -557,7 +587,7 @@
                     {
                         "name": "Sound",
                         "source_uuid": "50924270-f055-4299-a683-5d7fb27eb095",
-                        "visible": true,
+                        "visible": false,
                         "locked": false,
                         "rot": 0.0,
                         "scale_ref": {
@@ -608,6 +638,61 @@
                             "duration": 0
                         },
                         "private_settings": {}
+                    },
+                    {
+                        "name": "Устройство захвата видео V4L2",
+                        "source_uuid": "63a4943c-97dc-489c-b04a-b2dda8366795",
+                        "visible": true,
+                        "locked": false,
+                        "rot": 0.0,
+                        "scale_ref": {
+                            "x": 1920.0,
+                            "y": 1080.0
+                        },
+                        "align": 5,
+                        "bounds_type": 0,
+                        "bounds_align": 0,
+                        "bounds_crop": false,
+                        "crop_left": 0,
+                        "crop_top": 0,
+                        "crop_right": 0,
+                        "crop_bottom": 0,
+                        "id": 6,
+                        "group_item_backup": false,
+                        "pos": {
+                            "x": 40.0,
+                            "y": 61.0
+                        },
+                        "pos_rel": {
+                            "x": -1.703703761100769,
+                            "y": -0.8870370388031006
+                        },
+                        "scale": {
+                            "x": 1.46875,
+                            "y": 1.4694443941116333
+                        },
+                        "scale_rel": {
+                            "x": 1.46875,
+                            "y": 1.4694443941116333
+                        },
+                        "bounds": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "bounds_rel": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "scale_filter": "disable",
+                        "blend_method": "default",
+                        "blend_type": "normal",
+                        "show_transition": {
+                            "duration": 300
+                        },
+                        "hide_transition": {
+                            "duration": 300
+                        },
+                        "private_settings": {}
                     }
                 ]
             },
@@ -629,7 +714,9 @@
                 "libobs.show_scene_item.4": [],
                 "libobs.hide_scene_item.4": [],
                 "libobs.show_scene_item.5": [],
-                "libobs.hide_scene_item.5": []
+                "libobs.hide_scene_item.5": [],
+                "libobs.show_scene_item.6": [],
+                "libobs.hide_scene_item.6": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -679,7 +766,7 @@
     "saved_projectors": [],
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -12,
+    "scaling_level": -20,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
     "modules": {
