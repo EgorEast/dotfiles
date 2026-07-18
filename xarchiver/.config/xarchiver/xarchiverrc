@@ -1,5 +1,5 @@
 [xarchiver]
-preferred_format=0
+preferred_format=7zip
 prefer_unzip=true
 confirm_deletion=true
 sort_filename_content=false
@@ -14,8 +14,8 @@ show_toolbar=true
 preferred_custom_cmd=
 preferred_temp_dir=/tmp
 preferred_extract_dir=/tmp
-allow_sub_dir=0
-extended_dnd=0
+allow_sub_dir=false
+extended_dnd=false
 ensure_directory=true
 overwrite=false
 full_path=2
