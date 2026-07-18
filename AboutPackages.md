@@ -51,6 +51,7 @@
 - [rustnet](https://github.com/domcyrus/rustnet) - A cross-platform network monitoring terminal UI tool built with Rust.
 - [sshs](https://github.com/quantumsheep/sshs) – Terminal user interface for SSH.
 - [syncthing](https://wiki.archlinux.org/title/Syncthing) – Open-source file synchronization client/server application written in Go, which implements its own - equally free - Block Exchange Protocol.
+- [tailscale](https://github.com/tailscale/tailscale) – The easiest, most secure way to use WireGuard and 2FA.
 - [telegram-desktop](https://desktop.telegram.org/) – Official Telegram client.
 - [tor](https://2019.www.torproject.org/docs/documentation.html.en) – Anonymity network.
 - [torbrowser-launcher](https://github.com/micahflee/torbrowser-launcher) – Tor Browser installer/updater.

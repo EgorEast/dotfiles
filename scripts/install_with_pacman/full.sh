@@ -102,6 +102,7 @@ sudo pacman -S --noconfirm --needed \
   systemctl-tui \
   systeroid \
   tabiew \
+  tailscale \
   taskwarrior-tui \
   television \
   termscp \
