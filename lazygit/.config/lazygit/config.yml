@@ -80,6 +80,9 @@ git:
     exarh-web: # This is repository folder name
       - pattern: "^(\\w+\\-\\w+#).*"
         replace: "$1 "
+    exarh-flutter:
+      - pattern: "^(\\w+)/(\\w+-\\d+).*"
+        replace: "$2# $1: "
 # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-pull-request-urls
 services: {}
 customCommands:
