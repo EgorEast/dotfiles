@@ -195,7 +195,6 @@
 - [pandoc](https://github.com/jgm/pandoc) – Universal markup converter.
 - [tabiew](https://github.com/shshemi/tabiew) – TUI tabular data viewer.
 - [taskwarrior-tui](https://github.com/kdheepak/taskwarrior-tui) – Terminal user interface for taskwarrior.
-- [tdf](https://github.com/itsjunetime/tdf) – Terminal-based PDF viewer.
 - [visidata](https://github.com/saulpw/visidata) – Terminal interface for exploring and arranging tabular data.
 - [xan](https://github.com/medialab/xan) – The CSV magician.
 
