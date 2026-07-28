@@ -12,7 +12,7 @@
 
   ▓▓▓▓▓▓▓▓▓▓
  ░▓ about  ▓ custom linux config files
- ░▓ author ▓ egoreast <i@egoreast.ru>
+ ░▓ author ▓ egoreast <egor.east@yandex.ru>
  ░▓▓▓▓▓▓▓▓▓▓
  ░░░░░░░░░░
 
