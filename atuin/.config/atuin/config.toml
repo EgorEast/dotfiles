@@ -294,3 +294,6 @@ name = "tokyo-night"
 
 [ai]
 enabled = false
+
+[dotfiles]
+enabled = true
