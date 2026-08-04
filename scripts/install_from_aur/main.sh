@@ -8,7 +8,6 @@ yay -S --noconfirm --needed \
   logseq-desktop \
   onlyoffice-bin \
   pantum-driver \
-  syncthingtray \
   ttf-ms-fonts \
   v2rayn-bin \
   ventoy

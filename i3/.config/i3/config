@@ -512,7 +512,6 @@ exec --no-startup-id /usr/bin/dunst
 
 # Autostart apps as you like
 exec --no-startup-id syncthing serve --no-browser --logflags=3
-exec --no-startup-id /usr/bin/syncthingtray qt-widgets-gui --single-instance --wait
 exec --no-startup-id crow
 exec --no-startup-id element-desktop --hidden
 exec --no-startup-id ollama serve
