@@ -38,7 +38,7 @@ sync_frequency = "10m"
 
 ## which search mode to use
 ## possible values: prefix, fulltext, fuzzy, skim
-search_mode = "fuzzy"
+search_mode = "daemon-fuzzy"
 
 ## which filter mode to use by default
 ## possible values: "global", "host", "session", "session-preload", "directory", "workspace"
@@ -248,6 +248,8 @@ records = true
 # strategy = "auto"
 
 [daemon]
+enabled = true
+autostart = true
 ## Enables using the daemon to sync. Requires the daemon to be running in the background. Start it with `atuin daemon`
 # enabled = false
 
@@ -284,7 +286,11 @@ name = "tokyo-night"
 # debug = true
 
 [search]
+
 ## The list of enabled filter modes, in order of priority.
 ## The "workspace" mode is skipped when not in a workspace or workspaces = false.
 ## Default filter mode can be overridden with the filter_mode setting.
 # filters = [ "global", "host", "session", "session-preload", "workspace", "directory" ]
+
+[ai]
+enabled = false
