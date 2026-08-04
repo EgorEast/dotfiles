@@ -57,9 +57,11 @@ get_gui_address() {
 }
 
 # Получает тело ответа REST-эндпоинта Syncthing; при ошибке — пустую строку.
+# --connect-timeout защищает от «полуоткрытого» порта (принимает, но не отвечает),
+# --max-time ограничивает общее время запроса; в сумме блок укладывается в интервал i3blocks.
 fetch_json() {
     local endpoint="$1"
-    curl -s --max-time 3 -H "X-API-Key:$API_KEY" "$API_BASE/$endpoint" 2>/dev/null
+    curl -s --connect-timeout 1 --max-time 2 -H "X-API-Key:$API_KEY" "$API_BASE/$endpoint" 2>/dev/null
 }
 
 # Считает подключённые устройства в ответе /rest/system/connections.
@@ -82,6 +84,13 @@ aggregate_folder_state() {
     local folders_json="$1"
     local folder_id folder_state
     local -i folder_count=0 has_error=0 has_syncing=0 has_non_paused=0
+
+    # Ранний выход: невалидный/пустой JSON — папок нет, значит состояние OK.
+    # Не даём развернуться N медленным curl-запросам к заведомо плохим данным.
+    if ! jq -e 'type == "array" and length > 0' <<< "$folders_json" >/dev/null 2>&1; then
+        echo "OK"
+        return 0
+    fi
 
     while IFS= read -r folder_id; do
         [[ -n "$folder_id" ]] || continue
@@ -151,7 +160,9 @@ main() {
     API_BASE="http://$gui_address"
 
     connections_json="$(fetch_json "rest/system/connections")"
-    if [[ -z "$connections_json" ]]; then
+    # Ранний выход: ответ должен быть JSON-объектом с полем connections.
+    # Пустой / null / HTML-ошибка / любой необъект — показываем «недоступен».
+    if ! jq -e 'has("connections")' <<< "$connections_json" >/dev/null 2>&1; then
         render_block OFFLINE "0"
         return 0
     fi
