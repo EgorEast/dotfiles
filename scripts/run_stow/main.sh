@@ -9,7 +9,6 @@ stow --adopt --restow \
   bat \
   btop \
   crow-translate \
-  cruise \
   curl \
   delta \
   dunst \

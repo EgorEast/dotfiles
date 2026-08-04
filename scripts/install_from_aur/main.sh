@@ -4,7 +4,6 @@ yay -S --noconfirm --needed \
   amneziavpn-bin \
   blobdrop-git \
   crow-translate \
-  cruise \
   fish-done \
   logseq-desktop \
   onlyoffice-bin \
