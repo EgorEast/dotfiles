@@ -6,6 +6,7 @@ atac/.config/atac/atac.log
 autostart/.config/autostart/chrome-*.desktop
 chawan/.config/chawan/history.uri
 claude/.claude/*
+claude/.claude/plugins/.last_inuse_sweep
 clipse/.config/clipse/clipboard_history.json
 clipse/.config/clipse/clipse.log
 clipse/.config/clipse/tmp_files/*
