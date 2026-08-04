@@ -1,0 +1,393 @@
+#!/usr/bin/env bash
+#
+# Наблюдатель событий Syncthing для dunst.
+#
+# Фоновый демон опрашивает REST API Syncthing методом длинного опроса
+# (long-polling) и показывает уведомления через notify-send:
+#   - запуск Syncthing;
+#   - подключение / отключение / приостановка / возобновление устройств;
+#   - запросы на подключение новых устройств и папок;
+#   - переход папки в состояние ошибки;
+#   - ошибки передачи отдельных файлов.
+#
+# Шумные события (прогресс, индексация, изменения файлов) игнорируются.
+#
+# Запуск (автозапуск в i3, рядом с syncthing serve):
+#     exec --no-startup-id sleep 5 && ~/.config/i3/scripts/syncthing-watcher
+# Остановка:
+#     pkill -f syncthing-watcher
+#
+# Одновременно работает только один экземпляр (блокировка flock).
+# Последний обработанный id события хранится в ~/.local/state/syncthing-watcher.state,
+# поэтому после перезапуска история событий не повторяется.
+
+set -uo pipefail
+
+readonly DEFAULT_GUI_ADDRESS="127.0.0.1:8384"
+readonly STATE_FILE="$HOME/.local/state/syncthing-watcher.state"
+
+API_KEY=""
+API_BASE=""
+LAST_ID=0
+NOTIFY_ENABLED=1  # сбрасывается в 0, если notify-send не установлен
+
+declare -A DEVICE_NAMES=()
+declare -A FOLDER_NAMES=()
+declare -A FOLDER_PREV_STATE=()
+
+log() {
+    printf '[syncthing-watcher] %s\n' "$*" >&2
+}
+
+# --- Конфигурация ------------------------------------------------------------
+
+# Возвращает путь к конфигу Syncthing; переопределяется переменной ST_CONF.
+config_path() {
+    if [[ -n "${ST_CONF:-}" ]]; then
+        echo "$ST_CONF"
+    else
+        echo "$HOME/.local/state/syncthing/config.xml"
+    fi
+}
+
+# Печатает API-ключ из конфига (пустая строка, если ключ не найден).
+get_api_key() {
+    local conf
+    conf="$(config_path)"
+    [[ -f "$conf" ]] || return 1
+    grep -oP '(?<=<apikey>)[^<]+' "$conf" 2>/dev/null
+}
+
+# Печатает адрес GUI из блока <gui> конфига (адрес по умолчанию, если не задан).
+get_gui_address() {
+    local conf gui_block addr
+    conf="$(config_path)"
+    if [[ ! -f "$conf" ]]; then
+        echo "$DEFAULT_GUI_ADDRESS"
+        return 0
+    fi
+    gui_block="$(sed -n '/<gui[ >]/,/<\/gui>/p' "$conf")"
+    addr="$(printf '%s\n' "$gui_block" | grep -oP '(?<=<address>)[^<]+' | head -1)"
+    echo "${addr:-$DEFAULT_GUI_ADDRESS}"
+}
+
+# --- Одиночный экземпляр -----------------------------------------------------
+
+# Захватывает блокировку flock; если другой экземпляр уже запущен — выход 0.
+acquire_lock() {
+    local lockfile
+    lockfile="${XDG_RUNTIME_DIR:-/tmp}/syncthing-watcher.lock"
+    exec 9>"$lockfile" || { log "Не удалось открыть файл блокировки $lockfile"; exit 1; }
+    if ! flock -n 9; then
+        echo "syncthing-watcher: другой экземпляр уже запущен" >&2
+        exit 0
+    fi
+}
+
+# --- Состояние (последний обработанный id события) ----------------------------
+
+load_last_id() {
+    if [[ -f "$STATE_FILE" ]]; then
+        local value
+        value="$(cat "$STATE_FILE" 2>/dev/null || true)"
+        if [[ "$value" =~ ^[0-9]+$ ]]; then
+            LAST_ID="$value"
+        else
+            log "Файл состояния повреждён ($STATE_FILE), начинаем с нуля"
+        fi
+    fi
+}
+
+persist_last_id() {
+    mkdir -p "$HOME/.local/state" 2>/dev/null || true
+    local tmp="${STATE_FILE}.tmp"
+    printf '%s\n' "$LAST_ID" > "$tmp" 2>/dev/null && mv -f "$tmp" "$STATE_FILE" 2>/dev/null
+}
+
+# --- REST API ----------------------------------------------------------------
+
+# Получает тело ответа эндпоинта; при ошибке — пустую строку.
+api_get() {
+    local endpoint="$1"
+    curl -s --max-time 10 -H "X-API-Key:$API_KEY" "$API_BASE/$endpoint" 2>/dev/null
+}
+
+# Длинный опрос событий, начиная с указанного id.
+fetch_events() {
+    local since_id="$1"
+    curl -s --max-time 90 -H "X-API-Key:$API_KEY" "$API_BASE/rest/events?since=$since_id" 2>/dev/null
+}
+
+# --- Карты имён --------------------------------------------------------------
+
+# Строит ассоциативные массивы: deviceID → имя устройства, id папки → метка.
+build_name_maps() {
+    local devices_json folders_json dev_id dev_name folder_id folder_label
+    devices_json="$(api_get "rest/config/devices")"
+    folders_json="$(api_get "rest/config/folders")"
+
+    DEVICE_NAMES=()
+    while IFS=$'\t' read -r dev_id dev_name; do
+        [[ -n "$dev_id" ]] || continue
+        DEVICE_NAMES["$dev_id"]="$dev_name"
+    done <<< "$(jq -r '.[] | [.deviceID, (.name // "")] | @tsv' <<< "$devices_json" 2>/dev/null || true)"
+
+    FOLDER_NAMES=()
+    while IFS=$'\t' read -r folder_id folder_label; do
+        [[ -n "$folder_id" ]] || continue
+        FOLDER_NAMES["$folder_id"]="$folder_label"
+    done <<< "$(jq -r '.[] | [.id, (.label // .id // "")] | @tsv' <<< "$folders_json" 2>/dev/null || true)"
+}
+
+# Возвращает имя устройства; для неизвестного — первые 7 символов id.
+device_name() {
+    local device_id="$1"
+    if [[ -n "${DEVICE_NAMES[$device_id]:-}" ]]; then
+        echo "${DEVICE_NAMES[$device_id]}"
+    else
+        echo "${device_id:0:7}"
+    fi
+}
+
+# Возвращает метку папки; для неизвестной — первые 7 символов id.
+folder_name() {
+    local folder_id="$1"
+    if [[ -n "${FOLDER_NAMES[$folder_id]:-}" ]]; then
+        echo "${FOLDER_NAMES[$folder_id]}"
+    else
+        echo "${folder_id:0:7}"
+    fi
+}
+
+# --- Уведомления --------------------------------------------------------------
+
+# Экранирование pango-разметки для безопасного вывода имён от удалённых узлов
+escape_pango() {
+    local s=$1
+    s=${s//&/&amp;}
+    s=${s//</&lt;}
+    s=${s//>/&gt;}
+    printf '%s' "$s"
+}
+
+notify_event() {
+    local urgency="$1" title="$2" body="$3"
+    (( NOTIFY_ENABLED )) || return 0
+    body="$(escape_pango "$body")"
+    notify-send -a Syncthing -u "$urgency" -h string:x-dunst-stack-tag:syncthing \
+        "$title" "$body" 2>/dev/null || true
+}
+
+# --- Обработчики событий ------------------------------------------------------
+
+# Печатает поле события из JSON; при отсутствии — пустую строку.
+event_field() {
+    local json="$1" field="$2"
+    jq -r ".$field // \"\"" <<< "$json" 2>/dev/null || true
+}
+
+# Печатает объект data события (или пустой объект).
+event_data() {
+    local event_json="$1"
+    jq -c '.data' <<< "$event_json" 2>/dev/null || echo "{}"
+}
+
+handle_device_connected() {
+    local data="$1" device_id
+    device_id="$(event_field "$data" "id")"
+    notify_event normal "Syncthing: устройство подключено" "$(device_name "$device_id")"
+}
+
+handle_device_disconnected() {
+    local data="$1" device_id
+    device_id="$(event_field "$data" "id")"
+    notify_event normal "Syncthing: устройство отключено" "$(device_name "$device_id")"
+}
+
+handle_device_paused() {
+    local data="$1" device_id
+    device_id="$(event_field "$data" "id")"
+    notify_event low "Syncthing: устройство приостановлено" "$(device_name "$device_id")"
+}
+
+handle_device_resumed() {
+    local data="$1" device_id
+    device_id="$(event_field "$data" "id")"
+    notify_event low "Syncthing: устройство возобновлено" "$(device_name "$device_id")"
+}
+
+handle_device_rejected() {
+    local data="$1" device_id short_id
+    device_id="$(event_field "$data" "device")"
+    [[ -n "$device_id" ]] || device_id="$(event_field "$data" "id")"
+    short_id="${device_id:0:7}"
+    notify_event normal "Syncthing: запрос на подключение нового устройства" \
+        "$short_id (требует подтверждения в веб-интерфейсе)"
+}
+
+handle_folder_rejected() {
+    local data="$1" folder_id device_id
+    folder_id="$(event_field "$data" "folder")"
+    device_id="$(event_field "$data" "device")"
+    notify_event normal "Syncthing: предложена новая папка" \
+        "$(folder_name "$folder_id") от $(device_name "$device_id") (требует подтверждения)"
+}
+
+# Уведомляет только о переходе папки В состояние ошибки (иначе слишком шумно).
+handle_folder_summary() {
+    local data="$1" folder_id new_state prev_state
+    folder_id="$(event_field "$data" "folder")"
+    [[ -n "$folder_id" ]] || return 0
+    new_state="$(jq -r '.summary.state // ""' <<< "$data" 2>/dev/null || true)"
+    prev_state="${FOLDER_PREV_STATE[$folder_id]:-}"
+    FOLDER_PREV_STATE["$folder_id"]="$new_state"
+    if [[ "$new_state" == "error" && "$prev_state" != "error" ]]; then
+        notify_event normal "Syncthing: ошибка синхронизации папки" "$(folder_name "$folder_id")"
+    fi
+}
+
+# Уведомляет только об ошибках передачи файлов (успешные передачи слишком шумные).
+handle_item_finished() {
+    local data="$1" folder_id item error
+    folder_id="$(event_field "$data" "folder")"
+    item="$(event_field "$data" "item")"
+    error="$(jq -r '.error // ""' <<< "$data" 2>/dev/null || true)"
+    [[ -n "$error" ]] || return 0
+    notify_event normal "Syncthing: ошибка передачи файла" \
+        "$(folder_name "$folder_id"): $item — $error"
+}
+
+# Распределяет событие по типу; шумные типы игнорируются, но id продвигается.
+dispatch_event() {
+    local event_json="$1" event_type
+    event_type="$(event_field "$event_json" "type")"
+
+    case "$event_type" in
+        StartupComplete)    notify_event low "Syncthing запущен" "Сервис Syncthing запущен и готов к работе" ;;
+        DeviceConnected)    handle_device_connected "$(event_data "$event_json")" ;;
+        DeviceDisconnected) handle_device_disconnected "$(event_data "$event_json")" ;;
+        DevicePaused)       handle_device_paused "$(event_data "$event_json")" ;;
+        DeviceResumed)      handle_device_resumed "$(event_data "$event_json")" ;;
+        DeviceRejected)     handle_device_rejected "$(event_data "$event_json")" ;;
+        FolderRejected)     handle_folder_rejected "$(event_data "$event_json")" ;;
+        FolderSummary)      handle_folder_summary "$(event_data "$event_json")" ;;
+        ItemFinished)       handle_item_finished "$(event_data "$event_json")" ;;
+        ConfigSaved)        build_name_maps ;;
+        *) : ;;
+    esac
+}
+
+# --- Цикл опроса --------------------------------------------------------------
+
+# Один цикл длинного опроса; 0 — успех, 1 — временный сбой (сервер недоступен).
+poll_events() {
+    local response curl_status event_json event_id max_id
+    response="$(fetch_events "$LAST_ID")"
+    curl_status=$?
+
+    # Fail-fast: сервер недоступен или ответ не является массивом JSON.
+    if (( curl_status != 0 )) || [[ -z "$response" ]] || ! jq -e 'type == "array"' >/dev/null 2>&1 <<< "$response"; then
+        return 1
+    fi
+
+    # Пустой массив — новых событий нет; пауза против «горячего» цикла.
+    if [[ "$(jq -r 'length' <<< "$response" 2>/dev/null || echo "0")" == "0" ]]; then
+        sleep 2
+        return 0
+    fi
+
+    max_id=0
+    while IFS= read -r event_json; do
+        [[ -n "$event_json" ]] || continue
+        dispatch_event "$event_json"
+        event_id="$(event_field "$event_json" "id")"
+        if [[ "$event_id" =~ ^[0-9]+$ ]] && (( event_id > max_id )); then
+            max_id="$event_id"
+        fi
+    done <<< "$(jq -c '.[]' <<< "$response" 2>/dev/null || true)"
+
+    # Syncthing перезапущен: счётчик id событий сброшен — пересинхронизация
+    if (( max_id > 0 && max_id < LAST_ID )); then
+        log "Обнаружен сброс id событий (Syncthing перезапущен) — пересинхронизирую с id=$max_id"
+        LAST_ID="$max_id"
+        FOLDER_PREV_STATE=()
+        persist_last_id
+        return 0
+    fi
+
+    if (( max_id != LAST_ID )); then
+        LAST_ID="$max_id"
+        persist_last_id
+    fi
+    return 0
+}
+
+# Устанавливает базовую точку событий при первом запуске (без воспроизведения истории).
+initialize_last_id() {
+    local response max_id
+    while true; do
+        response="$(curl -s --max-time 10 -H "X-API-Key:$API_KEY" "$API_BASE/rest/events?limit=1" 2>/dev/null)"
+        if [[ -n "$response" ]] && jq -e 'type == "array"' >/dev/null 2>&1 <<< "$response"; then
+            max_id="$(jq -r 'max_by(.id) | .id // 0' <<< "$response" 2>/dev/null || echo "0")"
+            LAST_ID="$max_id"
+            persist_last_id
+            return 0
+        fi
+        log "Не удалось получить базовую точку событий, повтор через 30 секунд"
+        sleep 30
+    done
+}
+
+run_event_loop() {
+    local status
+    while true; do
+        poll_events
+        status=$?
+        case "$status" in
+            0) ;;
+            1) log "REST-API Syncthing недоступна, повтор через 30 секунд"; sleep 30 ;;
+            *) log "Неожиданная ошибка цикла опроса (код $status), повтор через 30 секунд"; sleep 30 ;;
+        esac
+    done
+}
+
+main() {
+    local conf api_key gui_address
+    acquire_lock
+
+    # Fail-fast проверки окружения: без этих инструментов демон неработоспособен.
+    command -v curl >/dev/null 2>&1 || { log "curl не установлен — работа невозможна"; exit 1; }
+    command -v jq   >/dev/null 2>&1 || { log "jq не установлен — работа невозможна";   exit 1; }
+    if ! command -v notify-send >/dev/null 2>&1; then
+        NOTIFY_ENABLED=0
+        log "notify-send не установлен — уведомления отключены"
+    fi
+    [[ -n "${XDG_RUNTIME_DIR:-}" ]] || { log "XDG_RUNTIME_DIR не задан — отказываюсь запускаться"; exit 1; }
+
+    conf="$(config_path)"
+    if [[ ! -f "$conf" ]]; then
+        log "Конфиг Syncthing не найден: $conf"
+        exit 1
+    fi
+
+    api_key="$(get_api_key)"
+    if [[ -z "$api_key" ]]; then
+        log "API-ключ Syncthing не найден в конфиге"
+        exit 1
+    fi
+    API_KEY="$api_key"
+
+    gui_address="$(get_gui_address)"
+    API_BASE="http://$gui_address"
+
+    load_last_id
+    build_name_maps
+    if (( LAST_ID == 0 )); then
+        initialize_last_id
+    fi
+
+    log "Наблюдатель запущен: API=$API_BASE, последний обработанный id=$LAST_ID"
+    run_event_loop
+}
+
+main

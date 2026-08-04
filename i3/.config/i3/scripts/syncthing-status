@@ -1,0 +1,169 @@
+#!/usr/bin/env bash
+#
+# i3blocks blocklet для отображения статуса Syncthing.
+#
+# Печатает одну строку pango-разметки в stdout и всегда завершается с кодом 0,
+# чтобы i3blocks не скрывал блок при сбое. Стиль повторяет yandex-disk-indicator:
+# пастельные цвета, Nerd Font иконки, префикс «st-».
+
+# --- Мягкие пастельные цвета ---
+readonly COLOR_OK="#86efac"      # Зелёный (всё синхронизировано, устройства подключены)
+readonly COLOR_SYNCING="#7dd3fc" # Голубой (идёт синхронизация)
+readonly COLOR_IDLE="#94a3b8"    # Серо-голубой (всё ок, устройств нет)
+readonly COLOR_PAUSED="#d6d3d1"  # Светло-серый (все папки на паузе)
+readonly COLOR_OFF="#fca5a5"     # Пастельно-красный (недоступен)
+readonly COLOR_ERROR="#fcd34d"   # Пастельно-желтый (ошибка)
+readonly COLOR_UNKNOWN="#94a3b8" # Серый (неизвестное состояние)
+
+# --- Иконки Nerd Font ---
+readonly ICON_OK="󰒋"     # nf-fa-cloud (подключено)
+readonly ICON_SYNCING="󰒍" # nf-fa-cloud_upload (синхронизация)
+readonly ICON_IDLE="󰤄"    # nf-fa-moon (ожидание)
+readonly ICON_PAUSED="󰏤"  # nf-fa-pause (пауза)
+readonly ICON_OFF="󰤭"     # nf-fa-power_off (выключен)
+readonly ICON_ERROR="󰀦"   # nf-fa-exclamation_triangle (ошибка)
+readonly ICON_UNKNOWN="󰀷" # nf-fa-question (неизвестный статус)
+
+readonly DEFAULT_GUI_ADDRESS="127.0.0.1:8384"
+
+# Возвращает путь к конфигу Syncthing; переопределяется переменной ST_CONF.
+config_path() {
+    if [[ -n "${ST_CONF:-}" ]]; then
+        echo "$ST_CONF"
+    else
+        echo "$HOME/.local/state/syncthing/config.xml"
+    fi
+}
+
+# Печатает API-ключ из конфига (пустая строка, если ключ не найден).
+get_api_key() {
+    local conf
+    conf="$(config_path)"
+    [[ -f "$conf" ]] || return 1
+    grep -oP '(?<=<apikey>)[^<]+' "$conf" 2>/dev/null
+}
+
+# Печатает адрес GUI из блока <gui> конфига (адрес по умолчанию, если не задан).
+get_gui_address() {
+    local conf gui_block addr
+    conf="$(config_path)"
+    if [[ ! -f "$conf" ]]; then
+        echo "$DEFAULT_GUI_ADDRESS"
+        return 0
+    fi
+    gui_block="$(sed -n '/<gui[ >]/,/<\/gui>/p' "$conf")"
+    addr="$(printf '%s\n' "$gui_block" | grep -oP '(?<=<address>)[^<]+' | head -1)"
+    echo "${addr:-$DEFAULT_GUI_ADDRESS}"
+}
+
+# Получает тело ответа REST-эндпоинта Syncthing; при ошибке — пустую строку.
+fetch_json() {
+    local endpoint="$1"
+    curl -s --max-time 3 -H "X-API-Key:$API_KEY" "$API_BASE/$endpoint" 2>/dev/null
+}
+
+# Считает подключённые устройства в ответе /rest/system/connections.
+count_connected_devices() {
+    local connections_json="$1"
+    jq '[.connections | to_entries[] | select(.value.connected == true)] | length' \
+        <<< "$connections_json" 2>/dev/null || echo "0"
+}
+
+# Печатает состояние одной папки из /rest/db/status (или "unknown").
+folder_state_of() {
+    local folder_id="$1"
+    local status_json
+    status_json="$(fetch_json "rest/db/status?folder=$folder_id")"
+    jq -r '.state // "unknown"' <<< "$status_json" 2>/dev/null || echo "unknown"
+}
+
+# Сводит состояния всех папок к одному: ERROR > SYNCING > PAUSED > OK.
+aggregate_folder_state() {
+    local folders_json="$1"
+    local folder_id folder_state
+    local -i folder_count=0 has_error=0 has_syncing=0 has_non_paused=0
+
+    while IFS= read -r folder_id; do
+        [[ -n "$folder_id" ]] || continue
+        folder_count+=1
+        folder_state="$(folder_state_of "$folder_id")"
+        case "$folder_state" in
+            error)                                           has_error=1 ;;
+            syncing|sync-preparing|scan-completing|cleaning|scanning|sync-waiting|scan-waiting) has_syncing=1 ;;
+            paused)                                          : ;;
+            *)                                               has_non_paused=1 ;;
+        esac
+    done <<< "$(jq -r '.[] | .id' <<< "$folders_json" 2>/dev/null || true)"
+
+    if (( has_error )); then
+        echo "ERROR"
+    elif (( has_syncing )); then
+        echo "SYNCING"
+    elif (( folder_count > 0 && has_non_paused == 0 )); then
+        echo "PAUSED"
+    else
+        echo "OK"
+    fi
+}
+
+# Печатает готовую pango-строку блока по состоянию и числу устройств.
+render_block() {
+    local state="$1"
+    local device_count="$2"
+
+    case "$state" in
+        OFFLINE) echo "<span color='$COLOR_OFF'>st-$ICON_OFF</span>" ;;
+        ERROR)   echo "<span color='$COLOR_ERROR'>st-$ICON_ERROR</span>" ;;
+        SYNCING) echo "<span color='$COLOR_SYNCING'>st-$ICON_SYNCING</span>" ;;
+        PAUSED)  echo "<span color='$COLOR_PAUSED'>st-$ICON_PAUSED</span>" ;;
+        OK)
+            if (( device_count > 0 )); then
+                echo "<span color='$COLOR_OK'>st-$ICON_OK$device_count</span>"
+            else
+                echo "<span color='$COLOR_IDLE'>st-$ICON_IDLE</span>"
+            fi
+            ;;
+        *) echo "<span color='$COLOR_UNKNOWN'>st-$ICON_UNKNOWN</span>" ;;
+    esac
+}
+
+main() {
+    local conf api_key gui_address connections_json folders_json state devices
+    conf="$(config_path)"
+
+    # Ранний выход: нет конфига или нет инструментов — показываем «недоступен».
+    if [[ ! -f "$conf" ]] || ! command -v jq >/dev/null 2>&1 || ! command -v curl >/dev/null 2>&1; then
+        render_block OFFLINE "0"
+        return 0
+    fi
+
+    api_key="$(get_api_key)"
+    if [[ -z "$api_key" ]]; then
+        render_block OFFLINE "0"
+        return 0
+    fi
+    API_KEY="$api_key"
+
+    gui_address="$(get_gui_address)"
+    case "$BLOCK_BUTTON" in
+        1) setsid xdg-open "http://$gui_address" </dev/null >/dev/null 2>&1 & ;;
+    esac
+    API_BASE="http://$gui_address"
+
+    connections_json="$(fetch_json "rest/system/connections")"
+    if [[ -z "$connections_json" ]]; then
+        render_block OFFLINE "0"
+        return 0
+    fi
+
+    folders_json="$(fetch_json "rest/config/folders")"
+
+    devices="$(count_connected_devices "$connections_json")"
+    state="$(aggregate_folder_state "$folders_json")"
+
+    render_block "$state" "$devices"
+    return 0
+}
+
+main
+exit 0

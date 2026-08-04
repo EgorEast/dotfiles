@@ -147,6 +147,14 @@
     timeout = 15
     frame_color = "#4a7899"
 
+[syncthing-notifications]
+    appname = "Syncthing"
+    format = "<b>%s</b>\n%b\n%a"
+    history_ignore = no
+    urgency = normal
+    timeout = 8
+    frame_color = "#0892D4"
+
 [portmaster]
     appname = "Portmaster"
     timeout = 10
