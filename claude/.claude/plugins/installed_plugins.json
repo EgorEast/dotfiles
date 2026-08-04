@@ -49,6 +49,13 @@
         "version": "1.0.0",
         "installedAt": "2026-05-26T06:28:02.556Z",
         "lastUpdated": "2026-05-26T06:28:02.556Z"
+      },
+      {
+        "scope": "user",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-04T14:39:10.115Z",
+        "lastUpdated": "2026-08-04T14:39:10.115Z"
       }
     ],
     "figma@claude-plugins-official": [
