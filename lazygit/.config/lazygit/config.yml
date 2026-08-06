@@ -62,7 +62,7 @@ gui:
 # Config relating to git
 git:
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
-  pagers:
+  diffRenderers:
     - # Value of the --color arg in the git diff command. Some pagers want this to be set to 'always' and some want it set to 'never'
       colorArg: always
       # e.g.
@@ -70,9 +70,7 @@ git:
       # delta --dark --paging=never
       # ydiff -p cat -s --wrap --width={{columnWidth}}
       # pager: diff-so-fancy
-      pager: delta --paging=never --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
-      # e.g. 'difft --color=always'
-      externalDiffCommand: ""
+      command: delta --paging=never --line-numbers --features=collared-trogon-egoreast --hyperlinks --hyperlinks-file-link-format="lazygit-edit://{path}:{line}"
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#predefined-commit-message-prefix
   commitPrefix: []
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#predefined-commit-message-prefix
