@@ -1,5 +1,5 @@
 [Annotations]
-annotationToolType=6
+annotationToolType=7
 arrowShadow=false
 blurStrength=0.25510204081632654
 ellipseShadow=false
@@ -8,6 +8,7 @@ highlighterStrokeColor=255,0,0
 lineShadow=false
 numberFont=JetBrainsMono Nerd Font Mono,16,-1,5,700,0,0,0,0,0,0,0,0,0,0,1,Bold
 pixelateStrength=0.2687074829931973
+rectangleFillColor=255,0,0,0
 rectangleShadow=false
 rectangleStrokeColor=255,0,0
 textFont=JetBrainsMono Nerd Font Mono,16,-1,5,300,0,0,0,0,0,0,0,0,0,0,1,Light
