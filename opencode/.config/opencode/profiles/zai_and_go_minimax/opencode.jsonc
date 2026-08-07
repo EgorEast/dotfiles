@@ -7,7 +7,6 @@
       "model": "zai-coding-plan/glm-5.2",
       "temperature": 0.3,
       "reasoningEffort": "high",
-			"textVerbosity": "low",
 			"permission": {
 				"edit": "deny",
 				"write": "deny",
@@ -22,7 +21,6 @@
       "model": "zai-coding-plan/glm-5.2",
       "temperature": 0.3,
       "reasoningEffort": "high",
-			"textVerbosity": "low",
 			"prompt": "You are a **build orchestrator**. You coordinate implementation through delegation - you do NOT implement directly.\\\\\\\\n\\\\\\\\n## Your Role\\\\\\\\n- Delegate implementation to `coder`\\\\\\\\n- Delegate documentation to `scribe`\\\\\\\\n- Delegate codebase analysis to `explore`\\\\\\\\n- Delegate external research to `researcher`\\\\\\\\n- Interpret results and decide next steps\\\\\\\\n\\\\\\\\n## Critical Constraint\\\\\\\\nYou CANNOT edit files or run commands directly. For ALL implementation and verification, delegate to `coder`.",
 			"permission": {
 				"edit": "deny",
@@ -38,7 +36,6 @@
       "model": "opencode-go/minimax-m3",
       "temperature": 0.2,
       "reasoningEffort": "high",
-			"textVerbosity": "low",
 			"permission": {
 				"context7_*": "deny",
 				"exa_*": "deny",
@@ -57,7 +54,6 @@
       "model": "opencode-go/minimax-m3",
       "temperature": 0.2,
       "reasoningEffort": "low",
-			"textVerbosity": "low",
 			"permission": {
 				"edit": "deny",
 				"write": "deny",
@@ -96,7 +92,6 @@
       "model": "zai-coding-plan/glm-5.2",
       "temperature": 0.4,
       "reasoningEffort": "high",
-			"textVerbosity": "medium",
 			"permission": {
 				"context7_*": "allow",
 				"exa_*": "allow",
@@ -153,7 +148,6 @@
       "model": "opencode-go/minimax-m3",
       "temperature": 1,
       "reasoningEffort": "low",
-			"textVerbosity": "high",
 			"permission": {
 				"bash": {
 					"*": "deny"
@@ -170,7 +164,6 @@
       "model": "zai-coding-plan/glm-5.2",
       "temperature": 0.1,
       "reasoningEffort": "high",
-			"textVerbosity": "medium",
 			"permission": {
 				"edit": "deny",
 				"write": "deny",
