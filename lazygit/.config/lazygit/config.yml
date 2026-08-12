@@ -61,7 +61,6 @@ gui:
     rate: 70
 # Config relating to git
 git:
-  autoSignOff: true
   # See https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
   diffRenderers:
     - # Value of the --color arg in the git diff command. Some pagers want this to be set to 'always' and some want it set to 'never'
