@@ -7,7 +7,6 @@ rm -rf ~/.config/mineapps.list
 "$SCRIPT_DIR/main.sh"
 
 stow --adopt --restow \
-  anydesk \
   atac \
   autostart \
   cava \

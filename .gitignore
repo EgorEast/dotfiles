@@ -1,7 +1,6 @@
 .env
 **/*.old
 
-anydesk/.anydesk/*
 atac/.config/atac/atac.log
 autostart/.config/autostart/chrome-*.desktop
 chawan/.config/chawan/history.uri
@@ -61,7 +60,6 @@ ya-disk/.config/yandex-disk/crash.txt
 ya-disk/.config/yandex-disk/iid
 ya-disk/.config/yandex-disk/passwd
 
-!anydesk/.anydesk/user.conf
 !claude/.claude/commands
 !claude/.claude/plugins
 !claude/.claude/settings.json
