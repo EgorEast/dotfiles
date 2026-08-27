@@ -50,9 +50,6 @@ ocx init --global
 
 "$SCRIPT_DIR/setup_main_in_end.sh"
 
-yandex-disk token || true
-yandex-disk start || true
-
 echo ">>> Configuring bandwhich..."
 sudo setcap cap_sys_ptrace,cap_dac_read_search,cap_net_raw,cap_net_admin+ep $(command -v bandwhich)
 

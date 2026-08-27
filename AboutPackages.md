@@ -57,7 +57,6 @@
 - [torbrowser-launcher](https://github.com/micahflee/torbrowser-launcher) – Tor Browser installer/updater.
 - [torsocks](https://gitweb.torproject.org/torsocks.git) – Run applications through Tor.
 - [v2rayn](https://github.com/2dust/v2rayN) – A GUI client for Windows, Linux and macOS, support Xray and sing-box and others
-- [yandex-disk](https://yandex.ru/support/yandex-360/customers/disk/desktop/linux) – Cloud storage client.
 
 ## 💻 Development Tools
 

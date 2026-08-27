@@ -56,9 +56,6 @@ ssh/.ssh/known_hosts
 termux/.termux/shell
 thunar/.config/Thunar/accels.scm
 vim/.config/nvim/*/
-ya-disk/.config/yandex-disk/crash.txt
-ya-disk/.config/yandex-disk/iid
-ya-disk/.config/yandex-disk/passwd
 
 !claude/.claude/commands
 !claude/.claude/plugins

@@ -26,5 +26,4 @@ yay -S --noconfirm --needed \
   wifitui-bin \
   xautolock \
   xkblayout-state-git \
-  yandex-disk \
   ytsurf
