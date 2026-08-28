@@ -162,39 +162,65 @@ map("n", "<leader>cf", function()
   vim.lsp.buf.format({ async = true })
 end, { desc = "Format buffer (LSP)" })
 
--- Jumplist: <C-o>/<C-i> jump in place within the same file, but when the
--- destination is a different file, open it in a (new or existing) tab instead
--- of replacing the current one. The current window / jumplist is left intact.
+-- Jumplist: <C-o>/<C-i> jump in place within the same file, but a jump to a
+-- different file focuses that file's tab (opening one if needed) and leaves the
+-- current tab untouched. When such a hop happens we remember where we came from
+-- so the opposite key jumps straight back across tabs.
 local function jump_in_tab(back)
   local fwd, rev = vim.keycode("<C-i>"), vim.keycode("<C-o>")
+  local this_dir = back and "back" or "fwd"
   return function()
-    local cur_buf = vim.api.nvim_get_current_buf()
+    -- 1. return across tabs if this window has a recorded origin for this direction
+    local origin = vim.w.jump_return
+    if origin and origin.dir == this_dir and vim.api.nvim_win_is_valid(origin.win) then
+      vim.w.jump_return = nil
+      vim.api.nvim_set_current_win(origin.win)
+      pcall(vim.api.nvim_win_set_cursor, origin.win, origin.pos)
+      vim.cmd("normal! zz")
+      return
+    end
+
+    -- 2. native jump; if it stays in the same file, that's all
+    local from_win = vim.api.nvim_get_current_win()
+    local from_pos = vim.api.nvim_win_get_cursor(0)
+    local from_buf = vim.api.nvim_get_current_buf()
     vim.api.nvim_feedkeys(back and rev or fwd, "nx", false)
     local dest_buf = vim.api.nvim_get_current_buf()
     local name = vim.api.nvim_buf_get_name(dest_buf)
-    if dest_buf == cur_buf or name == "" then
-      return -- same file (jump already done) or scratch buffer
+    if dest_buf == from_buf or name == "" then
+      return
     end
-    local pos = vim.api.nvim_win_get_cursor(0)
-    -- undo the jump so this window and its jumplist are fully restored
+    local dest_pos = vim.api.nvim_win_get_cursor(0)
+
+    -- 3. undo the in-window jump, then relocate to the destination's tab
     vim.api.nvim_feedkeys(back and fwd or rev, "nx", false)
-    -- focus the destination in an existing tab if it has one, else a new tab
+    local target_win
     for _, tab in ipairs(vim.api.nvim_list_tabpages()) do
       for _, win in ipairs(vim.api.nvim_tabpage_list_wins(tab)) do
         if vim.api.nvim_win_get_buf(win) == dest_buf then
-          vim.api.nvim_set_current_win(win)
-          pcall(vim.api.nvim_win_set_cursor, 0, pos)
-          return
+          target_win = win
+          break
         end
       end
+      if target_win then
+        break
+      end
     end
-    vim.cmd("tabedit " .. vim.fn.fnameescape(name))
-    pcall(vim.api.nvim_win_set_cursor, 0, pos)
+    if target_win then
+      vim.api.nvim_set_current_win(target_win)
+      pcall(vim.api.nvim_win_set_cursor, 0, dest_pos)
+    else
+      vim.cmd("tabedit " .. vim.fn.fnameescape(name))
+      pcall(vim.api.nvim_win_set_cursor, 0, dest_pos)
+    end
     vim.cmd("normal! zz")
+
+    -- 4. record how to get back: pressing the opposite key returns here
+    vim.w.jump_return = { win = from_win, pos = from_pos, dir = back and "fwd" or "back" }
   end
 end
-map("n", "<C-o>", jump_in_tab(true), { desc = "Jump back (new tab if other file)" })
-map("n", "<C-i>", jump_in_tab(false), { desc = "Jump forward (new tab if other file)" })
+map("n", "<C-o>", jump_in_tab(true), { desc = "Jump back (cross-tab aware)" })
+map("n", "<C-i>", jump_in_tab(false), { desc = "Jump forward (cross-tab aware)" })
 
 -- Move lines
 map("n", "<A-j>", "<cmd>move .+1<cr>==", { desc = "Move line down" })

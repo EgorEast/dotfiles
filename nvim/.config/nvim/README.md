@@ -100,7 +100,7 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `<leader>xq` / `<leader>xl` | toggle quickfix / location list |
 | `<leader>xd` | diagnostics → quickfix |
 | `gd` `gD` `gy` | definition / declaration / type definition (other file → new tab) |
-| `<C-o>` / `<C-i>` | jumplist back / forward — other file opens in a (new or existing) tab |
+| `<C-o>` / `<C-i>` | jumplist back / forward — a jump to another file focuses that file's tab; the opposite key jumps back across tabs |
 | `<leader>?` | searchable list of all keymaps (which-key) |
 | `grr` `gri` `grt` `gO` | native LSP: refs / impl / type def / document symbols |
 | `<leader>rr` / `<leader>cr` | rename symbol |
