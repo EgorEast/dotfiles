@@ -19,7 +19,7 @@ native equivalent.
 | Tabs | native `tabline` (`lua/tabline.lua`) |
 | Statusline + LSP progress | native `statusline` + `vim.lsp.status()` (`lua/statusline.lua`) |
 | File manager | `yazi` in a native floating terminal (`lua/filemanager.lua`); netrw fallback |
-| Fuzzy find | `mini.pick` — files / live grep / buffers / help (`lua/picker.lua`), hidden & ignored toggled live; `:find` / `:grep` kept as native fallback |
+| Fuzzy find | `mini.pick` — files / live grep / buffers / help (`lua/picker.lua`); hidden, ignored and glob filters changed live from the picker; `:find` / `:grep` kept as native fallback |
 | Plugin manager | built-in `vim.pack` (`lua/pack.lua`) |
 | Folding | `vim.treesitter.foldexpr` |
 | Incremental selection | native (`an` / `in` / `]n` / `[n`) |
@@ -96,7 +96,9 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `<leader>fb` / `<leader>fh` / `<leader>fo` / `<leader>fr` | buffers / help / recent files / resume |
 | `<leader>sg` / `<leader>/` | live grep across all files |
 | `<leader>fw` | grep word under cursor |
-| `<A-h>` / `<A-i>` (in picker) | toggle hidden / ignored files · `:SearchToggleHidden` `:SearchToggleIgnored` |
+| `<A-h>` / `<A-i>` (in picker) | toggle hidden / ignored files |
+| `<C-o>` / `<C-e>` (in picker) | add a glob filter (`*.lua`, `!**/test/**`; empty = clear) / grep regex↔plain |
+| `:SearchGlob <globs>` / `:SearchToggleHidden` / `:SearchToggleIgnored` / `:SearchFilters` | change / show the filters outside a picker |
 | `<leader>f/` / `<leader>s/` | native `:find` / `:grep` fallback |
 | `<leader>sr` / `<leader>sw` | project search & replace (grug-far) / prefilled with word under cursor |
 | `<leader>sR` (or visual `<leader>sr`) | grug-far scoped to current file / selection |
