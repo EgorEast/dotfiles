@@ -53,7 +53,8 @@ o.ignorecase = true
 o.smartcase = true
 o.incsearch = true
 o.inccommand = "split" -- live :substitute preview
-o.grepprg = "rg --vimgrep --smart-case --hidden --glob '!.git'"
+-- hidden / ignored behaviour comes from RIPGREP_CONFIG_PATH, set in lua/picker.lua
+o.grepprg = "rg --vimgrep"
 o.grepformat = "%f:%l:%c:%m"
 
 -- Native file finding via :find / gf
