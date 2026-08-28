@@ -50,6 +50,11 @@ Updating:
 
 After updating, commit `nvim-pack-lock.json` to pin the new versions.
 
+In the update buffer: **`:w` applies** the listed changes, **`:q` cancels**
+(also shown in its winbar). Same idea elsewhere — the quickfix list, the picker
+and the yazi/lazygit floats each show their key hints in the winbar/footer; in
+the picker `<S-Tab>` lists every mapping.
+
 ## Required external binaries
 
 Core: `git`, `rg` (ripgrep), `fd`, `yazi`, `node`.
@@ -95,6 +100,7 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `<leader>xq` / `<leader>xl` | toggle quickfix / location list |
 | `<leader>xd` | diagnostics → quickfix |
 | `gd` `gD` `gy` | definition / declaration / type definition (other file → new tab) |
+| `<C-o>` / `<C-i>` | jumplist back / forward — other file opens in a (new or existing) tab |
 | `<leader>?` | searchable list of all keymaps (which-key) |
 | `grr` `gri` `grt` `gO` | native LSP: refs / impl / type def / document symbols |
 | `<leader>rr` / `<leader>cr` | rename symbol |
@@ -130,6 +136,7 @@ lua/filemanager.lua yazi float wrapper + netrw settings
 lua/term.lua        floating-terminal helper (lazygit)
 lua/session.lua     per-cwd session auto-save / restore
 lua/whichkey.lua    which-key popup config
+lua/hints.lua       winbar key hints for special windows
 lua/theme.lua       colorscheme (tokyonight)
 lsp/*.lua           per-server config
 ftdetect/ ftplugin/ syntax/   kitty.conf support (replaces vim-kitty)

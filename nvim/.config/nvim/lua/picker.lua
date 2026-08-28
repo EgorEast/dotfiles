@@ -21,6 +21,8 @@ pick.setup({
         row = math.floor(0.5 * (vim.o.lines - height)),
         col = math.floor(0.5 * (vim.o.columns - width)),
         border = "rounded",
+        footer = " <CR> open  <C-v/s/t> vsplit/split/tab  <C-x> mark  <Tab> preview  <S-Tab> all keys  <Esc> close ",
+        footer_pos = "left",
       }
     end,
   },

@@ -162,6 +162,40 @@ map("n", "<leader>cf", function()
   vim.lsp.buf.format({ async = true })
 end, { desc = "Format buffer (LSP)" })
 
+-- Jumplist: <C-o>/<C-i> jump in place within the same file, but when the
+-- destination is a different file, open it in a (new or existing) tab instead
+-- of replacing the current one. The current window / jumplist is left intact.
+local function jump_in_tab(back)
+  local fwd, rev = vim.keycode("<C-i>"), vim.keycode("<C-o>")
+  return function()
+    local cur_buf = vim.api.nvim_get_current_buf()
+    vim.api.nvim_feedkeys(back and rev or fwd, "nx", false)
+    local dest_buf = vim.api.nvim_get_current_buf()
+    local name = vim.api.nvim_buf_get_name(dest_buf)
+    if dest_buf == cur_buf or name == "" then
+      return -- same file (jump already done) or scratch buffer
+    end
+    local pos = vim.api.nvim_win_get_cursor(0)
+    -- undo the jump so this window and its jumplist are fully restored
+    vim.api.nvim_feedkeys(back and fwd or rev, "nx", false)
+    -- focus the destination in an existing tab if it has one, else a new tab
+    for _, tab in ipairs(vim.api.nvim_list_tabpages()) do
+      for _, win in ipairs(vim.api.nvim_tabpage_list_wins(tab)) do
+        if vim.api.nvim_win_get_buf(win) == dest_buf then
+          vim.api.nvim_set_current_win(win)
+          pcall(vim.api.nvim_win_set_cursor, 0, pos)
+          return
+        end
+      end
+    end
+    vim.cmd("tabedit " .. vim.fn.fnameescape(name))
+    pcall(vim.api.nvim_win_set_cursor, 0, pos)
+    vim.cmd("normal! zz")
+  end
+end
+map("n", "<C-o>", jump_in_tab(true), { desc = "Jump back (new tab if other file)" })
+map("n", "<C-i>", jump_in_tab(false), { desc = "Jump forward (new tab if other file)" })
+
 -- Move lines
 map("n", "<A-j>", "<cmd>move .+1<cr>==", { desc = "Move line down" })
 map("n", "<A-k>", "<cmd>move .-2<cr>==", { desc = "Move line up" })

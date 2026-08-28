@@ -31,6 +31,7 @@ for _, module in ipairs({
   "term",
   "session",
   "whichkey",
+  "hints",
 }) do
   local ok, err = pcall(require, module)
   if not ok then
