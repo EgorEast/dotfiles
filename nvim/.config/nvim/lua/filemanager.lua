@@ -27,11 +27,23 @@ function M.open(path)
     vim.notify("yazi is not installed", vim.log.levels.ERROR)
     return
   end
-  path = path or vim.fn.expand("%:p:h")
-  if path == "" or vim.fn.isdirectory(path) == 0 then
-    path = vim.fn.getcwd()
+  -- With no explicit target, hand yazi the current file's full path so it opens
+  -- the containing directory with the cursor already on that file. Fall back to
+  -- the file's directory, then the cwd.
+  if not path then
+    local cur = vim.fn.expand("%:p")
+    if cur ~= "" and vim.fn.filereadable(cur) == 1 then
+      path = cur
+    else
+      path = vim.fn.expand("%:p:h")
+    end
   end
-  M.last_dir = path
+  local target_dir = vim.fn.isdirectory(path) == 1 and path or vim.fn.fnamemodify(path, ":h")
+  if target_dir == "" or vim.fn.isdirectory(target_dir) == 0 then
+    path = vim.fn.getcwd()
+    target_dir = path
+  end
+  M.last_dir = target_dir
 
   local chooser = vim.fn.tempname()
   local _, win = float_win({ title = " yazi " })

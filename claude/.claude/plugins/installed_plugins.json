@@ -56,6 +56,14 @@
         "version": "1.0.0",
         "installedAt": "2026-08-04T14:39:10.115Z",
         "lastUpdated": "2026-08-04T14:39:10.115Z"
+      },
+      {
+        "scope": "project",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-08-26T12:23:42.268Z",
+        "lastUpdated": "2026-08-26T12:23:42.268Z",
+        "projectPath": "/home/egoreast/Programming/exarh-flutter"
       }
     ],
     "figma@claude-plugins-official": [
@@ -66,6 +74,15 @@
         "installedAt": "2026-06-08T08:27:31.691Z",
         "lastUpdated": "2026-06-08T08:27:31.691Z",
         "gitCommitSha": "fabc1ca81d839602ba7c1ca0f445a64246b3870e"
+      },
+      {
+        "scope": "project",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/figma/2.1.30",
+        "version": "2.1.30",
+        "installedAt": "2026-08-26T12:23:42.268Z",
+        "lastUpdated": "2026-08-26T12:23:42.268Z",
+        "gitCommitSha": "fabc1ca81d839602ba7c1ca0f445a64246b3870e",
+        "projectPath": "/home/egoreast/Programming/exarh-flutter"
       }
     ]
   }

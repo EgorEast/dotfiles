@@ -27,5 +27,7 @@
   },
   "syntaxHighlightingDisabled": false,
   "theme": "custom:tokyo-night-ansi",
-  "editorMode": "normal"
+  "editorMode": "normal",
+  "agentPushNotifEnabled": true,
+  "inputNeededNotifEnabled": true
 }
