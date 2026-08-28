@@ -92,6 +92,28 @@ vim.api.nvim_create_user_command("MasonEnsure", function()
   ensure_installed(true)
 end, { desc = "Install any missing language servers / tools" })
 
+-- Update every installed mason package. In mason v2 there is no per-package
+-- "is there a newer version" API, but running install() on an installed package
+-- pulls it to the latest version, so we just do that for everything.
+vim.api.nvim_create_user_command("MasonUpgrade", function()
+  local reg = require("mason-registry")
+  reg.refresh(function()
+    local pkgs = reg.get_installed_packages()
+    if #pkgs == 0 then
+      vim.notify("mason: nothing installed")
+      return
+    end
+    vim.notify(("mason: updating %d package(s) to latest — see :Mason for progress"):format(#pkgs))
+    for _, pkg in ipairs(pkgs) do
+      pkg:install()
+    end
+  end)
+end, { desc = "Update all installed mason packages" })
+
+vim.keymap.set("n", "<leader>cm", "<cmd>Mason<cr>", { desc = "Mason (UI: C check, U update)" })
+vim.keymap.set("n", "<leader>cM", "<cmd>MasonEnsure<cr>", { desc = "Mason: install missing tools" })
+vim.keymap.set("n", "<leader>cu", "<cmd>MasonUpgrade<cr>", { desc = "Mason: upgrade all packages" })
+
 -- First-run automation: bootstrap any missing tools shortly after startup.
 vim.defer_fn(function()
   pcall(ensure_installed, false)

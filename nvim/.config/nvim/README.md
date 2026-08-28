@@ -33,7 +33,22 @@ native equivalent.
 - `which-key.nvim` — popup listing available `<leader>` mappings as you type
 - `tokyonight.nvim` — colorscheme (cosmetic only; `lua/theme.lua`)
 
-Managed by `vim.pack`; lockfile: `nvim-pack-lock.json`.
+Managed by `vim.pack`; lockfile: `nvim-pack-lock.json` (committed).
+
+Updating:
+
+| Key / command | Action |
+|---|---|
+| `<leader>ll` / `:PackUpdate` | fetch remotes, show pending changes per plugin, `:w` to apply |
+| `<leader>ls` / `:PackStatus` | offline status vs. lockfile |
+| `<leader>lx` / `:PackRestore` | roll back to `nvim-pack-lock.json` |
+| `<leader>lL` / `<leader>lc` | list plugins / `:checkhealth vim.pack` |
+| `<leader>lp` / `:TSUpdate` | rebuild treesitter parsers |
+| `<leader>cm` / `:Mason` | Mason UI (`C` check, `U` update, `X` uninstall) |
+| `<leader>cM` / `:MasonEnsure` | install missing tools from the config's list |
+| `<leader>cu` / `:MasonUpgrade` | update every installed Mason package |
+
+After updating, commit `nvim-pack-lock.json` to pin the new versions.
 
 ## Required external binaries
 
@@ -90,6 +105,7 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `]h` / `[h`, `gh` / `gH` | git hunk nav / apply / reset (mini.diff) |
 | `<leader>gd` `<leader>gD` `<leader>gu` | diff overlay / `:DiffTool` / undo tree |
 | `<leader>gg` | lazygit float |
+| `<leader>ll` / `<leader>cm` | update plugins / open Mason (see Updating above) |
 | `<leader>qs` / `<leader>qS` / `<leader>qd` | restore / save / stop-autosave session |
 | `<leader>'d` / `dm` | delete marks |
 

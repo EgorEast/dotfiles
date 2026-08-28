@@ -27,6 +27,7 @@ wk.setup({
     { "<leader>u", group = "toggles" },
     { "<leader>x", group = "lists / diagnostics" },
     { "<leader>W", group = "windows" },
+    { "<leader>l", group = "plugins" },
     { "<leader>'", group = "marks" },
   },
 })
