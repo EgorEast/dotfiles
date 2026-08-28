@@ -24,6 +24,7 @@ for _, module in ipairs({
   "lsp",
   "git",
   "picker",
+  "replace",
   "statusline",
   "tabs",
   "tabline",

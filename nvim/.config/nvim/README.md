@@ -32,6 +32,7 @@ native equivalent.
 - `nvim-treesitter` (`main` branch) — fetches/compiles treesitter parsers
 - `which-key.nvim` — popup listing available `<leader>` mappings as you type
 - `tokyonight.nvim` — colorscheme (cosmetic only; `lua/theme.lua`)
+- `grug-far.nvim` — project-wide search & replace UI (`lua/replace.lua`)
 
 Managed by `vim.pack`; lockfile: `nvim-pack-lock.json` (committed).
 
@@ -96,7 +97,9 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `<leader>sg` / `<leader>/` | live grep across all files |
 | `<leader>sw` | grep word under cursor |
 | `<leader>f/` / `<leader>s/` | native `:find` / `:grep` fallback |
-| `<leader>sr` / `<leader>sR` | replace word in file / across project (`:s` / grep + `:cdo`) |
+| `<leader>sr` / `<leader>sw` | project search & replace (grug-far) / prefilled with word under cursor |
+| `<leader>sR` (or visual `<leader>sr`) | grug-far scoped to current file / selection |
+| `<leader>sn` | quick single-file `:%s` (no UI, live preview) |
 | `<leader>xq` / `<leader>xl` | toggle quickfix / location list |
 | `<leader>xd` | diagnostics → quickfix |
 | `gd` `gD` `gy` | definition / declaration / type definition (other file → new tab) |
@@ -129,6 +132,7 @@ lua/treesitter.lua  parser install + native highlight attach
 lua/lsp.lua         diagnostics, LspAttach, vim.lsp.enable
 lua/git.lua         mini.diff + branch cache
 lua/picker.lua      mini.pick config + find/grep maps
+lua/replace.lua     grug-far project search & replace
 lua/statusline.lua  native statusline
 lua/tabs.lua        tab pinning / ordering / reorder
 lua/tabline.lua     native tabline

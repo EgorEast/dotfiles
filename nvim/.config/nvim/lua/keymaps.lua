@@ -100,30 +100,9 @@ map("n", "<leader>xD", function()
   vim.diagnostic.setloclist({ open = true })
 end, { desc = "Buffer diagnostics -> loclist" })
 
--- Search & replace (native :substitute with inccommand=split live preview)
+-- <leader>s (search / replace) group. Search maps are in picker.lua,
+-- replace maps (grug-far) are in replace.lua.
 map("n", "<leader>s", "", { desc = "Search / replace" })
-map(
-  "n",
-  "<leader>sr",
-  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-  { desc = "Replace word in file" }
-)
-map("x", "<leader>sr", [["zy:%s/<C-r>z//gI<Left><Left><Left>]], { desc = "Replace selection in file" })
--- Project-wide: grep for the word, then prefill :cdo so you just type the replacement.
-map("n", "<leader>sR", function()
-  local word = vim.fn.expand("<cword>")
-  if word == "" then
-    return
-  end
-  vim.cmd("silent grep " .. vim.fn.shellescape([[\b]] .. word .. [[\b]]))
-  if vim.fn.getqflist({ size = 0 }).size == 0 then
-    vim.notify("No project matches for " .. word, vim.log.levels.WARN)
-    return
-  end
-  vim.cmd("copen")
-  local keys = [[:cdo s/\<]] .. word .. [[\>//gc | update]] .. string.rep("<Left>", 11)
-  vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(keys, true, false, true), "n", false)
-end, { desc = "Replace word across project (grep + :cdo)" })
 
 -- LSP refactor / actions (these degrade to a notice when no server is attached)
 map("n", "<leader>r", "", { desc = "Rename" })

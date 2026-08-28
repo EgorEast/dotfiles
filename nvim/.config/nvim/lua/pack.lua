@@ -6,6 +6,7 @@
 --   nvim-treesitter  treesitter parser installer
 --   which-key.nvim   popup showing available <leader> mappings as you type
 --   tokyonight.nvim  colorscheme (cosmetic only)
+--   grug-far.nvim    project-wide search & replace UI (ripgrep-backed)
 
 -- Build/update hooks must be registered before vim.pack.add.
 vim.api.nvim_create_autocmd("PackChanged", {
@@ -29,6 +30,7 @@ vim.pack.add({
   { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
   { src = "https://github.com/folke/which-key.nvim" },
   { src = "https://github.com/folke/tokyonight.nvim" },
+  { src = "https://github.com/MagicDuck/grug-far.nvim" },
 })
 
 -- Plugin manager commands / keymaps (LazyVim-style: <leader>l = "plugins") -----
