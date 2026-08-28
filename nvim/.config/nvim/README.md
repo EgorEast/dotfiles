@@ -96,7 +96,7 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `<leader>fb` / `<leader>fh` / `<leader>fo` / `<leader>fr` | buffers / help / recent files / resume |
 | `<leader>sg` / `<leader>/` | live grep across all files |
 | `<leader>fw` | grep word under cursor |
-| `<A-h>` / `<A-i>` (in picker) | toggle hidden / ignored files |
+| `<C-h>` / `<C-g>` (in picker) | toggle hidden / ignored files (also shown in the picker's winbar) |
 | `<C-o>` / `<C-e>` (in picker) | add a glob filter (`*.lua`, `!**/test/**`; empty = clear) / grep regex↔plain |
 | `:SearchGlob <globs>` / `:SearchToggleHidden` / `:SearchToggleIgnored` / `:SearchFilters` | change / show the filters outside a picker |
 | `<leader>f/` / `<leader>s/` | native `:find` / `:grep` fallback |

@@ -1,15 +1,15 @@
 -- Fuzzy finding with mini.pick (same family as mini.diff, no dependencies).
 --
--- Filters, all changeable live from inside the picker (see the footer hint):
---   <A-h>  include hidden files (dotfiles)          default below
---   <A-i>  include .gitignore'd / .ignore'd files   default below
+-- Filters, changeable live from inside the picker (also shown in its winbar):
+--   <C-h>  toggle hidden files (dotfiles)
+--   <C-g>  toggle .gitignore'd / .ignore'd files
 --   <C-o>  add a glob filter, e.g.  *.lua   src/**   !**/test/**
 --          (enter an empty pattern to clear all glob filters)
 --   <C-e>  (grep only) toggle regex / plain matching
 local search = {
   hidden = false,
   ignored = false,
-  globs = {}, -- e.g. { "*.lua", "!**/node_modules/**" }
+  globs = {},
 }
 
 local ok, pick = pcall(require, "mini.pick")
@@ -44,58 +44,73 @@ local function suffix()
   return #s > 0 and (" [" .. table.concat(s, " ") .. "]") or ""
 end
 
-local function footer(kind)
-  local glob = "  <C-o> glob filter"
-  local method = kind == "grep" and "  <C-e> regex/plain" or ""
-  return (" <CR> open  <C-v/s/t> splits%s%s  <A-h> hidden  <A-i> ignored  <Tab> preview  <S-Tab> keys "):format(
-    glob,
-    method
-  )
-end
-
-local function win_config(kind)
-  return function()
-    local height = math.floor(0.65 * vim.o.lines)
-    local width = math.floor(0.75 * vim.o.columns)
-    return {
-      anchor = "NW",
-      height = height,
-      width = width,
-      row = math.floor(0.5 * (vim.o.lines - height)),
-      col = math.floor(0.5 * (vim.o.columns - width)),
-      border = "rounded",
-      footer = footer(kind),
-      footer_pos = "left",
-    }
-  end
-end
-
 pick.setup({
   mappings = { move_down = "<C-j>", move_up = "<C-k>" },
-  window = { config = win_config() },
+  window = {
+    config = function()
+      local height = math.floor(0.65 * vim.o.lines)
+      local width = math.floor(0.75 * vim.o.columns)
+      return {
+        anchor = "NW",
+        height = height,
+        width = width,
+        row = math.floor(0.5 * (vim.o.lines - height)),
+        col = math.floor(0.5 * (vim.o.columns - width)),
+        border = "rounded",
+      }
+    end,
+  },
 })
 
 vim.ui.select = pick.ui_select
 
+-- Hint line in the picker window (mini.pick owns the border, so use the winbar).
+vim.api.nvim_create_autocmd("User", {
+  pattern = "MiniPickStart",
+  group = vim.api.nvim_create_augroup("cfg_picker_hint", { clear = true }),
+  callback = function()
+    local st = pick.get_picker_state and pick.get_picker_state()
+    local win = st and st.windows and st.windows.main
+    if not win or not vim.api.nvim_win_is_valid(win) then
+      return
+    end
+    local name = (pick.get_picker_opts().source or {}).name or ""
+    local hint = "%#Comment#  <C-h> hidden  <C-g> ignored  <C-o> glob"
+    if name:match("^Grep") then
+      hint = hint .. "  <C-e> regex/plain"
+    end
+    hint = hint .. "   <Tab> preview  <S-Tab> all keys  <Esc> close "
+    vim.wo[win].winbar = hint
+  end,
+})
+
 local b = pick.builtin
 local map = vim.keymap.set
 
--- Shared live-filter actions: rewrite state, relaunch the same picker.
+-- Live-filter actions passed to each picker. Rebinds the two least-used mini.pick
+-- scroll/jump keys (<C-h> scroll-left, <C-g> move-to-start) to the toggles.
 local function filter_maps(relaunch)
-  local function toggle(field, char)
-    return {
-      char = char,
+  return {
+    scroll_left = "",
+    move_start = "",
+    toggle_hidden = {
+      char = "<C-h>",
       func = function()
-        search[field] = not search[field]
+        search.hidden = not search.hidden
         write_rg_conf()
         vim.schedule(relaunch)
         return true
       end,
-    }
-  end
-  return {
-    toggle_hidden = toggle("hidden", "<A-h>"),
-    toggle_ignored = toggle("ignored", "<A-i>"),
+    },
+    toggle_ignored = {
+      char = "<C-g>",
+      func = function()
+        search.ignored = not search.ignored
+        write_rg_conf()
+        vim.schedule(relaunch)
+        return true
+      end,
+    },
     add_glob = {
       char = "<C-o>",
       func = function()
@@ -131,7 +146,6 @@ local function pick_files()
   b.cli({ command = files_command() }, {
     source = { name = "Files" .. suffix() },
     mappings = filter_maps(pick_files),
-    window = { config = win_config("files") },
   })
 end
 
@@ -139,15 +153,14 @@ end
 local function pick_grep()
   b.grep_live({ globs = vim.deepcopy(search.globs) }, {
     source = { name = "Grep" .. suffix() },
-    mappings = filter_maps(pick_grep), -- <C-o> here re-prompts; native add-glob is <C-g>-less
-    window = { config = win_config("grep") },
+    mappings = filter_maps(pick_grep),
   })
 end
 
 local function pick_grep_word()
   b.grep(
     { pattern = vim.fn.expand("<cword>"), globs = vim.deepcopy(search.globs) },
-    { source = { name = "Grep word" .. suffix() }, window = { config = win_config("grep") } }
+    { source = { name = "Grep word" .. suffix() } }
   )
 end
 
@@ -176,7 +189,7 @@ map("n", "<leader>fg", pick_grep, { desc = "Grep (live, all files)" })
 map("n", "<leader>/", pick_grep, { desc = "Grep (live, all files)" })
 map("n", "<leader>fw", pick_grep_word, { desc = "Grep word under cursor" })
 
--- Commands for changing the filters outside a picker -------------------------
+-- Filter commands for use outside a picker -----------------------------------
 vim.api.nvim_create_user_command("SearchToggleHidden", function()
   search.hidden = not search.hidden
   write_rg_conf()
