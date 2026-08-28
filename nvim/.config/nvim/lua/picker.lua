@@ -65,22 +65,30 @@ pick.setup({
 vim.ui.select = pick.ui_select
 
 -- Hint line in the picker window (mini.pick owns the border, so use the winbar).
+local function set_picker_hint()
+  local st = pick.get_picker_state and pick.get_picker_state()
+  local win = st and st.windows and st.windows.main
+  if not win or not vim.api.nvim_win_is_valid(win) then
+    return
+  end
+  local name = (pick.get_picker_opts().source or {}).name or ""
+  local hint = "%#Comment#  <C-h> hidden  <C-g> ignored  <C-o> glob"
+  if name:match("^Grep") then
+    hint = hint .. "  <C-e> regex/plain"
+  end
+  hint = hint .. "   <Tab> preview  <S-Tab> all keys  <Esc> close "
+  vim.wo[win].winbar = hint
+  pcall(vim.api.nvim__redraw, { win = win, flush = true })
+end
+
 vim.api.nvim_create_autocmd("User", {
   pattern = "MiniPickStart",
   group = vim.api.nvim_create_augroup("cfg_picker_hint", { clear = true }),
   callback = function()
-    local st = pick.get_picker_state and pick.get_picker_state()
-    local win = st and st.windows and st.windows.main
-    if not win or not vim.api.nvim_win_is_valid(win) then
-      return
-    end
-    local name = (pick.get_picker_opts().source or {}).name or ""
-    local hint = "%#Comment#  <C-h> hidden  <C-g> ignored  <C-o> glob"
-    if name:match("^Grep") then
-      hint = hint .. "  <C-e> regex/plain"
-    end
-    hint = hint .. "   <Tab> preview  <S-Tab> all keys  <Esc> close "
-    vim.wo[win].winbar = hint
+    set_picker_hint()
+    -- grep_live renders lazily with 0 items; re-assert once the loop settles
+    vim.schedule(set_picker_hint)
+    vim.defer_fn(set_picker_hint, 50)
   end,
 })
 
