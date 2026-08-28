@@ -135,6 +135,29 @@ map("n", "<leader>cA", function()
     context = { only = { "source" }, diagnostics = {} },
   })
 end, { desc = "Source action (whole file)" })
+
+-- Quick source actions (auto-apply when there is a single match).
+local function source_action(kinds, desc)
+  return function()
+    vim.lsp.buf.code_action({
+      apply = true,
+      context = { only = kinds, diagnostics = {} },
+    })
+  end
+end
+map("n", "<leader>cu", source_action(
+  { "source.removeUnused", "source.removeUnusedImports", "source.removeUnused.ts" },
+  "Remove unused code"
+), { desc = "Remove unused code" })
+map("n", "<leader>cM", source_action(
+  { "source.addMissingImports", "source.addMissingImports.ts" },
+  "Add missing imports"
+), { desc = "Add missing imports" })
+map("n", "<leader>co", source_action(
+  { "source.organizeImports", "source.organizeImports.ts" },
+  "Organize imports"
+), { desc = "Organize imports" })
+
 map("n", "<leader>cf", function()
   vim.lsp.buf.format({ async = true })
 end, { desc = "Format buffer (LSP)" })

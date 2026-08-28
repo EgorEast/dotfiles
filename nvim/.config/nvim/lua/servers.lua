@@ -110,9 +110,9 @@ vim.api.nvim_create_user_command("MasonUpgrade", function()
   end)
 end, { desc = "Update all installed mason packages" })
 
-vim.keymap.set("n", "<leader>cm", "<cmd>Mason<cr>", { desc = "Mason (UI: C check, U update)" })
-vim.keymap.set("n", "<leader>cM", "<cmd>MasonEnsure<cr>", { desc = "Mason: install missing tools" })
-vim.keymap.set("n", "<leader>cu", "<cmd>MasonUpgrade<cr>", { desc = "Mason: upgrade all packages" })
+vim.keymap.set("n", "<leader>cm", "<cmd>Mason<cr>", { desc = "Mason UI (C check, U update)" })
+vim.keymap.set("n", "<leader>lm", "<cmd>MasonEnsure<cr>", { desc = "Mason: install missing tools" })
+vim.keymap.set("n", "<leader>lM", "<cmd>MasonUpgrade<cr>", { desc = "Mason: upgrade all packages" })
 
 -- First-run automation: bootstrap any missing tools shortly after startup.
 vim.defer_fn(function()

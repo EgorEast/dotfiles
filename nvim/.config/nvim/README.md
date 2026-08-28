@@ -45,8 +45,8 @@ Updating:
 | `<leader>lL` / `<leader>lc` | list plugins / `:checkhealth vim.pack` |
 | `<leader>lp` / `:TSUpdate` | rebuild treesitter parsers |
 | `<leader>cm` / `:Mason` | Mason UI (`C` check, `U` update, `X` uninstall) |
-| `<leader>cM` / `:MasonEnsure` | install missing tools from the config's list |
-| `<leader>cu` / `:MasonUpgrade` | update every installed Mason package |
+| `<leader>lm` / `:MasonEnsure` | install missing tools from the config's list |
+| `<leader>lM` / `:MasonUpgrade` | update every installed Mason package |
 
 After updating, commit `nvim-pack-lock.json` to pin the new versions.
 
@@ -99,6 +99,7 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `grr` `gri` `grt` `gO` | native LSP: refs / impl / type def / document symbols |
 | `<leader>rr` / `<leader>cr` | rename symbol |
 | `<leader>ca` / `<leader>cA` | code action / source action (whole file) |
+| `<leader>cu` / `<leader>cM` / `<leader>co` | remove unused / add missing imports / organize imports |
 | `<leader>cf` / `<leader>ci` / `<leader>cl` | format / toggle inlay hints / run code lens |
 | `<leader>cd` / `<leader>ud` | line diagnostics float / toggle inline ⇄ expanded style |
 | `]d` / `[d`, `<C-w>d` | diagnostic nav / float (native) |
