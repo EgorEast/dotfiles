@@ -114,7 +114,8 @@ Optional sanity check: `:checkhealth vim.lsp vim.pack vim.treesitter`.
 | `<leader>rr` / `<leader>cr` | rename symbol |
 | `<leader>ca` / `<leader>cA` | code action / source action (whole file) |
 | `<leader>cu` / `<leader>cM` / `<leader>co` | remove unused / add missing imports / organize imports |
-| `<leader>cf` / `<leader>ci` / `<leader>cl` | format / toggle inlay hints / run code lens |
+| `<leader>cf` / `<leader>ci` / `<leader>cl` | format buffer / toggle inlay hints / run code lens |
+| `<leader>uf` / `<leader>uF` | toggle format-on-save (buffer / global) |
 | `<leader>cd` / `<leader>ud` | line diagnostics float / toggle inline ⇄ expanded style |
 | `]d` / `[d`, `<C-w>d` | diagnostic nav / float (native) |
 | `]h` / `[h`, `gh` / `gH` | git hunk nav / apply / reset (mini.diff) |
@@ -135,6 +136,7 @@ lua/pack.lua        vim.pack + build hooks
 lua/servers.lua     mason installer + PATH + :MasonEnsure
 lua/treesitter.lua  parser install + native highlight attach
 lua/lsp.lua         diagnostics, LspAttach, vim.lsp.enable
+lua/format.lua      format-on-save (prettier/stylua/shfmt, LSP fallback)
 lua/git.lua         mini.diff + branch cache
 lua/picker.lua      mini.pick config + find/grep maps
 lua/replace.lua     grug-far project search & replace

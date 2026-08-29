@@ -147,9 +147,7 @@ map("n", "<leader>co", source_action(
   "Organize imports"
 ), { desc = "Organize imports" })
 
-map("n", "<leader>cf", function()
-  vim.lsp.buf.format({ async = true })
-end, { desc = "Format buffer (LSP)" })
+-- <leader>cf (format) and format-on-save live in lua/format.lua.
 
 -- Jumplist: <C-o>/<C-i> jump in place within the same file, but a jump to a
 -- different file focuses that file's tab (opening one if needed) and leaves the

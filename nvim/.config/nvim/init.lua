@@ -22,6 +22,7 @@ for _, module in ipairs({
   "servers",
   "treesitter",
   "lsp",
+  "format",
   "git",
   "picker",
   "replace",
