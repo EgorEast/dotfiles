@@ -44,8 +44,36 @@ local function suffix()
   return #s > 0 and (" [" .. table.concat(s, " ") .. "]") or ""
 end
 
+-- Multi-select like fzf-lua:
+--   <Tab>   mark / unmark the item under the cursor
+--   <CR>    with items marked -> send them to the quickfix list (otherwise open)
+--   <C-q>   send marked items (or every current match, if none marked) to quickfix
+local function choose_marked_or_open(item)
+  local m = pick.get_picker_matches()
+  if m and m.marked and #m.marked > 0 then
+    pick.default_choose_marked(m.marked)
+    return false
+  end
+  return pick.default_choose(item)
+end
+
 pick.setup({
-  mappings = { move_down = "<C-j>", move_up = "<C-k>" },
+  mappings = {
+    move_down = "<C-j>",
+    move_up = "<C-k>",
+    mark = "<Tab>",
+    toggle_preview = "<C-p>",
+    send_to_qflist = {
+      char = "<C-q>",
+      func = function()
+        local m = pick.get_picker_matches()
+        local items = (m.marked and #m.marked > 0) and m.marked or m.all
+        pick.default_choose_marked(items or {})
+        return true
+      end,
+    },
+  },
+  source = { choose = choose_marked_or_open },
   window = {
     config = function()
       local height = math.floor(0.65 * vim.o.lines)
@@ -76,7 +104,7 @@ local function set_picker_hint()
   if name:match("^Grep") then
     hint = hint .. "  <C-e> regex/plain"
   end
-  hint = hint .. "   <Tab> preview  <S-Tab> all keys  <Esc> close "
+  hint = hint .. "   <Tab> mark  <C-q> quickfix  <C-p> preview  <Esc> close "
   vim.wo[win].winbar = hint
   pcall(vim.api.nvim__redraw, { win = win, flush = true })
 end
@@ -189,7 +217,7 @@ map("n", "<leader>fo", function()
   local items = vim.tbl_filter(function(p)
     return vim.fn.filereadable(p) == 1
   end, vim.v.oldfiles)
-  pick.start({ source = { items = items, name = "Recent files", choose = pick.default_choose } })
+  pick.start({ source = { items = items, name = "Recent files" } })
 end, { desc = "Recent files" })
 
 map("n", "<leader>sg", pick_grep, { desc = "Grep (live, all files)" })
