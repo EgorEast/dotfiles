@@ -10,6 +10,7 @@
     "opencode-vibeguard",
     "@tarquinen/opencode-dcp@latest",
     "@vymalo/opencode-browser",
+    "opencode-plugin-openspec"
   ],
   // "model": "anthropic/claude-sonnet-4-5",
   "autoupdate": true,
