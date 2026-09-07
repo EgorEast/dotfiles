@@ -37,8 +37,6 @@
     "coder": {
       "model": "opencode-go/deepseek-v4-flash",
       "temperature": 0.2,
-      "reasoningEffort": "high",
-			"textVerbosity": "low",
 			"permission": {
 				"context7_*": "deny",
 				"exa_*": "deny",
@@ -56,8 +54,6 @@
     "explore": {
       "model": "opencode-go/deepseek-v4-flash",
       "temperature": 0.2,
-      "reasoningEffort": "low",
-			"textVerbosity": "low",
 			"permission": {
 				"edit": "deny",
 				"write": "deny",
@@ -152,8 +148,6 @@
     "scribe": {
       "model": "opencode-go/deepseek-v4-flash",
       "temperature": 1,
-      "reasoningEffort": "low",
-			"textVerbosity": "high",
 			"permission": {
 				"bash": {
 					"*": "deny"
