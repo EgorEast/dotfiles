@@ -513,9 +513,9 @@ exec --no-startup-id /usr/bin/dunst
 # Autostart apps as you like
 exec --no-startup-id bash -c 'pgrep -x syncthing >/dev/null 2>&1 || exec syncthing serve --no-browser --logflags=3'
 exec --no-startup-id sleep 5 && ~/.config/i3/scripts/syncthing-watcher
-exec --no-startup-id crow
+# exec --no-startup-id crow
 exec --no-startup-id element-desktop --hidden
-exec --no-startup-id ollama serve
+# exec --no-startup-id ollama serve
 exec --no-startup-id sleep 2 && $terminal
 # exec --no-startup-id sleep 2 && $vpn
 exec --no-startup-id sleep 3 && $passwordManager
