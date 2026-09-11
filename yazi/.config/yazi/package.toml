@@ -20,7 +20,7 @@ hash = "da4534745930e827a44d4585bbd965eb"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:chmod"
-rev = "4dc7f1b"
+rev = "58c4f4e"
 hash = "87472b05a8c420100f6a2b9cde1e7746"
 
 [[plugin.deps]]
@@ -30,22 +30,22 @@ hash = "6ea5f37c7f219671ec504cb8311f889d"
 
 [[plugin.deps]]
 use = "boydaihungst/restore"
-rev = "7bfcfcb"
-hash = "bbb1569978e6d2b3e8343c6ca08a4ea6"
+rev = "864dd05"
+hash = "3070b579618c4831f5d7ca4293c1c275"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:git"
-rev = "4dc7f1b"
+rev = "58c4f4e"
 hash = "5bb0bfab901d3601c370eafdd66edd31"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:full-border"
-rev = "4dc7f1b"
+rev = "58c4f4e"
 hash = "f281261ff04ad7ec867c3f802a50835f"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:piper"
-rev = "4dc7f1b"
+rev = "58c4f4e"
 hash = "45a533508a9840cc5a10cf6129f63e6a"
 
 [[plugin.deps]]
@@ -60,7 +60,7 @@ hash = "421263a8558fbd2fdb07a75f074cc6e3"
 
 [[plugin.deps]]
 use = "yazi-rs/plugins:types"
-rev = "4dc7f1b"
+rev = "58c4f4e"
 hash = "d368d5a6a72657e1c0e7ee7340dcea8c"
 
 [[flavor.deps]]
