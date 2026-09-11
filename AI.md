@@ -46,7 +46,7 @@ Scribe (MiniMax-M3)
 бесплатный - BigPickle (opencode Zen)
 средний по цене в go - Qwen3.7 Plus
 
-go_glm_and_deepseek - GLM-5.2 (opencode Go) + DeepSeek V4 Flash (opencode Go)
-go_glm_and_free - GLM-5.2 (opencode Go) + BigPickle (opencode Zen)
-zai_and_free - GLM-5.3 (z.AI) + BigPickle (opencode Zen)
-zai_and_go_deepseek - GLM-5.3 (z.AI) + DeepSeek V4 Flash (opencode Go)
+go_glm_and_deepseek - GLM-5.3-Flash (opencode Go) + DeepSeek V4 Flash (opencode Go)
+go_glm_and_free - GLM-5.3-Flash (opencode Go) + BigPickle (opencode Zen)
+zai_and_free - GLM-5.3-Flash (z.AI) + BigPickle (opencode Zen)
+zai_and_go_deepseek - GLM-5.3-Flash (z.AI) + DeepSeek V4 Flash (opencode Go)
