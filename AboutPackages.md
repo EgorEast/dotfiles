@@ -182,8 +182,6 @@
 - [galculator](https://github.com/galculator/galculator) – GTK calculator.
 - [glow](https://github.com/charmbracelet/glow) – TUI Markdown viewer.
 - [gsimplecal](https://dmedvinsky.github.io/gsimplecal/) – Simple popup calendar.
-- [hledger-ui](https://hledger.org/ui.html) – UI for hledger.
-- [hledger](https://github.com/simonmichael/hledger) – Robust, intuitive plain text accounting.
 - [khal](https://github.com/pimutils/khal) – CLI calendar application.
 - [libqalculate](https://github.com/Qalculate/libqalculate) - TUI calculator.
 - [libreoffice](https://wiki.archlinux.org/title/LibreOffice) – Powerful office suite that is fully compatible with 32/64-bit systems.
