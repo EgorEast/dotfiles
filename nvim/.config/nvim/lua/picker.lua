@@ -44,9 +44,71 @@ local function suffix()
   return #s > 0 and (" [" .. table.concat(s, " ") .. "]") or ""
 end
 
+-- Resolve the file/buffer name behind a picker item, per the string/table
+-- formats documented at `:h MiniPick-source.items-common`.
+local function item_target_name(item)
+  if type(item) == "table" then
+    local buf_id = item.bufnr or item.buf_id or item.buf
+    if type(buf_id) == "number" and vim.api.nvim_buf_is_valid(buf_id) then
+      return vim.api.nvim_buf_get_name(buf_id)
+    end
+    return item.path
+  end
+  if type(item) ~= "string" then
+    return nil
+  end
+  local buf_id = tonumber(item)
+  if buf_id and vim.api.nvim_buf_is_valid(buf_id) then
+    return vim.api.nvim_buf_get_name(buf_id)
+  end
+  -- "path\0lnum\0col\0text" (grep results) -> keep the path part.
+  local from = item:match("()%z")
+  local path = from and item:sub(1, from - 1) or item
+  if path:sub(1, 1) == "~" then
+    path = (vim.uv or vim.loop).os_homedir() .. path:sub(2)
+  end
+  return path
+end
+
+local function find_open_window(full_path)
+  for _, tabpage in ipairs(vim.api.nvim_list_tabpages()) do
+    for _, win in ipairs(vim.api.nvim_tabpage_list_wins(tabpage)) do
+      local name = vim.api.nvim_buf_get_name(vim.api.nvim_win_get_buf(win))
+      if name ~= "" and vim.fn.fnamemodify(name, ":p") == full_path then
+        return win
+      end
+    end
+  end
+end
+
+-- Open the chosen item in a tab instead of replacing the current window: jump
+-- to the tab/window that already shows it (at the right cursor spot), or open
+-- a new tab otherwise. Done via `vim.schedule` so it runs only once the
+-- picker has fully closed itself -- doing it inline would have the picker's
+-- own `H.picker_stop` (which refocuses/closes windows right after `choose`
+-- returns) stomp on the tab/window switch made here. Same trick mini.pick's
+-- own `help` picker uses for its choose (see its "next event loop" comment).
+local function choose_in_tab(item)
+  vim.schedule(function()
+    local name = item_target_name(item)
+    local full = name and name ~= "" and vim.fn.fnamemodify(name, ":p") or nil
+    local win = full and find_open_window(full)
+
+    if win then
+      vim.api.nvim_set_current_tabpage(vim.api.nvim_win_get_tabpage(win))
+      vim.api.nvim_set_current_win(win)
+    else
+      vim.cmd("tabnew")
+    end
+    pick.default_choose(item)
+  end)
+  return false
+end
+
 -- Multi-select like fzf-lua:
 --   <Tab>   mark / unmark the item under the cursor
---   <CR>    with items marked -> send them to the quickfix list (otherwise open)
+--   <CR>    with items marked -> send them to the quickfix list (otherwise
+--           open in a new tab, or jump to the tab already showing it)
 --   <C-q>   send marked items (or every current match, if none marked) to quickfix
 local function choose_marked_or_open(item)
   local m = pick.get_picker_matches()
@@ -54,7 +116,7 @@ local function choose_marked_or_open(item)
     pick.default_choose_marked(m.marked)
     return false
   end
-  return pick.default_choose(item)
+  return choose_in_tab(item)
 end
 
 pick.setup({
