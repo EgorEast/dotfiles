@@ -36,6 +36,8 @@ local ensure = {
   "yaml",
   "dart",
   "astro",
+  "swift",
+  "kotlin",
 }
 
 -- Install anything missing (async, no-op if already present). Building parsers

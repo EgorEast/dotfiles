@@ -22,8 +22,9 @@ mason.setup({
   },
 })
 
--- Tools this config expects. Dart's LSP ships with the Flutter/Dart SDK, so it is
--- intentionally absent here. tree-sitter-cli is needed to build parsers.
+-- Tools this config expects. Dart's LSP ships with the Flutter/Dart SDK and
+-- Swift's (sourcekit-lsp) with the Swift toolchain, so both are intentionally
+-- absent here. tree-sitter-cli is needed to build parsers.
 local ensure = {
   "tree-sitter-cli",
   "lua-language-server",
@@ -41,6 +42,7 @@ local ensure = {
   "taplo",
   "bash-language-server",
   "marksman",
+  "kotlin-language-server",
   "shfmt",
   "shellcheck",
   "stylua",
