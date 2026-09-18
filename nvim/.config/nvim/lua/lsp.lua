@@ -159,5 +159,5 @@ vim.lsp.enable({
   "marksman",
   "dartls",
   "sourcekit",
-  "kotlin_language_server",
+  "kotlin_lsp",
 })

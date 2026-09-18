@@ -42,7 +42,7 @@ local ensure = {
   "taplo",
   "bash-language-server",
   "marksman",
-  "kotlin-language-server",
+  "kotlin-lsp",
   "shfmt",
   "shellcheck",
   "stylua",
