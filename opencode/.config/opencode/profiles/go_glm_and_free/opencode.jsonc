@@ -167,7 +167,7 @@
 			}
     },
     "reviewer": {
-      "model": "opencode-go/glm-5.3-flash",
+      "model": "opencode-go/glm-5.3",
       "temperature": 0.1,
       "reasoningEffort": "high",
 			// "textVerbosity": "medium",

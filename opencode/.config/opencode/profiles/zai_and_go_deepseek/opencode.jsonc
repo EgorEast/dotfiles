@@ -161,7 +161,7 @@
 			}
     },
     "reviewer": {
-      "model": "zai-coding-plan/glm-5.3-flash",
+      "model": "zai-coding-plan/glm-5.3",
       "temperature": 0.1,
       "reasoningEffort": "high",
 			"textVerbosity": "medium",
