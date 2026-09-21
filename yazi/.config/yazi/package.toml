@@ -50,8 +50,8 @@ hash = "d1e0499cae5f3aeb628c267616d4b682"
 
 [[plugin.deps]]
 use = "DreamMaoMao/fg"
-rev = "b9fb819"
-hash = "7d62f2eae04f77d13a21917c169b151b"
+rev = "629ee22"
+hash = "a8957dde2e30c23a345883cf9e1e9217"
 
 [[plugin.deps]]
 use = "AnirudhG07/plugins-yazi:copy-file-contents"
