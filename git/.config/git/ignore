@@ -1,0 +1,3 @@
+# Claude Code / oh-my-claudecode usage-cache lock files
+.usage-cache-*.json
+.usage-cache-*.json.lock

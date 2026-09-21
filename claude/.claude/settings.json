@@ -1,4 +1,7 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "hooks": {
     "Notification": [
       {
@@ -21,13 +24,26 @@
       }
     ]
   },
+  "statusLine": {
+    "type": "command",
+    "command": "node ${CLAUDE_CONFIG_DIR:-$HOME/.claude}/hud/omc-hud.mjs"
+  },
   "enabledPlugins": {
     "figma@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "oh-my-claudecode@omc": true
+  },
+  "extraKnownMarketplaces": {
+    "omc": {
+      "source": {
+        "source": "git",
+        "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
+      }
+    }
   },
   "syntaxHighlightingDisabled": false,
   "theme": "custom:tokyo-night-ansi",
   "editorMode": "normal",
-  "agentPushNotifEnabled": true,
-  "inputNeededNotifEnabled": true
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true
 }

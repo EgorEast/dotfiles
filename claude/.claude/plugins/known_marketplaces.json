@@ -6,5 +6,13 @@
     },
     "installLocation": "/home/egoreast/.claude/plugins/marketplaces/claude-plugins-official",
     "lastUpdated": "2026-05-15T09:14:10.442Z"
+  },
+  "omc": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
+    },
+    "installLocation": "/home/egoreast/.claude/plugins/marketplaces/omc",
+    "lastUpdated": "2026-09-21T07:36:11.902Z"
   }
 }
