@@ -2,16 +2,72 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     // "@mohak34/opencode-notifier",
-    "opencode-gemini-auth@latest",
-    "opencode-openai-codex-auth@latest",
-    "@nick-vi/opencode-type-inject",
     "@plannotator/opencode@latest",
-    "opencode-vibeguard",
-    "@vymalo/opencode-browser",
-    "opencode-plugin-openspec"
+    // Removed (not `autoupdate`d away): opencode-gemini-auth@latest,
+    // opencode-openai-codex-auth@latest, @nick-vi/opencode-type-inject,
+    // opencode-vibeguard, @vymalo/opencode-browser, opencode-plugin-openspec.
+    // All fail with "Plugin must export a default definition with an id and
+    // an effect or setup function" — still on the V1 plugin API, `opencode
+    // plugin update` confirms no newer version exists yet. Same situation as
+    // @tarquinen/opencode-dcp in slovo-propovedi-mobile's .opencode/README.md:
+    // re-add once each is ported to V2.
   ],
   // "model": "anthropic/claude-sonnet-4-5",
   "autoupdate": true,
+  // agents/permissions below: ported from slovo-propovedi-mobile's
+  // .opencode/opencode.jsonc (thin base) + .opencode/agents/*.md, as a global
+  // fallback for projects with no .opencode/ of their own. build/coder/
+  // researcher/reviewer/scribe hold their prompts/permissions in
+  // ~/.config/opencode/agents/*.md frontmatter — NOT here, matching that
+  // project's split. No model wiring here either — the profile plugin
+  // (plugins/profile/index.ts) applies .opencode-style model profiles from
+  // ~/.config/opencode/profiles/*.json at runtime.
+  "agents": {
+    "plan": {
+      "permissions": [
+        { "action": "edit", "resource": "*", "effect": "deny" },
+        { "action": "shell", "resource": "*", "effect": "deny" },
+        { "action": "subagent", "resource": "*", "effect": "allow" },
+        { "action": "worktree_*", "resource": "*", "effect": "allow" }
+      ]
+    },
+    "explore": {
+      "permissions": [
+        { "action": "edit", "resource": "*", "effect": "deny" },
+        { "action": "plan_read", "resource": "*", "effect": "deny" },
+        { "action": "todoread", "resource": "*", "effect": "deny" },
+        { "action": "shell", "resource": "*", "effect": "deny" },
+        { "action": "shell", "resource": "ls *", "effect": "allow" },
+        { "action": "shell", "resource": "tree *", "effect": "allow" },
+        { "action": "shell", "resource": "pwd", "effect": "allow" },
+        { "action": "shell", "resource": "cat *", "effect": "allow" },
+        { "action": "shell", "resource": "head *", "effect": "allow" },
+        { "action": "shell", "resource": "tail *", "effect": "allow" },
+        { "action": "shell", "resource": "wc *", "effect": "allow" },
+        { "action": "shell", "resource": "file *", "effect": "allow" },
+        { "action": "shell", "resource": "stat *", "effect": "allow" },
+        { "action": "shell", "resource": "grep *", "effect": "allow" },
+        { "action": "shell", "resource": "rg *", "effect": "allow" },
+        { "action": "shell", "resource": "find *", "effect": "allow" },
+        { "action": "shell", "resource": "git status*", "effect": "allow" },
+        { "action": "shell", "resource": "git log*", "effect": "allow" },
+        { "action": "shell", "resource": "git diff*", "effect": "allow" },
+        { "action": "shell", "resource": "git show*", "effect": "allow" },
+        { "action": "shell", "resource": "git blame*", "effect": "allow" },
+        { "action": "shell", "resource": "git branch*", "effect": "allow" },
+        { "action": "shell", "resource": "git ls-files*", "effect": "allow" },
+        { "action": "shell", "resource": "uname*", "effect": "allow" },
+        { "action": "shell", "resource": "hostname", "effect": "allow" },
+        { "action": "shell", "resource": "whoami", "effect": "allow" },
+        { "action": "shell", "resource": "which *", "effect": "allow" },
+        { "action": "shell", "resource": "realpath *", "effect": "allow" }
+      ]
+    }
+  },
+  "permissions": [
+    { "action": "subagent", "resource": "*", "effect": "deny" },
+    { "action": "worktree_*", "resource": "*", "effect": "deny" }
+  ],
   "provider": {
     // "anthropic": {
     //   "options": {
