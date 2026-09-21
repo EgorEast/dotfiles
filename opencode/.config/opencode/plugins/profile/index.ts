@@ -6,7 +6,7 @@
  * of this plugin as the source of truth there — see that project's
  * `.opencode/plugins/profile/index.ts` for the full design rationale
  * (mode-based agent registry pinning, no TUI dialog, etc). This file mirrors
- * it, with two differences:
+ * it, with four differences:
  *
  * 1. profilesDir is resolved from THIS FILE's own location (import.meta.dir),
  *    not from ctx.location.directory — a project-relative path would look
@@ -25,11 +25,29 @@
  *    not from a hardcoded list — unlike the mobile copy, this file runs
  *    against whichever project happens to be using it as a fallback, and
  *    different projects can have different custom-agent layouts.
+ * 4. Plugin id is "profile-global", not "profile" — a global and a
+ *    project-local plugin sharing one id are both flagged failed by the
+ *    plugin host itself, before setup() even runs (see the id comment below).
+ *
+ * Model failover (adaptive fallback on quota/rate-limit errors) is ported
+ * verbatim from the mobile copy's failover.ts/shared.ts. Its state/log files
+ * stay project-relative (.opencode/profile-fallback.*), matching the
+ * per-project agent frontmatter it rewrites, and it is mounted only after the
+ * early-return guard above has decided this instance is the active one.
  */
 
 import * as fs from "node:fs/promises"
 import * as path from "node:path"
-import { Model, Plugin } from "@opencode/plugin"
+import { Plugin } from "@opencode/plugin"
+import { installFailover, resolveAgentModel } from "./failover"
+import {
+  formatRef,
+  formatValue,
+  isMissingFileError,
+  parseModelRef,
+  toMessage,
+  type ModelRef,
+} from "./shared"
 
 /** This file's own directory — .../plugins/profile — independent of the current project. */
 const PLUGIN_DIR = import.meta.dir
@@ -52,37 +70,9 @@ const PROFILE_AGENTS = ["plan", "build", "researcher", "coder", "explore", "scri
  */
 const SUBAGENT_IDS = new Set<string>(PROFILE_AGENTS.filter((id) => id !== "plan" && id !== "build"))
 
-/** A parsed "provider/model[#variant]" reference — the canonical Model.Ref, trusted after the boundary. */
-type ModelRef = Model.Ref
-
 interface ProfileData {
   primary: ModelRef
   agents: Record<string, ModelRef>
-}
-
-function toMessage(error: unknown): string {
-  return error instanceof Error ? error.message : String(error)
-}
-
-/** Render a ModelRef back to its "provider/model[#variant]" string form. */
-function formatRef(ref: ModelRef): string {
-  return ref.variant ? `${ref.providerID}/${ref.id}#${ref.variant}` : `${ref.providerID}/${ref.id}`
-}
-
-/** Human-readable rendering of an arbitrary value for error messages. */
-function formatValue(value: unknown): string {
-  if (typeof value === "string") return `"${value}"`
-  if (value === null) return "null"
-  if (typeof value === "object") return JSON.stringify(value) ?? String(value)
-  return String(value)
-}
-
-/**
- * Parse "provider/model#variant" into the canonical Model.Ref (Law 4: Fail Fast).
- * Throws for malformed values; callers add profile/field context.
- */
-function parseModelRef(raw: string): ModelRef {
-  return Model.Ref.parse(raw)
 }
 
 /** Wrap parseModelRef so malformed values carry the profile/field location. */
@@ -132,11 +122,6 @@ async function listProfiles(profilesDir: string): Promise<string[]> {
     .filter((entry) => entry.endsWith(".json"))
     .map((entry) => entry.replace(/\.json$/, ""))
     .sort()
-}
-
-/** True when the error means "file does not exist on disk". */
-function isMissingFileError(error: unknown): boolean {
-  return typeof error === "object" && error !== null && "code" in error && error.code === "ENOENT"
 }
 
 /** True when the given directory exists (any type — used for the local-override check). */
@@ -299,16 +284,36 @@ export default Plugin.define({
       }
     }
 
+    // Failover is mounted before the registry transform so a persisted overlay
+    // is re-applied (and the module's overlay state recovered) before the base
+    // transform below can read it via resolveAgentModel. deps.directory is the
+    // CURRENT project, so the state/log files stay project-relative — failover
+    // rewrites that project's agent frontmatter, so its state must be per
+    // project too.
+    const failover = await installFailover(ctx, {
+      directory: ctx.location.directory,
+      getActiveProfile: () => activeProfile,
+      writeAgentModelFrontmatter: (agentId, modelRef) =>
+        writeAgentModelFrontmatter(agentsDir, agentId, modelRef),
+      applyProfilePins: (profile) =>
+        applyMarkdownFrontmatterPins(agentsDir, profile, markdownSubagentIds),
+      agentIds: PROFILE_AGENTS,
+      markdownAgentIds: markdownSubagentIds,
+      registryAgentIds: registrySubagentIds,
+      warn,
+    })
+
     // Only agents with no .opencode/agents/<id>.md file go through this path
     // — see classifySubagents for why: a registry pin on a markdown-defined
     // agent gets silently discarded once its own frontmatter gets
     // (re-)applied, so those are pinned via applyMarkdownFrontmatterPins
-    // instead.
+    // instead. resolveAgentModel makes the effective model overlay-aware (a
+    // live failover override wins over the profile value).
     await ctx.agent.transform((editor) => {
       if (!activeProfile) return
 
       for (const agentId of registrySubagentIds) {
-        const modelRef = activeProfile.agents[agentId]
+        const modelRef = resolveAgentModel(activeProfile, agentId)
         if (!modelRef) continue
         const agent = editor.get(agentId)
         if (!agent) {
@@ -392,6 +397,9 @@ export default Plugin.define({
 
       activeProfile = profile
       activeProfileName = name
+      // A manual profile switch supersedes any failover overlay: clear it
+      // (delete the state file, dispose pins, log reset) before re-applying.
+      await failover.reset()
       await ctx.storage.set(STORAGE_KEY, name)
       const frontmatterErrors = await applyMarkdownFrontmatterPins(agentsDir, profile, markdownSubagentIds)
       await ctx.agent.reload()
@@ -436,6 +444,16 @@ export default Plugin.define({
         },
       })
 
+      editor.add({
+        name: "profile-failover-test",
+        description:
+          'Simulate a quota error for a model (default: current session model) and run the failover path; prefix with "dry" to rehearse without applying.',
+        async execute({ sessionID, prompt }) {
+          const text = await failover.runTest({ sessionID, argText: prompt.text })
+          await ctx.session.synthetic({ sessionID, text })
+        },
+      })
+
       // One command per profile file, e.g. "profile-zai_and_free" — typing
       // "/profile" and pausing shows all of these (with descriptions) via
       // opencode's native by-name slash completion, giving a discoverable
@@ -450,5 +468,9 @@ export default Plugin.define({
         })
       }
     })
+
+    // Failover cleanup (TTL timer, agent transforms, retry hook) is handed to
+    // the SDK so a hot-reload of this plugin never leaves stale hooks behind.
+    return failover.cleanup
   },
 })
