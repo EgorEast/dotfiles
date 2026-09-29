@@ -71,3 +71,8 @@ vim/.config/nvim/*/
 
 
 claude/.claude/plugins/cache
+claude/.claude/plugins/marketplaces
+claude/.claude/plugins/plugin-catalog-cache.json
+claude/.claude/plugins/synced
+claude/.claude/skills/synced
+/claude/.claude/plugins/oh-my-claudecode/.usage-cache-anthropic.json
