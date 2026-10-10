@@ -1,30 +1,5 @@
 # Config relating to the Lazygit UI
 gui:
-  # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-author-color
-  authorColors:
-    "egoreast": "blue"
-  # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-branch-color
-  branchColorPatterns:
-    "main": "red"
-    "dev": "green"
-    "test": "yellow"
-    "staging": "cyan"
-    "stage": "cyan"
-  # Custom icons for filenames and file extensions
-  # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-files-icon--color
-  # customIcons:
-  #   # Map of filenames to icon properties (icon and color)
-  #   # filenames: {}
-  #
-  #   # Map of file extensions (including the dot) to icon properties (icon and color)
-  #   extensions:
-  #     ".md":
-  #       "icon": ""
-  #       "color": "blue"
-  #     ".css":
-  #       "icon": "\ue6b8"
-  #       "color": "red"
-
   # If true, capture mouse events.
   # When mouse events are captured, it's a little harder to select text: e.g. requiring you to hold the option key when on macOS.
   mouseEvents: false
@@ -42,6 +17,30 @@ gui:
     # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#highlighting-the-selected-line
     selectedLineBgColor:
       - magenta
+    # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-author-color
+    authorColors:
+      "egoreast": "blue"
+    # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-branch-color
+    branchColorPatterns:
+      "main": "red"
+      "dev": "green"
+      "test": "yellow"
+      "staging": "cyan"
+      "stage": "cyan"
+    # Custom icons for filenames and file extensions
+    # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#custom-files-icon--color
+    # customIcons:
+    #   # Map of filenames to icon properties (icon and color)
+    #   # filenames: {}
+    #
+    #   # Map of file extensions (including the dot) to icon properties (icon and color)
+    #   extensions:
+    #     ".md":
+    #       "icon": ""
+    #       "color": "blue"
+    #     ".css":
+    #       "icon": "\ue6b8"
+    #       "color": "red"
   # If true, show the number of lines changed per file in the Files view
   showNumstatInFilesView: true
   # Whether to show the divergence from the base branch in the branches view.
