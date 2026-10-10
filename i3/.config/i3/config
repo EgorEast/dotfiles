@@ -348,14 +348,14 @@ set $ws10 "10:"
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
-workspace $ws1 output HDMI-A-0
-workspace $ws2 output eDP
-workspace $ws3 output HDMI-A-0
-workspace $ws4 output HDMI-A-0
-workspace $ws5 output eDP
-workspace $ws6 output eDP
-workspace $ws7 output eDP
-workspace $ws10 output HDMI-A-0
+workspace $ws1 output HDMI-1
+workspace $ws2 output eDP-1
+workspace $ws3 output HDMI-1
+workspace $ws4 output HDMI-1
+workspace $ws5 output eDP-1
+workspace $ws6 output eDP-1
+workspace $ws7 output eDP-1
+workspace $ws10 output HDMI-1
 
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
