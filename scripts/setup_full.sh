@@ -46,8 +46,6 @@ sudo systemctl enable docker
 sudo systemctl start docker
 sudo gpasswd -a egoreast docker
 
-ocx init --global
-
 "$SCRIPT_DIR/setup_main_in_end.sh"
 
 echo ">>> Configuring bandwhich..."
@@ -68,17 +66,17 @@ choice=${choice:-"n"}
 
 case $choice in
 "n" | "N" | "")
-  echo "Skipping llms installation."
-  ;;
+	echo "Skipping llms installation."
+	;;
 "y")
-  echo "Running llms installation..."
-  "./install_llms.sh"
-  echo "Full setup completed."
-  ;;
+	echo "Running llms installation..."
+	"./install_llms.sh"
+	echo "Full setup completed."
+	;;
 *)
-  echo "Invalid choice. Exiting."
-  exit 1
-  ;;
+	echo "Invalid choice. Exiting."
+	exit 1
+	;;
 esac
 
 echo ">>> All done!"
