@@ -23,7 +23,7 @@
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:"JetBrainsMono Nerd Font Mono" 10.5
+font pango:"JetBrainsMono Nerd Font Mono" 12.5
 
 # set the mod key to the winkey:
 set $mod Mod4
@@ -599,7 +599,7 @@ client.urgent						$urgentred	$urgentred	$white	$yellowbrown	$yellowbrown
 # Start i3bar to display a workspace bar
 # (plus the system information i3status finds out, if available)
 bar {
-  font pango: JetBrainsMono Nerd Font Mono 10.5
+  font pango: JetBrainsMono Nerd Font Mono 12.5
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
   position top
   # i3bar_command i3bar --transparency

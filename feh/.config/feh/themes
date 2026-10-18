@@ -4,8 +4,8 @@ feh --auto-zoom \
 --draw-filename \
 --draw-tinted \
 --edit \
---font /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular/10.5 \
+--font /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular/12.5 \
 --geometry 500x500 \
 --image-bg black \
---menu-font /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular/10.5 \
+--menu-font /usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular/12.5 \
 --verbose
