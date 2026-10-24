@@ -50,3 +50,4 @@ x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 [Added Associations]
 application/x-msdownload=wine.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=onlyoffice-desktopeditors.desktop;
+application/vnd.openxmlformats-officedocument.presentationml.presentation=onlyoffice-desktopeditors.desktop;
