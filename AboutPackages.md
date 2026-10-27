@@ -255,6 +255,7 @@
 - [Dark Reader](https://addons.mozilla.org/ru/firefox/addon/darkreader/)
 - [DuckDuckGo Search & Tracker Protection](https://addons.mozilla.org/ru/firefox/addon/duckduckgo-for-firefox/)
 - [Floccus](https://addons.mozilla.org/ru/firefox/addon/floccus/)
+- [Get cookies.txt LOCALLY](https://addons.mozilla.org/ru/firefox/addon/get-cookies-txt-locally/)
 - [KeePassXC-Browser](https://addons.mozilla.org/ru/firefox/addon/keepassxc-browser/)
 - [Logseq Web Clipper](https://addons.mozilla.org/ru/firefox/addon/logseq-web-clipper/)
 - [OpenCode Browser](https://addons.mozilla.org/ru/firefox/addon/opencode-browser/)
