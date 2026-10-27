@@ -33,6 +33,7 @@ sudo pacman -S --noconfirm --needed \
 	duf \
 	dysk \
 	ebtables \
+	firefoxpwa \
 	firejail \
 	flawz \
 	galculator \
