@@ -167,7 +167,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $browser "chromium"
+set $browser "firefox"
 set $terminal "kitty"
 set $fileManager "thunar"
 set $md_editor "logseq"
@@ -359,7 +359,7 @@ workspace $ws10 output HDMI-1
 
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
-assign [class="Chromium"] $ws2
+assign [class="firefox"] $ws2
 assign [class="Logseq"] $ws3
 assign [class="Thunar"] $ws4
 assign [class="Anydesk" window_type="normal"] $ws5
@@ -372,7 +372,7 @@ assign [class="crow-translate"] $ws7
 
 # automatic set focus new window if it opens on another workspace than the current:
 for_window [class=Anydesk] focus
-for_window [class=Chromium] focus
+for_window [class=firefox] focus
 for_window [class=KeePassXC] focus
 for_window [class=Rudesktop] focus
 for_window [class=Rustdesk] focus
