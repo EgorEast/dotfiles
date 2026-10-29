@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 set $browser "firefox"
 set $terminal "kitty"
 set $fileManager "thunar"
-set $md_editor "logseq"
+set $md_editor "obsidian"
 set $vpn "AmneziaVPN"
 set $passwordManager "keepassxc"
 
@@ -360,7 +360,7 @@ workspace $ws10 output HDMI-1
 # bind program to workspace and focus to them on startup:
 assign [class="kitty"] $ws1
 assign [class="firefox"] $ws2
-assign [class="Logseq"] $ws3
+assign [class="Obsidian"] $ws3
 assign [class="Thunar"] $ws4
 assign [class="Anydesk" window_type="normal"] $ws5
 assign [class="Rudesktop" window_type="normal"] $ws5
@@ -382,7 +382,7 @@ for_window [class=Thunar] focus
 for_window [class=crow-translate] focus
 for_window [class=gajim] focus
 for_window [class=kitty] focus
-for_window [class=Logseq] focus
+for_window [class=Obsidian] focus
 for_window [class=v2rayN] focus
 
 # set floating (nontiling) for apps needing it
