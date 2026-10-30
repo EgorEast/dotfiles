@@ -240,7 +240,7 @@
 - [Floccus](https://addons.mozilla.org/ru/firefox/addon/floccus/)
 - [Get cookies.txt LOCALLY](https://addons.mozilla.org/ru/firefox/addon/get-cookies-txt-locally/)
 - [KeePassXC-Browser](https://addons.mozilla.org/ru/firefox/addon/keepassxc-browser/)
-- [Logseq Web Clipper](https://addons.mozilla.org/ru/firefox/addon/logseq-web-clipper/)
+- [Obsidian Web Clipper](https://addons.mozilla.org/ru/firefox/addon/web-clipper-obsidian/)
 - [OpenCode Browser](https://addons.mozilla.org/ru/firefox/addon/opencode-browser/)
 - [Progressive Web Apps for Firefox](https://addons.mozilla.org/en-US/firefox/addon/pwas-for-firefox/)
 - [React Developer Tools](https://addons.mozilla.org/ru/firefox/addon/react-devtools/)
