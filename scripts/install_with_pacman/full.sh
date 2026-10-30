@@ -106,6 +106,7 @@ sudo pacman -S --noconfirm --needed \
 	television \
 	termscp \
 	termshark \
+	thunderbird \
 	tor \
 	torbrowser-launcher \
 	torsocks \

@@ -180,6 +180,7 @@
 - [doxx](https://github.com/bgreenwell/doxx) – Expose the contents of .docx files without leaving your terminal.
 - [galculator](https://github.com/galculator/galculator) – GTK calculator.
 - [glow](https://github.com/charmbracelet/glow) – TUI Markdown viewer.
+- [thunderbird](https://github.com/thunderbird/thunderbird-desktop) – Thunderbird desktop email client.
 - [gsimplecal](https://dmedvinsky.github.io/gsimplecal/) – Simple popup calendar.
 - [khal](https://github.com/pimutils/khal) – CLI calendar application.
 - [libqalculate](https://github.com/Qalculate/libqalculate) - TUI calculator.
