@@ -232,23 +232,6 @@
 
 <https://github.com/rothgar/awesome-tuis?tab=readme-ov-file#libraries>
 
-## 📚 Chromium extentions
-
-- [Automa](https://chromewebstore.google.com/detail/infppggnoaenmfagbfknfkancpbljcca)
-- [Dark Reader](https://chromewebstore.google.com/detail/eimadpbcbfnmbkopoojfekhnkhdbieeh)
-- [DuckDuckGo Search & Tracker Protection](https://chromewebstore.google.com/detail/bkdgflcldnnnapblkhphbgpggdiikppg)
-- [Floccus bookmarks sync](https://chromewebstore.google.com/detail/fnaicdffflnofjppbagibeoednhnbjhg)
-- [KeePassXC-Browser](https://chromewebstore.google.com/detail/oboonakemofpalcgghocfoadofidjkkk)
-- [Logseq Web Clipper](https://chromewebstore.google.com/detail/logseq-web-clipper/fhjehofpeafndgabgbehflkncpmdldgg)
-- [Picture-in-Picture](https://chromewebstore.google.com/detail/hkgfoiooedgoejojocmhlaklaeopbecg)
-- [React Developer Tools](https://chromewebstore.google.com/detail/fmkadmapgofadopljbjfkapdkoienihi)
-- [RedirectTube](https://chromewebstore.google.com/detail/jpbaggklodpddjcadlebabhiopjkjfjh)
-- [Redux DevTools](https://chromewebstore.google.com/detail/lmhkpmbekcpmknklioeibfkpmmfibljd)
-- [Tampermonkey](https://chromewebstore.google.com/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo) - [voice-over-translation](https://github.com/ilyhalight/voice-over-translation)
-- [Tokyo Night Storm Theme](https://chromewebstore.google.com/detail/pgbjifpikialeahbdendkjioeafbmfkn)
-- [VK Music Saver](https://chromewebstore.google.com/detail/ijgkbcbalaekboipcmaefchfjpognmog)
-- [Vimium](https://chromewebstore.google.com/detail/dbepggeogbaibhgnhhndojpepiihcmeb)
-
 ## 📚 Firefox extentions
 
 - [Automa](https://addons.mozilla.org/ru/firefox/addon/automa/)
