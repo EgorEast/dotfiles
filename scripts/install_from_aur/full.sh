@@ -19,6 +19,7 @@ yay -S --noconfirm --needed \
 	rofi-greenclip \
 	rudesktop \
 	rustdesk-bin \
+	specify-cli \
 	via-appimage \
 	vial-appimage \
 	warpd \

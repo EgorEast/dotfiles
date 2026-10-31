@@ -105,6 +105,7 @@
 - [rustup](https://rust-lang.github.io/rustup/) – Rust version manager.
 - [serie](https://github.com/lusingander/serie) – A rich git commit graph in your terminal, like magic 📚.
 - [soft-serve](https://github.com/charmbracelet/soft-serve) – Self-hostable Git server for the command line.
+- [specify](https://github.com/github/spec-kit) – 💫 Toolkit to help you get started with SDD or any other process!
 - [television](https://github.com/alexpasmantier/television) – Fast and hackable fuzzy finder for the terminal.
 - [termscp](https://github.com/veeso/termscp) – Feature rich terminal UI file transfer and explorer with support for SCP/SFTP/FTP/S3/SMB.
 - [vim](https://www.vim.org/docs.php) – Highly configurable text editor.
