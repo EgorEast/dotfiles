@@ -67,11 +67,11 @@
       },
       {
         "scope": "project",
+        "projectPath": "/home/egoreast/Programming/exarh-flutter-new",
         "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
         "version": "1.0.0",
         "installedAt": "2026-10-26T07:14:16.174Z",
-        "lastUpdated": "2026-10-26T07:14:16.174Z",
-        "projectPath": "/home/egoreast/Programming/exarh-flutter-new"
+        "lastUpdated": "2026-10-26T07:14:16.174Z"
       }
     ],
     "figma@claude-plugins-official": [
@@ -94,12 +94,12 @@
       },
       {
         "scope": "project",
+        "projectPath": "/home/egoreast/Programming/exarh-flutter-new",
         "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/figma/2.1.30",
         "version": "2.1.30",
         "installedAt": "2026-10-26T07:14:16.174Z",
         "lastUpdated": "2026-10-26T07:14:16.174Z",
-        "gitCommitSha": "fabc1ca81d839602ba7c1ca0f445a64246b3870e",
-        "projectPath": "/home/egoreast/Programming/exarh-flutter-new"
+        "gitCommitSha": "fabc1ca81d839602ba7c1ca0f445a64246b3870e"
       }
     ],
     "oh-my-claudecode@omc": [
@@ -119,6 +119,16 @@
         "installedAt": "2026-09-21T07:36:48.641Z",
         "lastUpdated": "2026-09-21T07:36:48.641Z",
         "gitCommitSha": "5281b19e0d64f8e6dc6767f2130299a88af2dc71"
+      }
+    ],
+    "clangd-lsp@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/home/egoreast/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-11-05T08:40:15.651Z",
+        "lastUpdated": "2026-11-05T08:40:15.651Z",
+        "gitCommitSha": "1a2f18b05cf5652fd25403e8d229fc884fb84103"
       }
     ]
   }

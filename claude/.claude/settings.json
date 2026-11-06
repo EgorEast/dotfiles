@@ -31,7 +31,8 @@
   "enabledPlugins": {
     "figma@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
-    "oh-my-claudecode@omc": true
+    "oh-my-claudecode@omc": true,
+    "clangd-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
     "omc": {
