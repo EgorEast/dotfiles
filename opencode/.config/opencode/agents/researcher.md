@@ -5,13 +5,16 @@ permissions:
   - action: edit
     resource: '*'
     effect: deny
+  - action: write
+    resource: '*'
+    effect: deny
+  - action: bash
+    resource: '*'
+    effect: deny
   - action: plan_read
     resource: '*'
     effect: deny
   - action: todoread
-    resource: '*'
-    effect: deny
-  - action: kagi_*
     resource: '*'
     effect: deny
   - action: shell
@@ -126,9 +129,6 @@ permissions:
     resource: 'tr *'
     effect: allow
   - action: context7_*
-    resource: '*'
-    effect: allow
-  - action: exa_*
     resource: '*'
     effect: allow
   - action: gh_grep_*

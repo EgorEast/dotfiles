@@ -22,6 +22,13 @@
   // project's split. No model wiring here either — the profile plugin
   // (plugins/profile/index.ts) applies .opencode-style model profiles from
   // ~/.config/opencode/profiles/*.json at runtime.
+  //
+  // agents/, skills/ and the speckit commands (speckit.*.md + review.md) are
+  // SYNCED from slovo-propovedi-mobile's .opencode/ — that repo is the
+  // canonical source. After editing them there, re-copy the directories here
+  // and strip the `model:` lines from the agents' frontmatter (model pins are
+  // runtime state written by the profile/failover plugins; global agents stay
+  // model-agnostic). A project's own .opencode/ overrides these global copies.
   "agents": {
     "plan": {
       "permissions": [
@@ -106,6 +113,24 @@
           },
         },
       },
+    },
+  },
+  // MCP servers (V2 shape: mcp.servers). Remote, no auth headers — context7 and
+  // gh_grep are the pair the mobile repo's agents expect.
+  //
+  // exa (https://mcp.exa.ai/mcp) is fully removed everywhere deliberately: it
+  // was never used — deny-blocked for every agent in the mobile repo — and its
+  // endpoint is network-blocked here (Cloudflare page). Removed from all
+  // slovo-propovedi repos on 2026-11-06. Re-add it if that ever changes.
+  //
+  // Intentional divergence from the mobile config: there is NO deny-first
+  // `permissions` here for webfetch / context7_* / gh_grep_*. Globally these
+  // tools are available to agents by default — that was the whole point of
+  // moving MCP to the global config. The mobile repo stays deny-first.
+  "mcp": {
+    "servers": {
+      "context7": { "type": "remote", "url": "https://mcp.context7.com/mcp" },
+      "gh_grep": { "type": "remote", "url": "https://mcp.grep.app" },
     },
   },
 }
