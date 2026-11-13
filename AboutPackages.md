@@ -98,6 +98,7 @@
 - [onefetch](https://github.com/o2sh/onefetch) – Git repository summary in terminal.
 - [openapi-tui](https://github.com/zaghaghi/openapi-tui) – Terminal UI to list, browse and run APIs defined with openapi spec.
 - [opencode](https://github.com/sst/opencode) – AI coding agent, built for the terminal.
+- [kimi-code](https://www.kimi.com/code/en) – Engineered to drop into any dev workflow, answer faster and more reliably, and get programming tasks done in record time.
 - [pnq](https://github.com/lirantal/npq) – Lightweight npm package query tool.
 - [qemu](https://github.com/qemu/qemu) – Generic and open source machine & userspace emulator and virtualizer.
 - [rainfrog](https://github.com/achristmascarl/rainfrog) – Database tool for the terminal.

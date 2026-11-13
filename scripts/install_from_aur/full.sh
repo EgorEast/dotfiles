@@ -23,6 +23,7 @@ yay -S --noconfirm --needed \
 	via-appimage \
 	vial-appimage \
 	warpd \
+	kimi-code \
 	wifitui-bin \
 	xautolock \
 	xkblayout-state-git \

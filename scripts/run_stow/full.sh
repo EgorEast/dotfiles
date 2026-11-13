@@ -6,8 +6,7 @@ rm -rf ~/.config/mineapps.list
 
 "$SCRIPT_DIR/main.sh"
 
-stow --adopt --restow \
-	atac \
+atac \
 	autostart \
 	cava \
 	chawan \
@@ -25,6 +24,7 @@ stow --adopt --restow \
 	inputrc \
 	k9s \
 	khal \
+	kimi \
 	lazydocker \
 	lnav \
 	ls-fusion \
@@ -61,4 +61,5 @@ stow --adopt --restow \
 	xsettingsd \
 	ya-disk \
 	ytsurf \
+	stow --adopt --restow \
 	-t ~
