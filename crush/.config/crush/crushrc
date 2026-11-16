@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+# GLOBAL setup — portable across all projects (port of .opencode via .crush).
+# A project ./.crushrc (when present) loads AFTER this file and overrides on
+# conflicts. Project-specific context files live only in the project config.
+
+# MCP servers, same set the OpenCode base config used.
+mcp add context7 --type http --url https://mcp.context7.com/mcp
+mcp add gh_grep --type http --url https://mcp.grep.app
+
+# Read-only tools never prompt; everything else keeps the normal
+# permission flow.
+permissions allow view ls grep glob
+
+# --- Global profile selection ---
+# Precedence: $CRUSH_PROFILE env override > ~/.config/crush/active-profile.
+# With neither, no profile applies and Crush uses its standard models.
+# Project ./.crushrc applies its own profiles later, so a project state
+# file wins over this one.
+CRUSH_PROFILES_DIR="${CRUSH_CONFIG_DIR:-$HOME/.config/crush}/profiles"
+CRUSH_ACTIVE_PROFILE_FILE="${CRUSH_CONFIG_DIR:-$HOME/.config/crush}/active-profile"
+
+crush_profile_name=""
+if [[ -n "${CRUSH_PROFILE:-}" ]]; then
+  crush_profile_name="$CRUSH_PROFILE"
+elif [[ -s "$CRUSH_ACTIVE_PROFILE_FILE" ]]; then
+  crush_profile_name="$(head -n 1 "$CRUSH_ACTIVE_PROFILE_FILE" | tr -d '[:space:]')"
+fi
+
+if [[ -n "$crush_profile_name" ]]; then
+  crush_profile_file="$CRUSH_PROFILES_DIR/$crush_profile_name.sh"
+  if [[ -f "$crush_profile_file" ]]; then
+    source "$crush_profile_file"
+  else
+    echo "crushrc: unknown global profile '$crush_profile_name' (no $crush_profile_file)" >&2
+  fi
+fi
