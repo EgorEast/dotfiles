@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "sources": {
+    "sha256:4eab939951e1e08ec016ab9e0efc7d1fa1591a7db7d59402a161c6406b300911": {
+      "chrome-devtools-mcp": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "cloud",
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:cecf9f8f466af1535ecf425a90528e3a2970b6aea1285d10c5d83124f574de5b",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "cloudbase": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:96e53f341a46b364bfca85558be7fefb28f5e07cdd0e5eada580091784a8ec37",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "kimi-browser-extension": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:e51c0923ca8e425142d11e543ae42074a75de9a6d04f1ff93b01240469d15ba0",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "kimi-cu": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "darwin"
+        ],
+        "artifactSourceKey": "sha256:dbd1ce1eb96d1ed45bc512a9dc6a1c095605a287330b0f07cad2117179171e3d",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "kimi-cu-win": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "win32"
+        ],
+        "artifactSourceKey": "sha256:388f11f59b34e32ce68362bc8193e625f891aa906d57b36873b0e5dcf1293e5b",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "kimi-datasource": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "cloud",
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:9c210f008307ed116edf7be07eb143d20d3ffddefcdf22a0ac2413db1cd630fd",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "modern-web-guidance": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "cloud",
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:26e480b5ed8dcebe87ac38e522c6024c22677020b43afd4167900677051b12ff",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "superpowers": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:a82e83754d8c5fe910fb2d49686c758f6f15bbcf1d2208864384c4e3cd0b9c24",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      },
+      "vercel": {
+        "clients": [
+          "desktop",
+          "cli"
+        ],
+        "platforms": [
+          "darwin",
+          "win32",
+          "linux"
+        ],
+        "artifactSourceKey": "sha256:44e6a3a592ce8a2573fe212eaaadbd745e6bf047fe0781760e93d3eef7530021",
+        "checkedAt": "2026-11-16T12:33:01.318Z"
+      }
+    }
+  }
+}

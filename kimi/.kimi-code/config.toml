@@ -1,4 +1,4 @@
-default_model = "kimi-code/k3"
+default_model = "kimi-code/kimi-for-coding-highspeed"
 
 [providers."managed:kimi-code"]
 type = "kimi"
