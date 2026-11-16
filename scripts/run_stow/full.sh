@@ -13,6 +13,7 @@ atac \
 	claude \
 	clipse \
 	cmus \
+	crush \
 	dive \
 	docker \
 	galculator \
