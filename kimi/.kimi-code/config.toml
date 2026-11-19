@@ -1,4 +1,4 @@
-default_model = "kimi-code/kimi-for-coding-highspeed"
+default_model = "kimi-code/k3"
 
 [providers."managed:kimi-code"]
 type = "kimi"
@@ -64,7 +64,7 @@ default_effort = "high"
 
 [thinking]
 enabled = true
-effort = "low"
+effort = "high"
 
 [services.moonshot_search]
 base_url = "https://api.kimi.ai/coding/v1/search"
@@ -86,3 +86,4 @@ oauth_host = "https://auth.kimi.ai"
 
 [secondary_model]
 default_model = "kimi-code/kimi-for-coding"
+
