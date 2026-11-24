@@ -6,7 +6,8 @@ dotfiles-репозиторию симлинком.
 ## Плагин `profile-global`
 
 `plugins/profile/index.ts` — **глобальный fallback** переключателя профилей для
-проектов, у которых нет своего `.opencode/plugins/profile` (например, exarh-web).
+проектов, у которых нет своей профиль-инфраструктуры — `.opencode/plugins/profile`
+или хотя бы `.opencode/profiles` (например, exarh-web).
 Source of truth дизайна — проект `slovo-propovedi-mobile`, его локальная копия
 плагина; этот файл зеркалит её с пятью намеренными отличиями:
 

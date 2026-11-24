@@ -2,7 +2,8 @@
  * profile — global in-session model-profile switcher.
  *
  * Global fallback for projects without their own `.opencode/plugins/profile`
- * (e.g. exarh-web). slovo-propovedi-mobile keeps its own project-local copy
+ * or `.opencode/profiles` (e.g. exarh-web). slovo-propovedi-mobile keeps its own
+ * project-local copy
  * of this plugin as the source of truth there — see that project's
  * `.opencode/plugins/profile/index.ts` for the full design rationale
  * (mode-based agent registry pinning, no TUI dialog, etc). This file mirrors
@@ -13,12 +14,15 @@
  *    for `<current project>/.opencode/profiles`, which doesn't exist for
  *    most projects when this plugin runs globally.
  * 2. setup() no-ops entirely when the current project has its own
- *    `.opencode/plugins/profile` directory. Both a global and a project-local
- *    plugin get loaded simultaneously when opencode runs inside such a
- *    project (project doesn't shadow global by id) — without this check,
- *    every command here (`/profile`, `/profile-<name>`) would register
- *    TWICE, once from each plugin, exactly the duplicate-completion-entry bug
- *    already hit and fixed once for the TUI dialog attempt.
+ *    `.opencode/plugins/profile` directory OR its own `.opencode/profiles`
+ *    directory. For the former, both a global and a project-local plugin get
+ *    loaded simultaneously when opencode runs inside such a project
+ *    (project doesn't shadow global by id) — without this check, every
+ *    command here (`/profile`, `/profile-<name>`) would register TWICE, once
+ *    from each plugin, exactly the duplicate-completion-entry bug already hit
+ *    and fixed once for the TUI dialog attempt. For the latter, the project's
+ *    own local profiles are what gets applied there, so offering the global
+ *    ones would only duplicate/confuse.
  * 3. Which subagent ids get pinned by rewriting their .opencode/agents/<id>.md
  *    frontmatter vs. via the ctx.agent.transform registry is determined
  *    dynamically per project (does that .md file exist for ctx.location.directory?),
@@ -253,9 +257,15 @@ export default Plugin.define({
   // plugin's setup() does nothing at all in that case).
   id: "profile-global",
   async setup(ctx) {
-    // Yield to a project-local profile plugin — see file header. Both would
-    // otherwise load side by side and double-register every command.
-    if (await pathExists(path.join(ctx.location.directory, ".opencode", "plugins", "profile"))) {
+    // Yield to a project-local profile setup — see file header. Two reasons:
+    // a project-local plugin would double-register every command, and a
+    // project with its own .opencode/profiles is self-governing anyway — its
+    // local profiles are what gets applied there, so offering the global
+    // ones in the palette would only duplicate/confuse.
+    if (
+      (await pathExists(path.join(ctx.location.directory, ".opencode", "plugins", "profile"))) ||
+      (await pathExists(path.join(ctx.location.directory, ".opencode", "profiles")))
+    ) {
       return
     }
 
