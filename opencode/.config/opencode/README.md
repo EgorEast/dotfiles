@@ -8,7 +8,7 @@ dotfiles-репозиторию симлинком.
 `plugins/profile/index.ts` — **глобальный fallback** переключателя профилей для
 проектов, у которых нет своего `.opencode/plugins/profile` (например, exarh-web).
 Source of truth дизайна — проект `slovo-propovedi-mobile`, его локальная копия
-плагина; этот файл зеркалит её с четырьмя намеренными отличиями:
+плагина; этот файл зеркалит её с пятью намеренными отличиями:
 
 1. **id `profile-global`** (не `profile`) — глобальный и проектный плагины с
    одним id оба помечаются хостом как failed ещё до `setup()`.
@@ -19,6 +19,7 @@ Source of truth дизайна — проект `slovo-propovedi-mobile`, его
 4. **Динамический `classifySubagents`** — какие субагенты пинятся через
    frontmatter их `.md`, а какие через registry-transform, определяется по
    наличию `.opencode/agents/<id>.md` в текущем проекте, а не хардкодом.
+5. **Дефолтный профиль** — при отсутствии персистентного выбора в storage (`activeProfile`) setup() применяет `go_glm_and_deepseek` как стартовый дефолт (frontmatter-пины + registry), не записывая его в storage; явный `/profile <имя>` по-прежнему персистится.
 
 ## Фейловер моделей при лимитах (profile-failover)
 

@@ -6,7 +6,7 @@
  * of this plugin as the source of truth there — see that project's
  * `.opencode/plugins/profile/index.ts` for the full design rationale
  * (mode-based agent registry pinning, no TUI dialog, etc). This file mirrors
- * it, with four differences:
+ * it, with five differences:
  *
  * 1. profilesDir is resolved from THIS FILE's own location (import.meta.dir),
  *    not from ctx.location.directory — a project-relative path would look
@@ -28,6 +28,9 @@
  * 4. Plugin id is "profile-global", not "profile" — a global and a
  *    project-local plugin sharing one id are both flagged failed by the
  *    plugin host itself, before setup() even runs (see the id comment below).
+ * 5. setup() applies DEFAULT_PROFILE when nothing is persisted in storage —
+ *    without writing it back, so an explicit /profile switch stays the only
+ *    thing that persists a choice (the mobile copy has no such default).
  *
  * Model failover (adaptive fallback on quota/rate-limit errors) is ported
  * verbatim from the mobile copy's failover.ts/shared.ts. Its state/log files
@@ -54,6 +57,11 @@ const PLUGIN_DIR = import.meta.dir
 
 /** Plugin-scoped storage key holding the active profile name. */
 const STORAGE_KEY = "activeProfile"
+
+/** Startup default applied when nothing is persisted in storage — a fresh
+ * install (or cleared KV) starts on this profile instead of raw defaults.
+ * An explicit /profile switch still persists over it. */
+const DEFAULT_PROFILE = "go_glm_and_deepseek"
 
 /** The 7 agent slots wired from a profile file, in display order. */
 const PROFILE_AGENTS = ["plan", "build", "researcher", "coder", "explore", "scribe", "reviewer"] as const
@@ -263,6 +271,9 @@ export default Plugin.define({
     // Reserved for the /profile command; the agent registry transform reads it.
     let activeProfile: ProfileData | null = null
     let activeProfileName: string | null = null
+    // True when the active profile came from DEFAULT_PROFILE, not from storage —
+    // the /profile list marks such a profile "(default, active)".
+    let activeIsDefault = false
 
     if (typeof storedProfile === "string" && storedProfile) {
       try {
@@ -281,6 +292,21 @@ export default Plugin.define({
         if (isMissingFileError(error)) {
           await ctx.storage.remove(STORAGE_KEY)
         }
+      }
+    } else {
+      // Nothing valid persisted (fresh install or cleared KV) — start on the
+      // default profile without writing it to storage, so an explicit
+      // /profile <name> remains the only way to persist a choice.
+      try {
+        activeProfile = await loadProfile(profilesDir, DEFAULT_PROFILE)
+        activeProfileName = DEFAULT_PROFILE
+        activeIsDefault = true
+        const errors = await applyMarkdownFrontmatterPins(agentsDir, activeProfile, markdownSubagentIds)
+        if (errors.length > 0) {
+          warn(`profile "${DEFAULT_PROFILE}" (default): failed to sync agent frontmatter for ${errors.join(", ")}`)
+        }
+      } catch (error) {
+        warn(`profile "${DEFAULT_PROFILE}" (default) could not be loaded: ${toMessage(error)} — starting with defaults`)
       }
     }
 
@@ -335,7 +361,8 @@ export default Plugin.define({
       }
 
       const lines = names.map((name) => {
-        const marker = name === activeProfileName ? " (active)" : ""
+        const isActive = name === activeProfileName
+        const marker = isActive ? (activeIsDefault ? " (default, active)" : " (active)") : ""
         return `  ${name}${marker}`
       })
       return [
