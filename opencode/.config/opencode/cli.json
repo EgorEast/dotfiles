@@ -11,5 +11,11 @@
     "scrollbar": false,
     "thinking": "show"
   },
-  "animations": true
+  "animations": true,
+  "tabs": {
+    "mode": "on",
+    "scope": "cwd",
+    "layout": "horizontal",
+    "indicators": "status"
+  }
 }
